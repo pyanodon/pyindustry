@@ -82,8 +82,8 @@ local function define_shed(name, logistics_name)
         logistic_slots_count = 12,
 		corpse = "big-remnants",
 		dying_explosion = "medium-explosion",
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = { filename = "__pyindustry__/sounds/shed-open.ogg", volume = 0.55 },
+		close_sound = { filename = "__pyindustry__/sounds/shed-close.ogg", volume = 0.65 },
 		vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
 		scale_entity_info_icon = true,
 		resistances =
@@ -102,9 +102,9 @@ local function define_shed(name, logistics_name)
 		{
 			filename = "__pyindustry__/graphics/entity/shed/shed-" .. name .. ".png",
 			priority = "high",
-			width = 129,
-			height = 100,
-			shift = {0.421875, 0},
+			width = 104,
+			height = 109,
+			shift = {0.1, -0.2},
 			scale = .66666,
 		},
 		-- circuit_connector_sprites = nil
