@@ -6,7 +6,9 @@ local recipe = Recipe {
     ingredients = {
         {"electronic-circuit", 5},
         {"iron-gear-wheel", 5},
-        {"iron-plate", 10}
+        {"iron-plate", 10},
+		{"wood", 20},
+		{"engine-unit", 1}
     },
     result = "py-local-radar",
     enabled = true
@@ -15,7 +17,7 @@ local recipe = Recipe {
 local item = {
     type = "item",
     name = "py-local-radar",
-    icon = "__base__/graphics/icons/radar.png",
+    icon = "__pyindustry__/graphics/icons/radar.png",
     flags = {"goes-to-quickbar"},
     subgroup = "py-industry",
     order = "d[radar]-a[radar]",
@@ -80,20 +82,22 @@ local radar = {
             {
                 filename = "__pyindustry__/graphics/entity/radar/radar.png",
                 priority = "low",
-                width = 98,
-                height = 128,
+                width = 100,
+                height = 141,
                 apply_projection = false,
-                direction_count = 64,
-                line_length = 8,
+                direction_count = 50,
+                line_length = 10,
+				animation_speed = 0.7,
                 shift = util.by_pixel(1, -16),
                 hr_version = {
                     filename = "__pyindustry__/graphics/entity/radar/hr-radar.png",
                     priority = "low",
-                    width = 196,
-                    height = 254,
+                    width = 201,
+                    height = 283,
                     apply_projection = false,
-                    direction_count = 64,
-                    line_length = 8,
+                    direction_count = 50,
+                    line_length = 10,
+					animation_speed = 0.7,
                     shift = util.by_pixel(1, -16),
                     scale = 0.5
                 }
@@ -101,21 +105,23 @@ local radar = {
             {
                 filename = "__pyindustry__/graphics/entity/radar/radar-shadow.png",
                 priority = "low",
-                width = 172,
-                height = 94,
+                width = 113,
+                height = 96,
                 apply_projection = false,
-                direction_count = 64,
+                direction_count = 50,
                 line_length = 8,
+				animation_speed = 0.7,
                 shift = util.by_pixel(39, 3),
                 draw_as_shadow = true,
                 hr_version = {
                     filename = "__pyindustry__/graphics/entity/radar/hr-radar-shadow.png",
                     priority = "low",
-                    width = 343,
-                    height = 186,
+                    width = 226,
+                    height = 192,
                     apply_projection = false,
-                    direction_count = 64,
+                    direction_count = 50,
                     line_length = 8,
+					animation_speed = 0.7,
                     shift = util.by_pixel(39.25, 3),
                     draw_as_shadow = true,
                     scale = 0.5
@@ -127,7 +133,7 @@ local radar = {
     working_sound = {
         sound = {
             {
-                filename = "__base__/sound/radar.ogg"
+                filename = "__pyindustry__/sounds/radar.ogg", volume = 0.5
             }
         },
         apparent_volume = 2
