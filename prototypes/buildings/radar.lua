@@ -1,6 +1,6 @@
 local Recipe = require("stdlib/data/recipe")
 
-local recipe = Recipe {
+Recipe {
     type = "recipe",
     name = "py-local-radar",
     ingredients = {
@@ -12,7 +12,7 @@ local recipe = Recipe {
     },
     result = "py-local-radar",
     enabled = true
-}
+}:extend()
 
 local item = {
     type = "item",
@@ -141,5 +141,4 @@ local radar = {
     radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275}
 }
 
-recipe:extend()
 Recipe:extend{item, radar}

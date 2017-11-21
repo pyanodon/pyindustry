@@ -1,4 +1,8 @@
+--[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
+ * Part of the Warehousing mod
+--]]
 local Technology = require("stdlib/data/technology")
+local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_ingredients(name)
     local ingredients
@@ -102,27 +106,23 @@ local function define_shed(name, logistics_name)
 		{
 			filename = "__pyindustry__/graphics/entity/shed/shed-" .. name .. ".png",
 			priority = "high",
-			width = 104,
-			height = 109,
-			shift = {0.1, -0.2},
-			scale = .66666,
+			width = 68,
+			height = 75,
+            shift = {0, 0},
+            scale = .66666,
+            hr_version = {
+                filename = "__pyindustry__/graphics/entity/shed/hr-shed-" .. name .. ".png",
+                priority = "extra-high",
+                width = 136,
+                height = 150,
+                shift = {0, 0},
+                scale = 0.5
+            }
 		},
-		-- circuit_connector_sprites = nil
 		circuit_wire_max_distance = 9,
-		circuit_wire_connection_point =
-		{
-			shadow =
-			{
-				red = {0.26, -0.6},
-				green = {0.36, -0.6}
-			},
-			wire =
-			{
-				red = {-0.16, -0.9},
-				green = {0.16, -0.9}
-			}
-		},
-	};
+		circuit_connector_sprites = connectors.sprites({0.75, 0.55}),
+        circuit_wire_connection_point = connectors.points({0.64, 0.13})
+	}
 
 	if logistics_name then
 		entity.minable.hardness = 0.2;
