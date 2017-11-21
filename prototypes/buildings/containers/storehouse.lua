@@ -1,4 +1,8 @@
+--[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
+ * Part of the Warehousing mod
+--]]
 local Technology = require("stdlib/data/technology")
+local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_ingredients(name)
     local ingredients
@@ -100,22 +104,21 @@ local function define_storehouse(name, logistics_name)
         picture = {
             filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
             priority = "high",
-            width = 129,
-            height = 100,
-            shift = {0.421875, 0}
-        },
-        -- circuit_connector_sprites = define_storehouse_connector({0.1875, 0.15625}),
-        circuit_wire_max_distance = 9,
-        circuit_wire_connection_point = {
-            shadow = {
-                red = {0.26, -0.6},
-                green = {0.36, -0.6}
-            },
-            wire = {
-                red = {-0.16, -0.9},
-                green = {0.16, -0.9}
+            width = 102,
+            height = 103,
+            shift = {0, 0},
+            hr_version = {
+                filename = "__pyindustry__/graphics/entity/storehouse/hr-storehouse-" .. name .. ".png",
+                priority = "extra-high",
+                width = 204,
+                height = 206,
+                shift = {0, 0},
+                scale = 0.5
             }
-        }
+        },
+        circuit_wire_max_distance = 9,
+        circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
+        circuit_wire_connection_point = connectors.points({-0.11, -1.92})
     }
 
     if logistics_name then
