@@ -518,7 +518,7 @@ recipe_niobium_pipe_to_ground:add_unlock({"coal-processing-2", "py-storage-tanks
 
 local recipes = {
     "xyhiphoe-pool", "hydrocyclone", "compressor", "genlab", "kmauts-enclosure", "nmf", "py-heat-exchanger",
-    "py-turbine"
+    "py-turbine", "science-coating"
 }
 for _, recipe in pairs(recipes) do
     Recipe(recipe):replace_ingredient("pipe", "niobium-pipe")
