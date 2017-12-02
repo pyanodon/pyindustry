@@ -2,6 +2,7 @@ require("prototypes.item-groups")
 
 require("prototypes.technologies.storage-tanks")
 require("prototypes.technologies.asphalt")
+require("prototypes.technologies.burner")
 require("prototypes.technologies.warehouses")
 
 --Tiles
@@ -30,5 +31,6 @@ require("prototypes.buildings.fluid-tanks.tanks-8000")
 
 require("prototypes.buildings.accumulator-mk01")
 require("prototypes.buildings.radar")
+require("prototypes.buildings.burner")
 
 require("prototypes.pipes.niobium-pipes")
