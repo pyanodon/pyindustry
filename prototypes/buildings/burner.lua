@@ -6,7 +6,7 @@ local recipe = Recipe {
     energy_required = 10,
     enabled = false,
     ingredients = {
-        {"burner", 5},
+        {"stone-furnace", 5},
         {"iron-plate", 20},
         {"steel-plate", 20},
         {"steel-furnace", 1}
@@ -68,13 +68,13 @@ local entity =
         fuel_category = "chemical",
         effectivity = 1,
         fuel_inventory_size = 1,
-        emissions = 0.01,
+        emissions = 0.03,
         smoke = {
             {
-                name = "smoke",
+                name = "turbine-smoke",
                 deviation = {0.1, 0.1},
-                frequency = 10 / 32,
-                position = {0.0, -2.8},
+                frequency = 25,
+                position = {0.3, -3.7},
                 starting_vertical_speed = 0.08,
                 starting_frame_deviation = 60
             }
@@ -88,7 +88,7 @@ local entity =
                 width = 96,
                 height = 192,
                 frame_count = 1,
-                shift = {0.0, -3.0}
+                shift = {0.0, -1.17}
             },
             {
                 filename = "__pyindustry__/graphics/entity/py-burner/shadow.png",
@@ -97,16 +97,16 @@ local entity =
                 height = 105,
                 frame_count = 1,
                 draw_as_shadow = true,
-                shift = {0.1, 0.0}
+                shift = {0.3, -0.2}
             }
         }
     },
     working_visualisations = {
         {
-            north_position = {0.0, -3.0},
-            east_position = {0.0, -3.0},
-            south_position = {0.0, -3.0},
-            west_position = {0.0, -3.0},
+            north_position = {0.0, 3.0},
+            east_position = {0.0, 3.0},
+            south_position = {0.0, 3.0},
+            west_position = {0.0, 3.0},
             animation = {
                 filename = "__pyindustry__/graphics/entity/py-burner/on.png",
                 priority = "extra-high",
