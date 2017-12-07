@@ -203,7 +203,7 @@ end
 -- @tparam table tblB second table
 -- @tparam[opt=false] boolean array_merge set to true to merge the tables as an array or false for an associative array
 -- @treturn array|table an array or an associated array where tblA and tblB have been merged
-function table.merge(tblA, tblB, array_merge)
+function table.merge(tblA, tblB, array_merge, raw)
     if not tblB then
         return tblA
     end
@@ -214,7 +214,11 @@ function table.merge(tblA, tblB, array_merge)
 
     else
         for k, v in pairs(tblB) do
-            tblA[k] = v
+            if raw then
+                rawset(tblA, k, v)
+            else
+                tblA[k] = v
+            end
         end
     end
     return tblA
@@ -348,9 +352,8 @@ end
 -- @usage local a = {1, 2, 3, 4, 5}
 -- table.count_keys(a, function(v, k) return k % 2 == 1 end) -- produces: 3, 5
 function table.count_keys(tbl, func, ...)
-    if type(tbl) ~= 'table' then return 0, 0 end
     local count, total = 0, 0
-    for k, v in pairs(tbl) do
+    for k, v in pairs(tbl or {}) do
         total = total + 1
         if func then
             if func(v, k, ...) then
@@ -378,11 +381,19 @@ function table.invert(tbl)
     return inverted
 end
 
+local function _size(tbl)
+    local count = 0
+    for _ in pairs(tbl or {}) do
+        count = count + 1
+    end
+    return count
+end
+
 --- Return the size of a table using the factorio built in table_size function
 -- @function size
 -- @tparam table table to use
 -- @treturn int size of the table
-table.size = table_size or table.count_keys --luacheck: globals table_size
+table.size = table_size or _size --luacheck: globals table_size
 
 --- For all string or number values in an array map them to a key = true table
 -- @usage local a = {"v1", "v2"}
