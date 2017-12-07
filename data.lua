@@ -32,5 +32,7 @@ require("prototypes.buildings.fluid-tanks.tanks-8000")
 require("prototypes.buildings.accumulator-mk01")
 require("prototypes.buildings.radar")
 require("prototypes.buildings.burner")
+require("prototypes.buildings.sinkhole")
+require("prototypes.buildings.gas-vent")
 
 require("prototypes.pipes.niobium-pipes")
