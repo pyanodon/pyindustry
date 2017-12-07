@@ -5,7 +5,7 @@ local pipecoverspictures = _G.pipecoverspictures
 local recipe = {
     type = "recipe",
     name = "py-tank-1500",
-    energy_required = 35,
+    energy_required = 15,
     enabled = false,
     ingredients = {
         {"iron-plate", 20},
