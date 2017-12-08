@@ -75,7 +75,7 @@ local entity =
         usage_priority = "secondary-input",
         emissions = 0.0
         },
-    animation = make_4way_animation_from_spritesheet({ layers =
+    animation = _G.make_4way_animation_from_spritesheet({ layers =
     {
             {
                 filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
@@ -111,7 +111,7 @@ local entity =
 					draw_as_shadow = true,
                     shift = {0.3, -0.0},
                     scale = 0.5
-                }				
+                }
             },
         }
     }),

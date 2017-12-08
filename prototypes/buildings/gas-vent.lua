@@ -110,7 +110,7 @@ local entity =
 					draw_as_shadow = true,
                     shift = {1.3, -0.0},
                     scale = 0.5
-                }				
+                }
             },
         }
     },

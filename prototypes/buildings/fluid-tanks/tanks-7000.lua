@@ -8,7 +8,7 @@ local recipe = {
     energy_required = 15,
     enabled = false,
     ingredients = {
-		{"storage-tank", 1},
+        {"storage-tank", 1},
         {"iron-plate", 20},
         {"pipe", 10},
         {"steel-plate", 10}
@@ -37,75 +37,71 @@ local entity = {
     corpse = "medium-remnants",
     collision_box = {{-3.3, -1.3}, {3.3, 1.3}},
     selection_box = {{-3.5, -1.5}, {3.5, 1.5}},
-    two_direction_only = true,
+    --two_direction_only = true,
     fluid_box = {
         base_area = 700,
         pipe_covers = pipecoverspictures(),
         pipe_connections = {
             {position = {4.0, -1.0}},
-			{position = {4.0, 1.0}},
+            {position = {4.0, 1.0}}
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
     pictures = {
-	picture = {
-		  north =
-		  {
-			filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
-			width = 250,
-			height = 150,
-			shift = {0.32, -0.20},
-			hr_version = {
-				filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
-				width = 499,
-				height = 299,
-				shift = {0.32, -0.20},
-				scale = 0.5
-			}
-		  },
-		  east =
-		  {
-			filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
-			width = 120,
-			height = 239,
-			shift = {0.3, -0.2},
-			hr_version = {
-				filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
-				width = 239,
-				height = 477,
-				shift = {0.3, -0.2},
-				scale = 0.5
-			}
-		  },
-		  south =
-		  {
-			filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
-			width = 250,
-			height = 150,
-			shift = {0.32, -0.20},
-			hr_version = {
-				filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
-				width = 499,
-				height = 299,
-				shift = {0.32, -0.20},
-				scale = 0.5
-			}
-		  },
-		  west =
-		  {
-			filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
-			width = 120,
-			height = 239,
-			shift = {0.3, -0.2},
-			hr_version = {
-				filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
-				width = 239,
-				height = 477,
-				shift = {0.3, -0.2},
-				scale = 0.5
-			}
-		  },
-		},
+        picture = {
+            north = {
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
+                width = 250,
+                height = 150,
+                shift = {0.32, -0.20},
+                hr_version = {
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
+                    width = 499,
+                    height = 299,
+                    shift = {0.32, -0.20},
+                    scale = 0.5
+                }
+            },
+            east = {
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
+                width = 120,
+                height = 239,
+                shift = {0.3, -0.2},
+                hr_version = {
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
+                    width = 239,
+                    height = 477,
+                    shift = {0.3, -0.2},
+                    scale = 0.5
+                }
+            },
+            south = {
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
+                width = 250,
+                height = 150,
+                shift = {0.32, -0.20},
+                hr_version = {
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
+                    width = 499,
+                    height = 299,
+                    shift = {0.32, -0.20},
+                    scale = 0.5
+                }
+            },
+            west = {
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
+                width = 120,
+                height = 239,
+                shift = {0.3, -0.2},
+                hr_version = {
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
+                    width = 239,
+                    height = 477,
+                    shift = {0.3, -0.2},
+                    scale = 0.5
+                }
+            }
+        },
         fluid_background = Pipes.empty_sprite(),
         window_background = Pipes.empty_sprite(),
         flow_sprite = Pipes.empty_sprite(),
