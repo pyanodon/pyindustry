@@ -1,7 +1,7 @@
 local Recipe = require("stdlib/data/recipe")
 -------------------------------------------------------------------------------
 --[[Recipes]]--
-local recipe = {
+local recipe = Recipe {
     type = "recipe",
     name = "accumulator-mk01",
     energy_required = 5,
@@ -9,7 +9,6 @@ local recipe = {
     ingredients =
     {
         {"battery", 20},
-        {"steel-plate", 20},
         {"iron-plate", 40},
         {"copper-plate", 40},
         {"steel-plate", 50}, -- {"nexelit-plate", 50},
@@ -17,7 +16,8 @@ local recipe = {
     },
     result= "accumulator-mk01",
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
-}
+}:extend()
+
 -------------------------------------------------------------------------------
 --[[Items]]--
 local item = {
@@ -121,11 +121,8 @@ end
 
 
 -------------------------------------------------------------------------------
-data:extend{recipe, item, entity}
+data:extend{item, entity}
 
-local accu = Recipe("accumulator-mk01"):replace_ingredient("steel-plate", "nexalite-plate"):add_ingredient({"niobium-plate", 10})
-if data.raw.technology["coal-processing-3"] then
-    accu:add_unlock("coal-processing-3")
-else
-    accu:add_unlock("electric-energy-accumulators-1")
-end
+recipe:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10})
+recipe:add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
+

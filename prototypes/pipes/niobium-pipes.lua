@@ -477,7 +477,8 @@ local recipe_niobium_pipe = Recipe {
     },
     result = "niobium-pipe",
     result_count = 2
-}
+}:extend()
+
 local niobium_pipe_ = Item {
     type = "item",
     name = "niobium-pipe",
@@ -501,7 +502,8 @@ local recipe_niobium_pipe_to_ground = Recipe {
     },
     result = "niobium-pipe-to-ground",
     result_count = 2
-}
+}:extend()
+
 local niobium_pipe_to_ground_ = Item {
     type = "item",
     name = "niobium-pipe-to-ground",
@@ -513,8 +515,8 @@ local niobium_pipe_to_ground_ = Item {
     stack_size = 100
 }:extend()
 
-recipe_niobium_pipe:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate"):extend()
-recipe_niobium_pipe_to_ground:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate"):extend()
+recipe_niobium_pipe:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+recipe_niobium_pipe_to_ground:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
 local recipes = {
     "xyhiphoe-pool", "hydrocyclone", "compressor", "genlab", "kmauts-enclosure", "nmf", "py-heat-exchanger",
