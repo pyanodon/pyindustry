@@ -1,4 +1,6 @@
-local warehouse = {
+local Technology = require("stdlib/data/technology")
+
+Technology {
     type = "technology",
     name = "py-warehouse-research",
     icon = "__pyindustry__/graphics/technology/warehouse-research.png",
@@ -12,7 +14,8 @@ local warehouse = {
     },
     order = "c-a"
 }
-local logistic_warehouse = {
+
+Technology {
     type = "technology",
     name = "py-warehouse-logistics-research",
     icon = "__pyindustry__/graphics/technology/warehouse-logistics-research.png",
@@ -31,5 +34,3 @@ local logistic_warehouse = {
     },
     order = "c-k-a"
 }
-
-data:extend{warehouse, logistic_warehouse}

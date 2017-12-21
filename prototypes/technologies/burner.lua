@@ -1,4 +1,6 @@
-local technology = {
+local Technology = require("stdlib/data/technology")
+
+Technology {
     type = "technology",
     name = "py-burner",
     icon = "__pyindustry__/graphics/technology/burner.png",
@@ -14,4 +16,3 @@ local technology = {
         time = 45
     }
 }
-data:extend {technology}

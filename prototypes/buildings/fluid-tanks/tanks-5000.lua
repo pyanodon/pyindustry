@@ -1,8 +1,9 @@
 local Pipes = require("stdlib.data.pipes")
 local Recipe = require("stdlib/data/recipe")
-local pipecoverspictures = _G.pipecoverspictures
+local Item = require("stdlib/data/item")
+local Entity = require("stdlib/data/entity")
 
-local recipe = {
+Recipe {
     type = "recipe",
     name = "py-tank-5000",
     energy_required = 15,
@@ -14,12 +15,13 @@ local recipe = {
         {"steel-plate", 30}
     },
     result = "py-tank-5000"
-}
+}:add_unlock("py-storage-tanks")
 
-local item = {
+Item {
     type = "item",
     name = "py-tank-5000",
     icon = "__pyindustry__/graphics/icons/py-tank-5000.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-storage-tanks",
     order = "a-c[py-items]",
@@ -27,10 +29,11 @@ local item = {
     stack_size = 10
 }
 
-local entity = {
+Entity {
     type = "storage-tank",
     name = "py-tank-5000",
     icon = "__pyindustry__/graphics/icons/py-tank-5000.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 3, result = "py-tank-5000"},
     max_health = 500,
@@ -40,7 +43,7 @@ local entity = {
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     fluid_box = {
         base_area = 500,
-        pipe_covers = pipecoverspictures(),
+        pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {position = {0, -3}},
             {position = {3, 0}},
@@ -75,39 +78,7 @@ local entity = {
         apparent_volume = 1.5,
         max_sounds_per_type = 3
     },
-    circuit_wire_max_distance = 9
+    circuit_wire_max_distance = 9,
+    circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points,
+    circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
 }
-
-if _G.get_circuit_connector_sprites then
-    entity.circuit_connector_sprites = {
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0)
-    }
-    entity.circuit_wire_connection_points = {
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        }
-    }
-else
-    entity.circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points
-    entity.circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
-end
-
-Recipe:extend {recipe, item, entity}
-
-Recipe("py-tank-5000"):add_unlock("py-storage-tanks")

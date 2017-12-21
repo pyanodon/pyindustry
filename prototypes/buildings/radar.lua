@@ -1,4 +1,6 @@
 local Recipe = require("stdlib/data/recipe")
+local Item = require("stdlib/data/item")
+local Entity = require("stdlib/data/entity")
 
 Recipe {
     type = "recipe",
@@ -12,12 +14,13 @@ Recipe {
     },
     result = "py-local-radar",
     enabled = true
-}:extend()
+}
 
-local item = {
+Item {
     type = "item",
     name = "py-local-radar",
     icon = "__pyindustry__/graphics/icons/radar.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-industry",
     order = "d[radar]-a[radar]",
@@ -25,10 +28,11 @@ local item = {
     stack_size = 50
 }
 
-local radar = {
+Entity {
     type = "radar",
     name = "py-local-radar",
     icon = "__pyindustry__/graphics/icons/radar.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "py-local-radar"},
     max_health = 250,
@@ -140,5 +144,3 @@ local radar = {
     },
     radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275}
 }
-
-Recipe:extend{item, radar}

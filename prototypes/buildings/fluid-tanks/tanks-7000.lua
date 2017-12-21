@@ -1,8 +1,9 @@
 local Pipes = require("stdlib.data.pipes")
 local Recipe = require("stdlib/data/recipe")
-local pipecoverspictures = _G.pipecoverspictures
+local Item = require("stdlib/data/item")
+local Entity = require("stdlib/data/entity")
 
-local recipe = {
+Recipe {
     type = "recipe",
     name = "py-tank-7000",
     energy_required = 15,
@@ -14,12 +15,13 @@ local recipe = {
         {"steel-plate", 10}
     },
     result = "py-tank-7000"
-}
+}:add_unlock("py-storage-tanks")
 
-local item = {
+Item {
     type = "item",
     name = "py-tank-7000",
     icon = "__pyindustry__/graphics/icons/py-tank-7000.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-storage-tanks",
     order = "a-c[py-items]",
@@ -27,77 +29,77 @@ local item = {
     stack_size = 10
 }
 
-local entity = {
+Entity {
     type = "storage-tank",
     name = "py-tank-7000",
     icon = "__pyindustry__/graphics/icons/py-tank-7000.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 3, result = "py-tank-7000"},
     max_health = 100,
     corpse = "medium-remnants",
-    collision_box = {{-3.3, -1.3}, {3.3, 1.3}},
-    selection_box = {{-3.5, -1.5}, {3.5, 1.5}},
-    --two_direction_only = true,
+    collision_box = {{-1.3, -3.3}, {1.3, 3.3}},
+    selection_box = {{-1.5, -3.5}, {1.5, 3.5}},
     fluid_box = {
         base_area = 700,
-        pipe_covers = pipecoverspictures(),
+        pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {4.0, -1.0}},
-            {position = {4.0, 1.0}}
+            {position = {-1.0, -4.0}},
+            {position = {1.0, -4.0}}
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
     pictures = {
         picture = {
             north = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
-                width = 250,
-                height = 150,
-                shift = {0.32, -0.20},
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/north.png",
+                width = 127,
+                height = 293,
+                shift = {0.5, -1},
                 hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
-                    width = 499,
-                    height = 299,
-                    shift = {0.32, -0.20},
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-north.png",
+                    width = 253,
+                    height = 585,
+                    shift = {0.5, -1.0},
                     scale = 0.5
                 }
             },
             east = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
-                width = 120,
-                height = 239,
-                shift = {0.3, -0.2},
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/east.png",
+                width = 250,
+                height = 150,
+                shift = {0.35, -0.15},
                 hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
-                    width = 239,
-                    height = 477,
-                    shift = {0.3, -0.2},
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-east.png",
+                    width = 499,
+                    height = 299,
+                    shift = {0.35, -0.15},
                     scale = 0.5
                 }
             },
             south = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/horizontal.png",
-                width = 250,
-                height = 150,
-                shift = {0.32, -0.20},
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/south.png",
+                width = 120,
+                height = 239,
+                shift = {0.34, -0.0},
                 hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-horizontal.png",
-                    width = 499,
-                    height = 299,
-                    shift = {0.32, -0.20},
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-south.png",
+                    width = 239,
+                    height = 477,
+                    shift = {0.34, -0.0},
                     scale = 0.5
                 }
             },
             west = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/vertical.png",
-                width = 120,
-                height = 239,
-                shift = {0.3, -0.2},
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/west.png",
+                width = 250,
+                height = 150,
+                shift = {0.35, -0.15},
                 hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-vertical.png",
-                    width = 239,
-                    height = 477,
-                    shift = {0.3, -0.2},
+                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-west.png",
+                    width = 499,
+                    height = 299,
+                    shift = {0.35, -0.15},
                     scale = 0.5
                 }
             }
@@ -117,39 +119,7 @@ local entity = {
         apparent_volume = 1.5,
         max_sounds_per_type = 3
     },
-    circuit_wire_max_distance = 9
+    circuit_wire_max_distance = 9,
+    circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points,
+    circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
 }
-
-if _G.get_circuit_connector_sprites then
-    entity.circuit_connector_sprites = {
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0),
-        _G.get_circuit_connector_sprites({0, 0}, nil, 0)
-    }
-    entity.circuit_wire_connection_points = {
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        },
-        {
-            shadow = {red = {0, 0}, green = {0, 0}},
-            wire = {red = {0, 0}, green = {0, 0}}
-        }
-    }
-else
-    entity.circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points
-    entity.circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
-end
-
-Recipe:extend {recipe, item, entity}
-
-Recipe("py-tank-7000"):add_unlock("py-storage-tanks")

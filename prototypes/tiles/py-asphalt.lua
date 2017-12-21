@@ -22,6 +22,7 @@ local item = {
     type="item",
     name="py-asphalt",
     icon="__pyindustry__/graphics/icons/py-asphalt-icon.png",
+    icon_size = 32,
     flags={"goes-to-main-inventory"},
     subgroup = "py-tiles",
     order = "a-asphalt",

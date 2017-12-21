@@ -20,6 +20,7 @@ local item = {
     type="item",
     name="py-coal-tile",
     icon="__pyindustry__/graphics/icons/py-coal-tile-icon.png",
+    icon_size = 32,
     flags={"goes-to-main-inventory"},
     subgroup = "py-tiles",
     order = "a-coal-tile",

@@ -1,4 +1,6 @@
-local technology = {
+local Technology = require("stdlib/data/technology")
+
+Technology {
     type = "technology",
     name = "py-storage-tanks",
     icon = "__pyindustry__/graphics/technology/storage-tanks.png",
@@ -6,13 +8,11 @@ local technology = {
     order = "c-a",
     prerequisites = {"fluid-handling"},
     effects = {},
-    unit =
-    {
+    unit = {
         count = 35,
         ingredients = {
-            {"science-pack-1", 2},
+            {"science-pack-1", 2}
         },
         time = 45
-    },
+    }
 }
-data:extend({technology})
