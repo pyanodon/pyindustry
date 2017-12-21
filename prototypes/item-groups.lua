@@ -54,5 +54,11 @@ data:extend {
         name = "py-tiles",
         group = "py-industry",
         order = "f"
+    },
+        {
+        type = "item-subgroup",
+        name = "py-void",
+        group = "py-industry",
+        order = "zzzzzzzzzzzzz"
     }
 }

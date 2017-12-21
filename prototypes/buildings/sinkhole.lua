@@ -1,7 +1,8 @@
 local Recipe = require("stdlib/data/recipe")
 local Pipes = require("stdlib.data.pipes")
 
-local recipe = Recipe {
+local recipe =
+    Recipe {
     type = "recipe",
     name = "py-sinkhole",
     energy_required = 10,
@@ -9,7 +10,7 @@ local recipe = Recipe {
     ingredients = {
         {"offshore-pump", 5},
         {"iron-plate", 40},
-		{"pipe", 20},
+        {"pipe", 20},
         {"steel-plate", 15},
         {"stone-brick", 50}
     },
@@ -28,9 +29,8 @@ local item = {
     stack_size = 10
 }
 
-local entity =
-    {
-    type = "assembling-machine",
+local entity = {
+    type = "furnace",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
     icon_size = 32,
@@ -43,6 +43,8 @@ local entity =
     open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
     close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
     vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
+    source_inventory_size = 0,
+    result_inventory_size = 0,
     module_specification = {
         module_slots = 6
     },
@@ -68,17 +70,17 @@ local entity =
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    crafting_categories = {"py-incineration"},
+    crafting_categories = {"py-runoff"},
     energy_usage = "1kW",
-	ingredient_count = 4,
+    ingredient_count = 4,
     crafting_speed = 1,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions = 0.0
-        },
-    animation = _G.make_4way_animation_from_spritesheet({ layers =
-    {
+    },
+    animation = _G.make_4way_animation_from_spritesheet {
+        layers = {
             {
                 filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
                 priority = "extra-high",
@@ -110,13 +112,13 @@ local entity =
                     width = 197,
                     height = 192,
                     frame_count = 1,
-					draw_as_shadow = true,
+                    draw_as_shadow = true,
                     shift = {0.3, -0.0},
                     scale = 0.5
                 }
-            },
+            }
         }
-    }),
+    },
     fluid_boxes = {
         {
             production_type = "input",
@@ -128,6 +130,6 @@ local entity =
         },
         off_when_no_fluid_recipe = false
     },
-    fast_replaceable_group = "py-sinkhole",
+    fast_replaceable_group = "py-sinkhole"
 }
 data:extend {recipe, item, entity}

@@ -1,3 +1,5 @@
+require("prototypes.void-recipes")
+
 local Area = require('stdlib.area.area')
 
 -- Make all storage-tanks fast replace with other other if they are the same size
