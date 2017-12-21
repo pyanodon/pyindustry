@@ -1,9 +1,14 @@
 require("prototypes.item-groups")
+require("prototypes.recipe-categories")
 
+--Technology
 require("prototypes.technologies.storage-tanks")
 require("prototypes.technologies.asphalt")
 require("prototypes.technologies.burner")
 require("prototypes.technologies.warehouses")
+
+--Pipes
+require("prototypes.pipes.niobium-pipes")
 
 --Tiles
 require ("prototypes.tiles.py-asphalt")
@@ -29,10 +34,15 @@ require("prototypes.buildings.fluid-tanks.tanks-7000")
 require("prototypes.buildings.fluid-tanks.tanks-6500")
 require("prototypes.buildings.fluid-tanks.tanks-8000")
 
+require("prototypes.buildings.valves.check-valve")
+require("prototypes.buildings.valves.overflow-valve")
+require("prototypes.buildings.valves.underflow-valve")
+
+--Other
 require("prototypes.buildings.accumulator-mk01")
 require("prototypes.buildings.radar")
+
+--Voiding
 require("prototypes.buildings.burner")
 require("prototypes.buildings.sinkhole")
 require("prototypes.buildings.gas-vent")
-
-require("prototypes.pipes.niobium-pipes")

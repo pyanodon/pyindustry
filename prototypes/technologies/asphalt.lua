@@ -1,4 +1,6 @@
-local technology = {
+local Technology = require("stdlib/data/technology")
+
+Technology {
     type = "technology",
     name = "py-asphalt",
     icon = "__pyindustry__/graphics/technology/py-asphalt.png",
@@ -6,16 +8,13 @@ local technology = {
     order = "c-a",
     prerequisites = {"concrete"},
     effects = {},
-    unit =
-    {
+    unit = {
         count = 10,
         ingredients = {
             {"science-pack-1", 1},
-            {"science-pack-2", 1},
+            {"science-pack-2", 1}
         },
         time = 35
-    },
+    }
 }
-data:extend({technology})
-
 -- add prereq "coal-processing-1"

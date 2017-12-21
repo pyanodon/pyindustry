@@ -1,27 +1,28 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
 --]]
-local Technology = require("stdlib/data/technology")
+local Recipe = require("stdlib/data/recipe")
+local Item = require("stdlib/data/item")
+local Entity = require("stdlib/data/entity")
 local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_ingredients(name)
-    local ingredients
     if name == "passive-provider" then
-        ingredients = {
+        return {
             {"py-shed-basic", 1},
             {"logistic-chest-passive-provider", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     elseif name == "active-provider" then
-        ingredients = {
+        return {
             {"py-shed-basic", 1},
             {"logistic-chest-active-provider", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     elseif name == "storage" then
-        ingredients = {
+        return {
             {"py-shed-basic", 1},
             {"logistic-chest-storage", 1},
             {"iron-plate", 5},
@@ -29,35 +30,34 @@ local function get_ingredients(name)
             {"steel-chest", 5}
         }
     elseif name == "requester" then
-        ingredients = {
+        return {
             {"py-shed-basic", 1},
             {"logistic-chest-requester", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     elseif name == "buffer" then
-        ingredients = {
+        return {
             {"py-shed-basic", 1},
             {"logistic-chest-buffer", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     else
-        ingredients = {
+        return {
             {"steel-plate", 20},
             {"iron-plate", 40},
             {"stone-brick", 10},
             {"wooden-chest", 5}
         }
     end
-    return ingredients
 end
 
 local function define_shed(name, logistics_name)
     local entity_type = logistics_name and "logistic-container" or "container"
     local full_name = "py-shed-" .. name
 
-    local recipe = {
+    local recipe = Recipe {
         type = "recipe",
         name = full_name,
         enabled = "false",
@@ -65,21 +65,23 @@ local function define_shed(name, logistics_name)
         result = full_name
     }
 
-    local item = {
+    Item {
         type = "item",
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
+        icon_size = 32,
         flags = {"goes-to-quickbar"},
         subgroup = "py-containers-shed",
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,
         stack_size = 15
     }
-	local entity =
-	{
+
+	local entity = Entity {
         type = entity_type,
 		name = full_name,
-		icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
+        icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
+        icon_size = 32,
 		flags = {"placeable-neutral", "placeable-player", "player-creation"},
 		minable = {mining_time = 2, result = full_name},
 		max_health = 250,
@@ -126,15 +128,14 @@ local function define_shed(name, logistics_name)
 
 	if logistics_name then
 		entity.minable.hardness = 0.2;
-		entity.logistic_mode = logistics_name;
-		Technology("py-warehouse-logistics-research"):add_effect(recipe)
+        entity.logistic_mode = logistics_name
+        recipe:add_unlock("py-warehouse-logistics-research")
 		if (logistics_name == "storage") then
 			entity.inventory_size = 150;
 		end
 	else
-		Technology("py-warehouse-research"):add_effect(recipe)
+		recipe:add_unlock("py-warehouse-research")
 	end
-	data:extend{recipe, item, entity}
 end
 
 define_shed("basic", nil)
@@ -142,7 +143,4 @@ define_shed("passive-provider", "passive-provider")
 define_shed("storage", "storage")
 define_shed("active-provider", "active-provider")
 define_shed("requester", "requester")
-if data.raw.item["logistic-chest-buffer"] then
-	define_shed("buffer", "buffer")
-end
-
+define_shed("buffer", "buffer")

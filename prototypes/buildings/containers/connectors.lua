@@ -13,7 +13,7 @@ function connectors.sprites(con_shift, shadow_shift)
             scale = 0.5
         },
         led_red = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-red.png",
+            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-red-glow.png",
             priority = "low",
             width = 20,
             height = 16,
@@ -22,7 +22,7 @@ function connectors.sprites(con_shift, shadow_shift)
             shift = red_green_shift
         },
         led_green = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-green.png",
+            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-green-glow.png",
             priority = "low",
             width = 20,
             height = 16,
@@ -31,7 +31,7 @@ function connectors.sprites(con_shift, shadow_shift)
             shift = red_green_shift
         },
         led_blue = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-blue.png",
+            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-blue-glow.png",
             priority = "low",
             width = 20,
             height = 16,

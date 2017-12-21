@@ -1,5 +1,6 @@
 local Recipe = require("stdlib/data/recipe")
 local Item = require("stdlib/data/item")
+local Entity = require("stdlib/data/entity")
 data.raw["pipe-to-ground"]["pipe-to-ground"].fast_replaceable_group = "pipe-to-ground"
 
 local function py_pipepictures()
@@ -467,7 +468,7 @@ local function py_pipecoverspictures()
 end
 
 --NIOBIUM PIPES
-local recipe_niobium_pipe = Recipe {
+Recipe {
     type = "recipe",
     name = "niobium-pipe",
     enabled = false,
@@ -477,21 +478,22 @@ local recipe_niobium_pipe = Recipe {
     },
     result = "niobium-pipe",
     result_count = 2
-}:extend()
+}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
-local niobium_pipe_ = Item {
+Item {
     type = "item",
     name = "niobium-pipe",
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-pipes",
     order = "pipe[niobium]a",
     place_result = "niobium-pipe",
     stack_size = 100
-}:extend()
+}
 
 --NIOBIUM PIPES TO GROUND
-local recipe_niobium_pipe_to_ground = Recipe {
+Recipe {
     type = "recipe",
     name = "niobium-pipe-to-ground",
     enabled = false,
@@ -502,21 +504,19 @@ local recipe_niobium_pipe_to_ground = Recipe {
     },
     result = "niobium-pipe-to-ground",
     result_count = 2
-}:extend()
+}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
-local niobium_pipe_to_ground_ = Item {
+Item {
     type = "item",
     name = "niobium-pipe-to-ground",
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-pipes",
     order = "pipe[niobium]b",
     place_result = "niobium-pipe-to-ground",
     stack_size = 100
-}:extend()
-
-recipe_niobium_pipe:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
-recipe_niobium_pipe_to_ground:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+}
 
 local recipes = {
     "xyhiphoe-pool", "hydrocyclone", "compressor", "genlab", "kmauts-enclosure", "nmf", "py-heat-exchanger",
@@ -526,10 +526,11 @@ for _, recipe in pairs(recipes) do
     Recipe(recipe):replace_ingredient("pipe", "niobium-pipe")
 end
 
-local pipe = {
+Entity {
     type = "pipe",
     name = "niobium-pipe",
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.3, mining_time = 0.5, result = "niobium-pipe"},
     max_health = 200,
@@ -567,10 +568,11 @@ local pipe = {
     vertical_window_bounding_box = {{-0.28125, -0.46875}, {0.03125, 0.125}}
 }
 
-local pipe_to_ground = {
+Entity {
     type = "pipe-to-ground",
     name = "niobium-pipe-to-ground",
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.3, mining_time = 0.5, result = "niobium-pipe-to-ground"},
     max_health = 50,
@@ -657,5 +659,3 @@ local pipe_to_ground = {
         }
     }
 }
-
-data:extend {pipe, pipe_to_ground}

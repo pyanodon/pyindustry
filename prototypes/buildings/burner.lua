@@ -1,6 +1,8 @@
+local Item = require("stdlib/data/item")
 local Recipe = require("stdlib/data/recipe")
+local Entity = require("stdlib/data/entity")
 
-local recipe = Recipe {
+Recipe {
     type = "recipe",
     name = "py-burner",
     energy_required = 10,
@@ -14,10 +16,11 @@ local recipe = Recipe {
     result = "py-burner"
 }:add_unlock("py-burner")
 
-local item = {
+Item {
     type = "item",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-industry",
     order = "a",
@@ -25,11 +28,11 @@ local item = {
     stack_size = 50
 }
 
-local entity =
-    {
+Entity {
     type = "furnace",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-burner"},
     max_health = 200,
@@ -58,7 +61,7 @@ local entity =
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    crafting_categories = {"smelting"},
+    crafting_categories = {"py-incineration"},
     result_inventory_size = 1,
     energy_usage = "180kW",
     crafting_speed = 1,
@@ -124,4 +127,3 @@ local entity =
     },
     fast_replaceable_group = "py-burner"
 }
-data:extend {recipe, item, entity}
