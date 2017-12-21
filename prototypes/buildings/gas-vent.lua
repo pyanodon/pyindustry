@@ -1,14 +1,15 @@
 local Recipe = require("stdlib/data/recipe")
 local Pipes = require("stdlib.data.pipes")
 
-local recipe = Recipe {
+local recipe =
+    Recipe {
     type = "recipe",
     name = "py-gas-vent",
     energy_required = 5,
     enabled = true,
     ingredients = {
         {"iron-plate", 20},
-		{"pipe", 15},
+        {"pipe", 15},
         {"stone-brick", 5}
     },
     result = "py-gas-vent"
@@ -26,14 +27,15 @@ local item = {
     stack_size = 10
 }
 
-local entity =
-    {
-    type = "assembling-machine",
+local entity = {
+    type = "furnace",
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
     icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-gas-vent"},
+    source_inventory_size = 1,
+    result_inventory_size = 0,
     max_health = 400,
     corpse = "medium-remnants",
     repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg"},
@@ -68,16 +70,15 @@ local entity =
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     crafting_categories = {"py-venting"},
     energy_usage = "1kW",
-	ingredient_count = 2,
+    ingredient_count = 2,
     crafting_speed = 1,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions = 0.0
-        },
+    },
     animation = {
-	layers =
-    {
+        layers = {
             {
                 filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
                 priority = "extra-high",
@@ -109,11 +110,11 @@ local entity =
                     width = 150,
                     height = 46,
                     frame_count = 1,
-					draw_as_shadow = true,
+                    draw_as_shadow = true,
                     shift = {1.3, -0.0},
                     scale = 0.5
                 }
-            },
+            }
         }
     },
     fluid_boxes = {
@@ -125,32 +126,8 @@ local entity =
             base_level = -1,
             pipe_connections = {{type = "input", position = {1.0, 0.0}}}
         },
-        {
-            production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
-            pipe_covers = Pipes.covers(true, true, true, true),
-            base_area = 10,
-            base_level = -1,
-            pipe_connections = {{type = "input", position = {-1.0, 0.0}}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
-            pipe_covers = Pipes.covers(true, true, true, true),
-            base_area = 10,
-            base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, 1.0}}}
-        },
-        {
-            production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
-            pipe_covers = Pipes.covers(true, true, true, true),
-            base_area = 10,
-            base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, -1.0}}}
-        },
         off_when_no_fluid_recipe = false
     },
-    fast_replaceable_group = "py-gas-vent",
+    fast_replaceable_group = "py-gas-vent"
 }
 data:extend {recipe, item, entity}

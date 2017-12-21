@@ -6,5 +6,9 @@ data:extend {
     {
         type = "recipe-category",
         name = "py-venting"
+    },
+    {
+        type = "recipe-category",
+        name = "py-runoff"
     }
 }
