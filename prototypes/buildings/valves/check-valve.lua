@@ -81,17 +81,18 @@ Entity {
                     priority = "extra-high",
                     draw_as_shadow = true,
                     frames = 4,
-                    width = 45,
-                    height = 24,
+                    width = 64,
+                    height = 45,
                     shift = {0.5, -0.0},
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve-shadow.png",
                         priority = "extra-high",
                         frames = 4,
                         draw_as_shadow = true,
-                        width = 90,
-                        height = 48,
-                        shift = {0.5, -0.0}
+                        width = 128,
+                        height = 70,
+                        shift = {0.5, -0.0},
+						scale = 0.5
                     }
                 }
             }

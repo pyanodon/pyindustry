@@ -83,17 +83,18 @@ Entity {
                     priority = "extra-high",
                     draw_as_shadow = true,
                     frames = 2,
-                    width = 45,
+                    width = 48,
                     height = 24,
-                    shift = {0.5, -0.0},
+                    shift = util.by_pixel(12, 0),
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-shadow.png",
                         priority = "extra-high",
                         frames = 2,
                         draw_as_shadow = true,
-                        width = 90,
+                        width = 96,
                         height = 48,
-                        shift = {0.5, -0.0}
+                        shift = util.by_pixel(12, 0),
+						scale = 0.5
                     }
                 }
             }

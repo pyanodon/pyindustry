@@ -91,7 +91,7 @@ Entity {
                 width = 96,
                 height = 192,
                 frame_count = 1,
-                shift = {0.0, -1.17}
+                shift = util.by_pixel(-0, -48)
             },
             {
                 filename = "__pyindustry__/graphics/entity/py-burner/shadow.png",
@@ -100,7 +100,7 @@ Entity {
                 height = 105,
                 frame_count = 1,
                 draw_as_shadow = true,
-                shift = {0.3, -0.2}
+                shift = util.by_pixel(8, -3)
             }
         }
     },

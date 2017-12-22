@@ -67,14 +67,14 @@ Entity {
                     frames = 2,
                     width = 32,
                     height = 64,
-                    shift = {0.0, -0.5},
+                    shift = util.by_pixel(0, -18),
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
                         priority = "extra-high",
                         frames = 2,
                         width = 64,
                         height = 128,
-                        shift = {0.0, -0.5},
+                        shift = util.by_pixel(0, -16),
                         scale = 0.5
                     }
                 },
@@ -85,7 +85,7 @@ Entity {
                     frames = 2,
                     width = 45,
                     height = 24,
-                    shift = {0.5, -0.0},
+                    shift = util.by_pixel(0, -0),
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve-shadow.png",
                         priority = "extra-high",
@@ -93,7 +93,8 @@ Entity {
                         frames = 2,
                         width = 90,
                         height = 48,
-                        shift = {0.5, -0.0}
+                        shift = util.by_pixel(14, -0),
+						scale = 0.5
                     }
                 }
             }
