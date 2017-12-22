@@ -111,7 +111,6 @@ local function define_shed(name, logistics_name)
 			width = 68,
 			height = 75,
             shift = {0, 0},
-            scale = .66666,
             hr_version = {
                 filename = "__pyindustry__/graphics/entity/shed/hr-shed-" .. name .. ".png",
                 priority = "extra-high",
