@@ -34,7 +34,7 @@ local entity = {
     icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-gas-vent"},
-    source_inventory_size = 1,
+    source_inventory_size = 0,
     result_inventory_size = 0,
     max_health = 400,
     corpse = "medium-remnants",
