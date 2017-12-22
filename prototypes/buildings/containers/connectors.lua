@@ -1,6 +1,6 @@
 local connectors = {}
 function connectors.sprites(con_shift, shadow_shift)
-    local connectorNumber = 1
+    --local connectorNumber = 1
     local red_green_shift = {con_shift[1] - 0.1, con_shift[2] + 0.05}
     local blue_shift = {con_shift[1] - 0.05, con_shift[2] + 0.1}
     return {
@@ -15,28 +15,28 @@ function connectors.sprites(con_shift, shadow_shift)
         led_red = {
             filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-red-glow.png",
             priority = "low",
-            width = 20,
-            height = 16,
-            x = 20 * (connectorNumber % 8),
-            y = 16 * (math.floor(connectorNumber / 8)),
+            width = 13,
+            height = 12,
+            -- x = 20 * (connectorNumber % 8),
+            -- y = 16 * (math.floor(connectorNumber / 8)),
             shift = red_green_shift
         },
         led_green = {
             filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-green-glow.png",
             priority = "low",
-            width = 20,
-            height = 16,
-            x = 20 * (connectorNumber % 8),
-            y = 16 * (math.floor(connectorNumber / 8)),
+            width = 13,
+            height = 12,
+            -- x = 20 * (connectorNumber % 8),
+            -- y = 16 * (math.floor(connectorNumber / 8)),
             shift = red_green_shift
         },
         led_blue = {
             filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-blue-glow.png",
             priority = "low",
-            width = 20,
-            height = 16,
-            x = 20 * (connectorNumber % 8),
-            y = 16 * (math.floor(connectorNumber / 8)),
+            width = 13,
+            height = 12,
+            -- x = 20 * (connectorNumber % 8),
+            -- y = 16 * (math.floor(connectorNumber / 8)),
             shift = blue_shift
         },
         logistic_animation = {
