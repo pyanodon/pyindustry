@@ -50,9 +50,9 @@ local entity = {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     working_sound = {
-        sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.6},
-        apparent_volume = 2.5
+        sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.8},
+        idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.4},
+        apparent_volume = 2.0
     },
     resistances = {
         {

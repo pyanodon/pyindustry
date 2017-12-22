@@ -75,24 +75,34 @@ local entity = {
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.0
+        emissions = 0.0,
+        smoke = {
+            {
+                name = "turbine-smoke",
+                deviation = {0.1, 0.1},
+                frequency = 15,
+                position = {0.0, -3.7},
+                starting_vertical_speed = 0.08,
+                starting_frame_deviation = 60
+            }
+        }
     },
-    animation = {
+    animation = _G.make_4way_animation_from_spritesheet {
         layers = {
             {
                 filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
                 priority = "extra-high",
                 width = 32,
-                height = 192,
+                height = 176,
                 frame_count = 1,
-                shift = {0.0, -2.5},
+                shift = util.by_pixel(0, -10),
                 hr_version = {
                     filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
                     priority = "extra-high",
                     width = 64,
-                    height = 384,
+                    height = 352,
                     frame_count = 1,
-                    shift = {0.0, -2.5},
+                    shift = util.by_pixel(0, -72),
                     scale = 0.5
                 }
             },
