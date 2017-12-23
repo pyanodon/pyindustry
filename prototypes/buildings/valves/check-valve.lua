@@ -48,8 +48,8 @@ Entity {
         base_area = 1,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, 1}, type = "output"},
-            {position = {0, -1}}
+            {position = {0, 1}},
+            {position = {0, -1}, type = "output"}
         }
     },
     pictures = {
