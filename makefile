@@ -9,7 +9,7 @@ MODS_DIRECTORY := ../.mods.15
 ##MOD_LINK := $(shell find $(MODS_DIRECTORY)/$(OUTPUT_NAME) -mindepth 1 -maxdepth 1 -type d)
 PARSER := ". | map(select(.tag_name == \"$(VERSION_STRING)\"))[0].assets | map(select(.name == \"$(OUTPUT_NAME).zip\"))[0].id"
 
-PKG_COPY := $(wildcard *.md) $(wildcard .*.md) $(wildcard graphics) $(wildcard locale) $(wildcard sounds)
+PKG_COPY := $(wildcard *.md) $(wildcard changelog.txt) $(wildcard graphics) $(wildcard locale) $(wildcard sounds)
 
 SED_FILES := $(shell find . -iname '*.json' -type f -not -path "./.*/*") $(shell find . -iname '*.lua' -type f -not -path "./.*/*")
 PNG_FILES := $(shell find ./graphics -iname '*.png' -type f)
