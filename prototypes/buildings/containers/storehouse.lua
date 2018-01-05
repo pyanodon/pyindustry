@@ -131,6 +131,7 @@ local function define_storehouse(name, logistics_name)
         entity.logistic_mode = logistics_name
         if (logistics_name == "storage") then
             entity.inventory_size = 300
+            entity.logistic_slots_count = 1
         end
     else
         recipe:add_unlock("py-warehouse-research")
