@@ -60,7 +60,9 @@ local function define_warehouse(name, logistics_name)
         name = full_name,
         enabled = "false",
         ingredients = get_ingredients(logistics_name),
-        result = full_name
+        results = {
+            {full_name, 1}
+        }
     }
 
     Item {
