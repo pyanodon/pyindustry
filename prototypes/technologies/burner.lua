@@ -1,5 +1,3 @@
-local Technology = require("stdlib/data/technology")
-
 Technology {
     type = "technology",
     name = "py-burner",

@@ -1,8 +1,3 @@
-local Pipes = require("stdlib.data.pipes")
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "py-tank-3000",
@@ -10,9 +5,11 @@ Recipe {
     enabled = false,
     ingredients = {
         {"iron-plate", 15},
-        {"pipe", 20},
+        {"pipe", 20}
     },
-    result = "py-tank-3000"
+    results = {
+        {"py-tank-3000", 1}
+    }
 }:add_unlock("py-storage-tanks")
 
 Item {
@@ -44,32 +41,32 @@ Entity {
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {position = {-1.5, -0.5}},
-			{position = {-1.5, 0.5}},
-	        {position = {1.5, -0.5}},
-			{position = {1.5, 0.5}},
+            {position = {-1.5, 0.5}},
+            {position = {1.5, -0.5}},
+            {position = {1.5, 0.5}}
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
     pictures = {
-	picture = {
-			sheet = {
-					filename = "__pyindustry__/graphics/entity/py-tank-3000/py-tank-3000.png",
-					priority = "extra-high",
-					frames = 2,
-					width = 66,
-					height = 79,
-					shift = {0.0, -0.0},
-					hr_version = {
-						filename = "__pyindustry__/graphics/entity/py-tank-3000/hr-py-tank-3000.png",
-						priority = "extra-high",
-						frames = 2,
-						width = 133,
-						height = 157,
-						shift = {0.0, -0.0},
-						scale = 0.5
-						}
-					},
-			},
+        picture = {
+            sheet = {
+                filename = "__pyindustry__/graphics/entity/py-tank-3000/py-tank-3000.png",
+                priority = "extra-high",
+                frames = 2,
+                width = 66,
+                height = 79,
+                shift = {0.0, -0.0},
+                hr_version = {
+                    filename = "__pyindustry__/graphics/entity/py-tank-3000/hr-py-tank-3000.png",
+                    priority = "extra-high",
+                    frames = 2,
+                    width = 133,
+                    height = 157,
+                    shift = {0.0, -0.0},
+                    scale = 0.5
+                }
+            }
+        },
         fluid_background = Pipes.empty_sprite(),
         window_background = Pipes.empty_sprite(),
         flow_sprite = Pipes.empty_sprite(),

@@ -1,7 +1,3 @@
-local Item = require("stdlib/data/item")
-local Recipe = require("stdlib/data/recipe")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "py-burner",
@@ -13,7 +9,9 @@ Recipe {
         {"steel-plate", 20},
         {"steel-furnace", 1}
     },
-    result = "py-burner"
+    results = {
+        {"py-burner", 1}
+    }
 }:add_unlock("py-burner")
 
 Item {

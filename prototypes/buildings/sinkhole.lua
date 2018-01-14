@@ -1,8 +1,4 @@
-local Recipe = require("stdlib/data/recipe")
-local Pipes = require("stdlib.data.pipes")
-
-local recipe =
-    Recipe {
+Recipe {
     type = "recipe",
     name = "py-sinkhole",
     energy_required = 10,
@@ -14,10 +10,12 @@ local recipe =
         {"steel-plate", 15},
         {"stone-brick", 50}
     },
-    result = "py-sinkhole"
+    results = {
+        {"py-sinkhole", 1}
+    }
 }:add_unlock("steel-processing")
 
-local item = {
+Item {
     type = "item",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
@@ -29,7 +27,7 @@ local item = {
     stack_size = 10
 }
 
-local entity = {
+Entity {
     type = "furnace",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
@@ -132,4 +130,3 @@ local entity = {
     },
     fast_replaceable_group = "py-sinkhole"
 }
-data:extend {recipe, item, entity}

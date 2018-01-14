@@ -1,7 +1,3 @@
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "wood-fence",
@@ -10,7 +6,9 @@ Recipe {
     ingredients = {
         {type = "item", name = "wood", amount = 2}
     },
-    result = "wood-fence"
+    results = {
+        {"wood-fence", 1}
+    }
 }:add_unlock("py-asphalt"):replace_ingredient("wood", "treated-wood")
 
 Item {

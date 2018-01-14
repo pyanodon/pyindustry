@@ -1,7 +1,3 @@
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "py-local-radar",
@@ -9,10 +5,12 @@ Recipe {
         {"electronic-circuit", 5},
         {"iron-gear-wheel", 5},
         {"iron-plate", 10},
-		{"wood", 20},
-		{"engine-unit", 1}
+        {"wood", 20},
+        {"engine-unit", 1}
     },
-    result = "py-local-radar",
+    results = {
+        {"py-local-radar", 1}
+    },
     enabled = true
 }
 
@@ -91,7 +89,7 @@ Entity {
                 apply_projection = false,
                 direction_count = 50,
                 line_length = 10,
-				animation_speed = 0.7,
+                animation_speed = 0.7,
                 shift = util.by_pixel(1, -16),
                 hr_version = {
                     filename = "__pyindustry__/graphics/entity/radar/hr-radar.png",
@@ -101,7 +99,7 @@ Entity {
                     apply_projection = false,
                     direction_count = 50,
                     line_length = 10,
-					animation_speed = 0.7,
+                    animation_speed = 0.7,
                     shift = util.by_pixel(1, -16),
                     scale = 0.5
                 }
@@ -114,7 +112,7 @@ Entity {
                 apply_projection = false,
                 direction_count = 50,
                 line_length = 8,
-				animation_speed = 0.7,
+                animation_speed = 0.7,
                 shift = util.by_pixel(39, 3),
                 draw_as_shadow = true,
                 hr_version = {
@@ -125,7 +123,7 @@ Entity {
                     apply_projection = false,
                     direction_count = 50,
                     line_length = 8,
-					animation_speed = 0.7,
+                    animation_speed = 0.7,
                     shift = util.by_pixel(39.25, 3),
                     draw_as_shadow = true,
                     scale = 0.5
@@ -137,7 +135,8 @@ Entity {
     working_sound = {
         sound = {
             {
-                filename = "__pyindustry__/sounds/radar.ogg", volume = 0.5
+                filename = "__pyindustry__/sounds/radar.ogg",
+                volume = 0.5
             }
         },
         apparent_volume = 2

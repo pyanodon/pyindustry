@@ -1,8 +1,4 @@
-local Recipe = require("stdlib/data/recipe")
-local Pipes = require("stdlib.data.pipes")
-
-local recipe =
-    Recipe {
+Recipe {
     type = "recipe",
     name = "py-gas-vent",
     energy_required = 5,
@@ -12,10 +8,12 @@ local recipe =
         {"pipe", 15},
         {"stone-brick", 5}
     },
-    result = "py-gas-vent"
+    results = {
+        {"py-gas-vent", 1}
+    }
 }
 
-local item = {
+Item {
     type = "item",
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
@@ -27,7 +25,7 @@ local item = {
     stack_size = 10
 }
 
-local entity = {
+Entity {
     type = "furnace",
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
@@ -140,4 +138,3 @@ local entity = {
     },
     fast_replaceable_group = "py-gas-vent"
 }
-data:extend {recipe, item, entity}
