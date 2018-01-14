@@ -1,5 +1,3 @@
-local Recipe = require("stdlib/data/recipe")
-
 local function make_fluid_recipe(name, locale, icons, category, ing)
     Recipe {
         name = name,
@@ -36,14 +34,14 @@ for _, fluid in pairs(data.raw.fluid) do
 
     if (fluid.default_temperature or 15) < (fluid.gas_temperature or 999999999999) then
         --Make sinkhole
-        local locale = {"", "Void ", {"fluid-name."..fluid.name}}
+        local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 10}
         make_fluid_recipe(name, locale, icons, "py-runoff", ing)
     end
 
     if fluid.gas_temperature then
-        --Make burner
-        local locale = {"", "Void ", {"fluid-name."..fluid.name}}
+        --Make venting
+        local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, minimum_temperature = fluid.gas_temperature, amount = 10}
         make_fluid_recipe(name, locale, icons, "py-venting", ing)
     end

@@ -1,8 +1,3 @@
-local Pipes = require("stdlib.data.pipes")
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "py-tank-7000",
@@ -14,7 +9,9 @@ Recipe {
         {"pipe", 10},
         {"steel-plate", 10}
     },
-    result = "py-tank-7000"
+    results = {
+        {"py-tank-7000", 1}
+    }
 }:add_unlock("py-storage-tanks")
 
 Item {

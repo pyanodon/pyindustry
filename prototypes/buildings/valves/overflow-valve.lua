@@ -1,7 +1,3 @@
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "py-overflow-valve",
@@ -13,7 +9,9 @@ Recipe {
         {"iron-gear-wheel", 1},
         {"pipe", 1}
     },
-    result = "py-overflow-valve"
+    results = {
+        {"py-overflow-valve", 1}
+    }
 }:add_unlock("fluid-handling")
 
 Item {
@@ -94,7 +92,7 @@ Entity {
                         width = 96,
                         height = 48,
                         shift = util.by_pixel(12, 0),
-						scale = 0.5
+                        scale = 0.5
                     }
                 }
             }

@@ -1,7 +1,3 @@
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
-
 Recipe {
     type = "recipe",
     name = "accumulator-mk01",
@@ -14,10 +10,10 @@ Recipe {
         {"steel-plate", 50} -- {"nexelit-plate", 50},
         -- {"niobium-plate", 10},
     },
-    result = "accumulator-mk01"
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock(
-    {"coal-processing-3", "electric-energy-accumulators-1"}
-)
+    results = {
+        {"accumulator-mk01", 1}
+    }
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
 
 Item {
     type = "item",

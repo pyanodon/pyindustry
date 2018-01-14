@@ -1,9 +1,6 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
 --]]
-local Recipe = require("stdlib/data/recipe")
-local Item = require("stdlib/data/item")
-local Entity = require("stdlib/data/entity")
 local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_ingredients(name)
