@@ -27,7 +27,7 @@ for _, type in pairs(Item.item_types) do
         else
             new_icons = {{icon = item.icon}}
         end
-        new_icons[#new_icons + 1] = {icon = "__pyindustry_/graphics/icons/no.png"}
+        new_icons[#new_icons + 1] = {icon = "__pyindustry__/graphics/icons/no.png"}
         make_void_recipe(name, new_icons, item.name)
     end
 end
