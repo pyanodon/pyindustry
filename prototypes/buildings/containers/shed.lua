@@ -1,4 +1,4 @@
---[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
+--[[ Original Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
 --]]
 local connectors = require("prototypes/buildings/containers/connectors")

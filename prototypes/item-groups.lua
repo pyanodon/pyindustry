@@ -59,6 +59,24 @@ data:extend {
         type = "item-subgroup",
         name = "py-void",
         group = "py-industry",
-        order = "zzzzzzzzzzzzz"
+        order = "za"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-void-items",
+        group = "py-industry",
+        order = "zb"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-void-liquid",
+        group = "py-industry",
+        order = "zc"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-void-gas",
+        group = "py-industry",
+        order = "zd"
     }
 }

@@ -1,4 +1,3 @@
-require("stdlib.core")
 require("stdlib.data.data").create_data_globals()
 
 require("prototypes.item-groups")
