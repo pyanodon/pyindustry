@@ -51,10 +51,10 @@ Entity {
         }
     },
     pictures = {
-        gas_flow = Entity.empty_pictures(),
-        fluid_background = Entity.empty_pictures(),
-        window_background = Entity.empty_pictures(),
-        flow_sprite = Entity.empty_pictures(),
+        gas_flow = Data.Pipes.empty_pictures(),
+        fluid_background = Data.Pipes.empty_pictures(),
+        window_background = Data.Pipes.empty_pictures(),
+        flow_sprite = Data.Pipes.empty_pictures(),
         picture = {
             sheets = {
                 {

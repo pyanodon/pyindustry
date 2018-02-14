@@ -59,10 +59,10 @@ Entity {
                 shift = {1.0, -1.5}
             }
         },
-        fluid_background = Pipes.empty_sprite(),
-        window_background = Pipes.empty_sprite(),
-        flow_sprite = Pipes.empty_sprite(),
-        gas_flow = Pipes.empty_animation()
+        fluid_background = Data.Pipes.empty_sprite(),
+        window_background = Data.Pipes.empty_sprite(),
+        flow_sprite = Data.Pipes.empty_sprite(),
+        gas_flow = Data.Pipes.empty_animation()
     },
     flow_length_in_ticks = 360,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
