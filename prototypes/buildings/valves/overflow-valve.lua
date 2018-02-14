@@ -53,23 +53,40 @@ Entity {
         }
     },
     pictures = {
-        gas_flow = Entity.empty_pictures(),
-        fluid_background = Entity.empty_pictures(),
-        window_background = Entity.empty_pictures(),
-        flow_sprite = Entity.empty_pictures(),
+        gas_flow = Data.Pipes.empty_pictures(),
+        fluid_background = Data.Pipes.empty_pictures(),
+        window_background = Data.Pipes.empty_pictures(),
+        flow_sprite = Data.Pipes.empty_pictures(),
         picture = {
             sheets = {
                 {
                     filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve.png",
                     priority = "extra-high",
-                    frames = 2,
+                    frames = 4,
                     width = 32,
                     height = 64,
                     shift = {0.0, -0.5},
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve.png",
                         priority = "extra-high",
-                        frames = 2,
+                        frames = 4,
+                        width = 64,
+                        height = 128,
+                        shift = {0.0, -0.5},
+                        scale = 0.5
+                    }
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    priority = "extra-high",
+                    frames = 4,
+                    width = 32,
+                    height = 64,
+                    shift = {0.0, -0.5},
+                    hr_version = {
+                        filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-arrows.png",
+                        priority = "extra-high",
+                        frames = 4,
                         width = 64,
                         height = 128,
                         shift = {0.0, -0.5},

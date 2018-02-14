@@ -48,28 +48,28 @@ Entity {
         base_level = -0.2,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, 1}, type = "output"},
-            {position = {0, -1}}
+            {position = {0, 1}},
+            {position = {0, -1}, type = "output"}
         }
     },
     pictures = {
-        gas_flow = Entity.empty_pictures(),
-        fluid_background = Entity.empty_pictures(),
-        window_background = Entity.empty_pictures(),
-        flow_sprite = Entity.empty_pictures(),
+        gas_flow = Data.Pipes.empty_pictures(),
+        fluid_background = Data.Pipes.empty_pictures(),
+        window_background = Data.Pipes.empty_pictures(),
+        flow_sprite = Data.Pipes.empty_pictures(),
         picture = {
             sheets = {
                 {
                     filename = "__pyindustry__/graphics/entity/py-valves/underflow-valve.png",
                     priority = "extra-high",
-                    frames = 2,
+                    frames = 4,
                     width = 32,
                     height = 64,
                     shift = util.by_pixel(0, -18),
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
                         priority = "extra-high",
-                        frames = 2,
+                        frames = 4,
                         width = 64,
                         height = 128,
                         shift = util.by_pixel(0, -16),
