@@ -67,7 +67,7 @@ Entity {
     energy_source = {
         type = "burner",
         fuel_category = "chemical",
-        effectivity = 1,
+        effectivity = .75,
         fuel_inventory_size = 1,
         emissions = 0.03,
         smoke = {
@@ -75,7 +75,10 @@ Entity {
                 name = "turbine-smoke",
                 deviation = {0.1, 0.1},
                 frequency = 25,
-                position = {0.3, -3.7},
+                north_position = {0.3, -3.7},
+                south_position = {0.3, -3.7},
+                east_position = {0.3, -3.7},
+                west_position = {0.3, -3.7},
                 starting_vertical_speed = 0.08,
                 starting_frame_deviation = 60
             }
@@ -116,8 +119,6 @@ Entity {
                 height = 96,
                 frame_count = 30,
                 animation_speed = 0.5,
-                --axially_symmetrical = false,
-                --direction_count = 1,
                 shift = {0, -3}
             },
             light = {intensity = 1, size = 1, color = {r = 1.0, g = 1.0, b = 1.0}}
