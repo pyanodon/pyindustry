@@ -450,7 +450,7 @@ local function py_pipecoverspictures()
 end
 
 --NIOBIUM PIPES
-Recipe {
+RECIPE {
     type = "recipe",
     name = "niobium-pipe",
     enabled = false,
@@ -463,7 +463,7 @@ Recipe {
     }
 }:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
-Item {
+ITEM {
     type = "item",
     name = "niobium-pipe",
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
@@ -476,7 +476,7 @@ Item {
 }
 
 --NIOBIUM PIPES TO GROUND
-Recipe {
+RECIPE {
     type = "recipe",
     name = "niobium-pipe-to-ground",
     enabled = false,
@@ -490,7 +490,7 @@ Recipe {
     }
 }:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
-Item {
+ITEM {
     type = "item",
     name = "niobium-pipe-to-ground",
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",
@@ -514,10 +514,10 @@ local recipes = {
     "science-coating"
 }
 for _, recipe in pairs(recipes) do
-    Recipe(recipe):replace_ingredient("pipe", "niobium-pipe")
+    RECIPE(recipe):replace_ingredient("pipe", "niobium-pipe")
 end
 
-Entity {
+ENTITY {
     type = "pipe",
     name = "niobium-pipe",
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
@@ -559,7 +559,7 @@ Entity {
     vertical_window_bounding_box = {{-0.28125, -0.46875}, {0.03125, 0.125}}
 }
 
-Entity {
+ENTITY {
     type = "pipe-to-ground",
     name = "niobium-pipe-to-ground",
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",

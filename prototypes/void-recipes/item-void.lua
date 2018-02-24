@@ -2,7 +2,7 @@
 
 local void_result = {
     type = "item",
-    name = Item("ash"):valid() and "ash" or Item("coal"):valid() and "coal" or nil,
+    name = ITEM("ash"):valid() and "ash" or ITEM("coal"):valid() and "coal" or nil,
     amount_min = 1,
     amount_max = 1,
     probability = 0.20
@@ -12,7 +12,7 @@ if not void_result.name then
 end
 
 local function make_void_recipe(name, newicons, ing_name)
-    Recipe {
+    RECIPE {
         name = name,
         type = "recipe",
         localised_name = {"", "Void ", {"item-name." .. ing_name}},
@@ -29,7 +29,7 @@ local function make_void_recipe(name, newicons, ing_name)
     }
 end
 
-for _, type in pairs(Item.item_types) do
+for _, type in pairs(ITEM.item_types) do
     for _, item in pairs(data.raw[type]) do
         if not item.fuel_value then
             local name = item.name .. "-pyvoid"

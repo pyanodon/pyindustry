@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "wood-fence",
     category = "crafting",
@@ -11,7 +11,7 @@ Recipe {
     }
 }:add_unlock("py-asphalt"):replace_ingredient("wood", "treated-wood")
 
-Item {
+ITEM {
     type = "item",
     name = "wood-fence",
     icon = "__pyindustry__/graphics/icons/wood-fence.png",
@@ -23,7 +23,7 @@ Item {
     stack_size = 100
 }
 
-Entity {
+ENTITY {
     type = "wall",
     name = "wood-fence",
     icon = "__pyindustry__/graphics/icons/wood-fence.png",

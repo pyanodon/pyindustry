@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-check-valve",
     energy_required = 2,
@@ -13,7 +13,7 @@ Recipe {
     }
 }:add_unlock("fluid-handling")
 
-Item {
+ITEM {
     type = "item",
     name = "py-check-valve",
     icon = "__pyindustry__/graphics/icons/check-valve.png",
@@ -25,7 +25,7 @@ Item {
     stack_size = 50
 }
 
-Entity {
+ENTITY {
     name = "py-check-valve",
     type = "storage-tank",
     minable = {mining_time = 1, result = "py-check-valve"},
@@ -51,10 +51,10 @@ Entity {
         }
     },
     pictures = {
-        gas_flow = Data.Pipes.empty_pictures(),
-        fluid_background = Data.Pipes.empty_pictures(),
-        window_background = Data.Pipes.empty_pictures(),
-        flow_sprite = Data.Pipes.empty_pictures(),
+        gas_flow = ENTITY.Pipes.empty_pictures(),
+        fluid_background = ENTITY.Pipes.empty_pictures(),
+        window_background = ENTITY.Pipes.empty_pictures(),
+        flow_sprite = ENTITY.Pipes.empty_pictures(),
         picture = {
             sheets = {
                 {

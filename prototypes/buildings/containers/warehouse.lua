@@ -55,7 +55,7 @@ local function define_warehouse(name, logistics_name)
     local full_name = "py-warehouse-" .. name
 
     local recipe =
-        Recipe {
+        RECIPE {
         type = "recipe",
         name = full_name,
         enabled = "false",
@@ -65,7 +65,7 @@ local function define_warehouse(name, logistics_name)
         }
     }
 
-    Item {
+    ITEM {
         type = "item",
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
@@ -78,7 +78,7 @@ local function define_warehouse(name, logistics_name)
     }
 
     local entity =
-        Entity {
+        ENTITY {
         type = entity_type,
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",

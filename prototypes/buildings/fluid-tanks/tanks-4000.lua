@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-tank-4000",
     energy_required = 15,
@@ -13,7 +13,7 @@ Recipe {
     }
 }:add_unlock("py-storage-tanks")
 
-Item {
+ITEM {
     type = "item",
     name = "py-tank-4000",
     icon = "__pyindustry__/graphics/icons/py-tank-4000.png",
@@ -25,7 +25,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "storage-tank",
     name = "py-tank-4000",
     icon = "__pyindustry__/graphics/icons/py-tank-4000.png",
@@ -59,10 +59,10 @@ Entity {
                 shift = {1.0, -1.5}
             }
         },
-        fluid_background = Data.Pipes.empty_sprite(),
-        window_background = Data.Pipes.empty_sprite(),
-        flow_sprite = Data.Pipes.empty_sprite(),
-        gas_flow = Data.Pipes.empty_animation()
+        fluid_background = ENTITY.Pipes.empty_sprite(),
+        window_background = ENTITY.Pipes.empty_sprite(),
+        flow_sprite = ENTITY.Pipes.empty_sprite(),
+        gas_flow = ENTITY.Pipes.empty_animation()
     },
     flow_length_in_ticks = 360,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},

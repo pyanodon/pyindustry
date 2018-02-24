@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-asphalt",
     category = "crafting-with-fluid",
@@ -14,7 +14,7 @@ Recipe {
     requester_paste_multiplier = 4
 }:add_unlock("py-asphalt"):replace_ingredient("water", "tar"):replace_ingredient("coal", "ash"):replace_ingredient("stone", "gravel")
 
-Item {
+ITEM {
     type = "item",
     name = "py-asphalt",
     icon = "__pyindustry__/graphics/icons/py-asphalt-icon.png",
@@ -27,7 +27,7 @@ Item {
     place_as_tile = {result = "py-asphalt", condition_size = 2, condition = {"water-tile"}}
 }
 
-Entity {
+ENTITY {
     type = "tile",
     name = "py-asphalt",
     needs_correction = false,
@@ -100,5 +100,5 @@ Entity {
     vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
 }
 
-Recipe("ball-mill"):add_ingredient({"py-asphalt", 50})
-Recipe("py-heat-exchanger"):replace_ingredient("stone-brick", "py-asphalt")
+RECIPE("ball-mill"):add_ingredient({"py-asphalt", 50})
+RECIPE("py-heat-exchanger"):replace_ingredient("stone-brick", "py-asphalt")

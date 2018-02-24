@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-sinkhole",
     energy_required = 10,
@@ -15,7 +15,7 @@ Recipe {
     }
 }:add_unlock("steel-processing")
 
-Item {
+ITEM {
     type = "item",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
@@ -27,7 +27,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "furnace",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
@@ -120,8 +120,8 @@ Entity {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = ENTITY.Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
+            pipe_covers = ENTITY.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.0, 0.0}}}
