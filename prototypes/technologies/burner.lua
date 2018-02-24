@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "py-burner",
     icon = "__pyindustry__/graphics/technology/burner.png",

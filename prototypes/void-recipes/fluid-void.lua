@@ -1,5 +1,5 @@
 local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
-    Recipe {
+    RECIPE {
         name = name,
         type = "recipe",
         localised_name = locale,

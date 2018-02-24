@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "py-asphalt",
     icon = "__pyindustry__/graphics/technology/py-asphalt.png",

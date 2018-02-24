@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "concrete-wall",
     category = "crafting",
@@ -12,7 +12,7 @@ Recipe {
     }
 }:add_unlock("py-asphalt")
 
-Item {
+ITEM {
     type = "item",
     name = "concrete-wall",
     icon = "__pyindustry__/graphics/icons/concrete-wall.png",
@@ -24,7 +24,7 @@ Item {
     stack_size = 100
 }
 
-Entity {
+ENTITY {
     type = "wall",
     name = "concrete-wall",
     icon = "__pyindustry__/graphics/icons/concrete-wall.png",

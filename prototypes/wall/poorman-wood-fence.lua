@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "poorman-wood-fence",
     category = "crafting",
@@ -11,7 +11,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "poorman-wood-fence",
     icon = "__pyindustry__/graphics/icons/poorman-wood-fence.png",
@@ -23,7 +23,7 @@ Item {
     stack_size = 500
 }
 
-Entity {
+ENTITY {
     type = "wall",
     name = "poorman-wood-fence",
     icon = "__pyindustry__/graphics/icons/poorman-wood-fence.png",

@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "py-warehouse-research",
     icon = "__pyindustry__/graphics/technology/warehouse-research.png",
@@ -13,7 +13,7 @@ Technology {
     order = "c-a"
 }
 
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "py-warehouse-logistics-research",
     icon = "__pyindustry__/graphics/technology/warehouse-logistics-research.png",

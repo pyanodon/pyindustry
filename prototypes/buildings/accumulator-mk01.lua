@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "accumulator-mk01",
     energy_required = 5,
@@ -15,7 +15,7 @@ Recipe {
     }
 }:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
 
-Item {
+ITEM {
     type = "item",
     name = "accumulator-mk01",
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
@@ -27,7 +27,7 @@ Item {
     stack_size = 50
 }
 
-Entity {
+ENTITY {
     type = "accumulator",
     name = "accumulator-mk01",
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",

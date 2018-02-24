@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-burner",
     energy_required = 10,
@@ -14,7 +14,7 @@ Recipe {
     }
 }:add_unlock("py-burner")
 
-Item {
+ITEM {
     type = "item",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
@@ -26,7 +26,7 @@ Item {
     stack_size = 50
 }
 
-Entity {
+ENTITY {
     type = "furnace",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",

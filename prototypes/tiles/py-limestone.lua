@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-limestone",
     category = "crafting-with-fluid",
@@ -17,7 +17,7 @@ Recipe {
     requester_paste_multiplier = 4
 }:add_unlock("py-asphalt"):replace_ingredient("water", "creosote"):replace_ingredient("coal", "ash"):replace_ingredient("stone", "limestone")
 
-Item {
+ITEM {
     type = "item",
     name = "py-limestone",
     icon = "__pyindustry__/graphics/icons/py-limestone-icon.png",
@@ -30,7 +30,7 @@ Item {
     place_as_tile = {result = "py-limestone", condition_size = 2, condition = {"water-tile"}}
 }
 
-Entity {
+ENTITY {
     type = "tile",
     name = "py-limestone",
     needs_correction = false,

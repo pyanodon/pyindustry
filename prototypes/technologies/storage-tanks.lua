@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "py-storage-tanks",
     icon = "__pyindustry__/graphics/technology/storage-tanks.png",

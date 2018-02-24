@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-local-radar",
     ingredients = {
@@ -14,7 +14,7 @@ Recipe {
     enabled = true
 }
 
-Item {
+ITEM {
     type = "item",
     name = "py-local-radar",
     icon = "__pyindustry__/graphics/icons/radar.png",
@@ -26,7 +26,7 @@ Item {
     stack_size = 50
 }
 
-Entity {
+ENTITY {
     type = "radar",
     name = "py-local-radar",
     icon = "__pyindustry__/graphics/icons/radar.png",

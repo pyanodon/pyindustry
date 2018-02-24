@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-coal-tile",
     category = "crafting",
@@ -13,7 +13,7 @@ Recipe {
     requester_paste_multiplier = 4
 }:add_unlock("py-asphalt"):replace_ingredient("coal", "ash"):replace_ingredient("raw-wood", "tailings-dust")
 
-Item {
+ITEM {
     type = "item",
     name = "py-coal-tile",
     icon = "__pyindustry__/graphics/icons/py-coal-tile-icon.png",
@@ -25,7 +25,7 @@ Item {
     place_as_tile = {result = "py-coal-tile", condition_size = 2, condition = {"water-tile"}}
 }
 
-Entity {
+ENTITY {
     type = "tile",
     name = "py-coal-tile",
     needs_correction = false,
