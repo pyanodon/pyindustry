@@ -44,6 +44,10 @@ require("prototypes/buildings/valves/underflow-valve")
 require("prototypes/buildings/accumulator-mk01")
 require("prototypes/buildings/radar")
 
+require('prototypes/buildings/py-roboport-mk01')
+require('prototypes/buildings/cr-01')
+require('prototypes/buildings/cargo-01')
+
 --Voiding
 require("prototypes/buildings/burner")
 require("prototypes/buildings/sinkhole")
