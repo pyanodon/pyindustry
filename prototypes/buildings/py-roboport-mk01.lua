@@ -8,7 +8,6 @@ RECIPE {
         {'iron-plate', 15},
         {'engine-unit', 1},
         {'iron-gear-wheel', 20},
-        {'engine-unit', 1},
         {'electronic-circuit', 5}
     },
     results = {
