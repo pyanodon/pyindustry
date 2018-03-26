@@ -1,6 +1,6 @@
 RECIPE {
     type = 'recipe',
-    name = 'cr-01',
+    name = 'py-construction-robot-01',
     energy_required = 10,
     enabled = false,
     ingredients = {
@@ -11,29 +11,29 @@ RECIPE {
         {'electronic-circuit', 5}
     },
     results = {
-        {'cr-01', 1}
+        {'py-construction-robot-01', 1}
     }
 }:add_ingredient({type = 'item', name = 'rubber', amount = 10}):add_unlock('engine')
 
 ITEM {
     type = 'item',
-    name = 'cr-01',
-    icon = '__pyindustry__/graphics/icons/cr-01.png',
+    name = 'py-construction-robot-01',
+    icon = '__pyindustry__/graphics/icons/py-construction-robot-01.png',
     icon_size = 32,
     flags = {'goes-to-quickbar'},
     subgroup = 'py-robots',
     order = 'b',
-    place_result = 'cr-01',
+    place_result = 'py-construction-robot-01',
     stack_size = 10
 }:subgroup_order("py-hightech-items", "b")
 
 ENTITY {
     type = 'construction-robot',
-    name = 'cr-01',
-    icon = '__pyindustry__/graphics/icons/cr-01.png',
+    name = 'py-construction-robot-01',
+    icon = '__pyindustry__/graphics/icons/py-construction-robot-01.png',
     icon_size = 32,
     flags = {'placeable-player', 'player-creation', 'placeable-off-grid', 'not-on-map'},
-    minable = {hardness = 0.1, mining_time = 0.1, result = 'cr-01'},
+    minable = {hardness = 0.1, mining_time = 0.1, result = 'py-construction-robot-01'},
     resistances = {{type = 'fire', percent = 85}},
     max_health = 20,
     collision_box = {{0, 0}, {0, 0}},
@@ -49,7 +49,7 @@ ENTITY {
     max_to_charge = 0.95,
     working_light = {intensity = 0.8, size = 3, color = {r = 0.8, g = 0.8, b = 0.8}},
     idle = {
-        filename = '__pyindustry__/graphics/entity/cr-01/cr-01.png',
+        filename = '__pyindustry__/graphics/entity/py-construction-robot-01/cr-01.png',
         priority = 'high',
         line_length = 16,
         width = 32,
@@ -58,7 +58,7 @@ ENTITY {
         shift = {0, -0.15625},
         direction_count = 16,
         hr_version = {
-            filename = '__pyindustry__/graphics/entity/cr-01/hr-cr-01.png',
+            filename = '__pyindustry__/graphics/entity/py-construction-robot-01/hr-cr-01.png',
             priority = 'high',
             line_length = 16,
             width = 64,
@@ -70,7 +70,7 @@ ENTITY {
         }
     },
     in_motion = {
-        filename = '__pyindustry__/graphics/entity/cr-01/cr-01.png',
+        filename = '__pyindustry__/graphics/entity/py-construction-robot-01/cr-01.png',
         priority = 'high',
         line_length = 16,
         width = 32,
@@ -80,7 +80,7 @@ ENTITY {
         direction_count = 16,
         y = 37,
         hr_version = {
-            filename = '__pyindustry__/graphics/entity/cr-01/hr-cr-01.png',
+            filename = '__pyindustry__/graphics/entity/py-construction-robot-01/hr-cr-01.png',
             priority = 'high',
             line_length = 16,
             width = 64,
@@ -93,7 +93,7 @@ ENTITY {
         }
     },
     shadow_idle = {
-        filename = '__pyindustry__/graphics/entity/cr-01/shadow.png',
+        filename = '__pyindustry__/graphics/entity/py-construction-robot-01/shadow.png',
         priority = 'high',
         line_length = 16,
         width = 32,
@@ -102,7 +102,7 @@ ENTITY {
         shift = util.by_pixel(33.5, 18.75),
         direction_count = 16,
         hr_version = {
-            filename = '__pyindustry__/graphics/entity/cr-01/hr-shadow.png',
+            filename = '__pyindustry__/graphics/entity/py-construction-robot-01/hr-shadow.png',
             priority = 'high',
             line_length = 16,
             width = 64,
@@ -114,7 +114,7 @@ ENTITY {
         }
     },
     shadow_in_motion = {
-        filename = '__pyindustry__/graphics/entity/cr-01/shadow.png',
+        filename = '__pyindustry__/graphics/entity/py-construction-robot-01/shadow.png',
         priority = 'high',
         line_length = 16,
         width = 32,
@@ -123,7 +123,7 @@ ENTITY {
         shift = util.by_pixel(33.5, 18.75),
         direction_count = 16,
         hr_version = {
-            filename = '__pyindustry__/graphics/entity/cr-01/hr-shadow.png',
+            filename = '__pyindustry__/graphics/entity/py-construction-robot-01/hr-shadow.png',
             priority = 'high',
             line_length = 16,
             width = 64,
@@ -135,7 +135,7 @@ ENTITY {
         }
     },
     working = {
-        filename = '__pyindustry__/graphics/entity/cr-01/cr-01-working.png',
+        filename = '__pyindustry__/graphics/entity/py-construction-robot-01/cr-01-working.png',
         priority = 'high',
         line_length = 2,
         width = 32,
@@ -145,7 +145,7 @@ ENTITY {
         direction_count = 16,
         animation_speed = 0.3,
         hr_version = {
-            filename = '__pyindustry__/graphics/entity/cr-01/hr-cr-01-working.png',
+            filename = '__pyindustry__/graphics/entity/py-construction-robot-01/hr-cr-01-working.png',
             priority = 'high',
             line_length = 2,
             width = 64,
@@ -162,7 +162,7 @@ ENTITY {
             2,
             {
                 {
-                    filename = '__pyindustry__/graphics/entity/cr-01/shadow.png',
+                    filename = '__pyindustry__/graphics/entity/py-construction-robot-01/shadow.png',
                     width_in_frames = 16,
                     height_in_frames = 1
                 }

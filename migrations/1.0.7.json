@@ -1,0 +1,6 @@
+{
+    "entity": [
+        ["cr-01", "py-construction-robot-01"],
+        ["cargo-01", "py-logistic-robot-01"]
+    ]
+}

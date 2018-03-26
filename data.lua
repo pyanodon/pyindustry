@@ -45,8 +45,8 @@ require("prototypes/buildings/accumulator-mk01")
 require("prototypes/buildings/radar")
 
 require('prototypes/buildings/py-roboport-mk01')
-require('prototypes/buildings/cr-01')
-require('prototypes/buildings/cargo-01')
+require('prototypes/robots/py-construction-robot-01')
+require('prototypes/robots/py-logistic-robot-01')
 
 --Voiding
 require("prototypes/buildings/burner")
