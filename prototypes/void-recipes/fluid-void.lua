@@ -20,9 +20,9 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
 end
 
 for _, fluid in pairs(data.raw.fluid) do
-    local name = fluid.name .. "-pyvoid" .. (fluid.gas_temperature and "-gas" or "-fluid")
-
+    local name
     local icons
+
     if fluid.icons then
         icons = table.deepcopy(fluid.icons)
     else
@@ -34,6 +34,7 @@ for _, fluid in pairs(data.raw.fluid) do
 
     if (fluid.default_temperature or 15) < (fluid.gas_temperature or 999999999999) then
         --Make sinkhole
+        name = fluid.name .. '-pyvoid-fluid'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 10}
         make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
@@ -41,6 +42,7 @@ for _, fluid in pairs(data.raw.fluid) do
 
     if fluid.gas_temperature then
         --Make venting
+        name = fluid.name .. '-pyvoid-gas'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, minimum_temperature = fluid.gas_temperature, amount = 10}
         make_fluid_recipe(name, locale, icons, "py-venting", ing, "py-void-gas")
