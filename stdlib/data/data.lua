@@ -266,6 +266,34 @@ function Data:get_icon()
     end
 end
 
+function Data:make_icons(...)
+    if self:valid() then
+        if not self.icons then
+            if self.icon then
+                self.icons = {{icon = self.icon, icon_size = self.icon_size}}
+                self.icon = nil
+            else
+                self.icons = {}
+            end
+        end
+        for _, icon in pairs({...}) do
+            self.icons[#self.icons + 1] = table.deepcopy(icon)
+        end
+    end
+    return self
+end
+
+function Data:set_icon_at(index, values)
+    if self:valid() then
+        if self.icons then
+            for k, v in pairs(values or {}) do
+                self.icons[index].k = v
+            end
+        end
+    end
+    return self
+end
+
 --- Get the objects name.
 -- @treturn string the objects name
 function Data:tostring()
