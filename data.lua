@@ -45,6 +45,7 @@ require("prototypes/buildings/accumulator-mk01")
 require("prototypes/buildings/radar")
 
 require('prototypes/buildings/py-roboport-mk01')
+require('prototypes/buildings/py-recharge-station-mk01')
 require('prototypes/robots/py-construction-robot-01')
 require('prototypes/robots/py-logistic-robot-01')
 
