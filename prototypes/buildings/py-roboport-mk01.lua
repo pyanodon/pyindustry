@@ -59,7 +59,7 @@ ENTITY {
     energy_usage = '50kW',
     -- per one charge slot
     charging_energy = '500kW',
-    logistics_radius = 20,
+    logistics_radius = 45,
     construction_radius = 50,
     charge_approach_distance = 5,
     robot_slots_count = 4,
