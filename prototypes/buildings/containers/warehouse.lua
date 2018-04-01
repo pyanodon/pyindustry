@@ -58,7 +58,7 @@ local function define_warehouse(name, logistics_name)
         RECIPE {
         type = "recipe",
         name = full_name,
-        enabled = "false",
+        enabled = false,
         ingredients = get_ingredients(logistics_name),
         results = {
             {full_name, 1}
