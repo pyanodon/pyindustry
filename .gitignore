@@ -1,2 +1,4 @@
 *.db
 Thumbs.*
+.build/
+.vscode/
