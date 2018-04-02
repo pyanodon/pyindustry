@@ -36,7 +36,7 @@ local function get_ingredients(name)
     elseif name == "buffer" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-requester", 1},
+            {"logistic-chest-buffer", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
