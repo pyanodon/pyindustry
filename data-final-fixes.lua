@@ -10,4 +10,6 @@ for _, storage_tank in pairs(data.raw["storage-tank"]) do
     storage_tank.fast_replaceable_group = "storage-tank-"..area
 end
 
-TECHNOLOGY('logistic-system'):remove_pack('science-pack-3'):remove_pack('high-tech-science-pack'):remove_pack('production-science-pack')
+TECHNOLOGY('logistic-system'):remove_pack('science-pack-3')
+TECHNOLOGY('logistic-system'):remove_pack('high-tech-science-pack')
+TECHNOLOGY('logistic-system'):remove_pack('production-science-pack')
