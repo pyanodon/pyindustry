@@ -9,3 +9,5 @@ for _, storage_tank in pairs(data.raw["storage-tank"]) do
     local area = Area(storage_tank.collision_box):round_to_integer():size()
     storage_tank.fast_replaceable_group = "storage-tank-"..area
 end
+
+TECHNOLOGY('logistic-system'):remove_pack('science-pack-3'):remove_pack('high-tech-science-pack'):remove_pack('production-science-pack')
