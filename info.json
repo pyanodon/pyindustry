@@ -1,11 +1,11 @@
 {
   "name": "pyindustry",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "factorio_version": "0.16",
   "title": "Pyanodons Industry",
   "author": "Pyanodon, Nexela",
   "contact": "",
   "homepage": "",
   "description": "Adds industry based buildings to the game.",
-  "dependencies": ["base >= 0.15.37", "? pycoalprocessing >= 0.4.0", "? pyfusionenergy >= 0.1.0", "? boblibrary"]
+  "dependencies": ["base >= 0.15.37", "? pycoalprocessing >= 1.0.6", "? pyfusionenergy >= 1.0.3", "? boblibrary"]
 }
