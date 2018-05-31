@@ -9,7 +9,7 @@ local cargo_bot =
         {'iron-plate', 10},
         {'iron-gear-wheel', 10},
         {'copper-plate', 2},
-        {'advanced-circuit', 10},
+        {'electronic-circuit', 10},
         {'py-construction-robot-01', 1},
         {type = 'fluid', name = 'lubricant', amount = 300}
     },
