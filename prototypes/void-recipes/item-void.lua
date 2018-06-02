@@ -2,7 +2,7 @@
 
 local void_result = {
     type = "item",
-    name = ITEM("ash"):valid() and "ash" or ITEM("coal"):valid() and "coal" or nil,
+    name = ITEM("ash"):is_valid() and "ash" or ITEM("coal"):is_valid() and "coal" or nil,
     amount_min = 1,
     amount_max = 1,
     probability = 0.20
@@ -29,7 +29,24 @@ local function make_void_recipe(name, newicons, ing_name)
     }
 end
 
-for _, type in pairs(ITEM.item_types) do
+local groups = {
+    "ammo",
+    "armor",
+    "capsule",
+    "gun",
+    "item-with-entity-data",
+    "item-with-inventory",
+    "item-with-label",
+    "item-with-tags",
+    "item",
+    "mining-tool",
+    "module",
+    "rail-planner",
+    "repair-tool",
+    "tool",
+}
+
+for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
         if not item.fuel_value then
             local name = item.name .. "-pyvoid"
