@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyindustry__/graphics/technology/burner.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"steel-processing"},
+    prerequisites = {"coal-processing-2"},
     effects = {},
     unit = {
         count = 40,
