@@ -16,7 +16,8 @@ require("prototypes/pipes/niobium-pipes")
 require("prototypes/tiles/py-asphalt")
 require("prototypes/tiles/py-limestone")
 require("prototypes/tiles/py-coal-tile")
-require("prototypes/tiles/py-iron-tile")
+require("prototypes/tiles/py-iron-oxide")
+require("prototypes/tiles/py-iron")
 
 --Walls
 require("prototypes/wall/poorman-wood-fence")

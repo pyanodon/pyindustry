@@ -578,7 +578,7 @@ ENTITY {
     collision_box = {{-0.29, -0.29}, {0.29, 0.2}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box = {
-        base_area = 2,
+        base_area = 4,
         pipe_covers = py_pipecoverspictures(),
         pipe_connections = {
             {position = {0, -1}},
