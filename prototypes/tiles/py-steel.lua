@@ -11,7 +11,7 @@ RECIPE {
         {"py-steel", 1}
     },
     requester_paste_multiplier = 4
-}:add_unlock("iron-mk02"):replace_ingredient("iron-stick", "solder")
+}:add_unlock("iron-mk02","coal-processing-2"):replace_ingredient("iron-stick", "solder")
 
 ITEM {
     type = "item",
