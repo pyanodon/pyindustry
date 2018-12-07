@@ -40,7 +40,7 @@ ENTITY {
     selection_box = {{-2, -2}, {2, 2}},
     energy_source = {
         type = "electric",
-        buffer_capacity = "20MJ",
+        buffer_capacity = "50MJ",
         usage_priority = "terciary",
         input_flow_limit = "1400kW",
         output_flow_limit = "1400kW"
