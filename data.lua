@@ -33,6 +33,7 @@ require("prototypes/buildings/containers/storehouse")
 require("prototypes/buildings/containers/warehouse")
 
 --Storage Tanks
+require("prototypes/buildings/fluid-tanks/tanks-1000")
 require("prototypes/buildings/fluid-tanks/tanks-1500")
 require("prototypes/buildings/fluid-tanks/tanks-3000")
 require("prototypes/buildings/fluid-tanks/tanks-4000")
