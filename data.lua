@@ -6,7 +6,6 @@ require("prototypes/recipe-categories")
 --Technology
 require("prototypes/technologies/storage-tanks")
 require("prototypes/technologies/asphalt")
-require("prototypes/technologies/burner")
 require("prototypes/technologies/warehouses")
 
 --Pipes
@@ -16,11 +15,14 @@ require("prototypes/pipes/niobium-pipes")
 require("prototypes/tiles/py-asphalt")
 require("prototypes/tiles/py-limestone")
 require("prototypes/tiles/py-coal-tile")
-require("prototypes/tiles/py-iron-oxide")
+
 require("prototypes/tiles/py-iron")
 require("prototypes/tiles/py-steel")
 require("prototypes/tiles/py-aluminium")
-require("prototypes/tiles/py-nexelit")
+if mods['pycoalprocessing'] then
+    require("prototypes/tiles/py-iron-oxide")
+    require("prototypes/tiles/py-nexelit")
+end
 
 --Walls
 require("prototypes/wall/poorman-wood-fence")
