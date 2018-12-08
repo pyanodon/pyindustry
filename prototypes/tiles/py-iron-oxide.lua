@@ -4,7 +4,7 @@ RECIPE {
     category = "hpf",
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-oxide", amount = 2}, 
+        {type = "item", name = "iron-oxide", amount = 2},
         {type = "item", name = "coarse", amount = 10},
         {type = "fluid", name = "dirty-water", amount = 20}
     },
