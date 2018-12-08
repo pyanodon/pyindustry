@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-tank-7000",
-    energy_required = 15,
+    energy_required = 5,
     enabled = false,
     ingredients = {
         {"storage-tank", 1},

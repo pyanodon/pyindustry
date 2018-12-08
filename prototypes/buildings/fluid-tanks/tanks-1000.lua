@@ -1,64 +1,72 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-6500",
-    energy_required = 05,
+    name = "py-tank-1000",
+    energy_required = 5,
     enabled = false,
     ingredients = {
-        {"py-tank-4000", 1},
-        {"pipe", 8},
-        {"iron-stick", 30},
-        {"steel-plate", 30}
+        {"iron-plate", 5},
+        {"pipe", 10},
+        {"steel-plate", 10}
     },
     results = {
-        {"py-tank-6500", 1}
+        {"py-tank-1000", 1}
     }
-}:add_unlock("py-storage-tanks")
+}:add_unlock("py-storage-tanks"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 
 ITEM {
     type = "item",
-    name = "py-tank-6500",
-    icon = "__pyindustry__/graphics/icons/py-tank-6500.png",
+    name = "py-tank-1000",
+    icon = "__pyindustry__/graphics/icons/py-tank-1000.png",
     icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-storage-tanks",
     order = "a-c[py-items]",
-    place_result = "py-tank-6500",
+    place_result = "py-tank-1000",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-6500",
-    icon = "__pyindustry__/graphics/icons/py-tank-6500.png",
+    name = "py-tank-1000",
+    icon = "__pyindustry__/graphics/icons/py-tank-1000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "py-tank-6500"},
+    minable = {hardness = 0.2, mining_time = 3, result = "py-tank-1000"},
     max_health = 500,
     corpse = "medium-remnants",
-    collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    two_direction_only = true,
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    two_direction_only = false,
     fluid_box = {
-        base_area = 650,
+        base_area = 100,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, -3}},
-            {position = {3, 0}},
-            {position = {0, 3}},
-            {position = {-3, 0}}
+            {position = {-2, 0}},
+            {position = {2, 0}},
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
     pictures = {
         picture = {
-            sheet = {
-                filename = "__pyindustry__/graphics/entity/py-tank-6500/py-tank-6500.png",
+            sheets = {
+                {
+                filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000.png",
                 priority = "extra-high",
-                frames = 1,
-                width = 182,
-                height = 201,
-                shift = {0.25, -0.3}
-            }
+                frames = 4,
+                width = 96,
+                height = 352,
+                shift = util.by_pixel(0, -128),
+                },
+                {
+                filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
+                priority = "extra-high",
+                frames = 4,
+                width = 160,
+                height = 92,
+                draw_as_shadow = true,
+                shift = util.by_pixel(64, 16),
+                },
+            },
         },
         fluid_background = ENTITY.Pipes.empty_sprite(),
         window_background = ENTITY.Pipes.empty_sprite(),

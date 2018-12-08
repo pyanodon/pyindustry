@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-tank-1500",
-    energy_required = 15,
+    energy_required = 5,
     enabled = false,
     ingredients = {
         {"iron-plate", 20},
