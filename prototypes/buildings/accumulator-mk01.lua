@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"accumulator-mk01", 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"coal-processing-2", "electric-energy-accumulators-1"})
 
 ITEM {
     type = "item",

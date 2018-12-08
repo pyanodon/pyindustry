@@ -47,6 +47,7 @@ require("prototypes/buildings/valves/underflow-valve")
 
 --Other
 require("prototypes/buildings/accumulator-mk01")
+require("prototypes/buildings/accumulator-mk02")
 require("prototypes/buildings/radar")
 
 require('prototypes/buildings/py-roboport-mk01')
