@@ -4,14 +4,14 @@ RECIPE {
     category = "crafting",
     enabled = false,
     ingredients = {
-        {type = "item", name = "steel-plate", amount = 2}, 
-        {type = "item", name = "iron-stick", amount = 1},
+        {type = "item", name = "steel-plate", amount = 2},
+        {type = "item", name = "iron-stick", amount = 1}
     },
     results = {
         {"py-steel", 1}
     },
     requester_paste_multiplier = 4
-}:add_unlock("iron-mk02","coal-processing-2"):replace_ingredient("iron-stick", "solder")
+}:add_unlock("iron-mk02", "coal-processing-2"):replace_ingredient("iron-stick", "solder")
 
 ITEM {
     type = "item",
