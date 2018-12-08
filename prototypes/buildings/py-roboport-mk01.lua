@@ -53,12 +53,12 @@ ENTITY {
         type = 'electric',
         usage_priority = 'secondary-input',
         input_flow_limit = '5MW',
-        buffer_capacity = '100MJ'
+        buffer_capacity = '300MJ'
     },
-    recharge_minimum = '40MJ',
+    recharge_minimum = '60MJ',
     energy_usage = '50kW',
     -- per one charge slot
-    charging_energy = '1500kW',
+    charging_energy = '4000kW',
     logistics_radius = 45,
     construction_radius = 50,
     charge_approach_distance = 5,
