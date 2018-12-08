@@ -4,7 +4,7 @@ RECIPE {
     category = "hpf",
     enabled = false,
     ingredients = {
-        {type = "item", name = "nexelit-plate", amount = 1}, 
+        {type = "item", name = "nexelit-plate", amount = 1},
         {type = "item", name = "gravel", amount = 2},
         {type = "fluid", name = "tar", amount = 20}
     },
