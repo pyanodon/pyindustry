@@ -93,7 +93,7 @@ ENTITY {
                 width = 32,
                 height = 176,
                 frame_count = 1,
-                shift = util.by_pixel(0, -10),
+                shift = util.by_pixel(0, -72),
                 hr_version = {
                     filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
                     priority = "extra-high",
