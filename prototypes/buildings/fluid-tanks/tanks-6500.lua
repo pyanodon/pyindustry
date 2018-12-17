@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {"py-tank-6500", 1}
     }
-}:add_unlock("py-storage-tanks")
+}:add_unlock("py-storage-tanks"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
 
 ITEM {
     type = "item",
