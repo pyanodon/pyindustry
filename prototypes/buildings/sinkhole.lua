@@ -71,7 +71,7 @@ ENTITY {
     crafting_categories = {"py-runoff"},
     energy_usage = "1kW",
     ingredient_count = 4,
-    crafting_speed = 1,
+    crafting_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
