@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-tank-4000",
-    energy_required = 5,
+    energy_required = 3,
     enabled = false,
     ingredients = {
         {"iron-stick", 40},
@@ -11,7 +11,7 @@ RECIPE {
     results = {
         {"py-tank-4000", 1}
     }
-}:add_unlock("py-storage-tanks"):replace_ingredient("iron-plate", "duralumin"):replace_ingredient("steel-plate", "lead-plate")
+}:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
