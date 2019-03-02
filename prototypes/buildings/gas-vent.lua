@@ -67,7 +67,7 @@ ENTITY {
     collision_box = {{-0.2, -0.2}, {0.2, 0.2}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     crafting_categories = {"py-venting"},
-    energy_usage = "1kW",
+    energy_usage = "25kW",
     ingredient_count = 2,
     crafting_speed = 2,
     energy_source = {

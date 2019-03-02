@@ -82,16 +82,6 @@ ENTITY {
     pictures = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/radar/radar.png",
-                priority = "low",
-                width = 100,
-                height = 141,
-                apply_projection = false,
-                direction_count = 50,
-                line_length = 10,
-                animation_speed = 0.7,
-                shift = util.by_pixel(1, -16),
-                hr_version = {
                     filename = "__pyindustry__/graphics/entity/radar/hr-radar.png",
                     priority = "low",
                     width = 201,
@@ -102,20 +92,8 @@ ENTITY {
                     animation_speed = 0.7,
                     shift = util.by_pixel(1, -16),
                     scale = 0.5
-                }
             },
             {
-                filename = "__pyindustry__/graphics/entity/radar/radar-shadow.png",
-                priority = "low",
-                width = 113,
-                height = 96,
-                apply_projection = false,
-                direction_count = 50,
-                line_length = 8,
-                animation_speed = 0.7,
-                shift = util.by_pixel(39, 3),
-                draw_as_shadow = true,
-                hr_version = {
                     filename = "__pyindustry__/graphics/entity/radar/hr-radar-shadow.png",
                     priority = "low",
                     width = 226,
@@ -128,7 +106,6 @@ ENTITY {
                     draw_as_shadow = true,
                     scale = 0.5
                 }
-            }
         }
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},

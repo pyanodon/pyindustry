@@ -566,7 +566,7 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.3, mining_time = 0.5, result = "niobium-pipe-to-ground"},
-    max_health = 50,
+    max_health = 100,
     corpse = "small-remnants",
     resistances = {
         {
