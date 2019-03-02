@@ -71,7 +71,7 @@ ENTITY {
     resistances = {
         {type = "physical", decrease = 5, percent = 60},
         {type = "explosion", decrease = 2, percent = 60},
-        {type = "fire", percent = 30},
+        {type = "fire", percent = 100},
         {type = "acid", percent = 15}
     },
     pictures = {
