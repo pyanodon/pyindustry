@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 2}, --ash, 2
-        {type = "item", name = "raw-wood", amount = 10} --tailings-dust, 10,
+        {type = "item", name = "wood", amount = 10} --tailings-dust, 10,
     },
     results = {
         {"py-iron-tile", 1}
@@ -18,7 +18,7 @@ ITEM {
     name = "py-iron-tile",
     icon = "__pyindustry__/graphics/icons/py-iron-tile-icon.png",
     icon_size = 32,
-    flags = {"goes-to-main-inventory"},
+    flags = {},
     subgroup = "py-tiles",
     order = "a-iron-tile",
     stack_size = 100,

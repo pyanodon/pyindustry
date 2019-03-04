@@ -5,8 +5,8 @@ local function py_pipepictures()
         straight_vertical_single = {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-vertical-single.png",
             priority = "extra-high",
-            width = 80,
-            height = 80,
+            width = 64,
+            height = 64,
             hr_version = {
                 filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-single.png",
                 priority = "extra-high",
@@ -468,7 +468,7 @@ ITEM {
     name = "niobium-pipe",
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-pipes",
     order = "pipe[niobium]a",
     place_result = "niobium-pipe",
@@ -495,7 +495,7 @@ ITEM {
     name = "niobium-pipe-to-ground",
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-pipes",
     order = "pipe[niobium]b",
     place_result = "niobium-pipe-to-ground",
