@@ -18,7 +18,7 @@ ITEM {
     name = "py-check-valve",
     icon = "__pyindustry__/graphics/icons/check-valve.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-pipes",
     order = "pipe[niobium]-flow-a",
     place_result = "py-check-valve",
@@ -80,7 +80,7 @@ ENTITY {
                     draw_as_shadow = true,
                     frames = 4,
                     width = 64,
-                    height = 45,
+                    height = 35,
                     shift = {0.5, -0.0},
                     hr_version = {
                         filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve-shadow.png",

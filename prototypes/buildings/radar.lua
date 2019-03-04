@@ -19,7 +19,7 @@ ITEM {
     name = "py-local-radar",
     icon = "__pyindustry__/graphics/icons/radar.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-industry",
     order = "d[radar]-a[radar]",
     place_result = "py-local-radar",

@@ -18,7 +18,7 @@ ITEM {
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-industry",
     order = "a",
     place_result = "py-gas-vent",

@@ -19,7 +19,7 @@ ITEM {
     name = "py-iron-oxide",
     icon = "__pyindustry__/graphics/icons/py-iron-oxide.png",
     icon_size = 32,
-    flags = {"goes-to-main-inventory"},
+    flags = {},
     subgroup = "py-tiles",
     order = "a-iron-oxide",
     stack_size = 500,

@@ -70,7 +70,7 @@ local function define_warehouse(name, logistics_name)
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
         icon_size = 32,
-        flags = {"goes-to-quickbar"},
+        flags = {},
         subgroup = "py-containers-warehouse",
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,

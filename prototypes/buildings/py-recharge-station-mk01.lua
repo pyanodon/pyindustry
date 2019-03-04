@@ -19,7 +19,7 @@ ITEM {
     name = 'py-recharge-station-mk01',
     icon = '__pyindustry__/graphics/icons/py-recharge-station-mk01.png',
     icon_size = 32,
-    flags = {'goes-to-quickbar'},
+    flags = {},
     subgroup = 'py-robots',
     order = 'a',
     place_result = 'py-recharge-station-mk01',

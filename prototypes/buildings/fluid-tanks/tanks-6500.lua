@@ -19,7 +19,7 @@ ITEM {
     name = "py-tank-6500",
     icon = "__pyindustry__/graphics/icons/py-tank-6500.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-storage-tanks",
     order = "a-c[py-items]",
     place_result = "py-tank-6500",
