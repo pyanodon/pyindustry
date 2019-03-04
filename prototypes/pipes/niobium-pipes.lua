@@ -10,8 +10,8 @@ local function py_pipepictures()
             hr_version = {
                 filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-single.png",
                 priority = "extra-high",
-                width = 160,
-                height = 160,
+                width = 128,
+                height = 128,
                 scale = 0.5
             }
         },
