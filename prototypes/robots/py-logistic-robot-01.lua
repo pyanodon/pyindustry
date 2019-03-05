@@ -26,7 +26,7 @@ ITEM {
     name = 'py-logistic-robot-01',
     icon = '__pyindustry__/graphics/icons/py-logistic-robot-01.png',
     icon_size = 32,
-    flags = {'goes-to-quickbar'},
+    flags = {},
     subgroup = 'py-robots',
     order = 'c',
     place_result = 'py-logistic-robot-01',

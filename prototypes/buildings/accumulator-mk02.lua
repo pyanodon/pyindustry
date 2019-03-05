@@ -22,7 +22,7 @@ ITEM {
     name = "accumulator-mk02",
     icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-industry",
     order = "a",
     place_result = "accumulator-mk02",
@@ -43,7 +43,7 @@ ENTITY {
     energy_source = {
         type = "electric",
         buffer_capacity = "120MJ",
-        usage_priority = "terciary",
+        usage_priority = "tertiary",
         input_flow_limit = "2500kW",
         output_flow_limit = "2500kW"
     },

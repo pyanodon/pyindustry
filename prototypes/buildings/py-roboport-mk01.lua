@@ -20,7 +20,7 @@ ITEM {
     name = 'py-roboport-mk01',
     icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
     icon_size = 32,
-    flags = {'goes-to-quickbar'},
+    flags = {},
     subgroup = 'py-robots',
     order = 'a',
     place_result = 'py-roboport-mk01',

@@ -16,7 +16,7 @@ ITEM {
     name = "wood-fence",
     icon = "__pyindustry__/graphics/icons/wood-fence.png",
     icon_size = 32,
-    flags = {"goes-to-main-inventory"},
+    flags = {},
     subgroup = "py-walls",
     order = "z",
     place_result = "wood-fence",
@@ -42,7 +42,7 @@ ENTITY {
     vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
     connected_gate_visualization = {filename = "__core__/graphics/arrows/underground-lines.png", priority = "high", width = 64, height = 64, scale = 0.5},
     wall_diode_green = {
-        filename = "__base__/graphics/entity/gate/wall-diode-green.png",
+        filename = "__base__/graphics/entity/wall/wall-diode-green.png",
         width = 21,
         height = 22,
         shift = {0, -0.78125}
@@ -55,7 +55,7 @@ ENTITY {
         intensity = 0.3
     },
     wall_diode_red = {
-        filename = "__base__/graphics/entity/gate/wall-diode-red.png",
+        filename = "__base__/graphics/entity/wall/wall-diode-red.png",
         width = 21,
         height = 22,
         shift = {0, -0.78125}
@@ -114,7 +114,7 @@ ENTITY {
             {
                 filename = "__pyindustry__/graphics/walls/wood-fence/corner-left.png",
                 priority = "extra-high",
-                width = 44,
+                width = 32,
                 height = 48,
                 shift = {0.2, -0.0}
             }

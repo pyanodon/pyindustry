@@ -18,7 +18,7 @@ ITEM {
     name = "py-steel",
     icon = "__pyindustry__/graphics/icons/py-steel.png",
     icon_size = 32,
-    flags = {"goes-to-main-inventory"},
+    flags = {},
     subgroup = "py-tiles",
     order = "a-steel-oxide",
     stack_size = 500,

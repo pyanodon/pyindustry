@@ -19,7 +19,7 @@ ITEM {
     name = "py-underflow-valve",
     icon = "__pyindustry__/graphics/icons/underflow-valve.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-pipes",
     order = "pipe[niobium]-flow-c",
     place_result = "py-underflow-valve",
