@@ -70,7 +70,7 @@ local function define_shed(name, logistics_name)
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
         icon_size = 32,
-        flags = {"goes-to-quickbar"},
+        flags = {},
         subgroup = "py-containers-shed",
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,

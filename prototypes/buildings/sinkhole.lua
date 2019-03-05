@@ -20,7 +20,7 @@ ITEM {
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-industry",
     order = "a",
     place_result = "py-sinkhole",
@@ -99,7 +99,7 @@ ENTITY {
             {
                 filename = "__pyindustry__/graphics/entity/py-sinkhole/shadow.png",
                 priority = "extra-high",
-                width = 99,
+                width = 98.5,
                 height = 96,
                 frame_count = 1,
                 draw_as_shadow = true,

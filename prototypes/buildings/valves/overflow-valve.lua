@@ -19,7 +19,7 @@ ITEM {
     name = "py-overflow-valve",
     icon = "__pyindustry__/graphics/icons/overflow-valve.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-pipes",
     order = "pipe[niobium]-flow-b",
     place_result = "py-overflow-valve",

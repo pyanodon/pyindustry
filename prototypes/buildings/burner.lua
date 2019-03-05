@@ -9,7 +9,7 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"science-pack-1", 2}
+            {"automation-science-pack", 2}
         },
         time = 45
     }
@@ -36,7 +36,7 @@ ITEM {
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
     icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-industry",
     order = "a",
     place_result = "py-burner",
