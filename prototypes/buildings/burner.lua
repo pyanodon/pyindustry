@@ -13,7 +13,7 @@ TECHNOLOGY {
         },
         time = 45
     }
-}:add_prereq('coal-processing-2')
+}:add_prereq('coal-processing-1')
 
 RECIPE {
     type = "recipe",
