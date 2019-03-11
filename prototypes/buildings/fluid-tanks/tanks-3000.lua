@@ -68,10 +68,10 @@ ENTITY {
                 }
             }
         },
-        fluid_background = ENTITY.Pipes.empty_sprite(),
-        window_background = ENTITY.Pipes.empty_sprite(),
-        flow_sprite = ENTITY.Pipes.empty_sprite(),
-        gas_flow = ENTITY.Pipes.empty_animation()
+        fluid_background = ENTITY.Sprites.empty_sprite(),
+        window_background = ENTITY.Sprites.empty_sprite(),
+        flow_sprite = ENTITY.Sprites.empty_sprite(),
+        gas_flow = ENTITY.Sprites.empty_animation()
     },
     flow_length_in_ticks = 660,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},

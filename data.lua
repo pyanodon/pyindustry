@@ -1,4 +1,4 @@
-require("stdlib/data/data").create_data_globals()
+require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
