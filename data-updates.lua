@@ -1,6 +1,6 @@
 local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 
-TECHNOLOGY('logistic-system'):remove_pack('high-tech-science-pack'):remove_pack('production-science-pack'):remove_pack('science-pack-3'):remove_prereq('advanced-electronics')
+TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('advanced-electronics'):remove_prereq('utility-science-pack')
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
