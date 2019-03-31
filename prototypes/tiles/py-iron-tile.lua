@@ -82,6 +82,6 @@ ENTITY {
         }
     },
     map_color = defines.color.darkgrey,
-    ageing = 0,
+    pollution_absorption_per_second = 0,
     vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
 }

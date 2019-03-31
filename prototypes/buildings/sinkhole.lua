@@ -75,7 +75,7 @@ ENTITY {
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.0
+        emissions_per_second_per_watt = 0
     },
     animation = _G.make_4way_animation_from_spritesheet {
         layers = {

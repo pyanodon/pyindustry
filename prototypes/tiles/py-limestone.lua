@@ -100,6 +100,6 @@ ENTITY {
     },
     --map_color={r=0.90, g=0.70, b=0.50},
     map_color = defines.color.darkgrey,
-    ageing = 0,
+    pollution_absorption_per_second = 0,
     vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
 }
