@@ -1,4 +1,4 @@
-local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
+local FUN = require("prototypes/functions/functions")
 
 TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('advanced-electronics'):remove_prereq('utility-science-pack')
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit')
