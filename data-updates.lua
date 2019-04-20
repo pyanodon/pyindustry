@@ -7,6 +7,21 @@ RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
 
+
+--Tiles
+require("prototypes/tiles/py-asphalt")
+require("prototypes/tiles/py-limestone")
+require("prototypes/tiles/py-coal-tile")
+
+require("prototypes/tiles/py-iron")
+require("prototypes/tiles/py-steel")
+require("prototypes/tiles/py-aluminium")
+if mods['pycoalprocessing'] then
+    require("prototypes/tiles/py-iron-oxide")
+    require("prototypes/tiles/py-nexelit")
+end
+
+
 local recipes_list =
 {
   "niobium-pipe",
