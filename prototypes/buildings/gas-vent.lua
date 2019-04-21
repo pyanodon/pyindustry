@@ -73,7 +73,7 @@ ENTITY {
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions_per_second_per_watt = 0,
+        emissions_per_minute = 0,
         smoke = {
             {
                 name = "turbine-smoke",
