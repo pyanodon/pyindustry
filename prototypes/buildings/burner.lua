@@ -86,7 +86,7 @@ ENTITY {
         fuel_category = "chemical",
         effectivity = .75,
         fuel_inventory_size = 1,
-        emissions_per_second_per_watt = 3e-05,
+        emissions_per_minute = 80,
         smoke = {
             {
                 name = "turbine-smoke",
