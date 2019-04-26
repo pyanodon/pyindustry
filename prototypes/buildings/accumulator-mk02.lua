@@ -15,7 +15,7 @@ RECIPE {
     results = {
         {"accumulator-mk02", 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel"):add_ingredient({type = "fluid", name = "liquid-nitrogen", amount = 50}):add_ingredient({"optical-fiber", 30}):add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({type = "fluid", name = "liquid-nitrogen", amount = 50}):add_ingredient({"optical-fiber", 30}):add_unlock({"coal-processing-3", "electric-energy-accumulators-1"})
 
 ITEM {
     type = "item",

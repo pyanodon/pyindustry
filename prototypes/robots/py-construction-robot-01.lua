@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {'py-construction-robot-01', 1}
     }
-}:add_ingredient({type = 'item', name = 'rubber', amount = 10}):add_unlock('engine')
+}:add_unlock('engine')
 
 ITEM {
     type = 'item',
