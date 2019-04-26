@@ -100,5 +100,5 @@ ENTITY {
     vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
 }
 
-RECIPE("ball-mill"):add_ingredient({"py-asphalt", 50})
+RECIPE("ball-mill-mk01"):add_ingredient({"py-asphalt", 50})
 RECIPE("py-heat-exchanger"):replace_ingredient("stone-brick", "py-asphalt")

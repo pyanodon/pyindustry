@@ -17,8 +17,7 @@ local cargo_bot =
         {'py-logistic-robot-01', 1}
     }
 }
-cargo_bot:add_ingredient({type = 'item', name = 'rubber', amount = 10})
-cargo_bot:replace_ingredient('iron-plate', 'brass-alloy'):replace_ingredient('iron-gear-wheel', 'steel-bearing'):replace_ingredient('copper-plate', 'chromium')
+cargo_bot:replace_ingredient('copper-plate', 'chromium')
 cargo_bot:add_unlock({'basic-electronics', 'advanced-electronics'})
 
 ITEM {
