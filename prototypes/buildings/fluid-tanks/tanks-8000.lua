@@ -84,6 +84,6 @@ ENTITY {
     circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
 }
 
-RECIPE("plankton-farm"):replace_ingredient("storage-tank", "py-tank-8000"):replace_ingredient("stone-brick", "py-asphalt")
+RECIPE("plankton-farm"):replace_ingredient("storage-tank", "py-tank-8000")
 RECIPE("mixer"):replace_ingredient("storage-tank", "py-tank-8000")
 RECIPE("py-heat-exchanger"):replace_ingredient("storage-tank", "py-tank-8000")
