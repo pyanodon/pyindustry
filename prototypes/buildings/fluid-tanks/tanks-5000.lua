@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"py-tank-1500", 1},
-        {"iron-stick", 40},
+        {"iron-plate", 30},
         {"pipe", 8},
         {"steel-plate", 30}
     },
