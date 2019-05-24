@@ -1,7 +1,8 @@
 local FUN = require("prototypes/functions/functions")
 
 TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('advanced-electronics'):remove_prereq('utility-science-pack')
-RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit')
+TECHNOLOGY('construction-robotics'):remove_prereq('advanced-electronics'):remove_prereq('robotics'):add_prereq('engine')
+RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics'):remove_unlock('logistic-robotics'):add_unlock('engine')
 RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
@@ -21,7 +22,6 @@ if mods['pycoalprocessing'] then
     require("prototypes/tiles/py-nexelit")
 end
 
---recipe updates
 RECIPE("plankton-farm"):replace_ingredient("stone-brick", "py-asphalt")
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
