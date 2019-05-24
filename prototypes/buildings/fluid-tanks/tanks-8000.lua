@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {"py-tank-4000", 1},
         {"pipe", 12},
-        {"iron-stick", 40},
+        {"iron-plate", 40},
         {"steel-plate", 40}
     },
     results = {
