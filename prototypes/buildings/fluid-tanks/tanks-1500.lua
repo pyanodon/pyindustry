@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"iron-stick", 10},
+        {"iron-plate", 10},
         {"pipe", 10},
         {"steel-plate", 10}
     },

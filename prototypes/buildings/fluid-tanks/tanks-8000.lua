@@ -4,9 +4,10 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
+		{"storage-tank", 1},
         {"py-tank-4000", 1},
         {"pipe", 12},
-        {"iron-plate", 40},
+        {"iron-plate", 20},
         {"steel-plate", 40}
     },
     results = {
