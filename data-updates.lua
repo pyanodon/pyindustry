@@ -22,7 +22,6 @@ if mods['pycoalprocessing'] then
     require("prototypes/tiles/py-nexelit")
 end
 
-RECIPE("plankton-farm"):replace_ingredient("stone-brick", "py-asphalt")
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
 local recipes_list =
