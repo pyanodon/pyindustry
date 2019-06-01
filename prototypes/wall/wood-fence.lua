@@ -32,7 +32,7 @@ ENTITY {
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     --drawing_box = {{-1.5,-1.5},{1.5,1.5}},
-    minable = {mining_time = 1, result = "wood-fence"},
+    minable = {mining_time = 0.5, result = "wood-fence"},
     max_health = 100,
     corpse = "wall-remnants",
     repair_sound = {filename = "__base__/sound/manual-repair-simple.ogg"},
