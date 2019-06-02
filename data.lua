@@ -35,6 +35,15 @@ require("prototypes/buildings/valves/check-valve")
 require("prototypes/buildings/valves/overflow-valve")
 require("prototypes/buildings/valves/underflow-valve")
 
+--tank size settings check
+if settings.startup["py-tank-adjust"].value then
+	data.raw["storage-tank"]["py-tank-3000"].fluid_box.base_area = 100
+	data.raw["storage-tank"]["py-tank-4000"].fluid_box.base_area = 275
+	data.raw["storage-tank"]["py-tank-5000"].fluid_box.base_area = 650
+	data.raw["storage-tank"]["py-tank-6500"].fluid_box.base_area = 750
+	data.raw["storage-tank"]["py-tank-8000"].fluid_box.base_area = 1250
+end
+
 --Other
 require("prototypes/buildings/accumulator-mk01")
 require("prototypes/buildings/accumulator-mk02")
