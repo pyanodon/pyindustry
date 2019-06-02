@@ -8,6 +8,13 @@ RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
 
+--pyph tank adjust
+if settings.startup["py-tank-adjust"].value then
+	if mods["pypetroleumhandling"] then
+		data.raw["storage-tank"]["py-tank-9000"].fluid_box.base_area = 1800
+		data.raw["storage-tank"]["py-tank-10000"].fluid_box.base_area = 2500
+	end
+end
 
 --Tiles
 require("prototypes/tiles/py-asphalt")
