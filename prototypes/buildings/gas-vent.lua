@@ -69,7 +69,7 @@ ENTITY {
     crafting_categories = {"py-venting"},
     energy_usage = "25kW",
     ingredient_count = 2,
-    crafting_speed = 2,
+    crafting_speed = 3,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
