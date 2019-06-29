@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.8
+  Balances:
+    - Desconstruct time reduced for all entities in this mod.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.7
   Balances:
     - Balanced energy consuption from MK01 pynobots.
