@@ -33,7 +33,7 @@ ENTITY {
     icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
     icon_size = 32,
     flags = {'placeable-player', 'player-creation'},
-    minable = {hardness = 0.2, mining_time = 0.5, result = 'py-roboport-mk01'},
+    minable = {hardness = 0.2, mining_time = 0.1, result = 'py-roboport-mk01'},
     max_health = 500,
     corpse = 'big-remnants',
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},

@@ -31,7 +31,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/megadar.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "megadar"},
+    minable = {hardness = 0.2, mining_time = 0.1, result = "megadar"},
     max_health = 1000,
     corpse = "big-remnants",
     resistances = {

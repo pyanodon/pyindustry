@@ -35,7 +35,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.5, result = "accumulator-mk02"},
+    minable = {hardness = 0.2, mining_time = 0.1, result = "accumulator-mk02"},
     max_health = 150,
     corpse = "medium-remnants",
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
