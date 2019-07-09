@@ -38,7 +38,8 @@ for _, fluid in pairs(data.raw.fluid) do
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 10}
         make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
-	elseif fluid.name ~= "steam" then
+    end
+	if fluid.name ~= "steam" then
 		if fluid.gas_temperature then
 			--Make venting
 			name = fluid.name .. '-pyvoid-gas'
