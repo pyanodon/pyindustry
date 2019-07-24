@@ -1,4 +1,4 @@
-local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
+local function make_fluid_recipe(name, locale, icons, category, ing, subgroup, item)
     RECIPE {
         name = name,
         type = "recipe",
@@ -11,7 +11,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
             ing
         },
         results = {
-            {type = "fluid", name = "water", amount = 0}
+            {type = "item", name = item, amount = 0}
         },
         icons = icons,
         icon_size = 32,
@@ -37,15 +37,14 @@ for _, fluid in pairs(data.raw.fluid) do
         name = fluid.name .. '-pyvoid-fluid'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 10}
-        make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
-    end
-	if fluid.name ~= "steam" then
+        make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid", "wastegas")
+    elseif fluid.name ~= "steam" then
 		if fluid.gas_temperature then
 			--Make venting
 			name = fluid.name .. '-pyvoid-gas'
 			local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
 			local ing = {type = "fluid", name = fluid.name, minimum_temperature = fluid.gas_temperature, amount = 10}
-			make_fluid_recipe(name, locale, icons, "py-venting", ing, "py-void-gas")
+			make_fluid_recipe(name, locale, icons, "py-venting", ing, "py-void-gas", "wastegas")
 		end
-	end
+    end
 end
