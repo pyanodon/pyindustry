@@ -75,16 +75,16 @@ local recipes_list =
   "py-check-valve",
   "py-overflow-valve",
   "py-underflow-valve",
-  "accumulator-mk01",
-  "accumulator-mk02",
-  "py-local-radar",
-  "py-roboport-mk01",
-  "py-recharge-station-mk01",
-  "py-construction-robot-01",
-  "py-logistic-robot-01",
-  "py-burner",
-  "py-sinkhole",
-  "py-gas-vent"
+  --"accumulator-mk01",
+  --"accumulator-mk02",
+  --"py-local-radar",
+  --"py-roboport-mk01",
+  --"py-recharge-station-mk01",
+  --"py-construction-robot-01",
+  --"py-logistic-robot-01",
+  --"py-burner",
+  --"py-sinkhole",
+  --"py-gas-vent"
 }
 
 --adding to module limitation list
