@@ -42,8 +42,8 @@ ENTITY {
         type = "electric",
         buffer_capacity = "50MJ",
         usage_priority = "tertiary",
-        input_flow_limit = "1400kW",
-        output_flow_limit = "1400kW"
+        input_flow_limit = "2000kW",
+        output_flow_limit = "2000kW"
     },
     picture = {
         filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-idle.png",
