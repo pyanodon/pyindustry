@@ -503,12 +503,12 @@ ITEM {
 }
 
 local recipes = {
-    "xyhiphoe-pool",
-    "hydrocyclone",
-    "compressor",
-    "genlab",
-    "kmauts-enclosure",
-    "nmf",
+    "xyhiphoe-pool-mk01",
+    "hydrocyclone-mk01",
+    "compressor-mk01",
+    "genlab-mk01",
+    "kmauts-enclosure-mk01",
+    "nmf-mk01",
     "py-heat-exchanger",
     "py-turbine",
     "science-coating"
