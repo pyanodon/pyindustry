@@ -84,5 +84,5 @@ ENTITY {
     circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
 }
 
-RECIPE("mixer"):replace_ingredient("storage-tank", "py-tank-8000")
+RECIPE("mixer-mk01"):replace_ingredient("storage-tank", "py-tank-8000")
 RECIPE("py-heat-exchanger"):replace_ingredient("storage-tank", "py-tank-8000")
