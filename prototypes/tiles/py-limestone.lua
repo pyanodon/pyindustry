@@ -38,6 +38,7 @@ ENTITY {
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.0,
+    decorative_removal_probability = 1,
     layer = 61,
     variants = {
         main = {
