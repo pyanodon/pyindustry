@@ -29,6 +29,8 @@ if mods['pycoalprocessing'] then
     require("prototypes/tiles/py-nexelit")
 end
 
+require("prototypes/updates/base-updates")
+
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
 local recipes_list =
