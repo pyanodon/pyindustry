@@ -116,7 +116,7 @@ ENTITY {
                 priority = "extra-high",
                 width = 32,
                 height = 48,
-                shift = {0.2, -0.0}
+                shift = {0.0, -0.0}
             }
         },
         t_up = {
