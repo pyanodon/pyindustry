@@ -118,9 +118,9 @@ local function define_warehouse(name, logistics_name)
                 scale = 0.5
             }
         },
-        circuit_wire_max_distance = 9,
-        circuit_connector_sprites = connectors.sprites({0, -2.4}),
-        circuit_wire_connection_point = connectors.points({-0.11, -2.82})
+        --circuit_wire_max_distance = 9,
+        --circuit_connector_sprites = connectors.sprites({0, -2.4}),
+        --circuit_wire_connection_point = connectors.points({-0.11, -2.82})
     }
 
     if logistics_name then
