@@ -2,7 +2,7 @@
  * Part of the Warehousing mod
 --]]
 
---local connectors = require("prototypes/buildings/containers/connectors")
+local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_ingredients(name)
     if name == "passive-provider" then
