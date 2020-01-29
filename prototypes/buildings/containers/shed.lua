@@ -1,9 +1,9 @@
 --[[ Original Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
 --]]
---[[
-local connectors = require("prototypes/buildings/containers/connectors")
-]]--
+
+--local connectors = require("prototypes/buildings/containers/connectors")
+
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
@@ -120,9 +120,9 @@ local function define_shed(name, logistics_name)
                 scale = 0.5
             }
         },
-        --circuit_wire_max_distance = 9,
+        circuit_wire_max_distance = 9,
         --circuit_connector_sprites = connectors.sprites({0.75, 0.55}),
-        --circuit_wire_connection_point = connectors.points({0.64, 0.13})
+        circuit_wire_connection_point = connectors.points({0.64, 0.13})
     }
 
     if logistics_name then
