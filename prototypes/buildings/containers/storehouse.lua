@@ -1,9 +1,9 @@
 --[[ Copyright (c) 2017 David-John Miller AKA Anoyomouse
  * Part of the Warehousing mod
 --]]
---[[
-local connectors = require("prototypes/buildings/containers/connectors")
-]]--
+
+--local connectors = require("prototypes/buildings/containers/connectors")
+
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
@@ -120,9 +120,9 @@ local function define_storehouse(name, logistics_name)
                 scale = 0.5
             }
         },
-        --circuit_wire_max_distance = 9,
+        circuit_wire_max_distance = 9,
         --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
-        --circuit_wire_connection_point = connectors.points({-0.11, -1.92})
+        circuit_wire_connection_point = connectors.points({-0.11, -1.92})
     }
 
     if logistics_name then
