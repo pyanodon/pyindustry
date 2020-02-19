@@ -233,6 +233,7 @@ ENTITY {
     working_sound =
       {
         filename = '__base__/sound/flying-robot-1.ogg',
+        apparent_volume = 0.2
       },
     cargo_centered = {0.0, 0.2}
 }
