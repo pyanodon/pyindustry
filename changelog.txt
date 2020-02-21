@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.3
+Date: 2020-02-21
+  Changes:
+    - Increased gas vent, burner and sinkholes speed.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.0
   Balances:
     - fixed wire connections to warehouses,sheds, and storehouse
