@@ -1,3 +1,5 @@
+local sounds = require("__base__/prototypes/entity/demo-sounds")
+
 local cargo_bot =
     RECIPE {
     type = 'recipe',
@@ -230,10 +232,6 @@ ENTITY {
             scale = 0.5
         }
     },
-    working_sound =
-      {
-        filename = '__base__/sound/flying-robot-1.ogg',
-        apparent_volume = 0.2
-      },
+    working_sound = sounds.flying_robot(0.5),
     cargo_centered = {0.0, 0.2}
 }

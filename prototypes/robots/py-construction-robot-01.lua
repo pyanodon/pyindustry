@@ -1,3 +1,5 @@
+local sounds = require("__base__/prototypes/entity/demo-sounds")
+
 RECIPE {
     type = 'recipe',
     name = 'py-construction-robot-01',
@@ -246,11 +248,7 @@ ENTITY {
             animation_speed = 0.3
         }
     },
-    working_sound =
-      {
-        filename = '__base__/sound/flying-robot-1.ogg',
-        apparent_volume = 0.2
-      },
+    working_sound = sounds.construction_robot(0.5),
     cargo_centered = {0.0, 0.2},
     construction_vector = {0.30, 0.22}
 }
