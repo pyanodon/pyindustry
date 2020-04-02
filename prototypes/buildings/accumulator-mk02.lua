@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "accumulator-mk02",
-    energy_required = 8,
+    energy_required = 0.5,
     category = 'crafting-with-fluid',
     enabled = false,
     ingredients = {
@@ -21,7 +21,7 @@ ITEM {
     type = "item",
     name = "accumulator-mk02",
     icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-industry",
     order = "a",
@@ -33,7 +33,7 @@ ENTITY {
     type = "accumulator",
     name = "accumulator-mk02",
     icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.1, result = "accumulator-mk02"},
     max_health = 150,

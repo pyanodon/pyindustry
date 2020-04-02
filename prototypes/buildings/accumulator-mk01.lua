@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "accumulator-mk01",
-    energy_required = 5,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"battery", 20},
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "accumulator-mk01",
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-industry",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "accumulator",
     name = "accumulator-mk01",
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.1, result = "accumulator-mk01"},
     max_health = 150,

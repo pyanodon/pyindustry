@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-sinkhole",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"offshore-pump", 5},
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-industry",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "furnace",
     name = "py-sinkhole",
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-sinkhole"},
     max_health = 400,

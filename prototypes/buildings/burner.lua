@@ -18,7 +18,7 @@ TECHNOLOGY {
 RECIPE {
     type = "recipe",
     name = "py-burner",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"stone-furnace", 5},
@@ -35,7 +35,7 @@ ITEM {
     type = "item",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-industry",
     order = "a",
@@ -47,7 +47,7 @@ ENTITY {
     type = "furnace",
     name = "py-burner",
     icon = "__pyindustry__/graphics/icons/burner.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-burner"},
     max_health = 200,

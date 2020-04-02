@@ -1,7 +1,7 @@
 RECIPE {
     type = 'recipe',
     name = 'py-roboport-mk01',
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {'steel-plate', 20},
@@ -19,7 +19,7 @@ ITEM {
     type = 'item',
     name = 'py-roboport-mk01',
     icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = 'py-robots',
     order = 'a',
@@ -31,7 +31,7 @@ ENTITY {
     type = 'roboport',
     name = 'py-roboport-mk01',
     icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
-    icon_size = 32,
+    icon_size = 64,
     flags = {'placeable-player', 'player-creation'},
     minable = {hardness = 0.2, mining_time = 0.1, result = 'py-roboport-mk01'},
     max_health = 500,

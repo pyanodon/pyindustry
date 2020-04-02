@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-gas-vent",
-    energy_required = 5,
+    energy_required = 0.5,
     enabled = true,
     ingredients = {
         {"iron-plate", 20},
@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-industry",
     order = "a",
@@ -29,7 +29,7 @@ ENTITY {
     type = "furnace",
     name = "py-gas-vent",
     icon = "__pyindustry__/graphics/icons/py-gas-vent.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-gas-vent"},
     source_inventory_size = 0,
