@@ -79,7 +79,7 @@ ENTITY {
     crafting_categories = {"py-incineration"},
     result_inventory_size = 1,
     energy_usage = "180kW",
-    crafting_speed = 3,
+    crafting_speed = 5,
     source_inventory_size = 1,
     energy_source = {
         type = "burner",
