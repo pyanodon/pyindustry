@@ -87,7 +87,7 @@ local function define_storehouse(name, logistics_name)
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
-        logistic_slots_count = 12,
+        logistic_slots_count = 30,
         corpse = "big-remnants",
         dying_explosion = "medium-explosion",
         open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
