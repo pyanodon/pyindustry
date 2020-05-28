@@ -133,7 +133,7 @@ local function define_warehouse(name, logistics_name)
             entity.inventory_size = 2000
             entity.logistic_slots_count = 1
         elseif (logistics_name == "buffer" or logistics_name == "requester") then
-            entity.logistic_slots_count = 12
+            entity.logistic_slots_count = 30
         end
     else
         recipe:add_unlock("py-warehouse-research")
