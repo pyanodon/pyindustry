@@ -73,9 +73,7 @@ ENTITY {
     ingredient_count = 4,
     crafting_speed = 4,
     energy_source = {
-        type = "electric",
-        usage_priority = "secondary-input",
-        emissions_per_minute = 0,
+        type = 'void'
     },
     animation = _G.make_4way_animation_from_spritesheet {
         layers = {
