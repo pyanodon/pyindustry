@@ -70,10 +70,7 @@ ENTITY {
     energy_usage = "25kW",
     ingredient_count = 2,
     crafting_speed = 4,
-    energy_source = {
-        type = 'void'
-        }
-    },
+    energy_source = {type = 'void'},
     animation = _G.make_4way_animation_from_spritesheet {
         layers = {
             {
