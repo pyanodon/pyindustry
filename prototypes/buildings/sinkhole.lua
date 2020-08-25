@@ -44,9 +44,9 @@ ENTITY {
     source_inventory_size = 0,
     result_inventory_size = 0,
     module_specification = {
-        module_slots = 6
+        module_slots = 0
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {},
     working_sound = {
         sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.8},
         idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.4},
@@ -71,7 +71,7 @@ ENTITY {
     crafting_categories = {"py-runoff"},
     energy_usage = "1kW",
     ingredient_count = 4,
-    crafting_speed = 4,
+    crafting_speed = 2,
     energy_source = {
         type = 'void'
     },
@@ -120,7 +120,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = ENTITY.Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
             pipe_covers = ENTITY.Pipes.covers(true, true, true, true),
-            base_area = 10,
+            base_area = 1000,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.0, 0.0}}}
         },

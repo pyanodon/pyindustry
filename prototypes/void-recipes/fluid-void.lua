@@ -7,6 +7,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         enabled = true,
         flags = {"hidden"},
         category = category,
+        energy_required = 1,
         ingredients = {
             ing
         },
@@ -36,7 +37,7 @@ for _, fluid in pairs(data.raw.fluid) do
         --Make sinkhole
         name = fluid.name .. '-pyvoid-fluid'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
-        local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 10}
+        local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 20000}
         make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
     end
 	if fluid.name ~= "steam" then
