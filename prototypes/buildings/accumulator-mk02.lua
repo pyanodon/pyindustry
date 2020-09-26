@@ -80,7 +80,7 @@ ENTITY {
     working_sound = {
         sound = {
             filename = "__pyindustry__/sounds/accumulator-mk02.ogg",
-            volume = 1.0
+            volume = 0.7
         },
         idle_sound = {
             filename = "__base__/sound/accumulator-idle.ogg",
