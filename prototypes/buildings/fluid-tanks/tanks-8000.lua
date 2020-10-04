@@ -32,7 +32,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/py-tank-8000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 3, result = "py-tank-8000"},
+    minable = {mining_time = 3, result = "py-tank-8000"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-2.9, -2.9}, {2.9, 2.9}},

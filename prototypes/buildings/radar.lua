@@ -32,7 +32,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/radar.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {hardness = 0.2, mining_time = 0.1, result = "py-local-radar"},
+    minable = {mining_time = 0.1, result = "py-local-radar"},
     max_health = 250,
     corpse = "big-remnants",
     resistances = {

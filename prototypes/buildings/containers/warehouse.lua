@@ -126,7 +126,6 @@ local function define_warehouse(name, logistics_name)
 
     if logistics_name then
         entity.max_health = 450
-        entity.minable.hardness = 0.2
         entity.logistic_mode = logistics_name
         recipe:add_unlock("py-warehouse-logistics-research")
         if (logistics_name == "storage") then

@@ -523,7 +523,10 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/niobium-pipe.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.3, mining_time = 0.1, result = "niobium-pipe"},
+    minable = {
+        mining_time = 0.1,
+        result = "niobium-pipe"
+    },
     max_health = 100,
     corpse = "small-remnants",
     resistances = {
@@ -565,7 +568,7 @@ ENTITY {
     icon = "__pyindustry__/graphics/icons/niobium-pipe-to-ground.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {hardness = 0.3, mining_time = 0.1, result = "niobium-pipe-to-ground"},
+    minable = {mining_time = 0.1, result = "niobium-pipe-to-ground"},
     max_health = 100,
     corpse = "small-remnants",
     resistances = {

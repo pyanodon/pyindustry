@@ -29,7 +29,7 @@ ENTITY {
     type = "tile",
     name = "py-iron-tile",
     needs_correction = false,
-    minable = {hardness = 0.2, mining_time = 0.1, result = "py-iron-tile"},
+    minable = {mining_time = 0.1, result = "py-iron-tile"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 1.4,
