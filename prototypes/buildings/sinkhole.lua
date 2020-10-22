@@ -70,7 +70,6 @@ ENTITY {
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     crafting_categories = {"py-runoff"},
     energy_usage = "1kW",
-    ingredient_count = 4,
     crafting_speed = 2,
     energy_source = {
         type = 'void'

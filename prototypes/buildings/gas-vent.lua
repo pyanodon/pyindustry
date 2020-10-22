@@ -42,9 +42,9 @@ ENTITY {
     close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
     vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
     module_specification = {
-        module_slots = 6
+        module_slots = 0
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+    allowed_effects = {},
     working_sound = {
         sound = {filename = "__base__/sound/idle1.ogg", volume = 0.7},
         idle_sound = {filename = "__base__/sound/idle1.ogg", volume = 0.4},
@@ -68,8 +68,7 @@ ENTITY {
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     crafting_categories = {"py-venting"},
     energy_usage = "25kW",
-    ingredient_count = 2,
-    crafting_speed = 4,
+    crafting_speed = 2,
     energy_source = {type = 'void'},
     animation = _G.make_4way_animation_from_spritesheet {
         layers = {
@@ -116,7 +115,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = ENTITY.Pipes.pictures("assembling-machine-3", nil, nil, nil, nil),
             pipe_covers = ENTITY.Pipes.covers(true, true, true, true),
-            base_area = 10,
+            base_area = 1000,
             base_level = -1,
             pipe_connections = {{type = "input", position = {1.0, 0.0}}}
         },
