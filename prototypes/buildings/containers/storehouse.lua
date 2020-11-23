@@ -70,7 +70,7 @@ local function define_storehouse(name, logistics_name)
         type = "item",
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
-        icon_size = 32,
+        icon_size = 64,
         flags = {},
         subgroup = "py-containers-storehouse",
         order = entity_type .. "[" .. full_name .. "]",
@@ -83,7 +83,7 @@ local function define_storehouse(name, logistics_name)
         type = entity_type,
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
-        icon_size = 32,
+        icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
@@ -100,25 +100,17 @@ local function define_storehouse(name, logistics_name)
                 percent = 90
             }
         },
-        collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-        selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+        collision_box = {{-1.8, -1.8}, {1.8, 1.8}},
+        selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
         fast_replaceable_group = "storehouse",
         inventory_size = 150,
         scale_info_icons = true,
         picture = {
             filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
             priority = "high",
-            width = 102,
-            height = 103,
-            shift = {0, 0},
-            hr_version = {
-                filename = "__pyindustry__/graphics/entity/storehouse/hr-storehouse-" .. name .. ".png",
-                priority = "extra-high",
-                width = 204,
-                height = 206,
-                shift = {0, 0},
-                scale = 0.5
-            }
+            width = 132,
+            height = 172,
+            shift = util.by_pixel(2, -12),
         },
         circuit_wire_max_distance = 9,
         --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),

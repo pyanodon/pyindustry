@@ -7,21 +7,21 @@ local connectors = require("prototypes/buildings/containers/connectors")
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
-            {"py-warehouse-basic", 1},
+            {"py-deposit-basic", 1},
             {"logistic-chest-passive-provider", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
     elseif name == "active-provider" then
         return {
-            {"py-warehouse-basic", 1},
+            {"py-deposit-basic", 1},
             {"logistic-chest-active-provider", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     elseif name == "storage" then
         return {
-            {"py-warehouse-basic", 1},
+            {"py-deposit-basic", 1},
             {"logistic-chest-storage", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5},
@@ -29,14 +29,14 @@ local function get_ingredients(name)
         }
     elseif name == "requester" then
         return {
-            {"py-warehouse-basic", 1},
+            {"py-deposit-basic", 1},
             {"logistic-chest-requester", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
     elseif name == "buffer" then
         return {
-            {"py-warehouse-basic", 1},
+            {"py-deposit-basic", 1},
             {"logistic-chest-buffer", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
@@ -51,9 +51,9 @@ local function get_ingredients(name)
     end
 end
 
-local function define_warehouse(name, logistics_name)
+local function define_deposit(name, logistics_name)
     local entity_type = logistics_name and "logistic-container" or "container"
-    local full_name = "py-warehouse-" .. name
+    local full_name = "py-deposit-" .. name
 
     local recipe =
         RECIPE {
@@ -69,10 +69,10 @@ local function define_warehouse(name, logistics_name)
     ITEM {
         type = "item",
         name = full_name,
-        icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
+        icon = "__pyindustry__/graphics/icons/containers/deposit-" .. name .. ".png",
         icon_size = 64,
         flags = {},
-        subgroup = "py-containers-warehouse",
+        subgroup = "py-containers-deposit",
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,
         stack_size = 15
@@ -82,7 +82,7 @@ local function define_warehouse(name, logistics_name)
         ENTITY {
         type = entity_type,
         name = full_name,
-        icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
+        icon = "__pyindustry__/graphics/icons/containers/deposit-" .. name .. ".png",
         icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
@@ -98,18 +98,18 @@ local function define_warehouse(name, logistics_name)
                 percent = 90
             }
         },
-        collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
-        selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+        collision_box = {{-4.2, -4.2}, {4.2, 4.2}},
+        selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
         drawing_box = {{-3.0, -3.0}, {3.0, 3.0}},
-        fast_replaceable_group = "warehouse",
-        inventory_size = 450,
+        fast_replaceable_group = "deposit",
+        inventory_size = 800,
         scale_info_icons = true,
         picture = {
-            filename = "__pyindustry__/graphics/entity/warehouse/warehouse-" .. name .. ".png",
+            filename = "__pyindustry__/graphics/entity/deposit/deposit-" .. name .. ".png",
             priority = "high",
-            width = 224,
-            height = 224,
-            shift = util.by_pixel(10, -16),
+            width = 320,
+            height = 352,
+            shift = util.by_pixel(16, -32),
         },
         circuit_wire_max_distance = 9,
        -- circuit_connector_sprites = connectors.sprites({0, -2.4}),
@@ -121,7 +121,7 @@ local function define_warehouse(name, logistics_name)
         entity.logistic_mode = logistics_name
         recipe:add_unlock("py-warehouse-logistics-research")
         if (logistics_name == "storage") then
-            entity.inventory_size = 1000
+            entity.inventory_size = 2000
             entity.logistic_slots_count = 1
         elseif (logistics_name == "buffer" or logistics_name == "requester") then
             entity.logistic_slots_count = 30
@@ -131,9 +131,9 @@ local function define_warehouse(name, logistics_name)
     end
 end
 
-define_warehouse("basic", nil)
-define_warehouse("passive-provider", "passive-provider")
-define_warehouse("storage", "storage")
-define_warehouse("active-provider", "active-provider")
-define_warehouse("requester", "requester")
-define_warehouse("buffer", "buffer")
+define_deposit("basic", nil)
+define_deposit("passive-provider", "passive-provider")
+define_deposit("storage", "storage")
+define_deposit("active-provider", "active-provider")
+define_deposit("requester", "requester")
+define_deposit("buffer", "buffer")

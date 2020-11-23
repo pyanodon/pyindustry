@@ -51,6 +51,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-containers-deposit",
+        group = "py-industry",
+        order = "ed"
+    },
+    {
+        type = "item-subgroup",
         name = "py-robots",
         group = "py-industry",
         order = "f"

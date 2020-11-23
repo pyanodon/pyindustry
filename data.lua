@@ -20,6 +20,7 @@ require("prototypes/wall/concrete-wall")
 require("prototypes/buildings/containers/shed")
 require("prototypes/buildings/containers/storehouse")
 require("prototypes/buildings/containers/warehouse")
+require("prototypes/buildings/containers/deposit")
 
 --Storage Tanks
 require("prototypes/buildings/fluid-tanks/tanks-1000")

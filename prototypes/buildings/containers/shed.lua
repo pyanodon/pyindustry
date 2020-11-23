@@ -70,7 +70,7 @@ local function define_shed(name, logistics_name)
         type = "item",
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
-        icon_size = 32,
+        icon_size = 64,
         flags = {},
         subgroup = "py-containers-shed",
         order = entity_type .. "[" .. full_name .. "]",
@@ -83,7 +83,7 @@ local function define_shed(name, logistics_name)
         type = entity_type,
         name = full_name,
         icon = "__pyindustry__/graphics/icons/containers/shed-" .. name .. ".png",
-        icon_size = 32,
+        icon_size = 64,
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
@@ -108,17 +108,9 @@ local function define_shed(name, logistics_name)
         picture = {
             filename = "__pyindustry__/graphics/entity/shed/shed-" .. name .. ".png",
             priority = "high",
-            width = 68,
-            height = 75,
-            shift = {0, 0},
-            hr_version = {
-                filename = "__pyindustry__/graphics/entity/shed/hr-shed-" .. name .. ".png",
-                priority = "extra-high",
-                width = 136,
-                height = 150,
-                shift = {0, 0},
-                scale = 0.5
-            }
+            width = 96,
+            height = 96,
+            shift = util.by_pixel(16, -16),
         },
         circuit_wire_max_distance = 9,
         --circuit_connector_sprites = connectors.sprites({0.75, 0.55}),
