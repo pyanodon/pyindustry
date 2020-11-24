@@ -87,7 +87,7 @@ local function define_shed(name, logistics_name)
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
-        logistic_slots_count = 12,
+        max_logistic_slots = 12,
         corpse = "big-remnants",
         dying_explosion = "medium-explosion",
         open_sound = {filename = "__pyindustry__/sounds/shed-open.ogg", volume = 0.55},
@@ -122,7 +122,7 @@ local function define_shed(name, logistics_name)
         recipe:add_unlock("py-warehouse-logistics-research")
         if (logistics_name == "storage") then
             entity.inventory_size = 150
-            entity.logistic_slots_count = 1
+            entity.max_logistic_slots = 1
         end
     else
         recipe:add_unlock("py-warehouse-research")

@@ -122,9 +122,9 @@ local function define_deposit(name, logistics_name)
         recipe:add_unlock("py-warehouse-logistics-research")
         if (logistics_name == "storage") then
             entity.inventory_size = 2000
-            entity.logistic_slots_count = 1
+            entity.max_logistic_slots = 1
         elseif (logistics_name == "buffer" or logistics_name == "requester") then
-            entity.logistic_slots_count = 30
+            entity.max_logistic_slots = 30
         end
     else
         recipe:add_unlock("py-warehouse-research")

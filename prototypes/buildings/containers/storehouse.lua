@@ -87,7 +87,7 @@ local function define_storehouse(name, logistics_name)
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
-        logistic_slots_count = 30,
+        max_logistic_slots = 30,
         corpse = "big-remnants",
         dying_explosion = "medium-explosion",
         open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
@@ -122,7 +122,7 @@ local function define_storehouse(name, logistics_name)
         entity.logistic_mode = logistics_name
         if (logistics_name == "storage") then
             entity.inventory_size = 300
-            entity.logistic_slots_count = 1
+            entity.max_logistic_slots = 1
         end
     else
         recipe:add_unlock("py-warehouse-research")
