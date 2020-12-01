@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {'py-recharge-station-mk01', 1}
     }
-}:add_unlock('engine')
+}:add_unlock('construction-robotics')
 
 ITEM {
     type = 'item',

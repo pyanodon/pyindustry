@@ -20,7 +20,7 @@ local cargo_bot =
     }
 }
 cargo_bot:replace_ingredient('copper-plate', 'chromium')
-cargo_bot:add_unlock({'basic-electronics', 'advanced-electronics'})
+cargo_bot:add_unlock({'logistic-robotics'})
 
 ITEM {
     type = 'item',

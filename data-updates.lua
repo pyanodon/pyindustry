@@ -1,13 +1,5 @@
 local FUN = require("prototypes/functions/functions")
 
-TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('utility-science-pack'):remove_prereq('logistic-robotics'):add_prereq('engine')
-TECHNOLOGY('construction-robotics'):remove_prereq('advanced-electronics'):remove_prereq('robotics'):add_prereq('engine'):remove_pack('chemical-science-pack')
-RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics'):remove_unlock('logistic-robotics'):add_unlock('engine')
-RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit')
-RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
-RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
-RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
-
 --pyph tank adjust
 if settings.startup["py-tank-adjust"].value then
 	if mods["pypetroleumhandling"] then
