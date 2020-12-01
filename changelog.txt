@@ -2,6 +2,8 @@
 Version: 1.5.2
 Date: ????
   Changes:
+      - Removed vanilla bots.
+      - Tweak techs to adapt it.
 ---------------------------------------------------------------------------------------------------
 Version: 1.5.1
 Date: 2020-11-24
