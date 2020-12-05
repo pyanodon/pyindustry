@@ -1,5 +1,5 @@
 RECIPE {
-    type = "recipe",
+    type = "recipe",      --test is this fork& merge ok?
     name = "concrete-wall",
     category = "crafting",
     enabled = false,
