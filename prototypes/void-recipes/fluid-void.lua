@@ -20,7 +20,14 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
     }
 end
 
+--[[
+local fluids = 0
+local fluid_count = 0
+local gas_count = 0
+]]--
+
 for _, fluid in pairs(data.raw.fluid) do
+    --fluids = fluids + 1
     local name
     local icons
 
@@ -34,6 +41,7 @@ for _, fluid in pairs(data.raw.fluid) do
     icons[#icons + 1] = {icon = "__pyindustry__/graphics/icons/no.png", icon_size = 32}
 
     if (fluid.default_temperature or 15) < (fluid.gas_temperature or 999999999999) then
+        --fluid_count = fluid_count + 1
         --Make sinkhole
         name = fluid.name .. '-pyvoid-fluid'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
@@ -41,7 +49,8 @@ for _, fluid in pairs(data.raw.fluid) do
         make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
     end
 	if fluid.name ~= "steam" then
-		if fluid.gas_temperature then
+        if fluid.gas_temperature and (fluid.default_temperature or 15) >= fluid.gas_temperature then
+            --gas_count = gas_count + 1
 			--Make venting
 			name = fluid.name .. '-pyvoid-gas'
 			local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
@@ -50,3 +59,9 @@ for _, fluid in pairs(data.raw.fluid) do
 		end
 	end
 end
+
+--[[
+log(fluids)
+log(fluid_count)
+log(gas_count)
+]]--

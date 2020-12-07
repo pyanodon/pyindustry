@@ -46,9 +46,12 @@ local groups = {
     "tool",
 }
 
+--local item_count = 0
+
 for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
         if not item.fuel_value then
+            --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 
             local new_icons
@@ -62,3 +65,5 @@ for _, type in pairs(groups) do
         end
     end
 end
+
+--log(item_count)
