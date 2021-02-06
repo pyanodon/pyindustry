@@ -42,7 +42,7 @@ ENTITY {
     energy_source =
     {
       type = "electric",
-      usage_priority = "secondary-input",
+      usage_priority = "primary-input",
       input_flow_limit = "25000kW",
       buffer_capacity = "300MJ"
     },
