@@ -653,3 +653,6 @@ ENTITY {
         }
     }
 }
+
+data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
+data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
