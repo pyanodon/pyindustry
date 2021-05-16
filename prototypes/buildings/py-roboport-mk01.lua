@@ -195,13 +195,13 @@ ENTITY {
     open_door_trigger_effect = {
         {
             type = 'play-sound',
-            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.7}
+            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.4}
         }
     },
     close_door_trigger_effect = {
         {
             type = 'play-sound',
-            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.7}
+            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.4}
         }
     },
     circuit_wire_connection_point = _G.circuit_connector_definitions['roboport'].points,
