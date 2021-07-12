@@ -49,7 +49,7 @@ ENTITY {
     allowed_effects = {},
     working_sound = {
         sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.8},
-        idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.4},
+        idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.3},
         apparent_volume = 2.0
     },
     resistances = {

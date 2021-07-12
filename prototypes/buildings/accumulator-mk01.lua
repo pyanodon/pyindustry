@@ -82,7 +82,7 @@ ENTITY {
         },
         idle_sound = {
             filename = "__base__/sound/accumulator-idle.ogg",
-            volume = 0.4
+            volume = 0.3
         },
         max_sounds_per_type = 5
     },
