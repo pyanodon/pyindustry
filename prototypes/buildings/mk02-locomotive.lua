@@ -11,6 +11,7 @@ RECIPE {
         {"advanced-circuit", 20},
         {"nexelit-plate", 20},
         {"niobium-plate", 20},
+        {"engine-unit", 5},
         {"iron-gear-wheel", 200},
     },
     results = {
@@ -41,21 +42,21 @@ ITEM {
     max_health = 1000,
     corpse = "locomotive-remnants",
     dying_explosion = "locomotive-explosion",
-    collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
+    collision_box = {{-0.6, -2.5}, {0.6, 2.5}},
     selection_box = {{-1, -3.5}, {1, 3.5}},
     --damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1, -4}, {1, 3}},
     alert_icon_shift = util.by_pixel(0, -24),
     weight = 1600,
     max_speed = 1.30,
-    max_power = "600kW",
+    max_power = "900kW",
     reversing_power_modifier = 0.6,
     braking_force = 12,
     friction_force = 0.40,
     vertical_selection_shift = -1.1,
     air_resistance = 0.0085, -- this is a percentage of current speed that will be subtracted
-    connection_distance = 3,
-    joint_distance = 4,
+    connection_distance = 4,
+    joint_distance = 3.5,
     energy_per_hit_point = 5,
     resistances =
     {
@@ -190,6 +191,7 @@ ITEM {
           height = 240,
           direction_count = 256,
           draw_as_glow = true,
+          blend_mode = "additive",
           allow_low_quality_rotation = true,
           filenames =
           {
@@ -223,6 +225,7 @@ ITEM {
             height = 480,
             direction_count = 256,
             draw_as_glow = true,
+            blend_mode = "additive",
             allow_low_quality_rotation = true,
             filenames =
             {
@@ -308,40 +311,32 @@ ITEM {
         type = "play-sound",
         sound =
         {
-          filename = "__pyhightechgraphics__/sounds/ht-locomotive-break.ogg",
-          volume = 0.4
-        },
-      },
-      {
-        type = "play-sound",
-        sound =
-        {
-          filename = "__pyhightechgraphics__/sounds/bonk.ogg",
+          filename = "__pyindustry__/sounds/mk02-locomotive-off.ogg",
           volume = 0.5
         },
       },
     },
     drive_over_tie_trigger = drive_over_tie(),
-    tie_distance = 50,
+    tie_distance = 30,
     vehicle_impact_sound = sounds.generic_impact,
     working_sound =
     {
       sound =
       {
-        filename = "__pyhightechgraphics__/sounds/ht-locomotive-engine.ogg",
-        volume = 0.63
+        filename = "__pyindustry__/sounds/mk02-locomotive.ogg",
+        volume = 1.2
       },
       deactivate_sound =
       {
-        filename = "__pyhightechgraphics__/sounds/ht-locomotive-end-engine.ogg",
-        volume = 0.40
+        filename = "__pyindustry__/sounds/mk02-locomotive-stop.ogg",
+        volume = 0.3
       },
       match_speed_to_activity = true,
       max_sounds_per_type = 2,
       -- use_doppler_shift = false
     },
-    open_sound = { filename = "__pyhightechgraphics__/sounds/ht-locomotive-open.ogg", volume=0.5 },
-    close_sound = { filename = "__pyhightechgraphics__/sounds/ht-locomotive-close.ogg", volume = 0.4 },
+    --open_sound = { filename = "__pyindustry__/sounds/mk02-locomotive-open.ogg", volume=0.5 },
+    close_sound = { filename = "__pyindustry__/sounds/mk02-locomotive-close.ogg", volume = 0.4 },
     sound_minimum_speed = 0.5,
     sound_scaling_ratio = 0.35,
     water_reflection = _ENV.locomotive_reflection(),
