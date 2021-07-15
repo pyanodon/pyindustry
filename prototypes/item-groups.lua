@@ -69,6 +69,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-trains",
+        group = "py-industry",
+        order = "u"
+    },
+    {
+        type = "item-subgroup",
         name = "py-void",
         group = "py-industry",
         order = "za"

@@ -56,6 +56,8 @@ require('prototypes/buildings/py-recharge-station-mk01')
 require('prototypes/robots/py-construction-robot-01')
 require('prototypes/robots/py-logistic-robot-01')
 
+require("prototypes/buildings/mk02-locomotive")
+
 --Voiding
 require("prototypes/buildings/burner")
 require("prototypes/buildings/sinkhole")
