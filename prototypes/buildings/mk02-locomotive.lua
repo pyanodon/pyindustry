@@ -116,7 +116,7 @@ ITEM {
     },
     --back_light = rolling_stock_back_light(),
     stand_by_light = rolling_stock_stand_by_light(),
-    color = {r = 0.333, g = 0.768, b = 0.913},
+    color = {r = 1, g = 0.0, b = 0.0},
     pictures =
     {
       layers =

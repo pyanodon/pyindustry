@@ -58,6 +58,7 @@ require('prototypes/robots/py-logistic-robot-01')
 
 require("prototypes/buildings/mk02-locomotive")
 require("prototypes/buildings/mk02-cargo-wagon")
+require("prototypes/buildings/mk02-fluid-wagon")
 
 --Voiding
 require("prototypes/buildings/burner")
