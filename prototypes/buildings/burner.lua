@@ -9,11 +9,12 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"automation-science-pack", 2}
+            {"automation-science-pack", 2},
+            {"logistic-science-pack", 2}
         },
         time = 45
     }
-}:add_prereq('coal-processing-1')
+}:add_prereq('advanced-material-processing')
 
 RECIPE {
     type = "recipe",
