@@ -10,7 +10,7 @@ RECIPE("roboport"):remove_unlock('logistic-robotics')
 end
 
 --move base techs around to support pynobots
-TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('utility-science-pack')
+TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('utility-science-pack'):remove_pack('military-science-pack')
 TECHNOLOGY('construction-robotics'):remove_prereq('robotics'):add_prereq('engine'):remove_pack('chemical-science-pack'):remove_pack('logistic-science-pack')
 TECHNOLOGY('logistic-robotics'):remove_prereq('robotics'):add_prereq('construction-robotics'):remove_pack('chemical-science-pack')
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
