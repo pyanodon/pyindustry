@@ -18,3 +18,13 @@ RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit'):
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
+
+--Move vanilla train to railway tech 1
+RECIPE("locomotive"):remove_unlock('railway'):add_unlock('railway-mk01')
+RECIPE("cargo-wagon"):remove_unlock('railway'):add_unlock('railway-mk01')
+RECIPE("rail"):remove_unlock('railway'):add_unlock('railway-mk01')
+
+TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("braking-force-1"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
