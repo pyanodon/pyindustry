@@ -28,3 +28,7 @@ TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01')
 TECHNOLOGY("braking-force-1"):remove_prereq('railway'):add_prereq('railway-mk01')
 TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01')
 TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
+
+if not mods['pycoalprocessing'] then
+    TECHNOLOGY("production-science-pack"):add_prereq("railway-mk01")
+end
