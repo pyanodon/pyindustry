@@ -20,7 +20,7 @@ RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
 
 --Move vanilla train to railway tech 1
-RECIPE("locomotive"):remove_unlock('railway'):add_unlock('railway-mk01')
+RECIPE("locomotive"):remove_unlock('railway'):add_unlock('railway-mk01'):remove_ingredient('engine-unit'):add_ingredient({type = "item", name = "pipe", amount = 20}):add_ingredient({type = "item", name = "iron-gear-wheel", amount = 20})
 RECIPE("cargo-wagon"):remove_unlock('railway'):add_unlock('railway-mk01')
 RECIPE("rail"):remove_unlock('railway'):add_unlock('railway-mk01')
 

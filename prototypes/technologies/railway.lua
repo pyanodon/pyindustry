@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyindustry__/graphics/technology/railway-mk01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"steel-processing","engine"},
+    prerequisites = {"steel-processing"},
     effects = {},
     unit = {
         count = 150,
