@@ -22,6 +22,7 @@ if mods['pycoalprocessing'] then
 end
 
 require("prototypes/updates/base-updates")
+require("prototypes/updates/pyrawores-updates")
 
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
