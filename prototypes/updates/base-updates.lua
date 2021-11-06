@@ -32,3 +32,6 @@ TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
 if not mods['pycoalprocessing'] then
     TECHNOLOGY("production-science-pack"):add_prereq("railway-mk01")
 end
+
+data.raw.pump['pump'].fluid_wagon_connector_alignment_tolerance = 1.0
+
