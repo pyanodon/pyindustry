@@ -11,8 +11,8 @@ RECIPE {
     results = {
         {"py-local-radar", 1}
     },
-    enabled = true
-}
+    enabled = false
+}:add_unlock('engine')
 
 ITEM {
     type = "item",

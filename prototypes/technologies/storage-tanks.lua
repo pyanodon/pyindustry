@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyindustry__/graphics/technology/storage-tanks.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"steel-processing"},
+    prerequisites = {"fluid-handling"},
     effects = {},
     unit = {
         count = 35,
