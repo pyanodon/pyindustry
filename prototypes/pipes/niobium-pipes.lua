@@ -459,7 +459,7 @@ RECIPE {
     results = {
         {"niobium-pipe", 2}
     }
-}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock({"niobium", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
@@ -486,7 +486,7 @@ RECIPE {
     results = {
         {"niobium-pipe-to-ground", 2}
     }
-}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock({"niobium", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
