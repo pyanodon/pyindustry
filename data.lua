@@ -8,6 +8,7 @@ require("prototypes/technologies/storage-tanks")
 require("prototypes/technologies/asphalt")
 require("prototypes/technologies/warehouses")
 require("prototypes/technologies/railway")
+require("prototypes/technologies/accumulators")
 
 --Pipes
 require("prototypes/pipes/niobium-pipes")

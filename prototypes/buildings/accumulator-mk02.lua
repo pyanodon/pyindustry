@@ -6,15 +6,15 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"battery", 50},
-        {"advanced-circuit", 15},
+        {"processing-unit", 15},
         {"iron-plate", 100},
         {"copper-cable", 150},
-        {"steel-plate", 60}
+        {"steel-plate", 60},
     },
     results = {
         {"accumulator-mk02", 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"optical-fiber", 30}):add_unlock( "electric-energy-accumulators-1")
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"optical-fiber", 30}):add_unlock("py-accumulator-mk02")
 
 ITEM {
     type = "item",
