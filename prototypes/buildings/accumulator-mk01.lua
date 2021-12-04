@@ -7,13 +7,14 @@ RECIPE {
         {"battery", 20},
         {"iron-plate", 40},
         {"copper-plate", 40},
-        {"steel-plate", 50} -- {"nexelit-plate", 50},
-        -- {"niobium-plate", 10},
+        {"steel-plate", 50},
+        {"advanced-circuit", 5}
     },
     results = {
         {"accumulator-mk01", 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"coal-processing-2", "electric-energy-accumulators-1"})
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"py-accumulator-mk01"})
+
 
 ITEM {
     type = "item",

@@ -1,5 +1,3 @@
-data.raw["pipe-to-ground"]["pipe-to-ground"].fast_replaceable_group = "pipe-to-ground"
-
 local function py_pipepictures()
     return {
         straight_vertical_single = {
@@ -461,7 +459,7 @@ RECIPE {
     results = {
         {"niobium-pipe", 2}
     }
-}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock({"niobium", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
@@ -488,7 +486,7 @@ RECIPE {
     results = {
         {"niobium-pipe-to-ground", 2}
     }
-}:add_unlock({"coal-processing-2", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock({"niobium", "py-storage-tanks"}):replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
@@ -577,7 +575,7 @@ ENTITY {
             percent = 80
         }
     },
-    fast_replaceable_group = "pipe-to-ground",
+    fast_replaceable_group = "pipe",
     collision_box = {{-0.29, -0.29}, {0.29, 0.2}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box = {
