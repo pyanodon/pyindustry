@@ -27,9 +27,9 @@ RECIPE("locomotive"):remove_unlock('railway'):add_unlock('railway-mk01'):remove_
 RECIPE("cargo-wagon"):remove_unlock('railway'):add_unlock('railway-mk01')
 RECIPE("rail"):remove_unlock('railway'):add_unlock('railway-mk01')
 
-TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01'):add_prereq("logistic-science-pack")
 TECHNOLOGY("braking-force-1"):remove_prereq('railway'):add_prereq('railway-mk01')
-TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01'):add_prereq("logistic-science-pack")
 TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
 
 RECIPE("accumulator"):add_ingredient({type = "item", name = "electronic-circuit", amount = 2})
