@@ -6,7 +6,6 @@ RECIPE {
     ingredients = {
         {'steel-plate', 20},
         {'iron-plate', 15},
-        {'engine-unit', 1},
         {'iron-gear-wheel', 20},
         {'electronic-circuit', 5}
     },
