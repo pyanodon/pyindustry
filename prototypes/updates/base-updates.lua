@@ -14,8 +14,9 @@ end
 
 --move base techs around to support pynobots
 TECHNOLOGY('logistic-system'):remove_pack('utility-science-pack'):remove_pack('production-science-pack'):remove_pack('chemical-science-pack'):remove_prereq('utility-science-pack'):remove_pack('military-science-pack')
-TECHNOLOGY('construction-robotics'):remove_prereq('robotics'):add_prereq('engine'):remove_pack('chemical-science-pack'):remove_pack('logistic-science-pack')
-TECHNOLOGY('logistic-robotics'):remove_prereq('robotics'):add_prereq('construction-robotics'):remove_pack('chemical-science-pack')
+TECHNOLOGY('construction-robotics'):remove_prereq('robotics'):add_prereq('steel-processing'):add_prereq('automation'):remove_pack('chemical-science-pack'):remove_pack('logistic-science-pack')
+TECHNOLOGY('logistic-robotics'):remove_prereq('robotics'):add_prereq('construction-robotics'):remove_pack('chemical-science-pack'):add_prereq('lubricant')
+TECHNOLOGY('personal-roboport-equipment'):add_prereq('chemical-science-pack'):add_prereq('battery')
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
 RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics')
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
@@ -27,9 +28,9 @@ RECIPE("locomotive"):remove_unlock('railway'):add_unlock('railway-mk01'):remove_
 RECIPE("cargo-wagon"):remove_unlock('railway'):add_unlock('railway-mk01')
 RECIPE("rail"):remove_unlock('railway'):add_unlock('railway-mk01')
 
-TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("fluid-wagon"):remove_prereq('railway'):add_prereq('railway-mk01'):add_prereq("logistic-science-pack")
 TECHNOLOGY("braking-force-1"):remove_prereq('railway'):add_prereq('railway-mk01')
-TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01')
+TECHNOLOGY("automated-rail-transportation"):remove_prereq('railway'):add_prereq('railway-mk01'):add_prereq("logistic-science-pack")
 TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
 
 RECIPE("accumulator"):add_ingredient({type = "item", name = "electronic-circuit", amount = 2})

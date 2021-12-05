@@ -13,6 +13,10 @@ RECIPE {
     enabled = false
 }:add_unlock("advanced-electronics")
 
+if mods['pycoalprocessing'] then
+    RECIPE("megadar"):remove_unlock("advanced-electronics"):add_unlock("railway-mk02"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10})
+end
+
 ITEM {
     type = "item",
     name = "megadar",
