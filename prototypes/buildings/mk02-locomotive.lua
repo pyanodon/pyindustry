@@ -11,7 +11,7 @@ RECIPE {
         {"advanced-circuit", 20},
         {"nexelit-plate", 20},
         {"niobium-plate", 20},
-        {"electric-engine-unit", 5},
+        {"engine-unit", 5},
         {"iron-gear-wheel", 200},
     },
     results = {
