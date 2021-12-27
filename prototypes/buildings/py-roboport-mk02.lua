@@ -151,7 +151,7 @@ ENTITY {
             },
             {
                 filename = '__pyindustry__/graphics/entity/py-roboport-mk02/sh.png',
-                width = 78,
+                width = 48,
                 height = 96,
                 line_length = 12,
                 frame_count = 50,
