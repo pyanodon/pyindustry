@@ -50,7 +50,7 @@ local groups = {
 
 for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
-        if not item.fuel_value then
+        if not item.fuel_value and item.name:find('%-barrel') == nil then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 
