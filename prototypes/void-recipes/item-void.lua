@@ -25,7 +25,8 @@ local function make_void_recipe(name, newicons, ing_name)
         category = "py-incineration",
         ingredients = {{type = "item", name = ing_name, amount = 1}},
         results = {void_result},
-        subgroup = "py-void-items"
+        subgroup = "py-void-items",
+        ignore_for_dependencies = true
     }
 end
 
@@ -50,7 +51,7 @@ local groups = {
 
 for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
-        if not item.fuel_value then
+        if not item.fuel_value and item.name:find('%-barrel') == nil then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 

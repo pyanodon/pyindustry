@@ -12,7 +12,7 @@ RECIPE {
         {"py-nexelit", 2}
     },
     requester_paste_multiplier = 4
-}:add_unlock("nexelit-mk02")
+}:add_unlock("py-asphalt-2", "nexelit-mk02")
 
 ITEM {
     type = "item",
