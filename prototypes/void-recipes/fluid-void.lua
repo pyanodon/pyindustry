@@ -11,12 +11,11 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         ingredients = {
             ing
         },
-        results = {
-            {type = "fluid", name = "water", amount = 0}
-        },
+        results = {},
         icons = icons,
         icon_size = 32,
-        subgroup = subgroup or "py-void"
+        subgroup = subgroup or "py-void",
+        ignore_for_dependencies = true
     }
 end
 

@@ -25,7 +25,8 @@ local function make_void_recipe(name, newicons, ing_name)
         category = "py-incineration",
         ingredients = {{type = "item", name = ing_name, amount = 1}},
         results = {void_result},
-        subgroup = "py-void-items"
+        subgroup = "py-void-items",
+        ignore_for_dependencies = true
     }
 end
 

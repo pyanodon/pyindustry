@@ -20,6 +20,7 @@ TECHNOLOGY {
     icon_size = 128,
     effects = {},
     prerequisites = {"py-warehouse-research", "logistic-system", "chemical-science-pack"},
+    dependencies = {"py-warehouse-research"},
     unit = {
         count = 25,
         ingredients = {

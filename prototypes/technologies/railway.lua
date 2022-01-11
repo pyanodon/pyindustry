@@ -25,6 +25,7 @@ if mods['pycoalprocessing'] then
         icon_size = 128,
         order = "c-a",
         prerequisites = {"railway-mk01", "niobium", "nexelit"},
+        dependencies = {"railway-mk01"},
         effects = {},
         unit = {
             count = 250,

@@ -25,6 +25,7 @@ TECHNOLOGY {
     icon_size = 64,
     effects = {},
     prerequisites = {"production-science-pack", "py-accumulator-mk01"},
+    dependencies = {"py-accumulator-mk01"},
     unit = {
         count = 200,
         ingredients = {
