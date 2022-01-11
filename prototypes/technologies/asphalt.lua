@@ -24,7 +24,7 @@ if mods["pyrawores"] then
         icon = "__pyindustry__/graphics/technology/py-asphalt.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"solder-mk02", "nexelit-mk01"},
+        prerequisites = {"nexelit-mk01"},
         dependencies = {"py-asphalt"},
         effects = {},
         unit = {
