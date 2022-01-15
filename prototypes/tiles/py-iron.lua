@@ -11,7 +11,7 @@ RECIPE {
         {"py-iron", 1}
     },
     requester_paste_multiplier = 4
-}:add_unlock("py-asphalt-2"):replace_ingredient("iron-stick", "solder")
+}:add_unlock("py-asphalt-mk02"):replace_ingredient("iron-stick", "solder")
 
 ITEM {
     type = "item",
