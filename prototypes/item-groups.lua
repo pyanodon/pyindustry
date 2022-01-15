@@ -4,7 +4,7 @@ data:extend {
         name = "py-industry",
         order = "t2",
         inventory_order = "t2",
-        icon = "__pyindustry__/graphics/technology/py-asphalt.png",
+        icon = "__pyindustry__/graphics/technology/tiles-mk01.png",
         icon_size = 128
     },
     {
