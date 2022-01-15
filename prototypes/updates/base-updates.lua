@@ -37,6 +37,9 @@ TECHNOLOGY("railway"):set_fields{enabled = false}:set_fields{hidden = true}
 
 RECIPE("accumulator"):add_ingredient({type = "item", name = "electronic-circuit", amount = 2})
 RECIPE('rocket-silo'):replace_ingredient("pipe", "niobium-pipe")
+TECHNOLOGY("electric-energy-accumulators").icon = "__pyindustry__/graphics/technology/accumulator-mk01.png"
+TECHNOLOGY("electric-energy-accumulators").icon_size = 128
+
 
 if not mods['pycoalprocessing'] then
     TECHNOLOGY("production-science-pack"):add_prereq("railway-mk01")

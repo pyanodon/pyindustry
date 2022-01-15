@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "py-accumulator-mk01",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
-    icon_size = 64,
+    icon = "__pyindustry__/graphics/technology/accumulator-mk02.png",
+    icon_size = 128,
     effects = {},
     prerequisites = {"chemical-science-pack", "electric-energy-accumulators"},
     unit = {
@@ -21,8 +21,8 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "py-accumulator-mk02",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
-    icon_size = 64,
+    icon = "__pyindustry__/graphics/technology/accumulator-mk03.png",
+    icon_size = 128,
     effects = {},
     prerequisites = {"production-science-pack", "py-accumulator-mk01"},
     dependencies = {"py-accumulator-mk01"},
