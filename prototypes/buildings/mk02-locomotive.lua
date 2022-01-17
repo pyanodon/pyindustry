@@ -8,7 +8,7 @@ RECIPE {
     ingredients = {
         {"steel-plate", 150},
         {"plastic-bar", 200},
-        {"advanced-circuit", 20},
+        {"electronic-circuit", 20},
         {"nexelit-plate", 20},
         {"niobium-plate", 20},
         {"engine-unit", 5},
