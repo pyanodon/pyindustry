@@ -43,11 +43,11 @@ ENTITY {
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     match_animation_speed_to_activity = false,
     module_specification = {
-        module_slots = 1
+        module_slots = 4
     },
     allowed_effects = {"speed",'consumption','pollution'},
     crafting_categories = {"py-barreling", "py-unbarreling"},
-    crafting_speed = 1,
+    crafting_speed = 2,
     source_inventory_size = 1,
     result_inventory_size = 1,
     energy_source = {
