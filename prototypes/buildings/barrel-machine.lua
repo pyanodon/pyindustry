@@ -14,7 +14,7 @@ RECIPE {
     results = {
         {"barrel-machine-mk01", 1}
     }
-}
+}:add_unlock("fluid-handling")
 
 ITEM {
     type = "item",
@@ -46,8 +46,8 @@ ENTITY {
         module_slots = 1
     },
     allowed_effects = {"speed",'consumption','pollution'},
-    crafting_categories = {"compost"},
-    crafting_speed = 0.3,
+    crafting_categories = {"py-barreling", "py-unbarreling"},
+    crafting_speed = 1,
     source_inventory_size = 1,
     result_inventory_size = 1,
     energy_source = {
