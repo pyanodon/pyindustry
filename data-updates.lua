@@ -34,14 +34,24 @@ end
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
 
-for f, fluid in pairs(data.raw.fluid) do
-    local recipe = RECIPE('empty-' .. f .. '-barrel')
+for f, _ in pairs(data.raw.fluid) do
+    local recipe
+
+    if data.raw.recipe['empty-canister-' .. f] then
+        recipe = RECIPE('empty-canister-' .. f)
+    else
+        recipe = RECIPE('empty-' .. f .. '-barrel')
+    end
 
     if recipe ~= nil then
         recipe:change_category("py-barreling"):remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
     end
 
-    recipe = RECIPE('fill-' .. f .. '-barrel')
+    if data.raw.recipe['fill-canister-' .. f] then
+        recipe = RECIPE('fill-canister-' .. f)
+    else
+        recipe = RECIPE('fill-' .. f .. '-barrel')
+    end
 
     if recipe ~= nil then
         recipe:change_category("py-unbarreling"):remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
