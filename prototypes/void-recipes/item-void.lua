@@ -48,10 +48,19 @@ local groups = {
 }
 
 --local item_count = 0
+local fluid_barrels = {}
+
+for f, _ in pairs(data.raw.fluid) do
+    local i = f .. '-barrel'
+    if data.raw.item[i] then
+        fluid_barrels[i] = true
+    end
+end
+
 
 for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
-        if not item.fuel_value and item.name:find('%-barrel') == nil then
+        if not item.fuel_value and not fluid_barrels[item.name] then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 
