@@ -37,7 +37,7 @@ ENTITY {
     minable = {mining_time = 0.1, result = "py-limestone"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
-    walking_speed_modifier = 2.0,
+    walking_speed_modifier = 2.5,
     decorative_removal_probability = 1,
     layer = 61,
     variants = {
