@@ -98,6 +98,6 @@ ENTITY {
     },
     map_color = defines.color.darkgrey,
     pollution_absorption_per_second = 0,
-    vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
+    vehicle_friction_modifier = 0.75
 }
 
