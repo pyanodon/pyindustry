@@ -32,7 +32,7 @@ ENTITY {
     minable = {mining_time = 0.1, result = "py-coal-tile"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
-    walking_speed_modifier = 1.4,
+    walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 61,
     variants = {
@@ -84,5 +84,5 @@ ENTITY {
     },
     map_color = defines.color.darkgrey,
     pollution_absorption_per_second = 0,
-    vehicle_friction_modifier = _G.stone_path_vehicle_speed_modifier
+    vehicle_friction_modifier = 0.6
 }
