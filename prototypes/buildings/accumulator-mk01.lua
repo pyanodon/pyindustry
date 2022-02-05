@@ -99,5 +99,6 @@ ENTITY {
     },
     circuit_wire_max_distance = 9,
     default_output_signal = {type = "virtual", name = "signal-A"},
-    circuit_connector_sprites = _G.circuit_connector_definitions["accumulator"].sprites
+    circuit_connector_sprites = _G.circuit_connector_definitions["accumulator"].sprites,
+    fast_replaceable_group = "py-accumulator"
 }
