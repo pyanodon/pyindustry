@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "py-electric",
     order = "a",
     place_result = "accumulator-mk01",
     stack_size = 50

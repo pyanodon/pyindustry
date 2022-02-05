@@ -15,6 +15,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-electric",
+        group = "py-industry",
+        order = "ab"
+    },
+    {
+        type = "item-subgroup",
         name = "py-storage-tanks",
         group = "py-industry",
         order = "b"

@@ -21,7 +21,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "py-void",
     order = "a",
     place_result = "py-sinkhole",
     stack_size = 10

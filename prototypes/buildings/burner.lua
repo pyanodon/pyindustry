@@ -38,7 +38,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/burner.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "py-void",
     order = "a",
     place_result = "py-burner",
     stack_size = 50
