@@ -44,7 +44,7 @@ for _, fluid in pairs(data.raw.fluid) do
         --Make sinkhole
         name = fluid.name .. '-pyvoid-fluid'
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
-        local ing = {type = "fluid", name = fluid.name, maximum_temperature = fluid.gas_temperature, amount = 20000}
+        local ing = {type = "fluid", name = fluid.name, amount = 20000}
         make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
     end
 	if fluid.name ~= "steam" then
@@ -53,7 +53,7 @@ for _, fluid in pairs(data.raw.fluid) do
 			--Make venting
 			name = fluid.name .. '-pyvoid-gas'
 			local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
-			local ing = {type = "fluid", name = fluid.name, minimum_temperature = fluid.gas_temperature, amount = 20000}
+			local ing = {type = "fluid", name = fluid.name,amount = 20000}
 			make_fluid_recipe(name, locale, icons, "py-venting", ing, "py-void-gas")
 		end
 	end
