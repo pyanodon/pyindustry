@@ -83,7 +83,7 @@ ENTITY {
             volume = 0.7
         }
     },
-    map_color = defines.color.black,
+    map_color = {r = 0, g = 110, b = 255, a = 1},
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.6
 }

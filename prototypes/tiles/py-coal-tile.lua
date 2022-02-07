@@ -82,7 +82,7 @@ ENTITY {
             volume = 1.2
         }
     },
-    map_color = defines.color.darkgrey,
+    map_color = {r = 50, g = 50, b = 50, a = 1},
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.6
 }
