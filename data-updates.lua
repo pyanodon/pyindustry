@@ -35,26 +35,22 @@ RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):re
 
 
 for f, _ in pairs(data.raw.fluid) do
-    local recipe
-
-    if data.raw.recipe['empty-canister-' .. f] then
-        recipe = RECIPE('empty-canister-' .. f)
-    else
-        recipe = RECIPE('empty-' .. f .. '-barrel')
-    end
-
-    if recipe ~= nil then
-        recipe:change_category("py-barreling"):remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
-    end
-
-    if data.raw.recipe['fill-canister-' .. f] then
-        recipe = RECIPE('fill-canister-' .. f)
-    else
-        recipe = RECIPE('fill-' .. f .. '-barrel')
-    end
-
-    if recipe ~= nil then
-        recipe:change_category("py-unbarreling"):remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
+    for i, recipe_name in pairs({
+        'empty-canister-' .. f,
+        'empty-' .. f .. '-barrel',
+        'fill-canister-' .. f,
+        'fill-' .. f .. '-barrel'
+    }) do
+        local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
+        if recipe ~= nil then
+            recipe:remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
+            -- This is backwards, I blame king
+            if recipe_name:match("^empty") then
+                recipe:change_category("py-barreling")
+            else
+                recipe:change_category("py-unbarreling")
+            end
+        end
     end
 end
 
