@@ -88,10 +88,10 @@ ITEM {
     },
     burner =
     {
-      fuel_category = "chemical",
+      fuel_category = "jerry",
       effectivity = 1,
       fuel_inventory_size = 2,
-      --burnt_inventory_size = 1,
+      burnt_inventory_size = 2,
     },
     front_light =
     {
