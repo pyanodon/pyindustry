@@ -20,11 +20,11 @@ ITEM {
     icon = '__pyindustry__/graphics/icons/py-recharge-station-mk01.png',
     icon_size = 64,
     flags = {},
-    subgroup = 'py-robots',
+    subgroup = 'py-stations',
     order = 'a',
     place_result = 'py-recharge-station-mk01',
     stack_size = 10
-}:subgroup_order('py-hightech-buildings', 'b')
+}
 
 ENTITY {
     type = "roboport",

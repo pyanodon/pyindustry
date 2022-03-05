@@ -63,9 +63,15 @@ data:extend {
     },
     {
         type = "item-subgroup",
-        name = "py-robots",
+        name = "py-stations",
         group = "py-industry",
         order = "f"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-robots",
+        group = "py-industry",
+        order = "g"
     },
     {
         type = "item-subgroup",

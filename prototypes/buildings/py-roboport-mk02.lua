@@ -20,7 +20,7 @@ ITEM {
     icon = '__pyindustry__/graphics/icons/py-roboport-mk02.png',
     icon_size = 64,
     flags = {},
-    subgroup = 'py-robots',
+    subgroup = 'py-stations',
     order = 'a',
     place_result = 'py-roboport-mk02',
     stack_size = 10

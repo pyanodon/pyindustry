@@ -20,11 +20,11 @@ ITEM {
     icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
     icon_size = 64,
     flags = {},
-    subgroup = 'py-robots',
+    subgroup = 'py-stations',
     order = 'a',
     place_result = 'py-roboport-mk01',
     stack_size = 10
-}:subgroup_order('py-hightech-buildings', 'b')
+}
 
 ENTITY {
     type = 'roboport',
@@ -63,6 +63,7 @@ ENTITY {
     charge_approach_distance = 5,
     robot_slots_count = 4,
     material_slots_count = 4,
+    robots_shrink_when_entering_and_exiting = true,
     stationing_offset = util.by_pixel(0, -3),
     charging_offsets = {
         {-0, -0.5}
