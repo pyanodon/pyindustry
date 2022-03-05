@@ -4,12 +4,15 @@ RECIPE {
     type = 'recipe',
     name = 'py-construction-robot-01',
     energy_required = 10,
+    category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
         {'steel-plate', 20},
         {'iron-plate', 15},
         {'iron-gear-wheel', 20},
-        {'electronic-circuit', 5}
+        {'steam-engine', 1},
+        {'battery-mk01', 2},
+        {'electronic-circuit', 5},
     },
     results = {
         {'py-construction-robot-01', 1}

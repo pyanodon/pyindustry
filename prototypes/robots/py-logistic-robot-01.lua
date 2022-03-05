@@ -10,15 +10,16 @@ local cargo_bot =
     ingredients = {
         {'iron-plate', 10},
         {'iron-gear-wheel', 10},
-        {'copper-plate', 2},
+        {'copper-plate', 4},
         {'electronic-circuit', 10},
-        {'py-construction-robot-01', 1},
-        {type = 'fluid', name = 'lubricant', amount = 300}
+        {'plastic-bar', 5},
+        {'steam-engine', 1},
+        {'battery-mk01', 2},
     },
     results = {
         {'py-logistic-robot-01', 1}
     }
-}
+}:add_ingredient({type = 'fluid', name = 'fish-oil', amount = 50})
 cargo_bot:replace_ingredient('copper-plate', 'chromium')
 cargo_bot:add_unlock({'logistic-robotics'})
 
