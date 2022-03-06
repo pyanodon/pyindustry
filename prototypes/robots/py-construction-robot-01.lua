@@ -11,7 +11,6 @@ RECIPE {
         {'iron-plate', 15},
         {'iron-gear-wheel', 20},
         {'steam-engine', 1},
-        {'battery-mk01', 2},
         {'electronic-circuit', 5},
     },
     results = {
