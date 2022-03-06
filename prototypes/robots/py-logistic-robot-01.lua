@@ -14,7 +14,6 @@ local cargo_bot =
         {'electronic-circuit', 10},
         {'plastic-bar', 5},
         {'steam-engine', 1},
-        {'battery-mk01', 2},
     },
     results = {
         {'py-logistic-robot-01', 1}
