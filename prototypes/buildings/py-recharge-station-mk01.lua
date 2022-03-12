@@ -47,7 +47,7 @@ ENTITY {
       buffer_capacity = "300MJ"
     },
     recharge_minimum = "60MJ",
-    energy_usage = "0kW",
+    energy_usage = "50kW",
     -- per one charge slot
     charging_energy = "500kW",
     logistics_radius = 1,
