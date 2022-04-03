@@ -4,7 +4,9 @@ TECHNOLOGY('fluid-processing-machines-1'):add_prereq('py-storage-tanks')
 
 
 -- RECIPE UNLOCKS
-
+if not mods['pyrawores'] then
+    RECIPE('automated-factory-mk01'):replace_ingredient('advanced-circuit', 'electronic-circuit'):remove_unlock('advanced-electronics'):add_unlock('fast-inserter')
+end
 
 -- RECIPE CHANGES
 RECIPE("mixer-mk01"):replace_ingredient("storage-tank", "py-tank-8000")
