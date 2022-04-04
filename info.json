@@ -11,7 +11,8 @@
     "base >= 0.15.37",
     "stdlib >= 1.4.0",
     "? pycoalprocessing >= 1.0.6",
-    "? pyfusionenergy >= 1.0.3"
+    "? pyfusionenergy >= 1.0.3",
+    "! DiscoScience"
   ],
   "package": {
     "ignore": [],
