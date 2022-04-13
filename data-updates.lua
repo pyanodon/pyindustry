@@ -16,12 +16,13 @@ require("prototypes/tiles/py-iron")
 require("prototypes/tiles/py-steel")
 require("prototypes/tiles/py-aluminium")
 
-if mods['pycoalprocessing'] then
+require("prototypes/updates/base-updates")
+
+if mods["pycoalprocessing"] then
+    require("prototypes/updates/pycoalprocessing-updates")
     require("prototypes/tiles/py-iron-oxide")
     require("prototypes/tiles/py-nexelit")
 end
-
-require("prototypes/updates/base-updates")
 
 if mods["pyfusionenergy"] then
     require("prototypes/updates/pyfusionenergy-updates")
