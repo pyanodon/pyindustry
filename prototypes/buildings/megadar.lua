@@ -26,7 +26,7 @@ ITEM {
     subgroup = "py-industry",
     order = "d[radar]-a[megadar]",
     place_result = "megadar",
-    stack_size = 50
+    stack_size = 500
 }
 
 ENTITY {

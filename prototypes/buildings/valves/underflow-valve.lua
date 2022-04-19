@@ -23,7 +23,7 @@ ITEM {
     subgroup = "py-pipes",
     order = "pipe[niobium]-flow-c",
     place_result = "py-underflow-valve",
-    stack_size = 50
+    stack_size = 500
 }
 
 ENTITY {

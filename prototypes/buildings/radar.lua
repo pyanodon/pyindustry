@@ -23,7 +23,7 @@ ITEM {
     subgroup = "py-industry",
     order = "d[radar]-a[radar]",
     place_result = "py-local-radar",
-    stack_size = 50
+    stack_size = 500
 }
 
 ENTITY {

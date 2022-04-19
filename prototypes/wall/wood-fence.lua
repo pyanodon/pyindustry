@@ -20,7 +20,7 @@ ITEM {
     subgroup = "py-walls",
     order = "z",
     place_result = "wood-fence",
-    stack_size = 100
+    stack_size = 500
 }
 
 ENTITY {

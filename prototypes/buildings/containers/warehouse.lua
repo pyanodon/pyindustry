@@ -75,7 +75,7 @@ local function define_warehouse(name, logistics_name)
         subgroup = "py-containers-warehouse",
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,
-        stack_size = 15
+        stack_size = 10
     }
 
     local entity =
