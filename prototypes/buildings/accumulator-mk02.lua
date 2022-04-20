@@ -25,7 +25,7 @@ ITEM {
     subgroup = "py-electric",
     order = "a",
     place_result = "accumulator-mk02",
-    stack_size = 500
+    stack_size = 10
 }
 
 ENTITY {

@@ -41,7 +41,7 @@ ITEM {
     subgroup = "py-void",
     order = "a",
     place_result = "py-burner",
-    stack_size = 500
+    stack_size = 10
 }
 
 ENTITY {
