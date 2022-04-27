@@ -3,10 +3,16 @@ data.raw.fluid['petroleum-gas'].gas_temperature = 20
 
 if not mods['boblogistics'] then
     --Remove base robots
-    RECIPE('construction-robot'):remove_unlock('construction-robotics')
-    RECIPE('logistic-robot'):remove_unlock('logistic-robotics')
-    RECIPE('flying-robot-frame'):remove_unlock('robotics')
-    RECIPE("roboport"):remove_unlock('logistic-robotics'):remove_unlock('construction-robotics')
+    RECIPE('construction-robot'):remove_unlock('construction-robotics'):set_fields{hidden = true}
+    RECIPE('logistic-robot'):remove_unlock('logistic-robotics'):set_fields{hidden = true}
+    RECIPE('flying-robot-frame'):remove_unlock('robotics'):set_fields{hidden = true}
+    RECIPE("roboport"):remove_unlock('logistic-robotics'):remove_unlock('construction-robotics'):set_fields{hidden = true}
+
+    ITEM("construction-robot"):add_flag("hidden")
+    ITEM("logistic-robot"):add_flag("hidden")
+    ITEM("flying-robot-frame"):add_flag("hidden")
+    ITEM("roboport"):add_flag("hidden")
+
     if not mods['pycoalprocessing'] then
         RECIPE("utility-science-pack"):remove_ingredient("flying-robot-frame"):add_ingredient({type='item', name='electric-engine-unit', amount=2}):add_ingredient({type='item', name='battery', amount=3})
     end
