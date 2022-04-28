@@ -28,7 +28,7 @@ ITEM {
     subgroup = "py-trains",
     order = "b",
     place_result = "mk02-locomotive",
-    stack_size = 10
+    stack_size = 5
 }
 
 {

@@ -25,7 +25,7 @@ ITEM {
     flags = {},
     subgroup = "py-tiles",
     order = "a-limestone",
-    stack_size = 500,
+    stack_size = 1000,
     default_request_amount = 150,
     place_as_tile = {result = "py-limestone", condition_size = 2, condition = {"water-tile"}}
 }

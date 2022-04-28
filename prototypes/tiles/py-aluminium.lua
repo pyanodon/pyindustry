@@ -21,7 +21,7 @@ ITEM {
     flags = {},
     subgroup = "py-tiles",
     order = "a-aluminium-oxide",
-    stack_size = 500,
+    stack_size = 1000,
     place_as_tile = {result = "py-aluminium", condition_size = 2, condition = {"water-tile"}}
 }
 

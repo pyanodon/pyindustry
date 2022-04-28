@@ -470,7 +470,7 @@ ITEM {
     subgroup = "py-pipes",
     order = "pipe[niobium]a",
     place_result = "niobium-pipe",
-    stack_size = 200
+    stack_size = 100
 }
 
 --NIOBIUM PIPES TO GROUND
@@ -497,7 +497,7 @@ ITEM {
     subgroup = "py-pipes",
     order = "pipe[niobium]b",
     place_result = "niobium-pipe-to-ground",
-    stack_size = 200
+    stack_size = 50
 }
 
 local recipes = {
