@@ -44,7 +44,7 @@ if mods["pyalternativeenergy"] then
     TECHNOLOGY {
         type = "technology",
         name = "py-accumulator-mk03",
-        icon = "__pyindustry__/graphics/technology/accumulator-mk03.png",
+        icon = "__pycoalprocessinggraphics__/graphics/technology/missing_icon.png", -- accumulator-mk04.png
         icon_size = 128,
         effects = {},
         prerequisites = {"production-science-pack", "py-accumulator-mk01"},
