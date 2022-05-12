@@ -32,6 +32,8 @@ if mods["pyrawores"] then
     require("prototypes/updates/pyrawores-updates")
 end
 
+require("prototypes/updates/compatibility-updates")
+
 RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 
 
