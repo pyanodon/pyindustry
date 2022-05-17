@@ -39,9 +39,9 @@ RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):re
 
 for f, _ in pairs(data.raw.fluid) do
     for i, recipe_name in pairs({
-        'empty-canister-' .. f,
+        'empty-' .. f .. '-canister',
         'empty-' .. f .. '-barrel',
-        'fill-canister-' .. f,
+        'fill-' .. f .. '-canister',
         'fill-' .. f .. '-barrel'
     }) do
         local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
