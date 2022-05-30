@@ -5,13 +5,13 @@ RECIPE {
         {"advanced-circuit", 20},
         {"iron-gear-wheel", 40},
         {"steel-plate", 20},
-        {"engine-unit", 3}
+        {"electric-engine-unit", 3}
     },
     results = {
         {"megadar", 1}
     },
     enabled = false
-}:add_unlock("advanced-electronics")
+}:add_unlock("radars-mk02")
 
 if mods['pycoalprocessing'] then
     RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10})

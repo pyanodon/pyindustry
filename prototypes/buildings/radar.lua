@@ -12,7 +12,7 @@ RECIPE {
         {"py-local-radar", 1}
     },
     enabled = false
-}:add_unlock('engine')
+}:add_unlock('radars-mk01')
 
 ITEM {
     type = "item",
