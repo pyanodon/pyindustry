@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "radars-mk01",
-    icon = "__pycoalprocessinggraphics__/graphics/technology/radars-mk01.png",
+    icon = "__pyindustry__/graphics/technology/radars-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"steel-processing"},
@@ -19,7 +19,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "radars-mk02",
-    icon = "__pycoalprocessinggraphics__/graphics/technology/radars-mk02.png",
+    icon = "__pyindustry__/graphics/technology/radars-mk02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"radars-mk01"},
