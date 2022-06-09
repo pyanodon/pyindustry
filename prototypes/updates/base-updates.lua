@@ -1,3 +1,4 @@
+local fun = require("prototypes.functions.functions")
 
 data.raw.fluid['petroleum-gas'].gas_temperature = 20
 
@@ -12,6 +13,13 @@ if not mods['boblogistics'] then
     ITEM("logistic-robot"):add_flag("hidden")
     ITEM("flying-robot-frame"):add_flag("hidden")
     ITEM("roboport"):add_flag("hidden")
+
+    for _, recipe in pairs(data.raw.recipe) do
+        local r = RECIPE(recipe)
+        r:replace_ingredient("roboport", "py-roboport-mk01")
+        r:replace_ingredient("construction-robot", "py-construction-robot-01")
+        r:replace_ingredient("logistic-robot", "py-logistic-robot-01")
+    end
 
     if not mods['pycoalprocessing'] then
         RECIPE("utility-science-pack"):remove_ingredient("flying-robot-frame"):add_ingredient({type='item', name='electric-engine-unit', amount=2}):add_ingredient({type='item', name='battery', amount=3})
