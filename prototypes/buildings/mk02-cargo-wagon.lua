@@ -52,7 +52,7 @@ ITEM {
     connection_distance = 2,
     joint_distance = 1.5, --igual to collision box works if the sprite is tight in the png
     energy_per_hit_point = 5,
-    inventory_size = 10,
+    inventory_size = 20,
     resistances =
     {
       {

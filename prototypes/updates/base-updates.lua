@@ -64,5 +64,5 @@ data.raw.pump['pump'].fluid_wagon_connector_alignment_tolerance = 1.0
 
 RECIPE("storage-tank"):remove_unlock('fluid-handling'):add_unlock('py-storage-tanks')
 
-data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 10
-data.raw["fluid-wagon"]["fluid-wagon"].capacity = 10000
+data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 20
+data.raw["fluid-wagon"]["fluid-wagon"].capacity = 25000
