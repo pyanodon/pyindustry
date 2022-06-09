@@ -53,7 +53,7 @@ ITEM {
     joint_distance = 1.5, --igual to collision box works if the sprite is tight in the png
     tank_count = 1,
     energy_per_hit_point = 5,
-    capacity = 20000,
+    capacity = 10000,
     resistances =
     {
       {
