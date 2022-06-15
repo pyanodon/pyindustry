@@ -68,8 +68,8 @@ if mods['pyalternativeenergy'] then
         icon = "__pyindustry__/graphics/technology/railway-mk04.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"railway-mk02","intermetallics-mk03","battery-mk04"},
-        dependencies = {"railway-mk02"},
+        prerequisites = {"railway-mk03","intermetallics-mk03","battery-mk04"},
+        dependencies = {"railway-mk03"},
         effects = {},
         unit = {
             count = 400,
