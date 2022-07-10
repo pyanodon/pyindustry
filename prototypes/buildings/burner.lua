@@ -44,6 +44,13 @@ ITEM {
     stack_size = 10
 }
 
+local fuels = {}
+if mods["pycoalprocessing"] then
+    fuels = {"chemical", "jerry"}
+else
+    fuels = {"chemical"}
+end
+
 ENTITY {
     type = "furnace",
     name = "py-burner",
@@ -85,7 +92,7 @@ ENTITY {
     energy_source = {
         type = "burner",
         --fuel_category = "chemical",
-        fuel_categories = {"chemical"},
+        fuel_categories = fuels,
         effectivity = 1,
         fuel_inventory_size = 1,
         burnt_inventory_size = 1,
