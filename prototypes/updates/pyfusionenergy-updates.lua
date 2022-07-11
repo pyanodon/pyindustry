@@ -1,7 +1,4 @@
 -- TECH CHANGES
-TECHNOLOGY("py-accumulator-mk02"):add_prereq("advanced-electronics-2")
-TECHNOLOGY('fluid-processing-machines-1'):add_prereq('py-storage-tanks')
-
 
 -- RECIPE UNLOCKS
 
