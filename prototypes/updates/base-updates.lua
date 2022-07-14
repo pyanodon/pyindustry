@@ -32,6 +32,9 @@ TECHNOLOGY('construction-robotics'):remove_prereq('robotics'):add_prereq('steel-
 TECHNOLOGY('logistic-robotics'):remove_prereq('robotics'):add_prereq('construction-robotics'):remove_pack('chemical-science-pack'):add_prereq('lubricant')
 TECHNOLOGY('personal-roboport-equipment'):add_prereq('chemical-science-pack'):add_prereq('battery')
 TECHNOLOGY('robotics'):add_prereq('construction-robotics')
+TECHNOLOGY('engine'):remove_pack('logistic-science-pack'):remove_prereq('logistic-science-pack')
+TECHNOLOGY("fluid-wagon"):remove_prereq("fluid-handling")
+
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
 RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics')
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
