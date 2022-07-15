@@ -43,7 +43,7 @@ ITEM {
     collision_box = {{-0.5, -1.5}, {0.5, 1.5}}, --must have a relation between this box and the joint distance to calibrate the wagon distance. (min 0.2)
     selection_box = {{-1, -1.7}, {1, 1.7}},
     --damaged_trigger_effect = hit_effects.entity(),
-    vertical_selection_shift = -1.1,
+    vertical_selection_shift = -0.7,
     weight = 500,
     max_speed = 1.5,
     braking_force = 4,

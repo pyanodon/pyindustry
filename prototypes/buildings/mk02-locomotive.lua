@@ -53,7 +53,7 @@ ITEM {
     reversing_power_modifier = 0.6,
     braking_force = 12,
     friction_force = 0.40,
-    vertical_selection_shift = -1.1,
+    vertical_selection_shift = -0.7,
     air_resistance = 0.0085, -- this is a percentage of current speed that will be subtracted
     connection_distance = 3,
     joint_distance = 4,
