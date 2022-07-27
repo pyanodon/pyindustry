@@ -104,6 +104,7 @@ local function define_shed(name, logistics_name)
         selection_box = {{-1.0, -1.0}, {1.0, 1.0}},
         fast_replaceable_group = "shed",
         inventory_size = 75,
+        inventory_type = "with_filters_and_bar",
         scale_info_icons = true,
         picture = {
             filename = "__pyindustry__/graphics/entity/shed/shed-" .. name .. ".png",
