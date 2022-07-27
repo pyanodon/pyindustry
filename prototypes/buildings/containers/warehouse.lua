@@ -103,6 +103,7 @@ local function define_warehouse(name, logistics_name)
         drawing_box = {{-3.0, -3.0}, {3.0, 3.0}},
         fast_replaceable_group = "warehouse",
         inventory_size = 450,
+        inventory_type = "with_filters_and_bar",
         scale_info_icons = true,
         picture = {
             filename = "__pyindustry__/graphics/entity/warehouse/warehouse-" .. name .. ".png",
