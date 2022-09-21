@@ -46,7 +46,7 @@ ITEM {
 
 local fuels = {}
 if mods["pycoalprocessing"] then
-    fuels = {"chemical", "jerry"}
+    fuels = {"chemical", "jerry", "biomass"}
 else
     fuels = {"chemical"}
 end
