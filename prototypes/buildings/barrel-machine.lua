@@ -45,7 +45,7 @@ ENTITY {
     module_specification = {
         module_slots = 4
     },
-    allowed_effects = {"speed",'consumption','pollution'},
+    allowed_effects = {"speed",'consumption'},
     crafting_categories = {"py-barreling", "py-unbarreling"},
     crafting_speed = 2,
     source_inventory_size = 1,
