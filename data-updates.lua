@@ -46,7 +46,7 @@ for f, _ in pairs(data.raw.fluid) do
     }) do
         local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
         if recipe ~= nil then
-            recipe:remove_unlock("fluid-handling"):set_fields{hide_from_player_crafting = true, hide_from_stats = true, enabled = true}
+            recipe:set_fields{hide_from_player_crafting = true, hide_from_stats = true}
             -- This is backwards, I blame king
             if recipe_name:match("^empty") then
                 recipe:change_category("py-barreling")
