@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 2022-11-03
+  Changes:
+    - Disabled barrels at game start and they are now only avaible as intended when the machine to use them is unlocked.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 2022-10-20
   Changes:
