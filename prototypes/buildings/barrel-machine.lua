@@ -47,7 +47,7 @@ ENTITY {
     },
     allowed_effects = {"speed",'consumption'},
     crafting_categories = {"py-barreling", "py-unbarreling"},
-    crafting_speed = 2,
+    crafting_speed = 0.5,
     source_inventory_size = 1,
     result_inventory_size = 1,
     energy_source = {
