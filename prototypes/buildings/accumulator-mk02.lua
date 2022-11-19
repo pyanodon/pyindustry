@@ -41,10 +41,10 @@ ENTITY {
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     energy_source = {
         type = "electric",
-        buffer_capacity = "150MJ",
+        buffer_capacity = "450MJ",
         usage_priority = "tertiary",
-        input_flow_limit = "10000kW",
-        output_flow_limit = "10000kW"
+        input_flow_limit = "50000kW",
+        output_flow_limit = "50000kW"
     },
     picture = {
         filename = "__pyindustry__/graphics/entity/accumulator-mk02/charged.png",
