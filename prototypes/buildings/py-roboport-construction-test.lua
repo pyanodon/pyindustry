@@ -1,6 +1,6 @@
 RECIPE {
     type = 'recipe',
-    name = 'py-roboport-construction',
+    name = 'py-ze',
     energy_required = 0.5,
     enabled = false,
     ingredients = {
@@ -10,29 +10,29 @@ RECIPE {
         {'electronic-circuit', 5}
     },
     results = {
-        {'py-roboport-construction', 1}
+        {'py-ze', 1}
     }
 }:add_unlock('construction-robotics')
 
 ITEM {
     type = 'item',
-    name = 'py-roboport-construction',
-    icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
+    name = 'py-ze',
+    icon = '__pyindustry__/graphics/icons/py-ze.png',
     icon_size = 64,
     flags = {},
     subgroup = 'py-stations',
     order = 'a',
-    place_result = 'py-roboport-construction',
+    place_result = 'py-ze',
     stack_size = 10
 }
 
 ENTITY {
     type = 'roboport',
-    name = 'py-roboport-construction',
-    icon = '__pyindustry__/graphics/icons/py-roboport-mk01.png',
+    name = 'py-ze',
+    icon = '__pyindustry__/graphics/icons/py-ze.png',
     icon_size = 64,
     flags = {'placeable-player', 'player-creation'},
-    minable = {mining_time = 0.1, result = 'py-roboport-construction'},
+    minable = {mining_time = 0.1, result = 'py-ze'},
     max_health = 500,
     corpse = 'big-remnants',
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
@@ -72,103 +72,113 @@ ENTITY {
     base = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/roboport.png',
-                width = 96,
-                height = 112,
-                shift = util.by_pixel(0, 0),
+                filename = '__pyindustry__/graphics/icons/filler.png',
+                width = 4,
+                height = 4,
+                shift = util.by_pixel(0, -0),
                 hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-roboport.png',
-                    width = 192,
-                    height = 224,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.5
+                    filename = '__pyindustry__/graphics/icons/filler.png',
+                    width = 4,
+                    height = 4,
+                    shift = util.by_pixel(0, -0),
                 }
             },
-            {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/shadow.png',
-                width = 96,
-                height = 80,
-                draw_as_shadow = true,
-                shift = util.by_pixel(8, 15),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-shadow.png',
-                    width = 192,
-                    height = 160,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(8, 15),
-                    scale = 0.5
-                }
-            }
         }
     },
     base_patch = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/patch.png',
-        priority = 'medium',
-        width = 64,
-        height = 64,
-        frame_count = 1,
-        shift = util.by_pixel(0, -8),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-patch.png',
-            priority = 'medium',
-            width = 128,
-            height = 128,
-            frame_count = 1,
-            shift = util.by_pixel(0, -8),
-            scale = 0.5
+        layers = {
+            {
+                filename = '__pyindustry__/graphics/icons/filler.png',
+                width = 4,
+                height = 4,
+                shift = util.by_pixel(0, -0),
+                hr_version = {
+                    filename = '__pyindustry__/graphics/icons/filler.png',
+                    width = 4,
+                    height = 4,
+                    shift = util.by_pixel(0, -0),
+                }
+            },
         }
     },
     base_animation = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/anim.png',
-        priority = 'extra-high',
-        width = 16,
-        height = 16,
-        frame_count = 2,
-        animation_speed = 0.1,
-        shift = util.by_pixel(28, -7),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-anim.png',
-            priority = 'extra-high',
-            width = 32,
-            height = 32,
-            frame_count = 2,
-            animation_speed = 0.1,
-            shift = util.by_pixel(28, -7),
-            scale = 0.5
+        layers = {
+            {
+                filename = '__pyindustry__/graphics/entity/py-zone-extender/raw.png',
+                priority = 'extra-high',
+                width = 96,
+                height = 288,
+                line_length = 10,
+                frame_count = 50,
+                animation_speed = 0.3,
+                shift = util.by_pixel(0, -96),
+            },
+            {
+                filename = '__pyindustry__/graphics/entity/py-zone-extender/sh.png',
+                priority = 'extra-high',
+                width = 128,
+                height = 96,
+                line_length = 10,
+                frame_count = 50,
+                draw_as_shadow = true,
+                animation_speed = 0.3,
+                shift = util.by_pixel(16, 0),
+            },
+            {
+                filename = '__pyindustry__/graphics/entity/py-zone-extender/ao.png',
+                priority = 'extra-high',
+                width = 160,
+                height = 320,
+                line_length = 10,
+                frame_count = 50,
+                animation_speed = 0.3,
+                shift = util.by_pixel(0, -80),
+            },
+            {
+                filename = '__pyindustry__/graphics/entity/py-zone-extender/l.png',
+                priority = 'extra-high',
+                width = 96,
+                height = 96,
+                line_length = 10,
+                frame_count = 50,
+                animation_speed = 0.3,
+                draw_as_glow = true,
+                tint = {r = 1.0, g = 1.0, b = 0.0, a = 0.8},
+                shift = util.by_pixel(0, -96),
+            },
         }
+
     },
     door_animation_up = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/door-up.png',
-        priority = 'medium',
-        width = 64,
-        height = 32,
-        frame_count = 16,
-        shift = util.by_pixel(0, -40),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-up.png',
-            priority = 'medium',
-            width = 128,
-            height = 64,
-            frame_count = 16,
-            shift = util.by_pixel(0, -40),
-            scale = 0.5
+        layers = {
+            {
+                filename = '__pyindustry__/graphics/icons/filler.png',
+                width = 4,
+                height = 4,
+                shift = util.by_pixel(0, -0),
+                hr_version = {
+                    filename = '__pyindustry__/graphics/icons/filler.png',
+                    width = 4,
+                    height = 4,
+                    shift = util.by_pixel(0, -0),
+                }
+            },
         }
     },
     door_animation_down = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/door-down.png',
-        priority = 'medium',
-        width = 64,
-        height = 32,
-        frame_count = 16,
-        shift = util.by_pixel(0, -24),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-down.png',
-            priority = 'medium',
-            width = 128,
-            height = 64,
-            frame_count = 16,
-            shift = util.by_pixel(0, -24),
-            scale = 0.5
+        layers = {
+            {
+                filename = '__pyindustry__/graphics/icons/filler.png',
+                width = 4,
+                height = 4,
+                shift = util.by_pixel(0, -0),
+                hr_version = {
+                    filename = '__pyindustry__/graphics/icons/filler.png',
+                    width = 4,
+                    height = 4,
+                    shift = util.by_pixel(0, -0),
+                }
+            },
         }
     },
     recharging_animation = {
