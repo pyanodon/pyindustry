@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.3
+Date: 2022-11-28
+  Changes:
+    - changed barrel machine speed from 2 to 0.5.
+    - buffed accumulator mk01-mk02.
+    - added construction zone expander for robot networks.
+---------------------------------------------------------------------------------------------------
 Version: 2.0.2
 Date: 2022-11-03
   Changes:
