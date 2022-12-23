@@ -11,11 +11,11 @@ if not void_result.name then
     void_result = {type = "fluid", name = "water", amount = 0}
 end
 
-local function make_void_recipe(name, newicons, ing_name)
+local function make_void_recipe(name, newicons, ing_name, place_result)
     RECIPE {
         name = name,
         type = "recipe",
-        localised_name = {"", "Void ", {"item-name." .. ing_name}},
+        localised_name = {"recipe-name.py-void", {"?", {"item-name." .. ing_name}, {"entity-name." .. (place_result or ing_name)}, ""}},
         energy_required = 1.5,
         icons = newicons,
         icon_size = 32,
@@ -71,7 +71,7 @@ for _, type in pairs(groups) do
                 new_icons = {{icon = item.icon, icon_size = item.icon_size or 32}}
             end
             new_icons[#new_icons + 1] = {icon = "__pyindustry__/graphics/icons/no.png"}
-            make_void_recipe(name, new_icons, item.name)
+            make_void_recipe(name, new_icons, item.name, item.place_result)
         end
     end
 end

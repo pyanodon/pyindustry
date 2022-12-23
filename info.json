@@ -8,7 +8,7 @@
   "homepage": "",
   "description": "Adds industry based buildings to the game.",
   "dependencies": [
-    "base >= 0.15.37",
+    "base >= 1.1.74",
     "stdlib >= 1.4.0",
     "? pycoalprocessing >= 1.0.6",
     "? pyfusionenergy >= 1.0.3"
