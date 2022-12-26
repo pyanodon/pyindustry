@@ -67,6 +67,9 @@ require('prototypes/robots/py-construction-robot-01')
 require('prototypes/robots/py-logistic-robot-01')
 
 require("prototypes/buildings/py-roboport-construction-test")
+require("prototypes/buildings/py-roboport-construction-mk02")
+require("prototypes/buildings/py-roboport-construction-mk03")
+require("prototypes/buildings/py-roboport-construction-mk04")
 
 if mods['pycoalprocessing'] then
 	require("prototypes/buildings/mk02-locomotive")
