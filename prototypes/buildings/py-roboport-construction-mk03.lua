@@ -59,7 +59,7 @@ ENTITY {
     recharge_minimum = '60MJ',
     energy_usage = '400kW',
     -- per one charge slot
-    charging_energy = '180kW',
+    charging_energy = '600kW',
     logistics_radius = 0,
     construction_radius = 80,
     logistics_connection_distance = 80,
