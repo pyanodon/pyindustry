@@ -53,6 +53,12 @@ if settings.startup["py-tank-adjust"].value then
 	data.raw["storage-tank"]["py-tank-8000"].localised_name = {"entity-name.py-tank-8000-adjust"}
 end
 
+-- Armor
+if mods['pycoalprocessing'] then
+	require("prototypes/equipment/armor-updates")
+	require("prototypes/equipment/portable-gasolene-generator")
+end
+
 --Other
 require("prototypes/buildings/accumulator-mk01")
 require("prototypes/buildings/accumulator-mk02")
