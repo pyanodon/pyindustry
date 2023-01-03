@@ -18,15 +18,15 @@ data:extend{{
 	sprite = {
 		width = 64,
 		height = 64,
-		filename = '__pyfusionenergygraphics__/graphics/technology/item-group.png'
+		filename = '__pyindustry__/graphics/icons/gasolene-burner.png'
 	}
 }}
 
 ITEM {
     type = 'item',
     name = 'portable-gasolene-generator',
-    icon = '__pyindustry__/graphics/icons/py-construction-robot-01.png',
-    icon_size = 32,
+    icon = '__pyindustry__/graphics/icons/gasolene-burner.png',
+    icon_size = 64,
     subgroup = 'equipment',
     order = 'a[energy-source]-a[portable-gasolene-generator]',
     stack_size = 10,
