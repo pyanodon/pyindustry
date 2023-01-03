@@ -87,6 +87,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-battery-equipment",
+        group = "py-industry",
+        order = "v1"
+    },
+    {
+        type = "item-subgroup",
         name = "py-void",
         group = "py-industry",
         order = "za"
@@ -119,7 +125,8 @@ data.raw['recipe']['empty-barrel'].subgroup = nil
 data.raw.item['stone-wall'].subgroup = 'py-walls'
 data.raw.item['gate'].subgroup = 'py-walls'
 data.raw['item-subgroup']['equipment'].group = 'py-industry'
-data.raw['item-subgroup']['equipment'].order = 'v1'
+data.raw['item-subgroup']['equipment'].order = 'v2'
 data.raw['item-subgroup']['armor'].group = 'py-industry'
-data.raw['item-subgroup']['armor'].order = 'v2'
+data.raw['item-subgroup']['armor'].order = 'v3'
 data.raw['item-with-entity-data']['artillery-wagon'].subgroup = 'defensive-structure'
+data.raw.item.radar.subgroup = 'py-industry'

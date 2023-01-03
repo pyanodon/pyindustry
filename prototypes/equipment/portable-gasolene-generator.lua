@@ -1,7 +1,7 @@
 data:extend{{
 	type = 'generator-equipment',
 	name = 'portable-gasolene-generator',
-	power = '280kW',
+	power = '180kW',
 	burner = {
 		type = 'burner',
 		emissions_per_minute = 6,
@@ -45,6 +45,7 @@ RECIPE {
         {'boiler', 1},
         {'steel-plate', 20},
         {'iron-gear-wheel', 14},
+		{'small-electric-pole', 1}
     },
     results = {
         {'portable-gasolene-generator', 1}
