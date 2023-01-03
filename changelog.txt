@@ -6,6 +6,7 @@ Date: ?
     - buffed the inventory size bonus of armor to from 0/0/10/20/30 to 20/40/60/80/100
     - added a grid to light and heavy armors
     - changed the recipe for all armor tiers
+    - fusion reactor now requires fusion cells to operate
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 2022-11-28
