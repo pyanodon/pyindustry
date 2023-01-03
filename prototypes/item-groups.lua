@@ -93,6 +93,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-generator-equipment",
+        group = "py-industry",
+        order = "v3"
+    },
+    {
+        type = "item-subgroup",
         name = "py-void",
         group = "py-industry",
         order = "za"
@@ -127,6 +133,6 @@ data.raw.item['gate'].subgroup = 'py-walls'
 data.raw['item-subgroup']['equipment'].group = 'py-industry'
 data.raw['item-subgroup']['equipment'].order = 'v2'
 data.raw['item-subgroup']['armor'].group = 'py-industry'
-data.raw['item-subgroup']['armor'].order = 'v3'
+data.raw['item-subgroup']['armor'].order = 'v4'
 data.raw['item-with-entity-data']['artillery-wagon'].subgroup = 'defensive-structure'
 data.raw.item.radar.subgroup = 'py-industry'

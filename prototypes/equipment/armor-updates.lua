@@ -28,47 +28,94 @@ data.raw.technology['battery-equipment'].enabled = false
 data.raw.recipe['battery-equipment'].hidden = true
 data.raw.item['battery-equipment'].hidden = true
 data.raw.item['battery-equipment'].placed_as_equipment_result = nil
+data.raw.item['battery-equipment'].localised_name = {'equipment-name.battery-equipment'}
 data.raw.technology['battery-mk2-equipment'].hidden = true
 data.raw.technology['battery-mk2-equipment'].enabled = false
 data.raw.recipe['battery-mk2-equipment'].hidden = true
 data.raw.item['battery-mk2-equipment'].hidden = true
 data.raw.item['battery-mk2-equipment'].placed_as_equipment_result = nil
+data.raw.item['battery-mk2-equipment'].localised_name = {'equipment-name.battery-mk2-equipment'}
 
 data:extend{{
-	type = 'generator-equipment',
 	name = 'personal-fusion-cell',
-	power = '1.35MW',
-	energy_source = {
-		type = 'electric',
-		usage_priority = 'secondary-output'
-	},
-	categories = {'armor'},
-	shape = {
-		type = 'manual',
-		width = 3,
-		height = 3,
-		points = {
-				    {1, 0}, {2, 0},
-			{0, 1}, {1, 1}, {2, 1},
-			{0, 2}, {1, 2}
-		}
-	},
-	sprite = {
-		width = 64,
-		height = 64,
-		filename = '__pyindustry__/graphics/icons/fusion-cell.png',
-		scale = 1.4
-	},
-	take_result = 'fusion-reactor-equipment',
-	localised_name = {'item-name.personal-fusion-cell'},
-	localised_description = {'item-description.personal-fusion-cell'}
+	type = 'fuel-category'
 }}
 
-data.raw.item['fusion-reactor-equipment'].placed_as_equipment_result = 'personal-fusion-cell'
-data.raw.item['fusion-reactor-equipment'].icon = '__pyindustry__/graphics/icons/fusion-cell.png'
-data.raw.item['fusion-reactor-equipment'].icon_size = 64
-data.raw.item['fusion-reactor-equipment'].icon_mipmaps = nil
-data.raw.item['fusion-reactor-equipment'].localised_name = {'item-name.personal-fusion-cell'}
-data.raw.item['fusion-reactor-equipment'].localised_description = {'item-description.personal-fusion-cell'}
+ITEM {
+    type = 'item',
+    name = 'personal-fusion-cell',
+    icon = '__pyindustry__/graphics/icons/fusion-cell.png',
+    icon_size = 64,
+    subgroup = 'py-generator-equipment',
+    order = 'a[energy-source]-cb[personal-fusion-cell]',
+    stack_size = 10,
+	burnt_result = 'personal-fusion-cell-used',
+	fuel_value = '1GJ',
+	fuel_category = 'personal-fusion-cell'
+}
 
-data.raw['solar-panel-equipment']['solar-panel-equipment'].power = '100kW'
+RECIPE {
+	type = 'recipe',
+    name = 'personal-fusion-cell',
+    energy_required = 10,
+    category = "crafting-with-fluid",
+    enabled = false,
+    ingredients = {
+        {'empty-barrel', 1},
+		{type = 'fluid', name = 'water', amount = 100}
+    },
+    results = {
+        {'personal-fusion-cell', 1}
+    }
+}:add_unlock('fusion-reactor-equipment')
+
+ITEM {
+    type = 'item',
+    name = 'personal-fusion-cell-used',
+    icon = '__pyindustry__/graphics/icons/empty-fusion-cell.png',
+    icon_size = 64,
+    subgroup = 'py-generator-equipment',
+    order = 'a[energy-source]-cb[personal-fusion-cell-used]',
+    stack_size = 10,
+}
+
+RECIPE {
+	type = 'recipe',
+    name = 'personal-fusion-cell-refuel',
+    energy_required = 10,
+    category = "crafting-with-fluid",
+    enabled = false,
+    ingredients = {
+        {'personal-fusion-cell-used', 1},
+		{type = 'fluid', name = 'water', amount = 100}
+    },
+    results = {
+        {'personal-fusion-cell', 1}
+    }
+}:add_unlock('fusion-reactor-equipment')
+
+data.raw.item['solar-panel-equipment'].subgroup = 'py-generator-equipment'
+data.raw.item['solar-panel-equipment'].order = 'a[energy-source]-b[solar-panel-equipment]'
+
+data.raw.item['fusion-reactor-equipment'].subgroup = 'py-generator-equipment'
+data.raw.item['fusion-reactor-equipment'].order = 'a[energy-source]-c[fusion-reactor-equipment]'
+data.raw['generator-equipment']['fusion-reactor-equipment'].power = '1.35MW'
+data.raw['generator-equipment']['fusion-reactor-equipment'].burner = {
+	type = 'burner',
+	fuel_inventory_size = 2,
+	burnt_inventory_size = 2,
+	fuel_category = 'personal-fusion-cell'
+}
+data.raw['generator-equipment']['fusion-reactor-equipment'].shape = {
+    type = 'manual',
+    width = 4,
+    height = 4,
+    points = {
+                {1, 0}, {2, 0},
+        {0, 1}, {1, 1}, {2, 1}, {3, 1},
+        {0, 2}, {1, 2}, {2, 2}, {3, 2},
+        {0, 3}, {1, 3}, {2, 3}, {3, 3}
+    }
+}
+
+data.raw['solar-panel-equipment']['solar-panel-equipment'].power = '90kW'

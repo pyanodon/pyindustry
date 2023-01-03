@@ -27,7 +27,7 @@ ITEM {
     name = 'portable-gasolene-generator',
     icon = '__pyindustry__/graphics/icons/gasolene-burner.png',
     icon_size = 64,
-    subgroup = 'equipment',
+    subgroup = 'py-generator-equipment',
     order = 'a[energy-source]-a[portable-gasolene-generator]',
     stack_size = 10,
 	placed_as_equipment_result = 'portable-gasolene-generator',
