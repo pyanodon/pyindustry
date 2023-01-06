@@ -8,13 +8,11 @@ RECIPE {
         {"processing-unit", 15},
         {'iron-gear-wheel', 200},
         {"plastic-bar", 10},
-        {"niobium-plate", 10},
-        {"nexelit-plate", 20},
     },
     results = {
         {'py-ze-mk03', 1}
     }
-}:add_unlock('py-accumulator-mk03')
+}:add_unlock('py-accumulator-mk03'):add_ingredient({"niobium-plate", 10}):add_ingredient({"nexelit-plate", 20})
 
 ITEM {
     type = 'item',

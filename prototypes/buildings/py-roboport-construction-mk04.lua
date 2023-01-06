@@ -6,13 +6,11 @@ RECIPE {
     ingredients = {
         {'py-ze-mk03', 1},
         {"low-density-structure", 10},
-        {"nbfe-alloy", 10},
-        {"kevlar", 30},
     },
     results = {
         {'py-ze-mk04', 1}
     }
-}:add_unlock('kevlar-mk02')
+}:add_unlock('kevlar-mk02'):add_ingredient({"nbfe-alloy", 10}):add_ingredient({"kevlar", 30})
 
 ITEM {
     type = 'item',
