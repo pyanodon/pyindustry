@@ -24,7 +24,7 @@ ITEM {
     order = "a-asphalt",
     stack_size = 1000,
     default_request_amount = 150,
-    place_as_tile = {result = "py-asphalt", condition_size = 2, condition = {"water-tile"}}
+    place_as_tile = {result = "py-asphalt", condition_size = 1, condition = {"water-tile"}}
 }
 
 ENTITY {

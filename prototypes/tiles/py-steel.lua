@@ -22,7 +22,7 @@ ITEM {
     subgroup = "py-tiles",
     order = "a-steel-oxide",
     stack_size = 1000,
-    place_as_tile = {result = "py-steel", condition_size = 2, condition = {"water-tile"}}
+    place_as_tile = {result = "py-steel", condition_size = 1, condition = {"water-tile"}}
 }
 
 ENTITY {
