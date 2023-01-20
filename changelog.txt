@@ -3,6 +3,7 @@ Version: 2.0.6
 Date: ?
   Changes:
     - Fixed that pY ground tiles could not be placed 1 tile away from water
+    - Fixed that nex and quantum batteries could be inserted into train equipment grids via inserter instead of the fuel slot
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 2023-1-5
