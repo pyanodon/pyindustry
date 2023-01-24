@@ -98,8 +98,8 @@ ITEM {
     {
       fuel_category = "jerry",
       effectivity = 1,
-      fuel_inventory_size = 2,
-      burnt_inventory_size = 2,
+      fuel_inventory_size = 5,
+      burnt_inventory_size = 5,
     },
     front_light =
     {
