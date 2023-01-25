@@ -70,3 +70,8 @@ RECIPE("storage-tank"):remove_unlock('fluid-handling'):add_unlock('py-storage-ta
 
 data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 20
 data.raw["fluid-wagon"]["fluid-wagon"].capacity = 25000
+
+-- Match movement speed on vanilla tiles (except hazard) to py tiles
+DATA('stone-path', 'tile'):set_field('walking_speed_modifier', 1.5)
+DATA('concrete', 'tile'):set_field('walking_speed_modifier', 2.5):set_field('vehicle_friction_modifier', 0.75)
+DATA('refined-concrete', 'tile'):set_field('walking_speed_modifier', 3.5):set_field('vehicle_friction_modifier', 0.6)
