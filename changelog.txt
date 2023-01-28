@@ -6,6 +6,7 @@ Date: ?
     - Fixed that nex and quantum batteries could be inserted into train equipment grids via inserter instead of the fuel slot
     - Increased fuel storage for t2 trains from 2 to 5
     - Matched stone path, concrete, and refined concrete to py tile speeds
+    - Reduced speeds and increased friction of hazard concrete to act as an effective warning area
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 2023-1-5

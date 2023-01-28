@@ -74,7 +74,17 @@ data.raw["fluid-wagon"]["fluid-wagon"].capacity = 25000
 -- Match movement speed on vanilla tiles (except hazard) to py tiles, update decorative removal probability
 DATA('stone-path', 'tile'):set_field('walking_speed_modifier', 1.5):set_field('decorative_removal_probability', 1.0)
 DATA('concrete', 'tile'):set_field('walking_speed_modifier', 2.5):set_field('vehicle_friction_modifier', 0.75):set_field('decorative_removal_probability', 1.0)
-DATA('refined-concrete', 'tile'):set_field('walking_speed_modifier', 3.5):set_field('vehicle_friction_modifier', 0.6):set_field('decorative_removal_probability', 1.0)
+local refined_properties = {
+    walking_speed_modifier = 3.5,
+    vehicle_friction_modifier = 0.6,
+    decorative_removal_probability = 1.0
+}
+-- Include the colored tiles if something exposes them
+for _, color_data in pairs(data.raw['utility-constants']['default'].player_colors) do
+    DATA(color_data.name .. '-refined-concrete', 'tile'):set_fields(refined_properties)
+end
+DATA('refined-concrete', 'tile'):set_fields(refined_properties)
+
 -- Update hazard concrete to slow movement, for safety™
 DATA('hazard-concrete-left', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
 DATA('hazard-concrete-right', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
