@@ -241,6 +241,6 @@ ITEM {
     close_sound = sounds.cargo_wagon_close,
     sound_minimum_speed = 1,
     vehicle_impact_sound = sounds.generic_impact,
-    equipment_grid = "mk02-train-equipment-grid",
+    --equipment_grid = "mk02-train-equipment-grid",
     water_reflection = locomotive_reflection(),
   }
