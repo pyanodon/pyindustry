@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 2023-3-28
+  Changes:
+    - reduced storage buildings to match the others in slot count
+    - removed equipment grid from mk02 wagon
+---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2023-1-31
   Changes:
