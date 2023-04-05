@@ -55,6 +55,10 @@ for f, _ in pairs(data.raw.fluid) do
     if data.raw.item[i] then
         fluid_barrels[i] = true
     end
+    local i = f .. '-canister'
+    if data.raw.item[i] then
+        fluid_barrels[i] = true
+    end
 end
 
 
