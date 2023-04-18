@@ -61,4 +61,4 @@ data.raw.recipe['personal-roboport-equipment'].ingredients = {
 
 data.raw.technology['personal-roboport-equipment'].prerequisites = {'construction-robotics'}
 data.raw.technology['personal-roboport-equipment'].unit.count = 300
-data.raw.technology['personal-roboport-equipment'].unit.ingredients = {{"automation-science-pack",1}, {"logistic-science-pack",1}}
+--data.raw.technology['personal-roboport-equipment'].unit.ingredients = {{"automation-science-pack",1}, {"logistic-science-pack",1}}
