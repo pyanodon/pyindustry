@@ -10,7 +10,7 @@ RECIPE {
     results = {
         {'py-ze-mk04', 1}
     }
-}:add_unlock('kevlar-mk02'):add_ingredient({"nbfe-alloy", 10}):add_ingredient({"kevlar", 30})
+}:add_ingredient({"nbfe-alloy", 10}):add_ingredient({"kevlar", 30})
 
 ITEM {
     type = 'item',
