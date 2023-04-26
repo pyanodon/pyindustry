@@ -102,8 +102,8 @@ data.raw.item['fusion-reactor-equipment'].order = 'a[energy-source]-c[fusion-rea
 data.raw['generator-equipment']['fusion-reactor-equipment'].power = '1.35MW'
 data.raw['generator-equipment']['fusion-reactor-equipment'].burner = {
 	type = 'burner',
-	fuel_inventory_size = 2,
-	burnt_inventory_size = 2,
+	fuel_inventory_size = 4,
+	burnt_inventory_size = 4,
 	fuel_category = 'personal-fusion-cell'
 }
 data.raw['generator-equipment']['fusion-reactor-equipment'].shape = {

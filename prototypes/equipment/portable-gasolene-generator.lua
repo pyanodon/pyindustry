@@ -5,8 +5,8 @@ data:extend{{
 	burner = {
 		type = 'burner',
 		emissions_per_minute = 6,
-		fuel_inventory_size = 2,
-		burnt_inventory_size = 2,
+		fuel_inventory_size = 4,
+		burnt_inventory_size = 4,
 		fuel_category = 'jerry'
 	},
 	energy_source = {
