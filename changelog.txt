@@ -2,6 +2,7 @@
 Version: 2.0.9
 Date: ?
   Changes:
+    - update chinese translation. credit sdqwo
     - increased fuel inventory size of the personal gasolene generator 2->4
     - increased fuel inventory size of the personal fusion generator 2->4
 ---------------------------------------------------------------------------------------------------
