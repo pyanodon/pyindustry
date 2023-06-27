@@ -10,7 +10,7 @@ Version: 2.0.8
 Date: 2023-4-16
   Changes:
     - fixed issue with burner burning canisters
-    - refuced charge energy of construction zone extenders mk02 from 5MW to 3MW and mk03 from 6MW to 4MW
+    - reduced charge energy of construction zone extenders mk02 from 5MW to 3MW and mk03 from 6MW to 4MW
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.7
 Date: 2023-3-28
