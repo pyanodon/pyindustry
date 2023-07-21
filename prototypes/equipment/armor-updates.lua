@@ -17,6 +17,11 @@ data:extend{{
 data.raw.armor['light-armor'].equipment_grid = 'light-armor-equipment-grid'
 data.raw.armor['heavy-armor'].equipment_grid = 'heavy-armor-equipment-grid'
 
+data.raw['equipment-grid']['small-equipment-grid'].width = 6
+data.raw['equipment-grid']['small-equipment-grid'].height = 6
+data.raw['equipment-grid']['medium-equipment-grid'].width = 8
+data.raw['equipment-grid']['medium-equipment-grid'].height = 8
+
 data.raw.armor['light-armor'].inventory_size_bonus = 20
 data.raw.armor['heavy-armor'].inventory_size_bonus = 40
 data.raw.armor['modular-armor'].inventory_size_bonus = 60
