@@ -7,6 +7,7 @@ Date: ?
     - increased fuel inventory size of the personal fusion generator 2 -> 4
     - increased grid inventory of modular armor 5x5 -> 6x6
     - increased grid inventory of modular armor 7x7 -> 8x8
+    - reduce volume of local radar
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2023-4-16
