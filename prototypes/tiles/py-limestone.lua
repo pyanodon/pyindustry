@@ -39,48 +39,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.5,
     decorative_removal_probability = 1,
-    layer = 61,
-    variants = {
-        main = {
-            {
-                picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone1.png",
-                count = 16,
-                size = 1
-            },
-            {
-                picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone2.png",
-                count = 4,
-                size = 2,
-                probability = 0.39
-            },
-            {
-                picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone4.png",
-                count = 4,
-                size = 4,
-                probability = 1
-            }
-        },
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-limestone/py-limestone-o.png",
-            count = 1
-        }
-    },
+    layer = 55,
     walking_sound = {
         {
             filename = "__base__/sound/walking/concrete-01.ogg",
@@ -104,3 +63,10 @@ ENTITY {
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.75
 }
+
+add_material_background(
+    data.raw.tile['py-limestone'],
+    '__pyindustry__/graphics/tiles/py-limestone/py-limestone.png',
+    '__pyindustry__/graphics/tiles/py-limestone/hr-py-limestone.png',
+    4
+)
