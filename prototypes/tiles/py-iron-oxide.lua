@@ -63,5 +63,5 @@ add_material_background(
     data.raw.tile['py-iron-oxide'],
     '__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png',
     '__pyindustry__/graphics/tiles/py-iron-oxide/hr-py-iron-oxide.png',
-    1
+    2
 )
