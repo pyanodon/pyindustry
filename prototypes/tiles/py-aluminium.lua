@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "py-aluminium",
     icon = "__pyindustry__/graphics/icons/py-aluminium.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
     order = "a-aluminium-oxide",
@@ -34,36 +34,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
-    layer = 61,
-    variants = {
-        main = {
-            {
-                picture = "__pyindustry__/graphics/tiles/py-aluminium/py-aluminium.png",
-                count = 1,
-                size = 1
-            }
-        },
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-            count = 1
-        }
-    },
+    layer = 58,
     walking_sound = {
         {
             filename = "__pyindustry__/sounds/iron1-01.ogg",
@@ -86,3 +57,10 @@ ENTITY {
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.6
 }
+
+add_material_background(
+    data.raw.tile['py-aluminium'],
+    '__pyindustry__/graphics/tiles/py-aluminium/py-aluminium.png',
+    '__pyindustry__/graphics/tiles/py-aluminium/hr-py-aluminium.png',
+    4
+)

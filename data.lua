@@ -87,3 +87,5 @@ end
 require("prototypes/buildings/burner")
 require("prototypes/buildings/sinkhole")
 require("prototypes/buildings/gas-vent")
+
+require("prototypes/tiles/functions")
