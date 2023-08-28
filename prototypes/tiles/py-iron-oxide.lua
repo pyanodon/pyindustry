@@ -18,7 +18,7 @@ ITEM {
     type = "item",
     name = "py-iron-oxide",
     icon = "__pyindustry__/graphics/icons/py-iron-oxide.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
     order = "a-iron-oxide",
@@ -35,36 +35,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.5,
     decorative_removal_probability = 1,
-    layer = 61,
-    variants = {
-        main = {
-            {
-                picture = "__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",
-                count = 1,
-                size = 1
-            }
-        },
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-            count = 1
-        }
-    },
+    layer = 56,
     walking_sound = {
         {
             filename = "__pyindustry__/sounds/iron-foot-01.ogg",
@@ -87,3 +58,10 @@ ENTITY {
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.75
 }
+
+add_material_background(
+    data.raw.tile['py-iron-oxide'],
+    '__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png',
+    '__pyindustry__/graphics/tiles/py-iron-oxide/hr-py-iron-oxide.png',
+    1
+)
