@@ -34,7 +34,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
-    layer = 54,
+    layer = 51,
     walking_sound = {
         {
             filename = "__pyindustry__/sounds/iron1-01.ogg",

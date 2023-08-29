@@ -128,5 +128,12 @@ function _G.add_material_background(tile, filename, filename_hr, count)
                 inner_corner_count = 8
             }
         ),
+        data.raw.tile['grass-1'].transitions[2]
     }
+end
+
+if mods.pystellarexpedition then
+    table.insert(data.raw.tile['grass-1'].transitions[2].to_tiles, 'space')
+    table.insert(data.raw.tile['concrete'].transitions[2].to_tiles, 'space')
+    table.insert(data.raw.tile['stone-path'].transitions[2].to_tiles, 'space')
 end
