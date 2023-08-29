@@ -16,7 +16,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-coal-tile",
-    icon = "__pyindustry__/graphics/icons/py-coal-tile-icon.png",
+    icon = "__pyindustry__/graphics/tiles/py-coal/py-coal-tile.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-tiles",
@@ -34,7 +34,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
-    layer = 61,
+    layer = 53,
     variants = {
         main = {
             {
