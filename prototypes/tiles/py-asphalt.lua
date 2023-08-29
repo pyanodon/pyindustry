@@ -36,7 +36,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.5,
     decorative_removal_probability = 1,
-    layer = 61,
+    layer = 51,
     variants = {
         main = {
             {

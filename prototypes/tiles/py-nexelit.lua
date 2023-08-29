@@ -63,5 +63,5 @@ add_material_background(
     data.raw.tile['py-nexelit'],
     '__pyindustry__/graphics/tiles/py-nexelit/py-nexelit.png',
     '__pyindustry__/graphics/tiles/py-nexelit/hr-py-nexelit.png',
-    1
+    2
 )
