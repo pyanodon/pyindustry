@@ -18,6 +18,10 @@ require("prototypes/tiles/py-iron")
 require("prototypes/tiles/py-steel")
 require("prototypes/tiles/py-aluminium")
 
+if mods.pyalternativeenergy then
+    require("prototypes/tiles/multicolored-concrete")
+end
+
 require("prototypes/updates/base-updates")
 
 if mods["pycoalprocessing"] then

@@ -77,7 +77,13 @@ data:extend {
         type = "item-subgroup",
         name = "py-tiles",
         group = "py-industry",
-        order = "t"
+        order = "ta"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-tiles-2",
+        group = "py-industry",
+        order = "tb"
     },
     {
         type = "item-subgroup",
