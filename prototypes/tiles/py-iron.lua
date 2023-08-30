@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "py-iron",
     icon = "__pyindustry__/graphics/icons/py-iron.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
     order = "a-iron-oxide",
