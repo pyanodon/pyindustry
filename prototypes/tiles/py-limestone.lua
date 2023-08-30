@@ -39,7 +39,7 @@ ENTITY {
     collision_mask = {"ground-tile"},
     walking_speed_modifier = 2.5,
     decorative_removal_probability = 1,
-    layer = 55,
+    layer = 57,
     walking_sound = {
         {
             filename = "__base__/sound/walking/concrete-01.ogg",

@@ -35,35 +35,6 @@ ENTITY {
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 52,
-    variants = {
-        main = {
-            {
-                picture = "__pyindustry__/graphics/tiles/py-iron/py-iron.png",
-                count = 1,
-                size = 1
-            }
-        },
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-            count = 1
-        }
-    },
     walking_sound = {
         {
             filename = "__pyindustry__/sounds/iron1-01.ogg",
@@ -86,3 +57,25 @@ ENTITY {
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.6
 }
+
+add_material_background(
+    data.raw.tile['py-iron'],
+    '__pyindustry__/graphics/tiles/py-limestone/py-limestone.png',
+    '__pyindustry__/graphics/tiles/py-limestone/hr-py-limestone.png',
+    1
+)
+
+data.raw.tile['py-iron'].variants.main = {
+    {
+        count = 8,
+        picture = '__pyindustry__/graphics/tiles/py-iron/py-iron.png',
+        size = 1,
+        hr_version = {
+            count = 8,
+            picture = '__pyindustry__/graphics/tiles/py-iron/hr-py-iron.png',
+            size = 1,
+            scale = 0.5
+        }
+    }
+}
+data.raw.tile['py-iron'].variants.material_background = nil
