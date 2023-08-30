@@ -80,3 +80,14 @@ DATA('hazard-concrete-left', 'tile'):set_field('walking_speed_modifier', 0.5):se
 DATA('hazard-concrete-right', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
 DATA('refined-hazard-concrete-left', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
 DATA('refined-hazard-concrete-right', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
+
+
+for _, subgroup in pairs(data.raw['item-subgroup']) do
+    if subgroup.group == 'logistics' then
+        subgroup.group = 'py-industry'
+        subgroup.order = 'a-' .. subgroup.order
+    end
+end
+
+data.raw['item-subgroup']['terrain'].order = 'ta'
+data.raw['item-subgroup']['transport'].group = 'combat'

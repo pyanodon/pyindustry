@@ -11,19 +11,19 @@ data:extend {
         type = "item-subgroup",
         name = "py-industry",
         group = "py-industry",
-        order = "a"
+        order = "ba"
     },
     {
         type = "item-subgroup",
         name = "py-electric",
         group = "py-industry",
-        order = "ab"
+        order = "bc"
     },
     {
         type = "item-subgroup",
         name = "py-storage-tanks",
         group = "py-industry",
-        order = "b"
+        order = "bd"
     },
     {
         type = "item-subgroup",
@@ -77,13 +77,13 @@ data:extend {
         type = "item-subgroup",
         name = "py-tiles",
         group = "py-industry",
-        order = "ta"
+        order = "tb"
     },
     {
         type = "item-subgroup",
         name = "py-tiles-2",
         group = "py-industry",
-        order = "tb"
+        order = "tc"
     },
     {
         type = "item-subgroup",
