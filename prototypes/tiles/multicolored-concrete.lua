@@ -54,5 +54,9 @@ for i, color_data in pairs(colors) do
         place_as_tile = {result = name, condition_size = 1, condition = {'water-tile'}},
         localised_name = data.raw.tile[name].localised_name
     }
+
+    data.raw.tile[name].minable = {mining_time = 0.1, result = name}
+    data.raw.tile[name].mined_sound = {filename = '__base__/sound/deconstruct-bricks.ogg'},
+    data.raw.tile[name].collision_mask = {'ground-tile'},
 end
 DATA('refined-concrete', 'tile'):set_fields(refined_properties)
