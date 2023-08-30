@@ -34,7 +34,7 @@ ENTITY {
     minable = {mining_time = 0.1, result = "py-asphalt"},
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     collision_mask = {"ground-tile"},
-    walking_speed_modifier = 2.5,
+    walking_speed_modifier = 3.25,
     decorative_removal_probability = 1,
     layer = 54,
     variants = {

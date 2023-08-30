@@ -13,6 +13,11 @@ RECIPE {
     requester_paste_multiplier = 4
 }:add_unlock("py-asphalt"):replace_ingredient("coal", "ash"):replace_ingredient("wood", "tailings-dust")
 
+if mods.pypetroleumhandling then
+    RECIPE('py-coal-tile'):add_ingredient{type = 'fluid', name = 'medium-distillate', amount = 5}
+    data.raw.recipe['py-coal-tile'].category = 'hor'
+end
+
 ITEM {
     type = "item",
     name = "py-coal-tile",
