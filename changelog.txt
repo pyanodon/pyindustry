@@ -13,6 +13,7 @@ Date: ?
     - added new technology: tiles mk03. this tech contains multicolored concrete
     - merged vanilla logistic item group with pyindustry item group
     - made some tile recipes more expensive. however you get 2x output
+    - Added menu simulations
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2023-4-16
