@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = 'item', name = 'coal', amount = 2}, --ash, 2
-        {type = 'item', name = 'wood', amount = 4} --tailings-dust, 10,
+        {type = 'item', name = 'wood', amount = 10} --tailings-dust, 10,
     },
     results = {
         {'py-coal-tile', 1}
@@ -15,7 +15,7 @@ RECIPE {
 }:add_unlock('py-asphalt'):replace_ingredient('coal', 'ash'):replace_ingredient('wood', 'tailings-dust')
 
 if mods.pypetroleumhandling then
-    RECIPE('py-coal-tile'):add_ingredient{type = 'fluid', name = 'medium-distillate', amount = 15}
+    RECIPE('py-coal-tile'):add_ingredient{type = 'fluid', name = 'medium-distillate', amount = 20}
     data.raw.recipe['py-coal-tile'].category = 'reformer'
     data.raw.recipe['py-coal-tile'].results = {{'py-coal-tile', 2}}
 end

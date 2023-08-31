@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = 'fluid', name = 'slacked-lime', amount = 10},
-        {type = 'item', name = 'powdered-quartz', amount = 4},
+        {type = 'item', name = 'powdered-quartz', amount = 1},
         {type = 'item', name = 'pure-sand', amount = 2}
     },
     results = {
