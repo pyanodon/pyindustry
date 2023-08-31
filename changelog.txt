@@ -11,7 +11,8 @@ Date: ?
     - new graphics for aluminium, nexelit, steel, limestone, iron oxide, asphalt, coal, and iron tiles
     - added quartz tile
     - added new technology: tiles mk03. this tech contains multicolored concrete
-    - buffed asphalt, iron oxide, and limestone tiles to 325% speed
+    - merged vanilla logistic item group with pyindustry item group
+    - made some tile recipes more expensive. however you get 2x output
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2023-4-16

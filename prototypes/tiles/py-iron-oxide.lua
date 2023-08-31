@@ -1,56 +1,57 @@
 RECIPE {
-    type = "recipe",
-    name = "py-iron-oxide",
-    category = "hpf",
+    type = 'recipe',
+    name = 'py-iron-oxide',
+    category = 'hpf',
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-oxide", amount = 2},
-        {type = "item", name = "coarse", amount = 10},
-        {type = "fluid", name = "dirty-water-light", amount = 20}
+        {type = 'item', name = 'iron-oxide', amount = 5},
+        {type = 'item', name = 'pipe', amount = 1},
+        {type = 'fluid', name = 'dirty-water-light', amount = 20}
     },
     results = {
-        {"py-iron-oxide", 1}
+        {'py-iron-oxide', 2}
     },
-    requester_paste_multiplier = 4
-}:add_unlock("py-asphalt")
+    requester_paste_multiplier = 4,
+    energy_required = 3
+}:add_unlock('py-asphalt')
 
 ITEM {
-    type = "item",
-    name = "py-iron-oxide",
-    icon = "__pyindustry__/graphics/icons/py-iron-oxide.png",
+    type = 'item',
+    name = 'py-iron-oxide',
+    icon = '__pyindustry__/graphics/icons/py-iron-oxide.png',
     icon_size = 64,
     flags = {},
-    subgroup = "py-tiles",
-    order = "a-iron-oxide",
+    subgroup = 'py-tiles',
+    order = 'a-iron-oxide',
     stack_size = 1000,
-    place_as_tile = {result = "py-iron-oxide", condition_size = 1, condition = {"water-tile"}}
+    place_as_tile = {result = 'py-iron-oxide', condition_size = 1, condition = {'water-tile'}}
 }
 
 ENTITY {
-    type = "tile",
-    name = "py-iron-oxide",
+    type = 'tile',
+    name = 'py-iron-oxide',
     needs_correction = false,
-    minable = {mining_time = 0.1, result = "py-iron-oxide"},
-    mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
-    collision_mask = {"ground-tile"},
-    walking_speed_modifier = 3.25,
+    minable = {mining_time = 0.1, result = 'py-iron-oxide'},
+    mined_sound = {filename = '__base__/sound/deconstruct-bricks.ogg'},
+    collision_mask = {'ground-tile'},
+    walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 56,
     walking_sound = {
         {
-            filename = "__pyindustry__/sounds/iron-foot-01.ogg",
+            filename = '__pyindustry__/sounds/iron-foot-01.ogg',
             volume = 0.7
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-02.ogg",
+            filename = '__pyindustry__/sounds/iron-foot-02.ogg',
             volume = 0.7
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-04.ogg",
+            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
             volume = 0.7
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-03.ogg",
+            filename = '__pyindustry__/sounds/iron-foot-03.ogg',
             volume = 0.7
         }
     },
