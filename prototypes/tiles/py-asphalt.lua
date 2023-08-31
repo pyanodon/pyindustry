@@ -1,20 +1,18 @@
-if not mods.pypetroleumhandling then
-    RECIPE {
-        type = 'recipe',
-        name = 'py-asphalt',
-        category = 'crafting-with-fluid',
-        enabled = false,
-        ingredients = {
-            {type = 'fluid', name = 'water', amount = 10},
-            {type = 'item', name = 'coal', amount = 3},
-            {type = 'item', name = 'stone', amount = 5}
-        },
-        results = {
-            {'py-asphalt', 1}
-        },
-        requester_paste_multiplier = 4
-    }:add_unlock('py-asphalt'):replace_ingredient('water', 'tar'):replace_ingredient('coal', 'ash'):replace_ingredient('stone', 'gravel')
-end
+RECIPE {
+    type = 'recipe',
+    name = 'py-asphalt',
+    category = 'crafting-with-fluid',
+    enabled = false,
+    ingredients = {
+        {type = 'fluid', name = 'water', amount = 10},
+        {type = 'item', name = 'coal', amount = 3},
+        {type = 'item', name = 'stone', amount = 5}
+    },
+    results = {
+        {'py-asphalt', 1}
+    },
+    requester_paste_multiplier = 4
+}:add_unlock('py-asphalt'):replace_ingredient('water', 'tar'):replace_ingredient('coal', 'ash'):replace_ingredient('stone', 'gravel')
 
 ITEM {
     type = 'item',

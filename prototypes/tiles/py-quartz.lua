@@ -13,7 +13,7 @@ RECIPE {
     },
     requester_paste_multiplier = 4,
     energy_required = 3
-}:add_unlock('py-asphalt')
+}:add_unlock('py-asphalt-mk02')
 
 ITEM {
     type = 'item',
