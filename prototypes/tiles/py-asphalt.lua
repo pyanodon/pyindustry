@@ -11,7 +11,8 @@ RECIPE {
     results = {
         {'py-asphalt', 1}
     },
-    requester_paste_multiplier = 4
+    requester_paste_multiplier = 4,
+    energy_required = 3
 }:add_unlock('py-asphalt'):replace_ingredient('water', 'tar'):replace_ingredient('coal', 'ash'):replace_ingredient('stone', 'gravel')
 
 ITEM {
