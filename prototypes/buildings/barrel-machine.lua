@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/barrel-machine.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "py-pipes",
     order = "a",
     place_result = "barrel-machine-mk01",
     stack_size = 10

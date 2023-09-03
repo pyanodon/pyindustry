@@ -20,7 +20,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/radar.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "defensive-structure",
     order = "d[radar]-a[radar]",
     place_result = "py-local-radar",
     stack_size = 10

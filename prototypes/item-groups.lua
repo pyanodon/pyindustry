@@ -16,97 +16,97 @@ data:extend {
     {
         type = "item-subgroup",
         name = "py-electric",
-        group = "py-industry",
-        order = "bc"
+        group = "logistics",
+        order = "dc"
     },
     {
         type = "item-subgroup",
         name = "py-storage-tanks",
-        group = "py-industry",
-        order = "bd"
+        group = "logistics",
+        order = "ad"
     },
     {
         type = "item-subgroup",
         name = "py-pipes",
-        group = "py-industry",
+        group = "logistics",
         order = "c"
     },
     {
         type = "item-subgroup",
         name = "py-walls",
-        group = "py-industry",
+        group = "combat",
         order = "d"
     },
     {
         type = "item-subgroup",
         name = "py-containers-shed",
-        group = "py-industry",
-        order = "ea"
+        group = "logistics",
+        order = "ga"
     },
     {
         type = "item-subgroup",
         name = "py-containers-storehouse",
-        group = "py-industry",
-        order = "eb"
+        group = "logistics",
+        order = "gb"
     },
     {
         type = "item-subgroup",
         name = "py-containers-warehouse",
-        group = "py-industry",
-        order = "ec"
+        group = "logistics",
+        order = "gc"
     },
     {
         type = "item-subgroup",
         name = "py-containers-deposit",
-        group = "py-industry",
-        order = "ed"
+        group = "logistics",
+        order = "gd"
     },
     {
         type = "item-subgroup",
         name = "py-stations",
-        group = "py-industry",
-        order = "f"
+        group = "logistics",
+        order = "ge"
     },
     {
         type = "item-subgroup",
         name = "py-robots",
-        group = "py-industry",
-        order = "g"
+        group = "logistics",
+        order = "gf"
     },
     {
         type = "item-subgroup",
         name = "py-tiles",
-        group = "py-industry",
+        group = "logistics",
         order = "tb"
     },
     {
         type = "item-subgroup",
         name = "py-tiles-2",
-        group = "py-industry",
+        group = "logistics",
         order = "tc"
     },
     {
         type = "item-subgroup",
         name = "py-trains",
-        group = "py-industry",
+        group = "logistics",
         order = "u"
     },
     {
         type = "item-subgroup",
         name = "py-battery-equipment",
-        group = "py-industry",
+        group = "combat",
         order = "v1"
     },
     {
         type = "item-subgroup",
         name = "py-generator-equipment",
-        group = "py-industry",
+        group = "combat",
         order = "v3"
     },
     {
         type = "item-subgroup",
         name = "py-void",
-        group = "py-industry",
+        group = "production",
         order = "za"
     },
     {
@@ -129,16 +129,15 @@ data:extend {
     }
 }
 
-data.raw['item-subgroup']['barrel'].group = 'py-industry'
+--data.raw['item-subgroup']['barrel'].group = 'py-industry'
 data.raw['item-subgroup']['barrel'].order = 'zz'
 data.raw['item']['empty-barrel'].subgroup = 'barrel'
 data.raw['item']['empty-barrel'].order = 'a'
 data.raw['recipe']['empty-barrel'].subgroup = nil
 data.raw.item['stone-wall'].subgroup = 'py-walls'
 data.raw.item['gate'].subgroup = 'py-walls'
-data.raw['item-subgroup']['equipment'].group = 'py-industry'
-data.raw['item-subgroup']['equipment'].order = 'v2'
-data.raw['item-subgroup']['armor'].group = 'py-industry'
-data.raw['item-subgroup']['armor'].order = 'v4'
+--data.raw['item-subgroup']['equipment'].group = 'py-industry'
+--data.raw['item-subgroup']['equipment'].order = 'v2'
+--data.raw['item-subgroup']['armor'].group = 'py-industry'
+--data.raw['item-subgroup']['armor'].order = 'v4'
 data.raw['item-with-entity-data']['artillery-wagon'].subgroup = 'defensive-structure'
-data.raw.item.radar.subgroup = 'py-industry'

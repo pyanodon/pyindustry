@@ -23,7 +23,7 @@ ITEM {
     icon = "__pyindustry__/graphics/icons/megadar.png",
     icon_size = 64,
     flags = {},
-    subgroup = "py-industry",
+    subgroup = "defensive-structure",
     order = "d[radar]-a[megadar]",
     place_result = "megadar",
     stack_size = 10
