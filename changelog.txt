@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.9
-Date: ?
+Date: 2023-9-3
   Changes:
     - update chinese translation. credit sdqwo
     - increased fuel inventory size of the personal gasolene generator 2 -> 4
@@ -11,9 +11,10 @@ Date: ?
     - new graphics for aluminium, nexelit, steel, limestone, iron oxide, asphalt, coal, and iron tiles
     - added quartz tile
     - added new technology: tiles mk03. this tech contains multicolored concrete
-    - merged vanilla logistic item group with pyindustry item group
+    - moved pyindustry item groups to vanilla item group tabs
     - made some tile recipes more expensive. however you get 2x output
     - Added menu simulations
+    - Removed productivity from all tiles, chests, tanks, and valves added by py industry
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2023-4-16
@@ -130,9 +131,6 @@ Date: 2020-02-21
 Version: 1.4.0
   Balances:
     - fixed wire connections to warehouses,sheds, and storehouse
----------------------------------------------------------------------------------------------------
-Version: 1.4.0
-  Balances:
     - Sound fix
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.9
@@ -241,9 +239,6 @@ Version: 1.1.6
 Version: 1.1.4
   Bugfixes:
     - Niobium pipe fix.
----------------------------------------------------------------------------------------------------
-Version: 1.1.4
-  Balances:
     - All recipes now support modules.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
