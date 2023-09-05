@@ -85,3 +85,9 @@ data.raw['item-subgroup']['terrain'].order = 'ta'
 data.raw['item-subgroup']['transport'].group = 'combat'
 
 data.raw.item["steel-chest"].subgroup = "logistic-network"
+
+ITEM("stone-brick"):set_fields{stack_size = 1000}
+ITEM("concrete"):set_fields{stack_size = 1000}
+ITEM("hazard-concrete"):set_fields{stack_size = 1000}
+ITEM("refined-concrete"):set_fields{stack_size = 1000}
+ITEM("refined-hazard-concrete"):set_fields{stack_size = 1000}
