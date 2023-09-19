@@ -84,6 +84,6 @@ ENTITY {
         max_sounds_per_type = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points,
-    circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
+    circuit_wire_connection_points = circuit_connector_definitions["tanks-3000"].points,
+    circuit_connector_sprites = circuit_connector_definitions["tanks-3000"].sprites
 }
