@@ -3,6 +3,10 @@ require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 require("prototypes/item-groups")
 require("prototypes/recipe-categories")
 
+-- (( Circuit Connector Definitions )) --
+require("prototypes/circuit-connector-definitions")
+-- ))
+
 --Technology
 require("prototypes/technologies/storage-tanks")
 require("prototypes/technologies/asphalt")
