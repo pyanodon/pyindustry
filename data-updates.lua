@@ -120,3 +120,11 @@ local recipes_list =
 
 --adding to module limitation list
 FUN.productivity(recipes_list)
+
+pypp_cache_file_to_use = function()
+    if mods.pycoalprocessing then
+        require "__pycoalprocessing__/cached-configs/pycoalprocessing+pyindustry.lua"
+    else
+        require "__pyindustry__/cached-configs/pyindustry.lua"
+    end
+end
