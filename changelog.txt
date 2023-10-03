@@ -4,7 +4,7 @@ Date: When it's done
   Changes:
     - Improved circuit connector placement for 30kL tank (credit: JStMorgan)
     - Fixed Asphalt and Coal tiles replacing dark vanilla Lab tiles (https://github.com/pyanodon/pybugreports/issues/321) (credit: JStMorgan)
-    - Decentralised tech cache from PyPP to individual Py mods
+    - added decentralised PyPP cache file
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.10
 Date: 2023-9-4
