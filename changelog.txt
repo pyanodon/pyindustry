@@ -7,6 +7,7 @@ Date: When it's done
     - Fixed Asphalt and Coal tiles replacing dark vanilla Lab tiles (https://github.com/pyanodon/pybugreports/issues/321) (credit: JStMorgan)
     - added decentralised PyPP cache file
     - Changed limestone tile map color thanks to @HugeCaniac
+    - added flag "not-rotatable" to symmetric fluid tanks. (https://github.com/pyanodon/pybugreports/issues/353)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.10
 Date: 2023-9-4
