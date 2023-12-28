@@ -4,7 +4,7 @@ RECIPE {
     category = mods.pycoalprocessing and 'smelting' or 'crafting-with-fluid',
     enabled = false,
     ingredients = {
-        {type = 'fluid', name = 'water', amount = 20},
+        {type = 'fluid', name = 'water', amount = 35},
         {type = 'item', name = 'coal', amount = 3},
         {type = 'item', name = 'stone', amount = 10}
         -- {type='fluid', name='creosote', amount=10},
