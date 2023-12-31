@@ -22,9 +22,9 @@ function _G.water_transition_template_with_effect(to_tiles, normal_res_transitio
 	return make_generic_transition_template(to_tiles, water_transition_group_id, nil, normal_res_transition, high_res_transition, options, true, false, true)
 end
 
-function _G.add_material_background(tile, filename, filename_hr, count)
+function _G.add_material_background(tile, filename, filename_hr, count, template)
 	count = count or 4
-    local variants = table.deepcopy(data.raw.tile['concrete'].variants)
+    local variants = table.deepcopy(data.raw.tile[template or 'concrete'].variants)
     
     variants.main = {
         {
@@ -56,7 +56,7 @@ function _G.add_material_background(tile, filename, filename_hr, count)
     }
     
     tile.variants = variants
-	tile.transitions_between_transitions = table.deepcopy(data.raw.tile['concrete'].transitions_between_transitions)
+	tile.transitions_between_transitions = table.deepcopy(data.raw.tile[template or 'concrete'].transitions_between_transitions)
 
     tile.transitions = {
         water_transition_template_with_effect(
