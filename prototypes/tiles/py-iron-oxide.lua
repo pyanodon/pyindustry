@@ -40,19 +40,23 @@ ENTITY {
     walking_sound = {
         {
             filename = '__pyindustry__/sounds/iron-foot-01.ogg',
-            volume = 0.7
+            volume = 0.3,
+            speed = 1.2
         },
         {
             filename = '__pyindustry__/sounds/iron-foot-02.ogg',
-            volume = 0.7
-        },
-        {
-            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
-            volume = 0.7
+            volume = 0.3,
+            speed = 1.2
         },
         {
             filename = '__pyindustry__/sounds/iron-foot-03.ogg',
-            volume = 0.7
+            volume = 0.3,
+            speed = 1.2
+        },
+        {
+            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
+            volume = 0.3,
+            speed = 1.2
         }
     },
     map_color = {r = 87, g = 33, b = 3, a = 1},

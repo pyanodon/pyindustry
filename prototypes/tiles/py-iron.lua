@@ -38,20 +38,24 @@ ENTITY {
     layer = 72,
     walking_sound = {
         {
-            filename = '__pyindustry__/sounds/iron1-01.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-01.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-02.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-02.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-04.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-03.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-03.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
+            volume = 0.3,
+            speed = 1.2
         }
     },
     map_color = {r = 130, g = 130, b = 130, a = 1},

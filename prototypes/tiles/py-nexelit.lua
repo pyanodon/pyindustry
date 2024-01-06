@@ -37,24 +37,7 @@ ENTITY {
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 75,
-    walking_sound = {
-        {
-            filename = '__pyindustry__/sounds/iron-foot-01.ogg',
-            volume = 0.7
-        },
-        {
-            filename = '__pyindustry__/sounds/iron-foot-02.ogg',
-            volume = 0.7
-        },
-        {
-            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
-            volume = 0.7
-        },
-        {
-            filename = '__pyindustry__/sounds/iron-foot-03.ogg',
-            volume = 0.7
-        }
-    },
+    walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
     map_color = {r = 0, g = 110, b = 255, a = 1},
     pollution_absorption_per_second = 0,
     vehicle_friction_modifier = 0.6

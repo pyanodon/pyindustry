@@ -9,6 +9,8 @@ Date: ?
     - Changed limestone tile map color thanks to @HugeCaniac
     - added flag "not-rotatable" to symmetric fluid tanks. (https://github.com/pyanodon/pybugreports/issues/353)
     - Increased creosote amount in limestone tile recipe from 20 to 35
+    - Updated the graphics for the steel tile
+    - Update the tile walking SFX
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.10
 Date: 2023-9-4

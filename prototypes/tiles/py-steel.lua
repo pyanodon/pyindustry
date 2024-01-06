@@ -54,23 +54,27 @@ ENTITY {
     collision_mask = {'ground-tile'},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
-    layer = 71,
+    layer = 7,
     walking_sound = {
         {
-            filename = '__pyindustry__/sounds/iron1-01.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-01.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-02.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-02.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-04.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-03.ogg',
+            volume = 0.3,
+            speed = 1.2
         },
         {
-            filename = '__pyindustry__/sounds/iron1-03.ogg',
-            volume = 0.6
+            filename = '__pyindustry__/sounds/iron-foot-04.ogg',
+            volume = 0.3,
+            speed = 1.2
         }
     },
     map_color = {r = 0, g = 0, b = 0, a = 1},
