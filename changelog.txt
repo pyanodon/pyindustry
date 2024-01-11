@@ -3,6 +3,7 @@ Version: 2.0.12
 Date: ?
   Changes:
     - Fixed that asphalt tiles would disappear when upgrading to 2.0.11.
+    - Adjusted mod thumbnail
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.11
 Date: 2024-1-8
