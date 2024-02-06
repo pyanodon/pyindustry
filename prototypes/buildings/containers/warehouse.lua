@@ -124,8 +124,6 @@ local function define_warehouse(name, logistics_name)
         if (logistics_name == "storage") then
             entity.inventory_size = 450
             entity.max_logistic_slots = 1
-        elseif (logistics_name == "buffer" or logistics_name == "requester") then
-            entity.max_logistic_slots = 30
         end
     else
         recipe:add_unlock("py-warehouse-research")

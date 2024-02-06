@@ -87,7 +87,6 @@ local function define_shed(name, logistics_name)
         flags = {"placeable-neutral", "placeable-player", "player-creation"},
         minable = {mining_time = 2, result = full_name},
         max_health = 250,
-        max_logistic_slots = 12,
         corpse = "big-remnants",
         dying_explosion = "medium-explosion",
         open_sound = {filename = "__pyindustry__/sounds/shed-open.ogg", volume = 0.55},
