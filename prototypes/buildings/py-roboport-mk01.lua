@@ -57,16 +57,19 @@ ENTITY {
     recharge_minimum = '60MJ',
     energy_usage = '50kW',
     -- per one charge slot
-    charging_energy = '180kW',
+    charging_energy = '350kW',
     logistics_radius = 30,
     construction_radius = 40,
-    charge_approach_distance = 5,
+    charge_approach_distance = 3,
     robot_slots_count = 4,
     material_slots_count = 4,
     robots_shrink_when_entering_and_exiting = true,
     stationing_offset = util.by_pixel(0, -3),
     charging_offsets = {
-        {-0, -0.5}
+        {-0, -0.5},
+        {-0, 0.5},
+        {-0.5, -0},
+        {0.5, -0},
     },
     base = {
         layers = {
