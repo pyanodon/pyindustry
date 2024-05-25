@@ -51,9 +51,9 @@ for f, _ in pairs(data.raw.fluid) do
             recipe:set_fields{hide_from_player_crafting = true, hide_from_stats = true}
             -- This is backwards, I blame king
             if recipe_name:match('^empty') then
-                recipe:change_category('py-barreling')
+                recipe.category = 'py-barreling'
             else
-                recipe:change_category('py-unbarreling')
+                recipe.category = 'py-unbarreling'
             end
         end
     end
