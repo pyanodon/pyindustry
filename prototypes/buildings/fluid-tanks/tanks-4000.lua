@@ -59,10 +59,10 @@ ENTITY {
                 shift = {1.0, -1.5}
             }
         },
-        fluid_background = ENTITY.Sprites.empty_sprite(),
-        window_background = ENTITY.Sprites.empty_sprite(),
-        flow_sprite = ENTITY.Sprites.empty_sprite(),
-        gas_flow = ENTITY.Sprites.empty_animation()
+        fluid_background = py.empty_image(),
+        window_background = py.empty_image(),
+        flow_sprite = py.empty_image(),
+        gas_flow = py.empty_image()
     },
     flow_length_in_ticks = 360,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
