@@ -29,7 +29,7 @@ ITEM {
     stack_size = 5
 }
 
-{
+ENTITY {
     type = "cargo-wagon",
     name = "mk02-wagon",
     icon = "__pyindustry__/graphics/icons/mk02-cargo-wagon.png",
