@@ -27,7 +27,7 @@ ITEM {
     place_as_tile = {result = 'py-nexelit', condition_size = 1, condition = {'water-tile'}}
 }
 
-ENTITY {
+TILE {
     type = 'tile',
     name = 'py-nexelit',
     needs_correction = false,
