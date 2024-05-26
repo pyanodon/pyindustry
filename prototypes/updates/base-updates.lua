@@ -70,14 +70,14 @@ data.raw['cargo-wagon']['cargo-wagon'].inventory_size = 20
 data.raw['fluid-wagon']['fluid-wagon'].capacity = 25000
 
 -- Match movement speed on vanilla tiles (except hazard) to py tiles, update decorative removal probability
-DATA('stone-path', 'tile'):set_field('walking_speed_modifier', 1.5):set_field('decorative_removal_probability', 1.0)
-DATA('concrete', 'tile'):set_field('walking_speed_modifier', 2.5):set_field('vehicle_friction_modifier', 0.75):set_field('decorative_removal_probability', 1.0)
+TILE('stone-path'):set_field('walking_speed_modifier', 1.5):set_field('decorative_removal_probability', 1.0)
+TILE('concrete'):set_field('walking_speed_modifier', 2.5):set_field('vehicle_friction_modifier', 0.75):set_field('decorative_removal_probability', 1.0)
 
 -- Update hazard concrete to slow movement, for safety™
-DATA('hazard-concrete-left', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
-DATA('hazard-concrete-right', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
-DATA('refined-hazard-concrete-left', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
-DATA('refined-hazard-concrete-right', 'tile'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
+TILE('hazard-concrete-left'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
+TILE('hazard-concrete-right'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 2):set_field('decorative_removal_probability', 1.0)
+TILE('refined-hazard-concrete-left'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
+TILE('refined-hazard-concrete-right'):set_field('walking_speed_modifier', 0.5):set_field('vehicle_friction_modifier', 500):set_field('decorative_removal_probability', 1.0)
 
 data.raw['item-subgroup']['terrain'].order = 'ta'
 data.raw['item-subgroup']['transport'].group = 'combat'
