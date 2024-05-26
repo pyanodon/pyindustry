@@ -2,7 +2,7 @@
 
 local void_result = {
     type = "item",
-    name = ITEM("ash"):is_valid() and "ash" or ITEM("coal"):is_valid() and "coal" or nil,
+    name = data.raw.item["ash"] and "ash" or data.raw.item["coal"] and "coal" or nil,
     amount_min = 1,
     amount_max = 1,
     probability = 0.20
