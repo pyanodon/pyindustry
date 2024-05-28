@@ -31,7 +31,7 @@ ITEM {
     place_as_tile = {result = 'py-limestone', condition_size = 1, condition = {'water-tile'}}
 }
 
-ENTITY {
+TILE {
     type = 'tile',
     name = 'py-limestone',
     needs_correction = false,

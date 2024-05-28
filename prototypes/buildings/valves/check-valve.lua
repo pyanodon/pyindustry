@@ -51,10 +51,10 @@ ENTITY {
         }
     },
     pictures = {
-        gas_flow = ENTITY.Sprites.empty_pictures(),
-        fluid_background = ENTITY.Sprites.empty_pictures(),
-        window_background = ENTITY.Sprites.empty_pictures(),
-        flow_sprite = ENTITY.Sprites.empty_pictures(),
+        gas_flow = py.empty_image(),
+        fluid_background = py.empty_image(),
+        window_background = py.empty_image(),
+        flow_sprite = py.empty_image(),
         picture = {
             sheets = {
                 {

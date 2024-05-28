@@ -26,7 +26,7 @@ ITEM {
     place_as_tile = {result = 'py-iron', condition_size = 1, condition = {'water-tile'}}
 }
 
-ENTITY {
+TILE {
     type = 'tile',
     name = 'py-iron',
     needs_correction = false,
