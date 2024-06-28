@@ -96,7 +96,7 @@ ENTITY {
     },
     burner =
     {
-      fuel_category = "jerry",
+      fuel_categories = {"jerry"},
       effectivity = 1,
       fuel_inventory_size = 5,
       burnt_inventory_size = 5,
