@@ -13,7 +13,6 @@ if not mods['boblogistics'] then
     ITEM('roboport'):add_flag('hidden')
 
     for _, recipe in pairs(data.raw.recipe) do
-        local r = RECIPE(recipe)
         r:replace_ingredient('roboport', 'py-roboport-mk01')
         r:replace_ingredient('construction-robot', 'py-construction-robot-01')
         r:replace_ingredient('logistic-robot', 'py-logistic-robot-01')
