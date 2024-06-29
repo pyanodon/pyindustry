@@ -459,7 +459,7 @@ RECIPE {
     results = {
         {'niobium-pipe', 2}
     }
-}:add_unlock {'niobium', 'py-storage-tanks'}:replace_ingredient('copper-plate', 'niobium-plate')
+}:add_unlock{'niobium', 'py-storage-tanks'}:replace_ingredient('copper-plate', 'niobium-plate')
 
 ITEM {
     type = 'item',
@@ -511,8 +511,8 @@ local recipes = {
     'py-turbine',
     'science-coating'
 }
-for _, recipe in pairs(recipes) do
-    recipe:replace_ingredient('pipe', 'niobium-pipe')
+for _, recipe_name in pairs(recipes) do
+    RECIPE(recipe_name):replace_ingredient('pipe', 'niobium-pipe')
 end
 
 ENTITY {
