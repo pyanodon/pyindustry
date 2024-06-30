@@ -18,6 +18,8 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
 end
 
 for _, fluid in pairs(data.raw.fluid) do
+    if fluid.name == 'fluid-unknown' then goto continue end
+
     local name
     local icons
 
@@ -43,4 +45,6 @@ for _, fluid in pairs(data.raw.fluid) do
         local ing = { type = 'fluid', name = fluid.name, amount = 20000 }
         make_fluid_recipe(name, locale, icons, 'py-venting', ing, 'py-void-gas')
     end
+
+    ::continue::
 end
