@@ -22,7 +22,7 @@ local cargo_bot =
 cargo_bot:replace_ingredient('copper-plate', {'nichrome', 2}):replace_ingredient("iron-plate", "niobium-plate")
 cargo_bot:add_unlock({'logistic-robotics'})
 
-ITEM {
+local bot_item = ITEM {
     type = 'item',
     name = 'py-logistic-robot-01',
     icon = '__pyindustry__/graphics/icons/py-logistic-robot-01.png',
@@ -32,7 +32,11 @@ ITEM {
     order = 'c',
     place_result = 'py-logistic-robot-01',
     stack_size = 50
-}:subgroup_order('py-hightech-items', 'b')
+}
+
+if data.raw['item-subgroup']["py-hightech-items"] then
+    bot_item:subgroup_order("py-hightech-items", "b")
+end
 
 ENTITY {
     type = 'logistic-robot',

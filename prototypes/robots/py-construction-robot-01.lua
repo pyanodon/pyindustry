@@ -18,7 +18,7 @@ RECIPE {
     }
 }:add_unlock('construction-robotics')
 
-ITEM {
+local bot_item = ITEM {
     type = 'item',
     name = 'py-construction-robot-01',
     icon = '__pyindustry__/graphics/icons/py-construction-robot-01.png',
@@ -28,7 +28,11 @@ ITEM {
     order = 'b',
     place_result = 'py-construction-robot-01',
     stack_size = 50
-}:subgroup_order("py-hightech-items", "b")
+}
+
+if data.raw['item-subgroup']["py-hightech-items"] then
+    bot_item:subgroup_order("py-hightech-items", "b")
+end
 
 ENTITY {
     type = 'construction-robot',
