@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.17
+Date: 2024-7-7
+  Changes:
+    - Added nuclear fuel to the list of things that cant be voided when pyalternative energy is active
+---------------------------------------------------------------------------------------------------
 Version: 2.0.16
 Date: 2024-6-27
   Changes:
