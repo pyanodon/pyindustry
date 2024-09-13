@@ -44,7 +44,7 @@ TILE {
     layer = 78,
     walking_sound = table.deepcopy(data.raw.tile['dry-dirt'].walking_sound),
     map_color = {r = 100, g = 100, b = 100, a = 1},
-    pollution_absorption_per_second = 0,
+    absorptions_per_second = {pollution = 0, pollen = 0},
     vehicle_friction_modifier = 0.6
 }
 

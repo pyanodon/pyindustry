@@ -59,7 +59,7 @@ TILE {
         }
     },
     map_color = {r = 130, g = 130, b = 130, a = 1},
-    pollution_absorption_per_second = 0,
+    absorptions_per_second = {pollution = 0, pollen = 0},
     vehicle_friction_modifier = 0.6
 }
 
