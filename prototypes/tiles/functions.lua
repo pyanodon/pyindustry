@@ -20,7 +20,7 @@ local function make_tile_transition_from_template_variation(src_x, src_y, cnt_, 
         scale = 0.5
       }
     }
-  end
+end
 
 function make_generic_transition_template(to_tiles, group1, group2, normal_res_transition, high_res_transition, options, base_layer, background, mask)
     local t = options.base or {}
@@ -30,70 +30,183 @@ function make_generic_transition_template(to_tiles, group1, group2, normal_res_t
     t.transition_group2 = group2
     local default_count = options.count or 16
     for k,y in pairs({inner_corner = 0, outer_corner = 288, side = 576, u_transition = 864, o_transition = 1152}) do
-      local count = options[k .. "_count"] or default_count
-      if count > 0 and type(y) == "number" then
+        local count = options[k .. "_count"] or default_count
+        if count > 0 and type(y) == "number" then
         local line_length = options[k .. "_line_length"] or count
         local is_tall = true
         if (options[k .. "_tall"] == false) then
-          is_tall = false
+            is_tall = false
         end
         if base_layer == true then
-          t[k] = make_tile_transition_from_template_variation(0, y, count, line_length, is_tall, normal_res_transition, high_res_transition)
+            t[k] = make_tile_transition_from_template_variation(0, y, count, line_length, is_tall, normal_res_transition, high_res_transition)
         end
         if background == true then
-          t[k .. "_background"] = make_tile_transition_from_template_variation(544, y, count, line_length, is_tall, normal_res_transition, high_res_transition)
+            t[k .. "_background"] = make_tile_transition_from_template_variation(544, y, count, line_length, is_tall, normal_res_transition, high_res_transition)
         end
         if mask == true then
-          t[k .. "_mask"] = make_tile_transition_from_template_variation(1088, y, count, line_length, nil, normal_res_transition, high_res_transition)
+            t[k .. "_mask"] = make_tile_transition_from_template_variation(1088, y, count, line_length, nil, normal_res_transition, high_res_transition)
         end
-  
+
         if options.effect_map ~= nil then
-          local effect_default_count = options.effect_map.count or 16
-          local effect_count = options.effect_map[k .. "_count"] or effect_default_count
-          if effect_count > 0 then
+            local effect_default_count = options.effect_map.count or 16
+            local effect_count = options.effect_map[k .. "_count"] or effect_default_count
+            if effect_count > 0 then
             local effect_line_length = options.effect_map[k .. "_line_length"] or effect_count
             local effect_is_tall = true
             if (options.effect_map[k .. "_tall"] == false) then
-              effect_is_tall = false
+                effect_is_tall = false
             end
             t[k .. "_effect_map"] = make_tile_transition_from_template_variation(0, y, effect_count, effect_line_length, effect_is_tall, options.effect_map.filename_norm, options.effect_map.filename_high)
-          end
+            end
         end
-      end
+        end
     end
     return t
-  end
+end
+
+base_tile_transition_effect_maps = {}
+local ttfxmaps = base_tile_transition_effect_maps
+
+ttfxmaps.water_grass =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-grass-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-grass-mask.png",
+  o_transition_tall = false,
+  u_transition_count = 4,
+  o_transition_count = 1
+}
+
+ttfxmaps.water_grass_to_land =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-grass-to-land-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-land-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_grass_to_out_of_map =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-grass-to-out-of-map-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-grass-to-out-of-map-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_sand =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-sand-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-sand-mask.png",
+  o_transition_tall = false,
+  u_transition_count = 4,
+  o_transition_count = 1
+}
+
+ttfxmaps.water_sand_to_land =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-sand-to-land-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-sand-to-land-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_sand_to_out_of_map =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-sand-to-out-of-map-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-sand-to-out-of-map-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_dirt =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-dirt-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-dirt-mask.png",
+  count = 8,
+  o_transition_tall = false,
+  u_transition_count = 2,
+  o_transition_count = 1
+}
+
+ttfxmaps.water_dirt_to_land =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-dirt-to-land-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-land-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_dirt_to_out_of_map =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-dirt-to-out-of-map-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-dirt-to-out-of-map-mask.png",
+  count = 3,
+  u_transition_count = 0,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_stone =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-stone-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-stone-mask.png",
+  count = 1,
+  o_transition_tall = false
+}
+
+ttfxmaps.water_stone_to_land =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-stone-to-land-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-stone-to-land-mask.png",
+  count = 3,
+  u_transition_count = 1,
+  o_transition_count = 0
+}
+
+ttfxmaps.water_stone_to_out_of_map =
+{
+  filename_norm = "__base__/graphics/terrain/effect-maps/water-stone-to-out-of-map-mask.png",
+  filename_high = "__base__/graphics/terrain/effect-maps/hr-water-stone-to-out-of-map-mask.png",
+  count = 3,
+  u_transition_count = 0,
+  o_transition_count = 0
+}
+
+
 
 _G.dirt_out_of_map_transition = make_generic_transition_template(
-	nil,
-	default_transition_group_id,
-	out_of_map_transition_group_id,
-	'__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png',
-	'__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png',
-	{
-		inner_corner_tall = true,
-		inner_corner_count = 3,
-		outer_corner_count = 3,
-		side_count = 3,
-		u_transition_count = 1,
-		o_transition_count = 0,
-		base = {
+    nil,
+    default_transition_group_id,
+    out_of_map_transition_group_id,
+    '__base__/graphics/terrain/out-of-map-transition/dirt-out-of-map-transition.png',
+    '__base__/graphics/terrain/out-of-map-transition/hr-dirt-out-of-map-transition.png',
+    {
+        inner_corner_tall = true,
+        inner_corner_count = 3,
+        outer_corner_count = 3,
+        side_count = 3,
+        u_transition_count = 1,
+        o_transition_count = 0,
+        base = {
             background_layer_offset = 1,
             background_layer_group = 0,
             offset_background_layer_by_tile_layer = true
         }
-	},
-	false,
-	true,
-	true
+    },
+    false,
+    true,
+    true
 )
 
 function _G.water_transition_template_with_effect(to_tiles, normal_res_transition, high_res_transition, options)
-	return make_generic_transition_template(to_tiles, water_transition_group_id, nil, normal_res_transition, high_res_transition, options, true, false, true)
+    return make_generic_transition_template(to_tiles, water_transition_group_id, nil, normal_res_transition, high_res_transition, options, true, false, true)
 end
 
 function _G.add_material_background(tile, filename, filename_hr, count, template)
-	count = count or 4
+    count = count or 4
     local variants = table.deepcopy(data.raw.tile[template or 'concrete'].variants)
     
     variants.main = {
@@ -126,7 +239,7 @@ function _G.add_material_background(tile, filename, filename_hr, count, template
     }
     
     tile.variants = variants
-	tile.transitions_between_transitions = table.deepcopy(data.raw.tile[template or 'concrete'].transitions_between_transitions)
+    tile.transitions_between_transitions = table.deepcopy(data.raw.tile[template or 'concrete'].transitions_between_transitions)
 
     tile.transitions = {
         water_transition_template_with_effect(
