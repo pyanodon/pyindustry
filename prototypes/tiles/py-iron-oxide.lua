@@ -24,7 +24,7 @@ ITEM {
     subgroup = 'py-tiles',
     order = 'a-iron-oxide',
     stack_size = 1000,
-    place_as_tile = {result = 'py-iron-oxide', condition_size = 1, condition = {'water-tile'}}
+    place_as_tile = {result = 'py-iron-oxide', condition_size = 1, condition = {layers = {water_tile = true}}}
 }
 
 TILE {
@@ -33,7 +33,7 @@ TILE {
     needs_correction = false,
     minable = {mining_time = 0.1, result = 'py-iron-oxide'},
     mined_sound = {filename = '__base__/sound/deconstruct-bricks.ogg'},
-    collision_mask = {'ground-tile'},
+    collision_mask = {layers = {ground_tile = true}},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 76,
