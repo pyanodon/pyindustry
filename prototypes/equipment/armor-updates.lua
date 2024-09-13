@@ -66,7 +66,7 @@ RECIPE {
     category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
-        {'empty-barrel', 1},
+        {'barrel', 1},
 		{type = 'fluid', name = 'water', amount = 100}
     },
     results = {
