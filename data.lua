@@ -1,3 +1,5 @@
+require '__pypostprocessing__.lib'
+
 require 'prototypes/item-groups'
 require 'prototypes/recipe-categories'
 
