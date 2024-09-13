@@ -2,7 +2,7 @@
 -- for base-game implementation details, see https://github.com/wube/factorio-data/blob/ed3d12197fbbe63fcd19c0eb23bc826cea44410f/core/lualib/circuit-connector-sprites.lua#L101
 -- variation counts from 0 (Python-like).
 
-circuit_connector_definitions["tanks-3000"] = circuit_connector_definitions.create
+circuit_connector_definitions["tanks-3000"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are horizontal in/outputs, vertical in/outputs.
