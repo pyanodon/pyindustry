@@ -5,7 +5,6 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         localised_name = locale,
         hidden = true,
         enabled = true,
-        flags = { 'hidden' },
         category = category,
         energy_required = 1,
         ingredients = { ing },

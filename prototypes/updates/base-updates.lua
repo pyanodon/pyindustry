@@ -7,10 +7,10 @@ if not mods['boblogistics'] then
     RECIPE('flying-robot-frame'):remove_unlock('robotics'):set_fields{hidden = true}
     RECIPE('roboport'):remove_unlock('logistic-robotics'):remove_unlock('construction-robotics'):set_fields{hidden = true}
 
-    ITEM('construction-robot'):add_flag('hidden')
-    ITEM('logistic-robot'):add_flag('hidden')
-    ITEM('flying-robot-frame'):add_flag('hidden')
-    ITEM('roboport'):add_flag('hidden')
+    ITEM('construction-robot'):set_fields{hidden = true}
+    ITEM('logistic-robot'):set_fields{hidden = true}
+    ITEM('flying-robot-frame'):set_fields{hidden = true}
+    ITEM('roboport'):set_fields{hidden = true}
 
     for _, recipe in pairs(data.raw.recipe) do
         recipe:replace_ingredient('roboport', 'py-roboport-mk01')

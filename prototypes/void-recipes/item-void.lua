@@ -30,17 +30,17 @@ local function make_void_recipe(name, newicons, ing_name, place_result)
     }
 end
 
+--TODO: See if Raiguard fixes the missing categories for release
 local groups = {
     "ammo",
     "armor",
     "capsule",
     "gun",
     "item-with-entity-data",
-    "item-with-inventory",
-    "item-with-label",
-    "item-with-tags",
+    --"item-with-inventory",
+    --"item-with-label",
+    --"item-with-tags",
     "item",
-    "mining-tool",
     "module",
     "rail-planner",
     "repair-tool",
