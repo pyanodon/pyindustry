@@ -39,26 +39,30 @@ TILE {
     decorative_removal_probability = 1,
     layer = 100,
     variants = {
-        main = data.raw.tile['lab-dark-2'].variants.main ,
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-            count = 1
+        main = data.raw.tile['lab-dark-2'].variants.main,
+        transition = {
+            overlay_layout = {
+                inner_corner = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
+                    count = 8
+                },
+                outer_corner = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
+                    count = 8
+                },
+                side = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
+                    count = 8
+                },
+                u_transition = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
+                    count = 8
+                },
+                o_transition = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
+                    count = 1
+                }
+            }
         }
     },
     walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
