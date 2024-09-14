@@ -44,30 +44,34 @@ TILE {
     layer = 101,
     variants = {
         main = data.raw.tile['lab-dark-1'].variants.main,
-        inner_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-            count = 8
-        },
-        outer_corner = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-            count = 8
-        },
-        side = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-            count = 8
-        },
-        u_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-            count = 8
-        },
-        o_transition = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-            count = 1
+        transition = {
+            overlay_layout = {
+                inner_corner = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
+                    count = 8
+                },
+                outer_corner = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
+                    count = 8
+                },
+                side = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
+                    count = 8
+                },
+                u_transition = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
+                    count = 8
+                },
+                o_transition = {
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
+                    count = 1
+                }
+            }
         }
     },
     walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
     map_color = {r = 50, g = 50, b = 50, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
+    absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.6,
     tint = {0.2,0.2,0.2}
 }

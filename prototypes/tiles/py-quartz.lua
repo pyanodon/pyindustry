@@ -38,7 +38,10 @@ data.raw.tile['lab-white'].collision_mask = {layers = {ground_tile = true}}
 data.raw.tile['lab-white'].vehicle_friction_modifier = 0.6
 data.raw.tile['lab-white'].tint = {255,255,255}
 
-local old = data.raw.tile['lab-white'].variants.main
-add_material_background(data.raw.tile['lab-white'])
-data.raw.tile['lab-white'].variants.material_background = nil
-data.raw.tile['lab-white'].variants.main = old
+-- giving it concrete base/transitions
+data.raw.tile['lab-white'].variants = table.deepcopy(data.raw.concrete.variants)
+data.raw.tile['lab-white'].variants.main = {{
+      picture = "__base__/graphics/terrain/lab-tiles/lab-white.png",
+      count = 1,
+      size = 1
+}}

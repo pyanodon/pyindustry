@@ -60,13 +60,15 @@ TILE {
         }
     },
     map_color = {r = 87, g = 33, b = 3, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
-    vehicle_friction_modifier = 0.75
+    absorptions_per_second = {pollution = 0},
+    vehicle_friction_modifier = 0.75,
+    variants = {
+        transition = table.deepcopy(TILE('concrete').variants.transition),
+        material_background =
+        {
+          picture = '__pyindustry__/graphics/tiles/py-iron-oxide/hr-py-iron-oxide.png',
+          count = 2,
+          scale = 0.5
+        }
+    }
 }
-
-add_material_background(
-    data.raw.tile['py-iron-oxide'],
-    '__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png',
-    '__pyindustry__/graphics/tiles/py-iron-oxide/hr-py-iron-oxide.png',
-    2
-)

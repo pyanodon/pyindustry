@@ -43,30 +43,33 @@ TILE {
     layer = 77,
     walking_sound = {
         {
-            filename = '__base__/sound/walking/concrete-01.ogg',
-            volume = 1.2
+            filename = '__base__/sound/walking/concrete-1.ogg',
+            volume = 0.5
         },
         {
-            filename = '__base__/sound/walking/concrete-02.ogg',
-            volume = 1.2
+            filename = '__base__/sound/walking/concrete-2.ogg',
+            volume = 0.5
         },
         {
-            filename = '__base__/sound/walking/concrete-03.ogg',
-            volume = 1.2
+            filename = '__base__/sound/walking/concrete-3.ogg',
+            volume = 0.5
         },
         {
-            filename = '__base__/sound/walking/concrete-04.ogg',
-            volume = 1.2
+            filename = '__base__/sound/walking/concrete-4.ogg',
+            volume = 0.5
         }
     },
     map_color = {r = 176, g = 175, b = 169, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
-    vehicle_friction_modifier = 0.75
-}
+    absorptions_per_second = {pollution = 0},
+    vehicle_friction_modifier = 0.75,
 
-add_material_background(
-    data.raw.tile['py-limestone'],
-    '__pyindustry__/graphics/tiles/py-limestone/py-limestone.png',
-    '__pyindustry__/graphics/tiles/py-limestone/hr-py-limestone.png',
-    4
-)
+    variants = {
+        transition = table.deepcopy(TILE('concrete').variants.transition),
+        material_background =
+        {
+          picture = '__pyindustry__/graphics/tiles/py-limestone/hr-py-limestone.png',
+          count = 4,
+          scale = 0.5
+        }
+    }
+}

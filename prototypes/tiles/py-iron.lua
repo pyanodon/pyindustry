@@ -26,6 +26,11 @@ ITEM {
     place_as_tile = {result = 'py-iron', condition_size = 1, condition = {layers = {water_tile = true}}}
 }
 
+local variants = {}
+for i=1, 8 do
+    
+end
+
 TILE {
     type = 'tile',
     name = 'py-iron',
@@ -59,28 +64,20 @@ TILE {
         }
     },
     map_color = {r = 130, g = 130, b = 130, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
-    vehicle_friction_modifier = 0.6
-}
-
-add_material_background(
-    data.raw.tile['py-iron'],
-    '__pyindustry__/graphics/tiles/py-limestone/py-limestone.png',
-    '__pyindustry__/graphics/tiles/py-limestone/hr-py-limestone.png',
-    1
-)
-
-data.raw.tile['py-iron'].variants.main = {
-    {
-        count = 8,
-        picture = '__pyindustry__/graphics/tiles/py-iron/py-iron.png',
-        size = 1,
-        hr_version = {
-            count = 8,
-            picture = '__pyindustry__/graphics/tiles/py-iron/hr-py-iron.png',
-            size = 1,
-            scale = 0.5
-        }
+    absorptions_per_second = {pollution = 0},
+    vehicle_friction_modifier = 0.6,
+    --TODO: fix low quality?
+    variants = {
+        transition = table.deepcopy(TILE('concrete').variants.transition),
+        -- why do we do this instead of the tile_background used elsewhere?
+        main =
+        {{
+          picture = '__pyindustry__/graphics/tiles/py-iron/hr-py-iron.png',
+          count = 8,
+          scale = 0.5,
+          size = 1,
+          y = 0,
+          line_length = 8
+        }}
     }
 }
-data.raw.tile['py-iron'].variants.material_background = nil

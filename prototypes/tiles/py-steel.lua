@@ -78,13 +78,15 @@ TILE {
         }
     },
     map_color = {r = 0, g = 0, b = 0, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
-    vehicle_friction_modifier = 0.6
+    absorptions_per_second = {pollution = 0},
+    vehicle_friction_modifier = 0.6,
+    variants = {
+        transition = table.deepcopy(TILE('concrete').variants.transition),
+        material_background =
+        {
+          picture = '__pyindustry__/graphics/tiles/py-steel/hr-py-steel.png',
+          count = 1,
+          scale = 0.5
+        }
+    }
 }
-
-add_material_background(
-    data.raw.tile['py-steel'],
-    '__pyindustry__/graphics/tiles/py-steel/py-steel.png',
-    '__pyindustry__/graphics/tiles/py-steel/hr-py-steel.png',
-    1
-)

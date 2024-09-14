@@ -39,13 +39,15 @@ TILE {
     layer = 75,
     walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
     map_color = {r = 0, g = 110, b = 255, a = 1},
-    absorptions_per_second = {pollution = 0, pollen = 0},
-    vehicle_friction_modifier = 0.6
+    absorptions_per_second = {pollution = 0},
+    vehicle_friction_modifier = 0.6,
+    variants = {
+        transition = table.deepcopy(TILE('concrete').variants.transition),
+        material_background =
+        {
+          picture = '__pyindustry__/graphics/tiles/py-nexelit/hr-py-nexelit.png',
+          count = 2,
+          scale = 0.5
+        }
+    }
 }
-
-add_material_background(
-    data.raw.tile['py-nexelit'],
-    '__pyindustry__/graphics/tiles/py-nexelit/py-nexelit.png',
-    '__pyindustry__/graphics/tiles/py-nexelit/hr-py-nexelit.png',
-    2
-)
