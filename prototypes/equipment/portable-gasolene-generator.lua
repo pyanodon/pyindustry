@@ -4,7 +4,9 @@ data:extend{{
 	power = '180kW',
 	burner = {
 		type = 'burner',
-		emissions_per_minute = 6,
+		emissions_per_minute = {
+		    pollution = 6
+		},
 		fuel_inventory_size = 4,
 		burnt_inventory_size = 4,
 		fuel_category = 'jerry'

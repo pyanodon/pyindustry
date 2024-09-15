@@ -96,7 +96,9 @@ ENTITY {
         effectivity = 1,
         fuel_inventory_size = 1,
         burnt_inventory_size = 1,
-        emissions_per_minute = 30,
+        emissions_per_minute = {
+            pollution = 30
+        },
         smoke = {
             {
                 name = "turbine-smoke",
