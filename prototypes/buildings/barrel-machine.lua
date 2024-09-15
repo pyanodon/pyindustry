@@ -97,7 +97,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {-1.0, -2.0}}}
+            pipe_connections = {{flow_direction = "input", position = {-1.0, -1.3}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
@@ -105,7 +105,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = 1,
-            pipe_connections = {{type = "output", position = {1.0, 2.0}}}
+            pipe_connections = {{flow_direction = "output", position = {1.0, 1.3}, direction = defines.direction.south}}
         },
         off_when_no_fluid_recipe = true
     },
