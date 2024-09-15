@@ -39,7 +39,7 @@ ENTITY {
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
     two_direction_only = true,
     fluid_box = {
-        base_area = 800,
+        volume = 80000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {position = {0.5, -3.5}},

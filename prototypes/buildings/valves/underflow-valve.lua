@@ -44,7 +44,7 @@ ENTITY {
     two_direction_only = false,
     working_sound = nil,
     fluid_box = {
-        base_area = 1,
+        volume = 100,
         base_level = -0.2,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {

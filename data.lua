@@ -45,15 +45,15 @@ require 'prototypes/buildings/valves/underflow-valve'
 
 --tank size settings check
 if settings.startup["py-tank-adjust"].value then
-	data.raw["storage-tank"]["py-tank-3000"].fluid_box.base_area = 100
+	data.raw["storage-tank"]["py-tank-3000"].fluid_box.volume = 10000
 	data.raw["storage-tank"]["py-tank-3000"].localised_name = {"entity-name.py-tank-3000-adjust"}
-	data.raw["storage-tank"]["py-tank-4000"].fluid_box.base_area = 275
+	data.raw["storage-tank"]["py-tank-4000"].fluid_box.volume = 27500
 	data.raw["storage-tank"]["py-tank-4000"].localised_name = {"entity-name.py-tank-4000-adjust"}
-	data.raw["storage-tank"]["py-tank-5000"].fluid_box.base_area = 650
+	data.raw["storage-tank"]["py-tank-5000"].fluid_box.volume = 65000
 	data.raw["storage-tank"]["py-tank-5000"].localised_name = {"entity-name.py-tank-5000-adjust"}
-	data.raw["storage-tank"]["py-tank-6500"].fluid_box.base_area = 750
+	data.raw["storage-tank"]["py-tank-6500"].fluid_box.volume = 75000
 	data.raw["storage-tank"]["py-tank-6500"].localised_name = {"entity-name.py-tank-6500-adjust"}
-	data.raw["storage-tank"]["py-tank-8000"].fluid_box.base_area = 1250
+	data.raw["storage-tank"]["py-tank-8000"].fluid_box.volume = 125000
 	data.raw["storage-tank"]["py-tank-8000"].localised_name = {"entity-name.py-tank-8000-adjust"}
 end
 
