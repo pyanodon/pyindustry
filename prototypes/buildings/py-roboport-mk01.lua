@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'steel-plate', 20},
-        {'iron-plate', 15},
-        {'iron-gear-wheel', 20},
-        {'electronic-circuit', 5}
+        {type = "item", name = 'steel-plate', amount = 20},
+        {type = "item", name = 'iron-plate', amount = 15},
+        {type = "item", name = 'iron-gear-wheel', amount = 20},
+        {type = "item", name = 'electronic-circuit', amount = 5}
     },
     results = {
-        {'py-roboport-mk01', 1}
+        {type = "item", name = 'py-roboport-mk01', amount = 1}
     }
 }:add_unlock('construction-robotics')
 

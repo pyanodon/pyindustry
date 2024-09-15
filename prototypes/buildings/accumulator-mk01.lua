@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"battery", 20},
-        {"iron-plate", 40},
-        {"copper-plate", 40},
-        {"steel-plate", 50},
-        {"advanced-circuit", 5}
+        {type = "item", name = "battery", amount = 20},
+        {type = "item", name = "iron-plate", amount = 40},
+        {type = "item", name = "copper-plate", amount = 40},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "advanced-circuit", amount = 5}
     },
     results = {
-        {"accumulator-mk01", 1}
+        {type = "item", name = "accumulator-mk01", amount = 1}
     }
 }:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10}):add_unlock({"py-accumulator-mk01"})
 

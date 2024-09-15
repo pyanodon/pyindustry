@@ -12,7 +12,7 @@ RECIPE {
         -- {type='item', name='limestone', amount=5},
     },
     results = {
-        {'py-limestone', 2}
+        {type = "item", name = 'py-limestone', amount = 2}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

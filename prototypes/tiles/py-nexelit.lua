@@ -9,7 +9,7 @@ RECIPE {
         {type = 'fluid', name = 'tar', amount = 20}
     },
     results = {
-        {'py-nexelit', 2}
+        {type = "item", name = 'py-nexelit', amount = 2}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

@@ -66,11 +66,11 @@ RECIPE {
     category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
-        {'barrel', 1},
+        {type = "item", name = 'barrel', amount = 1},
 		{type = 'fluid', name = 'water', amount = 100}
     },
     results = {
-        {'personal-fusion-cell', 1}
+        {type = "item", name = 'personal-fusion-cell', amount = 1}
     }
 }:add_unlock('fusion-reactor-equipment')
 

@@ -8,7 +8,7 @@ RECIPE {
         {type = "item", name = "iron-stick", amount = 4}
     },
     results = {
-        {"concrete-wall", 1}
+        {type = "item", name = "concrete-wall", amount = 1}
     }
 }:add_unlock("py-asphalt")
 

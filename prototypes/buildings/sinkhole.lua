@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"offshore-pump", 5},
-        {"iron-plate", 40},
-        {"pipe", 20},
-        {"steel-plate", 15},
-        {"stone-brick", 50}
+        {type = "item", name = "offshore-pump", amount = 5},
+        {type = "item", name = "iron-plate", amount = 40},
+        {type = "item", name = "pipe", amount = 20},
+        {type = "item", name = "steel-plate", amount = 15},
+        {type = "item", name = "stone-brick", amount = 50}
     },
     results = {
-        {"py-sinkhole", 1}
+        {type = "item", name = "py-sinkhole", amount = 1}
     }
 }:add_unlock("steel-processing")
 

@@ -7,7 +7,7 @@ RECIPE {
         {type = "item", name = "wood", amount = 3}
     },
     results = {
-        {"poorman-wood-fence", 1}
+        {type = "item", name = "poorman-wood-fence", amount = 1}
     }
 }
 

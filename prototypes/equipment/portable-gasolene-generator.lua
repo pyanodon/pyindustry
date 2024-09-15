@@ -41,14 +41,14 @@ RECIPE {
     category = "crafting",
     enabled = false,
     ingredients = {
-        {'engine-unit', 4},
-        {'boiler', 1},
-        {'steel-plate', 20},
-        {'iron-gear-wheel', 14},
-		{'small-electric-pole', 1}
+        {type = "item", name = 'engine-unit', amount = 4},
+        {type = "item", name = 'boiler', amount = 1},
+        {type = "item", name = 'steel-plate', amount = 20},
+        {type = "item", name = 'iron-gear-wheel', amount = 14},
+		{type = "item", name = 'small-electric-pole', amount = 1}
     },
     results = {
-        {'portable-gasolene-generator', 1}
+        {type = "item", name = 'portable-gasolene-generator', amount = 1}
     }
 }:add_unlock('personal-roboport-equipment')
 

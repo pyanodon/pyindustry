@@ -8,7 +8,7 @@ RECIPE {
         {type = 'item', name = 'wood', amount = 10} --tailings-dust, 10,
     },
     results = {
-        {'py-coal-tile', 1}
+        {type = "item", name = 'py-coal-tile', amount = 1}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

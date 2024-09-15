@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 0.5,
     enabled = true,
     ingredients = {
-        {"iron-plate", 20},
-        {"pipe", 15},
-        {"stone-brick", 5}
+        {type = "item", name = "iron-plate", amount = 20},
+        {type = "item", name = "pipe", amount = 15},
+        {type = "item", name = "stone-brick", amount = 5}
     },
     results = {
-        {"py-gas-vent", 1}
+        {type = "item", name = "py-gas-vent", amount = 1}
     }
 }
 

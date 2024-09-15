@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'py-ze-mk02', 1},
-        {"processing-unit", 15},
-        {'iron-gear-wheel', 200},
-        {"plastic-bar", 10},
+        {type = "item", name = 'py-ze-mk02', amount = 1},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = 'iron-gear-wheel', amount = 200},
+        {type = "item", name = "plastic-bar", amount = 10},
     },
     results = {
-        {'py-ze-mk03', 1}
+        {type = "item", name = 'py-ze-mk03', amount = 1}
     }
 }:add_unlock('py-accumulator-mk03'):add_ingredient({"niobium-plate", 10}):add_ingredient({"nexelit-plate", 20})
 

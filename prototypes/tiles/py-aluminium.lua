@@ -8,7 +8,7 @@ RECIPE {
         {type = 'item', name = 'iron-stick', amount = 1}
     },
     results = {
-        {'py-aluminium', 1}
+        {type = "item", name = 'py-aluminium', amount = 1}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

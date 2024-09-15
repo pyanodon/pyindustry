@@ -9,7 +9,7 @@ RECIPE {
         {type = 'item', name = 'pure-sand', amount = 2}
     },
     results = {
-        {'py-quartz', 2}
+        {type = "item", name = 'py-quartz', amount = 2}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

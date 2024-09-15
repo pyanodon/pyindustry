@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'py-ze-mk03', 1},
-        {"low-density-structure", 10},
+        {type = "item", name = 'py-ze-mk03', amount = 1},
+        {type = "item", name = "low-density-structure", amount = 10},
     },
     results = {
-        {'py-ze-mk04', 1}
+        {type = "item", name = 'py-ze-mk04', amount = 1}
     }
 }:add_ingredient({"nbfe-alloy", 10}):add_ingredient({"kevlar", 30})
 

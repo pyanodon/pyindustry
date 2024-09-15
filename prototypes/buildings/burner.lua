@@ -22,13 +22,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"stone-furnace", 5},
-        {"iron-plate", 20},
-        {"steel-plate", 20},
-        {"steel-furnace", 1}
+        {type = "item", name = "stone-furnace", amount = 5},
+        {type = "item", name = "iron-plate", amount = 20},
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "steel-furnace", amount = 1}
     },
     results = {
-        {"py-burner", 1}
+        {type = "item", name = "py-burner", amount = 1}
     }
 }:add_unlock("py-burner")
 

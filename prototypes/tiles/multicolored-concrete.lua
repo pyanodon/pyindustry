@@ -36,7 +36,7 @@ for i, color_data in pairs(colors) do
             color_data.dye
         },
         results = {
-            {name, 3}
+            {type = "item", name = name, amount = 3}
         },
         requester_paste_multiplier = 4,
         energy_required = 1

@@ -8,15 +8,15 @@ local cargo_bot =
     category = 'crafting-with-fluid',
     enabled = false,
     ingredients = {
-        {'iron-plate', 10},
-        {'iron-gear-wheel', 10},
-        {'copper-plate', 4},
-        {'electronic-circuit', 10},
-        {'plastic-bar', 5},
-        {'steam-engine', 1},
+        {type = "item", name = 'iron-plate', amount = 10},
+        {type = "item", name = 'iron-gear-wheel', amount = 10},
+        {type = "item", name = 'copper-plate', amount = 4},
+        {type = "item", name = 'electronic-circuit', amount = 10},
+        {type = "item", name = 'plastic-bar', amount = 5},
+        {type = "item", name = 'steam-engine', amount = 1},
     },
     results = {
-        {'py-logistic-robot-01', 1}
+        {type = "item", name = 'py-logistic-robot-01', amount = 1}
     }
 }:add_ingredient({type = 'fluid', name = 'fish-oil', amount = 50})
 cargo_bot:replace_ingredient('copper-plate', {'nichrome', 2}):replace_ingredient("iron-plate", "niobium-plate")

@@ -10,7 +10,7 @@ if mods.pyrawores and mods.pypetroleumhandling then
             {type = 'item', name = 'small-parts-01', amount = 1}
         },
         results = {
-            {'py-steel', 2}
+            {type = "item", name = 'py-steel', amount = 2}
         },
         requester_paste_multiplier = 4,
         energy_required = 3

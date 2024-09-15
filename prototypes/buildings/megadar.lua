@@ -2,13 +2,13 @@ RECIPE {
     type = "recipe",
     name = "megadar",
     ingredients = {
-        {"advanced-circuit", 20},
-        {"iron-gear-wheel", 40},
-        {"steel-plate", 20},
-        {"electric-engine-unit", 3}
+        {type = "item", name = "advanced-circuit", amount = 20},
+        {type = "item", name = "iron-gear-wheel", amount = 40},
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "electric-engine-unit", amount = 3}
     },
     results = {
-        {"megadar", 1}
+        {type = "item", name = "megadar", amount = 1}
     },
     enabled = false
 }:add_unlock("radars-mk02")

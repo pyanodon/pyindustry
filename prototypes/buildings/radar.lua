@@ -2,14 +2,14 @@ RECIPE {
     type = "recipe",
     name = "py-local-radar",
     ingredients = {
-        {"electronic-circuit", 5},
-        {"iron-gear-wheel", 5},
-        {"iron-plate", 10},
-        {"wood", 20},
-        {"engine-unit", 1}
+        {type = "item", name = "electronic-circuit", amount = 5},
+        {type = "item", name = "iron-gear-wheel", amount = 5},
+        {type = "item", name = "iron-plate", amount = 10},
+        {type = "item", name = "wood", amount = 20},
+        {type = "item", name = "engine-unit", amount = 1}
     },
     results = {
-        {"py-local-radar", 1}
+        {type = "item", name = "py-local-radar", amount = 1}
     },
     enabled = false
 }:add_unlock('radars-mk01')

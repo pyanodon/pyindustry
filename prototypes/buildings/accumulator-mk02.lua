@@ -5,14 +5,14 @@ RECIPE {
     category = 'crafting-with-fluid',
     enabled = false,
     ingredients = {
-        {"battery", 50},
-        {"processing-unit", 15},
-        {"iron-plate", 100},
-        {"copper-cable", 150},
-        {"steel-plate", 60},
+        {type = "item", name = "battery", amount = 50},
+        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "iron-plate", amount = 100},
+        {type = "item", name = "copper-cable", amount = 150},
+        {type = "item", name = "steel-plate", amount = 60},
     },
     results = {
-        {"accumulator-mk02", 1}
+        {type = "item", name = "accumulator-mk02", amount = 1}
     }
 }:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"optical-fiber", 30}):add_unlock("py-accumulator-mk02")
 

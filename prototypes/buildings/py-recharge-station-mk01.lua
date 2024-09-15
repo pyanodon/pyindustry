@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'steel-plate', 20},
-        {'copper-plate', 15},
-        {'copper-cable', 30},
-        {'electronic-circuit', 10}
+        {type = "item", name = 'steel-plate', amount = 20},
+        {type = "item", name = 'copper-plate', amount = 15},
+        {type = "item", name = 'copper-cable', amount = 30},
+        {type = "item", name = 'electronic-circuit', amount = 10}
     },
     results = {
-        {'py-recharge-station-mk01', 1}
+        {type = "item", name = 'py-recharge-station-mk01', amount = 1}
     }
 }:add_unlock('construction-robotics')
 

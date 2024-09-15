@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'py-roboport-mk01', 1},
-        {'engine-unit', 1},
-        {'steel-plate', 20},
-        {'advanced-circuit', 10}
+        {type = "item", name = 'py-roboport-mk01', amount = 1},
+        {type = "item", name = 'engine-unit', amount = 1},
+        {type = "item", name = 'steel-plate', amount = 20},
+        {type = "item", name = 'advanced-circuit', amount = 10}
     },
     results = {
-        {'py-roboport-mk02', 1}
+        {type = "item", name = 'py-roboport-mk02', amount = 1}
     }
 }:add_unlock('robotics')
 

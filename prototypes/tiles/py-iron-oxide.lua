@@ -9,7 +9,7 @@ RECIPE {
         {type = 'fluid', name = 'dirty-water-light', amount = 20}
     },
     results = {
-        {'py-iron-oxide', 2}
+        {type = "item", name = 'py-iron-oxide', amount = 2}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

@@ -6,14 +6,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"steel-plate", 50},
-        {"plastic-bar", 100},
-        {"niobium-plate", 10},
-        {"nexelit-plate", 20},
-        {"iron-gear-wheel", 100},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "plastic-bar", amount = 100},
+        {type = "item", name = "niobium-plate", amount = 10},
+        {type = "item", name = "nexelit-plate", amount = 20},
+        {type = "item", name = "iron-gear-wheel", amount = 100},
     },
     results = {
-        {"mk02-fluid-wagon", 1}
+        {type = "item", name = "mk02-fluid-wagon", amount = 1}
     }
 }:add_unlock("railway-mk02")
 

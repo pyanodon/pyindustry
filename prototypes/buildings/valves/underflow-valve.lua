@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {"electronic-circuit", 1},
-        {"steel-plate", 1},
-        {"iron-gear-wheel", 1},
-        {"pipe", 1}
+        {type = "item", name = "electronic-circuit", amount = 1},
+        {type = "item", name = "steel-plate", amount = 1},
+        {type = "item", name = "iron-gear-wheel", amount = 1},
+        {type = "item", name = "pipe", amount = 1}
     },
     results = {
-        {"py-underflow-valve", 1}
+        {type = "item", name = "py-underflow-valve", amount = 1}
     }
 }:add_unlock("fluid-handling")
 

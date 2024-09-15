@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {'py-ze', 1},
-        {'steel-plate', 30},
-        {'plastic-bar', 15},
-        {'iron-gear-wheel', 100},
-        {'advanced-circuit', 10}
+        {type = "item", name = 'py-ze', amount = 1},
+        {type = "item", name = 'steel-plate', amount = 30},
+        {type = "item", name = 'plastic-bar', amount = 15},
+        {type = "item", name = 'iron-gear-wheel', amount = 100},
+        {type = "item", name = 'advanced-circuit', amount = 10}
     },
     results = {
-        {'py-ze-mk02', 1}
+        {type = "item", name = 'py-ze-mk02', amount = 1}
     }
 }:add_unlock('py-accumulator-mk02')
 

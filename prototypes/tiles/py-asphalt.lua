@@ -9,7 +9,7 @@ RECIPE {
         {type = 'item', name = 'stone', amount = 5}
     },
     results = {
-        {'py-asphalt', 1}
+        {type = "item", name = 'py-asphalt', amount = 1}
     },
     requester_paste_multiplier = 4,
     energy_required = 3

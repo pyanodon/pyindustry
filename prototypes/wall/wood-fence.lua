@@ -7,7 +7,7 @@ RECIPE {
         {type = "item", name = "wood", amount = 2}
     },
     results = {
-        {"wood-fence", 1}
+        {type = "item", name = "wood-fence", amount = 1}
     }
 }:add_unlock("py-asphalt"):replace_ingredient("wood", "treated-wood")
 
