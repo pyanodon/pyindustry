@@ -91,7 +91,7 @@ ENTITY {
     source_inventory_size = 1,
     energy_source = {
         type = "burner",
-        --fuel_category = "chemical",
+        --fuel_categories = {"chemical"},
         fuel_categories = fuels,
         effectivity = 1,
         fuel_inventory_size = 1,

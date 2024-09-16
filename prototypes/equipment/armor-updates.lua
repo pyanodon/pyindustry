@@ -109,7 +109,7 @@ data.raw['generator-equipment']['fusion-reactor-equipment'].burner = {
 	type = 'burner',
 	fuel_inventory_size = 4,
 	burnt_inventory_size = 4,
-	fuel_category = 'personal-fusion-cell'
+	fuel_categories = {'personal-fusion-cell'}
 }
 data.raw['generator-equipment']['fusion-reactor-equipment'].shape = {
     type = 'manual',

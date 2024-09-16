@@ -9,7 +9,7 @@ data:extend{{
 		},
 		fuel_inventory_size = 4,
 		burnt_inventory_size = 4,
-		fuel_category = 'jerry'
+		fuel_categories = {'jerry'}
 	},
 	energy_source = {
 		type = 'electric',
