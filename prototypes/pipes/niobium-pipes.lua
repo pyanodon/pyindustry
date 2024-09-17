@@ -1,315 +1,161 @@
 local function py_pipepictures()
     return {
         straight_vertical_single = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-vertical-single.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-single.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-single.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         straight_vertical = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-vertical.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         straight_vertical_window = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-vertical-window.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-window.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-window.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         straight_horizontal_window = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-horizontal-window.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal-window.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal-window.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         straight_horizontal = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-horizontal.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         corner_up_right = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-corner-up-right.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-right.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-right.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         corner_up_left = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-corner-up-left.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-left.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-left.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         corner_down_right = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-corner-down-right.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-right.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-right.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         corner_down_left = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-corner-down-left.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-left.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-left.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         t_up = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-t-up.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-up.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-up.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         t_down = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-t-down.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-down.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-down.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         t_right = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-t-right.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-right.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-right.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         t_left = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-t-left.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-left.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-left.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         cross = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-cross.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-cross.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-cross.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         ending_up = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-ending-up.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-up.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-up.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         ending_down = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-ending-down.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-down.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-down.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         ending_right = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-ending-right.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-right.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-right.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         ending_left = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-ending-left.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-left.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-left.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         horizontal_window_background = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-horizontal-window-background.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-horizontal-window-background.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-horizontal-window-background.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         vertical_window_background = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-vertical-window-background.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-vertical-window-background.png',
             priority = 'extra-high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-vertical-window-background.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
         fluid_background = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/fluid-background.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-fluid-background.png',
             priority = 'extra-high',
-            width = 32,
-            height = 20,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-fluid-background.png',
-                priority = 'extra-high',
-                width = 64,
-                height = 40,
-                scale = 0.5
-            }
+            width = 64,
+            height = 40,
+            scale = 0.5
         },
         low_temperature_flow = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/fluid-flow-low-temperature.png',
-            priority = 'extra-high',
-            width = 160,
-            height = 20
-        },
-        middle_temperature_flow = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/fluid-flow-medium-temperature.png',
-            priority = 'extra-high',
-            width = 160,
-            height = 20
-        },
-        high_temperature_flow = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/fluid-flow-high-temperature.png',
-            priority = 'extra-high',
-            width = 160,
-            height = 20
-        },
-        gas_flow = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/steam.png',
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-steam.png',
             priority = 'extra-high',
             line_length = 10,
-            width = 24,
-            height = 15,
+            width = 48,
+            height = 30,
             frame_count = 60,
             axially_symmetrical = false,
-            direction_count = 1,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-steam.png',
-                priority = 'extra-high',
-                line_length = 10,
-                width = 48,
-                height = 30,
-                frame_count = 60,
-                axially_symmetrical = false,
-                direction_count = 1
-            }
+            direction_count = 1
         }
     }
 end
@@ -515,6 +361,12 @@ for _, recipe_name in pairs(recipes) do
     RECIPE(recipe_name):replace_ingredient('pipe', 'niobium-pipe')
 end
 
+--TODO: unfuck when bug is fixed
+local tmp_pics = table.deepcopy(data.raw.pipe.pipe.pictures)
+for k, v in pairs(py_pipepictures()) do
+    tmp_pics[k] = v
+end
+
 ENTITY {
     type = 'pipe',
     name = 'niobium-pipe',
@@ -539,13 +391,25 @@ ENTITY {
     fluid_box = {
         volume = 100,
         pipe_connections = {
-            {position = {0, -1}},
-            {position = {1, 0}},
-            {position = {0, 1}},
-            {position = {-1, 0}}
+            {
+                position = {0, -0},
+                direction = defines.direction.north,
+            },
+            {
+                position = {0, 0},
+                direction = defines.direction.east,
+            },
+            {
+                position = {0, 0},
+                direction = defines.direction.south,
+            },
+            {
+                position = {-0, 0},
+                direction = defines.direction.west
+            }
         }
     },
-    pictures = py_pipepictures(),
+    pictures = tmp_pics,--py_pipepictures(),
     working_sound = {
         sound = {
             {
@@ -582,9 +446,14 @@ ENTITY {
         volume = 100,
         pipe_covers = py_pipecoverspictures(),
         pipe_connections = {
-            {position = {0, -1}},
             {
-                position = {0, 1},
+                position = {0, -0},
+                direction = defines.direction.north
+            },
+            {
+                position = {0, 0},
+                direction = defines.direction.south,
+                connection_type = "underground",
                 max_underground_distance = 32
             }
         }
@@ -597,57 +466,33 @@ ENTITY {
         scale = 0.5
     },
     pictures = {
-        up = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-up.png',
-            priority = 'high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-up.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+        north = {
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-up.png',
+            priority = 'extra-high',
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
-        down = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-down.png',
-            priority = 'high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-down.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+        south = {
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-down.png',
+            priority = 'extra-high',
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
-        left = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-left.png',
-            priority = 'high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-left.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+        west = {
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-left.png',
+            priority = 'extra-high',
+            width = 128,
+            height = 128,
+            scale = 0.5
         },
-        right = {
-            filename = '__pyindustry__/graphics/entity/niobium-pipe/pipe-to-ground-right.png',
-            priority = 'high',
-            width = 64,
-            height = 64,
-            hr_version = {
-                filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-right.png',
-                priority = 'extra-high',
-                width = 128,
-                height = 128,
-                scale = 0.5
-            }
+        east = {
+            filename = '__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-right.png',
+            priority = 'extra-high',
+            width = 128,
+            height = 128,
+            scale = 0.5
         }
     }
 }
