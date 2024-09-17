@@ -72,7 +72,7 @@ RECIPE {
     results = {
         {type = "item", name = 'personal-fusion-cell', amount = 1}
     }
-}:add_unlock('fusion-reactor-equipment')
+}:add_unlock('fission-reactor-equipment')
 
 ITEM {
     type = 'item',
@@ -97,21 +97,21 @@ RECIPE {
     results = {
         {'personal-fusion-cell', 1}
     }
-}:add_unlock('fusion-reactor-equipment')
+}:add_unlock('fission-reactor-equipment')
 
 data.raw.item['solar-panel-equipment'].subgroup = 'py-generator-equipment'
 data.raw.item['solar-panel-equipment'].order = 'a[energy-source]-b[solar-panel-equipment]'
 
-data.raw.item['fusion-reactor-equipment'].subgroup = 'py-generator-equipment'
-data.raw.item['fusion-reactor-equipment'].order = 'a[energy-source]-c[fusion-reactor-equipment]'
-data.raw['generator-equipment']['fusion-reactor-equipment'].power = '1.35MW'
-data.raw['generator-equipment']['fusion-reactor-equipment'].burner = {
+data.raw.item['fission-reactor-equipment'].subgroup = 'py-generator-equipment'
+data.raw.item['fission-reactor-equipment'].order = 'a[energy-source]-c[fission-reactor-equipment]'
+data.raw['generator-equipment']['fission-reactor-equipment'].power = '1.35MW'
+data.raw['generator-equipment']['fission-reactor-equipment'].burner = {
 	type = 'burner',
 	fuel_inventory_size = 4,
 	burnt_inventory_size = 4,
 	fuel_categories = {'personal-fusion-cell'}
 }
-data.raw['generator-equipment']['fusion-reactor-equipment'].shape = {
+data.raw['generator-equipment']['fission-reactor-equipment'].shape = {
     type = 'manual',
     width = 4,
     height = 4,
