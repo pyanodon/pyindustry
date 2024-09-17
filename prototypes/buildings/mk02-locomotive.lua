@@ -123,7 +123,24 @@ ENTITY {
       },
     },
     --back_light = rolling_stock_back_light(),
-    stand_by_light = rolling_stock_stand_by_light(),
+    stand_by_light = {
+      {
+        minimum_darkness = 0.3,
+        color = {1, 0.1, 0.05, 0},
+        shift = {-0.6, 3.5},
+        size = 2,
+        intensity = 0.6,
+        add_perspective = true
+      },
+      {
+        minimum_darkness = 0.3,
+        color = {1, 0.1, 0.05, 0},
+        shift = {0.6, 3.5},
+        size = 2,
+        intensity = 0.6,
+        add_perspective = true
+      }
+    },
     color = {r = 1, g = 0.0, b = 0.0},
     pictures =
     {
@@ -324,7 +341,10 @@ ENTITY {
         },
       },
     },
-    drive_over_tie_trigger = drive_over_tie(),
+    drive_over_tie_trigger = {
+      type = "play-sound",
+      sound = sound_variations("__base__/sound/train-tie", 6, 0.4, { volume_multiplier("main-menu", 2.4), volume_multiplier("driving", 1.3) } )
+    },
     tie_distance = 30,
     vehicle_impact_sound = sounds.generic_impact,
     working_sound =
@@ -348,5 +368,18 @@ ENTITY {
     sound_minimum_speed = 0.5,
     sound_scaling_ratio = 0.35,
     equipment_grid = "mk02-train-equipment-grid",
-    water_reflection = _ENV.locomotive_reflection(),
+    water_reflection = {
+      pictures =
+      {
+        filename = "__base__/graphics/entity/locomotive/reflection/locomotive-reflection.png",
+        priority = "extra-high",
+        width = 20,
+        height = 52,
+        shift = util.by_pixel(0, 40),
+        variation_count = 1,
+        scale = 5
+      },
+      rotate = true,
+      orientation_to_variation = false
+    },
   }
