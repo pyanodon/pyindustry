@@ -32,11 +32,11 @@ TECHNOLOGY('engine'):remove_pack('logistic-science-pack'):remove_prereq('logisti
 TECHNOLOGY('fluid-wagon'):remove_prereq('fluid-handling')
 TECHNOLOGY('worker-robots-speed-1'):remove_prereq('robotics'):add_prereq('logistic-robotics'):remove_pack('chemical-science-pack')
 
-RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
+RECIPE('storage-chest'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
 RECIPE('passive-provider-chest'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics')
-RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
-RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
-RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')
+RECIPE('active-provider-chest'):remove_ingredient('advanced-circuit')
+RECIPE('buffer-chest'):remove_ingredient('advanced-circuit')
+RECIPE('requester-chest'):remove_ingredient('advanced-circuit')
 
 --Move vanilla train to railway tech 1
 RECIPE('locomotive'):remove_unlock('railway'):add_unlock('railway-mk01'):remove_ingredient('engine-unit'):add_ingredient({type = 'item', name = 'pipe', amount = 20}):add_ingredient({type = 'item', name = 'steam-engine', amount = 2}):add_ingredient({type = 'item', name = 'iron-gear-wheel', amount = 20}):subgroup_order('py-trains', 'a')

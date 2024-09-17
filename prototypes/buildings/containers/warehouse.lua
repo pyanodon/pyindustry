@@ -8,21 +8,21 @@ local function get_ingredients(name)
     if name == "passive-provider" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-passive-provider", 1},
+            {"passive-provider-chest", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
     elseif name == "active-provider" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-active-provider", 1},
+            {"active-provider-chest", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
     elseif name == "storage" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-storage", 1},
+            {"storage-chest", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5},
             {"steel-chest", 15}
@@ -30,14 +30,14 @@ local function get_ingredients(name)
     elseif name == "requester" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-requester", 1},
+            {"requester-chest", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
     elseif name == "buffer" then
         return {
             {"py-warehouse-basic", 1},
-            {"logistic-chest-buffer", 1},
+            {"buffer-chest", 1},
             {"iron-plate", 20},
             {"advanced-circuit", 5}
         }
