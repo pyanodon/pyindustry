@@ -33,7 +33,7 @@ TECHNOLOGY('fluid-wagon'):remove_prereq('fluid-handling')
 TECHNOLOGY('worker-robots-speed-1'):remove_prereq('robotics'):add_prereq('logistic-robotics'):remove_pack('chemical-science-pack')
 
 RECIPE('logistic-chest-storage'):remove_ingredient('advanced-circuit'):remove_unlock('logistic-robotics')
-RECIPE('logistic-chest-passive-provider'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics')
+RECIPE('passive-provider-chest'):remove_ingredient('advanced-circuit'):remove_unlock('construction-robotics')
 RECIPE('logistic-chest-active-provider'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-buffer'):remove_ingredient('advanced-circuit')
 RECIPE('logistic-chest-requester'):remove_ingredient('advanced-circuit')

@@ -8,7 +8,7 @@ local function get_ingredients(name)
     if name == "passive-provider" then
         return {
             {"py-shed-basic", 1},
-            {"logistic-chest-passive-provider", 1},
+            {"passive-provider-chest", 1},
             {"iron-plate", 5},
             {"advanced-circuit", 2}
         }
