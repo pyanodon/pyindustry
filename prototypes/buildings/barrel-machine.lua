@@ -58,38 +58,40 @@ ENTITY {
         },
     },
     energy_usage = "200kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyindustry__/graphics/entity/barrel-machine/r.png",
-                width = 96,
-                height = 192,
-                frame_count = 40,
-                line_length = 10,
-                shift = util.by_pixel(0, -48),
-                animation_speed = 0.6,
-            },
-            {
-                filename = "__pyindustry__/graphics/entity/barrel-machine/ao.png",
-                width = 160,
-                height = 224,
-                frame_count = 40,
-                line_length = 10,
-                shift = util.by_pixel(0, -32),
-                animation_speed = 0.6,
-            },
-            {
-                filename = "__pyindustry__/graphics/entity/barrel-machine/sh.png",
-                width = 128,
-                height = 128,
-                frame_count = 1,
-                repeat_count = 40,
-                draw_as_shadow = true,
-                line_length = 1,
-                shift = util.by_pixel(16, 16),
-                animation_speed = 0.6,
-            },
-        }
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyindustry__/graphics/entity/barrel-machine/r.png",
+                    width = 96,
+                    height = 192,
+                    frame_count = 40,
+                    line_length = 10,
+                    shift = util.by_pixel(0, -48),
+                    animation_speed = 0.6,
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/barrel-machine/ao.png",
+                    width = 160,
+                    height = 224,
+                    frame_count = 40,
+                    line_length = 10,
+                    shift = util.by_pixel(0, -32),
+                    animation_speed = 0.6,
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/barrel-machine/sh.png",
+                    width = 128,
+                    height = 128,
+                    frame_count = 1,
+                    repeat_count = 40,
+                    draw_as_shadow = true,
+                    line_length = 1,
+                    shift = util.by_pixel(16, 16),
+                    animation_speed = 0.6,
+                },
+            }
+        },
     },
     fluid_boxes = {
         --1

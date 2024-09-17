@@ -113,45 +113,47 @@ ENTITY {
             }
         }
     },
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pyindustry__/graphics/entity/py-burner/off.png",
-                priority = "extra-high",
-                width = 96,
-                height = 192,
-                frame_count = 1,
-                shift = util.by_pixel(-0, -48)
-            },
-            {
-                filename = "__pyindustry__/graphics/entity/py-burner/shadow.png",
-                priority = "extra-high",
-                width = 113,
-                height = 105,
-                frame_count = 1,
-                draw_as_shadow = true,
-                shift = util.by_pixel(8, -3)
+                north_position = {0.0, 3.0},
+                east_position = {0.0, 3.0},
+                south_position = {0.0, 3.0},
+                west_position = {0.0, 3.0},
+                animation = {
+                    filename = "__pyindustry__/graphics/entity/py-burner/on.png",
+                    priority = "extra-high",
+                    line_length = 5,
+                    width = 96,
+                    height = 96,
+                    frame_count = 30,
+                    animation_speed = 0.5,
+                    shift = {0, -3}
+                },
+                light = {intensity = 1, size = 1, color = {r = 1.0, g = 1.0, b = 1.0}}
             }
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = {0.0, 3.0},
-            east_position = {0.0, 3.0},
-            south_position = {0.0, 3.0},
-            west_position = {0.0, 3.0},
-            animation = {
-                filename = "__pyindustry__/graphics/entity/py-burner/on.png",
-                priority = "extra-high",
-                line_length = 5,
-                width = 96,
-                height = 96,
-                frame_count = 30,
-                animation_speed = 0.5,
-                shift = {0, -3}
-            },
-            light = {intensity = 1, size = 1, color = {r = 1.0, g = 1.0, b = 1.0}}
-        }
+        },
+        animation = {
+            layers = {
+                {
+                    filename = "__pyindustry__/graphics/entity/py-burner/off.png",
+                    priority = "extra-high",
+                    width = 96,
+                    height = 192,
+                    frame_count = 1,
+                    shift = util.by_pixel(-0, -48)
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/py-burner/shadow.png",
+                    priority = "extra-high",
+                    width = 113,
+                    height = 105,
+                    frame_count = 1,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(8, -3)
+                }
+            }
+        },
     },
     fast_replaceable_group = "py-burner"
 }

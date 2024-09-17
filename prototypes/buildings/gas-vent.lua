@@ -70,45 +70,47 @@ ENTITY {
     energy_usage = "25kW",
     crafting_speed = 2,
     energy_source = {type = 'void'},
-    animation = _G.make_4way_animation_from_spritesheet {
-        layers = {
-            {
-                filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
-                priority = "extra-high",
-                width = 32,
-                height = 176,
-                frame_count = 1,
-                shift = util.by_pixel(0, -72),
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
+    graphics_set = {
+        animation = _G.make_4way_animation_from_spritesheet {
+            layers = {
+                {
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
                     priority = "extra-high",
-                    width = 64,
-                    height = 352,
+                    width = 32,
+                    height = 176,
                     frame_count = 1,
                     shift = util.by_pixel(0, -72),
-                    scale = 0.5
-                }
-            },
-            {
-                filename = "__pyindustry__/graphics/entity/py-gas-vent/shadow.png",
-                priority = "extra-high",
-                width = 75,
-                height = 23,
-                frame_count = 1,
-                draw_as_shadow = true,
-                shift = {1.3, -0.0},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-shadow.png",
+                    hr_version = {
+                        filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
+                        priority = "extra-high",
+                        width = 64,
+                        height = 352,
+                        frame_count = 1,
+                        shift = util.by_pixel(0, -72),
+                        scale = 0.5
+                    }
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/shadow.png",
                     priority = "extra-high",
-                    width = 150,
-                    height = 46,
+                    width = 75,
+                    height = 23,
                     frame_count = 1,
                     draw_as_shadow = true,
                     shift = {1.3, -0.0},
-                    scale = 0.5
+                    hr_version = {
+                        filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-shadow.png",
+                        priority = "extra-high",
+                        width = 150,
+                        height = 46,
+                        frame_count = 1,
+                        draw_as_shadow = true,
+                        shift = {1.3, -0.0},
+                        scale = 0.5
+                    }
                 }
             }
-        }
+        },
     },
     fluid_boxes = {
         {

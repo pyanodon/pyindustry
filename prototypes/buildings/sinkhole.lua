@@ -74,45 +74,47 @@ ENTITY {
     energy_source = {
         type = 'void'
     },
-    animation = _G.make_4way_animation_from_spritesheet {
-        layers = {
-            {
-                filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
-                priority = "extra-high",
-                width = 96,
-                height = 96,
-                frame_count = 1,
-                shift = {0.0, -0.0},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-py-sinkhole.png",
+    graphics_set = {
+        animation = _G.make_4way_animation_from_spritesheet {
+            layers = {
+                {
+                    filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
                     priority = "extra-high",
-                    width = 192,
-                    height = 192,
+                    width = 96,
+                    height = 96,
                     frame_count = 1,
                     shift = {0.0, -0.0},
-                    scale = 0.5
-                }
-            },
-            {
-                filename = "__pyindustry__/graphics/entity/py-sinkhole/shadow.png",
-                priority = "extra-high",
-                width = 98.5,
-                height = 96,
-                frame_count = 1,
-                draw_as_shadow = true,
-                shift = {0.3, -0.0},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-shadow.png",
+                    hr_version = {
+                        filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-py-sinkhole.png",
+                        priority = "extra-high",
+                        width = 192,
+                        height = 192,
+                        frame_count = 1,
+                        shift = {0.0, -0.0},
+                        scale = 0.5
+                    }
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/py-sinkhole/shadow.png",
                     priority = "extra-high",
-                    width = 197,
-                    height = 192,
+                    width = 98.5,
+                    height = 96,
                     frame_count = 1,
                     draw_as_shadow = true,
                     shift = {0.3, -0.0},
-                    scale = 0.5
+                    hr_version = {
+                        filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-shadow.png",
+                        priority = "extra-high",
+                        width = 197,
+                        height = 192,
+                        frame_count = 1,
+                        draw_as_shadow = true,
+                        shift = {0.3, -0.0},
+                        scale = 0.5
+                    }
                 }
             }
-        }
+        },
     },
     fluid_boxes = {
         {
