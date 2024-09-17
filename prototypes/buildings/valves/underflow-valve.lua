@@ -48,8 +48,15 @@ ENTITY {
         base_level = -0.2,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, 1}},
-            {position = {0, -1}, type = "output"}
+            {
+                position = {0, 0},
+                direction = defines.direction.south
+            },
+            {
+                position = {0, -0},
+                direction = defines.direction.north,
+                flow_direction = "output"
+            }
         }
     },
     pictures = {
@@ -60,40 +67,23 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/underflow-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
                     priority = "extra-high",
                     frames = 4,
-                    width = 32,
-                    height = 64,
-                    shift = util.by_pixel(0, -18),
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
-                        priority = "extra-high",
-                        frames = 4,
-                        width = 64,
-                        height = 128,
-                        shift = util.by_pixel(0, -16),
-                        scale = 0.5
-                    }
+                    width = 64,
+                    height = 128,
+                    shift = util.by_pixel(0, -16),
+                    scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/underflow-valve-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve-shadow.png",
                     priority = "extra-high",
                     draw_as_shadow = true,
                     frames = 2,
-                    width = 45,
-                    height = 24,
-                    shift = util.by_pixel(0, -0),
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve-shadow.png",
-                        priority = "extra-high",
-                        draw_as_shadow = true,
-                        frames = 2,
-                        width = 90,
-                        height = 48,
-                        shift = util.by_pixel(14, -0),
-                        scale = 0.5
-                    }
+                    width = 90,
+                    height = 48,
+                    shift = util.by_pixel(14, -0),
+                    scale = 0.5
                 }
             }
         }

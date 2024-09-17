@@ -36,7 +36,7 @@ ENTITY {
     max_health = data.raw["pipe"]["pipe"].max_health,
     resistances = data.raw["pipe"]["pipe"].resistances,
     fast_replaceable_group = data.raw["pipe"]["pipe"].fast_replaceable_group,
-    collision_box = data.raw["pipe"]["pipe"].collision_box,
+    collision_box = data.raw["pipe"]["pipe"].collision_box,--0.29
     selection_box = data.raw["pipe"]["pipe"].selection_box,
     window_bounding_box = {{0, 0}, {0, 0}},
     flow_length_in_ticks = data.raw["storage-tank"]["storage-tank"].flow_length_in_ticks,
@@ -46,8 +46,15 @@ ENTITY {
         volume = 100,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, 1}},
-            {position = {0, -1}, type = "output"}
+            {
+                position = {0, 0},
+                direction = defines.direction.south
+            },
+            {
+                position = {0, -0},
+                direction = defines.direction.north,
+                flow_direction = "output"
+            }
         }
     },
     pictures = {
@@ -58,40 +65,23 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/check-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve.png",
                     priority = "extra-high",
-                    frames = 4,
-                    width = 32,
-                    height = 64,
-                    shift = {0.0, -0.5},
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve.png",
-                        priority = "extra-high",
-                        frames = 4,
-                        width = 64,
-                        height = 128,
-                        shift = {0.0, -0.5},
-                        scale = 0.5
-                    }
-                },
-                {
-                    filename = "__pyindustry__/graphics/entity/py-valves/check-valve-shadow.png",
-                    priority = "extra-high",
-                    draw_as_shadow = true,
                     frames = 4,
                     width = 64,
-                    height = 35,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5
+                },
+                {
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve-shadow.png",
+                    priority = "extra-high",
+                    frames = 4,
+                    draw_as_shadow = true,
+                    width = 128,
+                    height = 70,
                     shift = {0.5, -0.0},
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve-shadow.png",
-                        priority = "extra-high",
-                        frames = 4,
-                        draw_as_shadow = true,
-                        width = 128,
-                        height = 70,
-                        shift = {0.5, -0.0},
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 }
             }
         }

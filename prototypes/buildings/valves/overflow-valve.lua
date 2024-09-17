@@ -48,8 +48,15 @@ ENTITY {
         base_level = 0.8,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {position = {0, 1}, type = "output"},
-            {position = {0, -1}}
+            {
+                position = {0, 0},
+                direction = defines.direction.south,
+                flow_direction = "output"
+            },
+            {
+                position = {0, -0},
+                direction = defines.direction.north
+            }
         }
     },
     pictures = {
@@ -60,57 +67,32 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve.png",
                     priority = "extra-high",
                     frames = 4,
-                    width = 32,
-                    height = 64,
+                    width = 64,
+                    height = 128,
                     shift = {0.0, -0.5},
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve.png",
-                        priority = "extra-high",
-                        frames = 4,
-                        width = 64,
-                        height = 128,
-                        shift = {0.0, -0.5},
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-arrows.png",
                     priority = "extra-high",
                     frames = 4,
-                    width = 32,
-                    height = 64,
+                    width = 64,
+                    height = 128,
                     shift = {0.0, -0.5},
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-arrows.png",
-                        priority = "extra-high",
-                        frames = 4,
-                        width = 64,
-                        height = 128,
-                        shift = {0.0, -0.5},
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-shadow.png",
                     priority = "extra-high",
-                    draw_as_shadow = true,
                     frames = 2,
-                    width = 48,
-                    height = 24,
+                    draw_as_shadow = true,
+                    width = 96,
+                    height = 48,
                     shift = util.by_pixel(12, 0),
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-shadow.png",
-                        priority = "extra-high",
-                        frames = 2,
-                        draw_as_shadow = true,
-                        width = 96,
-                        height = 48,
-                        shift = util.by_pixel(12, 0),
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 }
             }
         }

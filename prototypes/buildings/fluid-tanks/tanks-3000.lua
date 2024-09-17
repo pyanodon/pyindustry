@@ -63,21 +63,13 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustry__/graphics/entity/py-tank-3000/py-tank-3000.png",
+                filename = "__pyindustry__/graphics/entity/py-tank-3000/hr-py-tank-3000.png",
                 priority = "extra-high",
                 frames = 2,
-                width = 66,
-                height = 79,
+                width = 133,
+                height = 157,
                 shift = {0.0, -0.0},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-3000/hr-py-tank-3000.png",
-                    priority = "extra-high",
-                    frames = 2,
-                    width = 133,
-                    height = 157,
-                    shift = {0.0, -0.0},
-                    scale = 0.5
-                }
+                scale = 0.5
             }
         },
         fluid_background = py.empty_image(),
