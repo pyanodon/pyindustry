@@ -57,27 +57,16 @@ ENTITY {
     },
     energy_usage = "25kW",
     integration_patch = {
-        filename = "__pyindustry__/graphics/entity/radar/radar-integration.png",
+        filename = "__pyindustry__/graphics/entity/radar/hr-radar-integration.png",
         priority = "low",
-        width = 119,
-        height = 108,
+        width = 238,
+        height = 216,
         apply_projection = false,
         direction_count = 1,
         repeat_count = 64,
         line_length = 1,
         shift = util.by_pixel(1.5, 4),
-        hr_version = {
-            filename = "__pyindustry__/graphics/entity/radar/hr-radar-integration.png",
-            priority = "low",
-            width = 238,
-            height = 216,
-            apply_projection = false,
-            direction_count = 1,
-            repeat_count = 64,
-            line_length = 1,
-            shift = util.by_pixel(1.5, 4),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     pictures = {
         layers = {

@@ -74,40 +74,23 @@ ENTITY {
         animation = _G.make_4way_animation_from_spritesheet {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
                     priority = "extra-high",
-                    width = 32,
-                    height = 176,
+                    width = 64,
+                    height = 352,
                     frame_count = 1,
                     shift = util.by_pixel(0, -72),
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
-                        priority = "extra-high",
-                        width = 64,
-                        height = 352,
-                        frame_count = 1,
-                        shift = util.by_pixel(0, -72),
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-shadow.png",
                     priority = "extra-high",
-                    width = 75,
-                    height = 23,
+                    width = 150,
+                    height = 46,
                     frame_count = 1,
                     draw_as_shadow = true,
                     shift = {1.3, -0.0},
-                    hr_version = {
-                        filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-shadow.png",
-                        priority = "extra-high",
-                        width = 150,
-                        height = 46,
-                        frame_count = 1,
-                        draw_as_shadow = true,
-                        shift = {1.3, -0.0},
-                        scale = 0.5
-                    }
+                    scale = 0.5
                 }
             }
         },

@@ -55,56 +55,32 @@ ENTITY {
     pictures = {
         picture = {
             north = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/north.png",
-                width = 127,
-                height = 293,
-                shift = {0.5, -1},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-north.png",
-                    width = 253,
-                    height = 585,
-                    shift = {0.5, -1.0},
-                    scale = 0.5
-                }
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-north.png",
+                width = 253,
+                height = 585,
+                shift = {0.5, -1.0},
+                scale = 0.5
             },
             east = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/east.png",
-                width = 250,
-                height = 150,
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-east.png",
+                width = 499,
+                height = 299,
                 shift = {0.35, -0.15},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-east.png",
-                    width = 499,
-                    height = 299,
-                    shift = {0.35, -0.15},
-                    scale = 0.5
-                }
+                scale = 0.5
             },
             south = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/south.png",
-                width = 120,
-                height = 239,
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-south.png",
+                width = 239,
+                height = 477,
                 shift = {0.34, -0.0},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-south.png",
-                    width = 239,
-                    height = 477,
-                    shift = {0.34, -0.0},
-                    scale = 0.5
-                }
+                scale = 0.5
             },
             west = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/west.png",
-                width = 250,
-                height = 150,
+                filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-west.png",
+                width = 499,
+                height = 299,
                 shift = {0.35, -0.15},
-                hr_version = {
-                    filename = "__pyindustry__/graphics/entity/py-tank-7000/hr-west.png",
-                    width = 499,
-                    height = 299,
-                    shift = {0.35, -0.15},
-                    scale = 0.5
-                }
+                scale = 0.5
             }
         },
         fluid_background = py.empty_image(),

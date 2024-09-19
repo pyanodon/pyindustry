@@ -74,104 +74,58 @@ ENTITY {
     base = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/roboport.png',
-                width = 96,
-                height = 112,
+                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-roboport.png',
+                width = 192,
+                height = 224,
                 shift = util.by_pixel(0, 0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-roboport.png',
-                    width = 192,
-                    height = 224,
-                    shift = util.by_pixel(0, 0),
-                    scale = 0.5
-                }
+                scale = 0.5
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/shadow.png',
-                width = 96,
-                height = 80,
+                filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-shadow.png',
+                width = 192,
+                height = 160,
                 draw_as_shadow = true,
                 shift = util.by_pixel(8, 15),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-shadow.png',
-                    width = 192,
-                    height = 160,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(8, 15),
-                    scale = 0.5
-                }
+                scale = 0.5
             }
         }
     },
     base_patch = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/patch.png',
+        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-patch.png',
         priority = 'medium',
-        width = 64,
-        height = 64,
+        width = 128,
+        height = 128,
         frame_count = 1,
         shift = util.by_pixel(0, -8),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-patch.png',
-            priority = 'medium',
-            width = 128,
-            height = 128,
-            frame_count = 1,
-            shift = util.by_pixel(0, -8),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     base_animation = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/anim.png',
+        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-anim.png',
         priority = 'extra-high',
-        width = 16,
-        height = 16,
+        width = 32,
+        height = 32,
         frame_count = 2,
         animation_speed = 0.1,
         shift = util.by_pixel(28, -7),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-anim.png',
-            priority = 'extra-high',
-            width = 32,
-            height = 32,
-            frame_count = 2,
-            animation_speed = 0.1,
-            shift = util.by_pixel(28, -7),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     door_animation_up = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/door-up.png',
+        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-up.png',
         priority = 'medium',
-        width = 64,
-        height = 32,
+        width = 128,
+        height = 64,
         frame_count = 16,
         shift = util.by_pixel(0, -40),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-up.png',
-            priority = 'medium',
-            width = 128,
-            height = 64,
-            frame_count = 16,
-            shift = util.by_pixel(0, -40),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     door_animation_down = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/door-down.png',
+        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-down.png',
         priority = 'medium',
-        width = 64,
-        height = 32,
+        width = 128,
+        height = 64,
         frame_count = 16,
         shift = util.by_pixel(0, -24),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk01/hr-door-down.png',
-            priority = 'medium',
-            width = 128,
-            height = 64,
-            frame_count = 16,
-            shift = util.by_pixel(0, -24),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     recharging_animation = {
         filename = '__pyindustry__/graphics/entity/py-roboport-mk01/effect.png',

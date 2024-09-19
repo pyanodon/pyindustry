@@ -81,94 +81,51 @@ ENTITY {
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/icons/filler.png',
-                    width = 4,
-                    height = 4,
-                    shift = util.by_pixel(0, -0),
-                }
             },
         }
     },
     base_patch = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk02/patch.png',
+        filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-patch.png',
         priority = 'high',
-        width = 160,
-        height = 256,
+        width = 320,
+        height = 512,
         frame_count = 1,
         shift = util.by_pixel(0, -48),
-        hr_version = {
-            filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-patch.png',
-            priority = 'high',
-            width = 320,
-            height = 512,
-            frame_count = 1,
-            shift = util.by_pixel(0, -48),
-            scale = 0.5
-        }
+        scale = 0.5
     },
     base_animation = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/raw.png',
-                width = 160,
-                height = 256,
+                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-raw.png',
+                width = 320,
+                height = 512,
                 line_length = 12,
                 frame_count = 50,
                 animation_speed = 0.4,
                 shift = util.by_pixel(0, -48),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-raw.png',
-                    width = 320,
-                    height = 512,
-                    line_length = 12,
-                    frame_count = 50,
-                    animation_speed = 0.4,
-                    shift = util.by_pixel(0, -48),
-                    scale = 0.5
-                }
+                scale = 0.5
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/l.png',
-                width = 128,
-                height = 64,
+                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-l.png',
+                width = 256,
+                height = 128,
                 line_length = 12,
                 frame_count = 50,
                 animation_speed = 0.4,
                 draw_as_glow = true,
                 shift = util.by_pixel(0, -96),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-l.png',
-                    width = 256,
-                    height = 128,
-                    line_length = 12,
-                    frame_count = 50,
-                    animation_speed = 0.4,
-                    draw_as_glow = true,
-                    shift = util.by_pixel(0, -96),
-                    scale = 0.5
-                }
+                scale = 0.5
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/sh.png',
-                width = 48,
-                height = 96,
+                filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-sh.png',
+                width = 96,
+                height = 192,
                 line_length = 12,
                 frame_count = 50,
                 animation_speed = 0.4,
                 draw_as_shadow = true,
                 shift = util.by_pixel(102, 0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/entity/py-roboport-mk02/hr-sh.png',
-                    width = 96,
-                    height = 192,
-                    line_length = 12,
-                    frame_count = 50,
-                    animation_speed = 0.4,
-                    draw_as_shadow = true,
-                    shift = util.by_pixel(102, 0),
-                    scale = 0.5
-                }
+                scale = 0.5
             }
         }
     },
@@ -177,24 +134,12 @@ ENTITY {
         width = 4,
         height = 4,
         shift = util.by_pixel(0, -0),
-        hr_version = {
-            filename = '__pyindustry__/graphics/icons/filler.png',
-            width = 4,
-            height = 4,
-            shift = util.by_pixel(0, -0),
-        }
     },
     door_animation_down = {
         filename = '__pyindustry__/graphics/icons/filler.png',
         width = 4,
         height = 4,
         shift = util.by_pixel(0, -0),
-        hr_version = {
-            filename = '__pyindustry__/graphics/icons/filler.png',
-            width = 4,
-            height = 4,
-            shift = util.by_pixel(0, -0),
-        }
     },
     recharging_animation = {
         filename = '__pyindustry__/graphics/entity/py-roboport-mk01/effect.png',

@@ -76,12 +76,6 @@ ENTITY {
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/icons/filler.png',
-                    width = 4,
-                    height = 4,
-                    shift = util.by_pixel(0, -0),
-                }
             },
         }
     },
@@ -92,12 +86,6 @@ ENTITY {
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/icons/filler.png',
-                    width = 4,
-                    height = 4,
-                    shift = util.by_pixel(0, -0),
-                }
             },
         }
     },
@@ -156,12 +144,6 @@ ENTITY {
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/icons/filler.png',
-                    width = 4,
-                    height = 4,
-                    shift = util.by_pixel(0, -0),
-                }
             },
         }
     },
@@ -172,12 +154,6 @@ ENTITY {
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
-                hr_version = {
-                    filename = '__pyindustry__/graphics/icons/filler.png',
-                    width = 4,
-                    height = 4,
-                    shift = util.by_pixel(0, -0),
-                }
             },
         }
     },
