@@ -94,8 +94,9 @@ ENTITY {
         percent = 90
       }
     },
-    burner =
+    energy_source =
     {
+      type = "burner",
       fuel_categories = {"jerry"},
       effectivity = 1,
       fuel_inventory_size = 5,
