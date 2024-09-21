@@ -104,89 +104,64 @@ ENTITY {
     color = {r = 1, g = 0.0, b = 0.0},
     pictures =
     {
-      layers =
+      rotated =
       {
+        layers =
         {
-          --dice = 4,
-          priority = "very-low",
-          width = 144,
-          height = 176,
-          --back_equals_front = true,
-          direction_count = 256,
-          allow_low_quality_rotation = true,
-          filenames =
           {
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-01.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-02.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-03.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-04.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-05.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-06.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-07.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-08.png",
-          },
-          line_length = 7,
-          lines_per_file = 5,
-          shift = util.by_pixel(0, -24),
-          hr_version =
-          {
-            priority = "very-low",
             --dice = 4,
-            width = 288,
-            height = 352,
+            priority = "very-low",
+            width = 144,
+            height = 176,
             --back_equals_front = true,
             direction_count = 256,
             allow_low_quality_rotation = true,
             filenames =
             {
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-01.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-02.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-03.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-04.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-05.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-06.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-07.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-08.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-01.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-02.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-03.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-04.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-05.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-06.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-07.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-08.png",
             },
             line_length = 7,
             lines_per_file = 5,
             shift = util.by_pixel(0, -24),
-            scale = 0.5
-            }
-        },
-        {
-          --dice = 4,
-          priority = "very-low",
-          flags = { "mask" },
-          width = 144,
-          height = 176,
-          --back_equals_front = true,
-          direction_count = 256,
-          draw_as_glow = true,
-          blend_mode = "additive",
-          allow_low_quality_rotation = true,
-          apply_runtime_tint = true,
-          filenames =
-          {
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-01-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-02-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-03-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-04-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-05-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-06-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-07-mask.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-08-mask.png",
+            hr_version =
+            {
+              priority = "very-low",
+              --dice = 4,
+              width = 288,
+              height = 352,
+              --back_equals_front = true,
+              direction_count = 256,
+              allow_low_quality_rotation = true,
+              filenames =
+              {
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-01.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-02.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-03.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-04.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-05.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-06.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-07.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-08.png",
+              },
+              line_length = 7,
+              lines_per_file = 5,
+              shift = util.by_pixel(0, -24),
+              scale = 0.5
+              }
           },
-          line_length = 7,
-          lines_per_file = 5,
-          shift = util.by_pixel(0, -24),
-          hr_version =
           {
+            --dice = 4,
             priority = "very-low",
             flags = { "mask" },
-            --dice = 4,
-            width = 288,
-            height = 352,
+            width = 144,
+            height = 176,
             --back_equals_front = true,
             direction_count = 256,
             draw_as_glow = true,
@@ -195,45 +170,73 @@ ENTITY {
             apply_runtime_tint = true,
             filenames =
             {
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-01-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-02-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-03-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-04-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-05-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-06-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-07-mask.png",
-                "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-08-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-01-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-02-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-03-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-04-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-05-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-06-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-07-mask.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/fluid-08-mask.png",
             },
             line_length = 7,
             lines_per_file = 5,
             shift = util.by_pixel(0, -24),
-            scale = 0.5
-            }
-        },
-        {
-          priority = "very-low",
-          --dice = 4,
-          flags = { "shadow" },
-          width = 144,
-          height = 112,
-          --back_equals_front = true,
-          direction_count = 256,
-          draw_as_shadow = true,
-          allow_low_quality_rotation = true,
-          filenames =
-          {
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-01.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-02.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-03.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-04.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-05.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-06.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-07.png",
-            "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-08.png",
+            hr_version =
+            {
+              priority = "very-low",
+              flags = { "mask" },
+              --dice = 4,
+              width = 288,
+              height = 352,
+              --back_equals_front = true,
+              direction_count = 256,
+              draw_as_glow = true,
+              blend_mode = "additive",
+              allow_low_quality_rotation = true,
+              apply_runtime_tint = true,
+              filenames =
+              {
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-01-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-02-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-03-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-04-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-05-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-06-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-07-mask.png",
+                  "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/hr-fluid-08-mask.png",
+              },
+              line_length = 7,
+              lines_per_file = 5,
+              shift = util.by_pixel(0, -24),
+              scale = 0.5
+              }
           },
-          line_length = 7,
-          lines_per_file = 5,
-          shift = util.by_pixel(32, 0),
+          {
+            priority = "very-low",
+            --dice = 4,
+            flags = { "shadow" },
+            width = 144,
+            height = 112,
+            --back_equals_front = true,
+            direction_count = 256,
+            draw_as_shadow = true,
+            allow_low_quality_rotation = true,
+            filenames =
+            {
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-01.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-02.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-03.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-04.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-05.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-06.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-07.png",
+              "__pyindustry__/graphics/entity/mk02-train/fluid-wagon/sh-fluid-08.png",
+            },
+            line_length = 7,
+            lines_per_file = 5,
+            shift = util.by_pixel(32, 0),
+          }
         }
       }
     },
