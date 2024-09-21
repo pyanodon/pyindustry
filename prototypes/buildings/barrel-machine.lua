@@ -42,9 +42,7 @@ ENTITY {
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     match_animation_speed_to_activity = false,
-    module_specification = {
-        module_slots = 4
-    },
+    module_slots = 4,
     allowed_effects = {"speed",'consumption'},
     crafting_categories = {"py-barreling", "py-unbarreling"},
     crafting_speed = 0.5,

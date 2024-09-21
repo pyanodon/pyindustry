@@ -41,9 +41,7 @@ ENTITY {
     open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
     close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
     vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
-    module_specification = {
-        module_slots = 0
-    },
+    module_slots = 0,
     allowed_effects = {},
     working_sound = {
         sound = {filename = "__base__/sound/idle1.ogg", volume = 0.7},

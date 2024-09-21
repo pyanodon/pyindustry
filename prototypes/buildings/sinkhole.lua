@@ -43,9 +43,7 @@ ENTITY {
     vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
     source_inventory_size = 0,
     result_inventory_size = 0,
-    module_specification = {
-        module_slots = 0
-    },
+    module_slots = 0,
     allowed_effects = {},
     working_sound = {
         sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.8},
