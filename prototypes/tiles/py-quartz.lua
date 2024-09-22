@@ -34,7 +34,7 @@ data.raw.tile['lab-white'].walking_speed_modifier = 3.25
 data.raw.tile['lab-white'].decorative_removal_probability = 1
 data.raw.tile['lab-white'].layer = 99
 data.raw.tile['lab-white'].walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound)
-data.raw.tile['lab-white'].collision_mask = {layers = {ground_tile = true}}
+data.raw.tile['lab-white'].collision_mask = {layers = {layers = {ground_tile = true}}}
 data.raw.tile['lab-white'].vehicle_friction_modifier = 0.6
 data.raw.tile['lab-white'].tint = {255,255,255}
 
