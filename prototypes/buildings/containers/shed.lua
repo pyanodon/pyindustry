@@ -92,7 +92,6 @@ local function define_shed(name, logistics_name)
         open_sound = {filename = "__pyindustry__/sounds/shed-open.ogg", volume = 0.55},
         close_sound = {filename = "__pyindustry__/sounds/shed-close.ogg", volume = 0.65},
         vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
-        scale_entity_info_icon = true,
         resistances = {
             {
                 type = "fire",
