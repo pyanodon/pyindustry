@@ -104,7 +104,6 @@ local function define_deposit(name, logistics_name)
         fast_replaceable_group = "deposit",
         inventory_size = 800,
         inventory_type = "with_filters_and_bar",
-        scale_info_icons = true,
         picture = {
             filename = "__pyindustry__/graphics/entity/deposit/deposit-" .. name .. ".png",
             priority = "high",

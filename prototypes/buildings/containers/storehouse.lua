@@ -103,7 +103,6 @@ local function define_storehouse(name, logistics_name)
         fast_replaceable_group = "storehouse",
         inventory_size = 150,
         inventory_type = "with_filters_and_bar",
-        scale_info_icons = true,
         picture = {
             filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
             priority = "high",
