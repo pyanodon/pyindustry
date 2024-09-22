@@ -12,10 +12,11 @@ if not mods['boblogistics'] then
     ITEM('flying-robot-frame'):set_fields{hidden = true}
     ITEM('roboport'):set_fields{hidden = true}
 
-    for _, recipe in pairs(data.raw.recipe) do
-        recipe:replace_ingredient('roboport', 'py-roboport-mk01')
-        recipe:replace_ingredient('construction-robot', 'py-construction-robot-01')
-        recipe:replace_ingredient('logistic-robot', 'py-logistic-robot-01')
+    for recipe_name in pairs(data.raw.recipe) do
+        RECIPE(recipe_name)
+            :replace_ingredient('roboport', 'py-roboport-mk01')
+            :replace_ingredient('construction-robot', 'py-construction-robot-01')
+            :replace_ingredient('logistic-robot', 'py-logistic-robot-01')
     end
 
     if not mods['pycoalprocessing'] then
