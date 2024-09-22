@@ -21,8 +21,6 @@ local function make_void_recipe(name, newicons, ing_name, place_result)
         icon_size = 32,
         hidden = true,
         enabled = true,
-        hidden = true,
-        flags = {},
         category = "py-incineration",
         ingredients = {{type = "item", name = ing_name, amount = 1}},
         results = {void_result},
