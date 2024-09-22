@@ -202,6 +202,5 @@ ENTITY {
         }
     },
     working_sound = sounds.construction_robot(0.5),
-    cargo_centered = {0.0, 0.2},
     construction_vector = {0.30, 0.22}
 }

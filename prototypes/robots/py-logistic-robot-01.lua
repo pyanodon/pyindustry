@@ -152,5 +152,4 @@ ENTITY {
         scale = 0.5
     },
     working_sound = sounds.flying_robot(0.5),
-    cargo_centered = {0.0, 0.2}
 }
