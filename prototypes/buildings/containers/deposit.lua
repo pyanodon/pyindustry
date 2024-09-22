@@ -100,7 +100,6 @@ local function define_deposit(name, logistics_name)
         },
         collision_box = {{-4.2, -4.2}, {4.2, 4.2}},
         selection_box = {{-4.5, -4.5}, {4.5, 4.5}},
-        drawing_box = {{-3.0, -3.0}, {3.0, 3.0}},
         fast_replaceable_group = "deposit",
         inventory_size = 800,
         inventory_type = "with_filters_and_bar",

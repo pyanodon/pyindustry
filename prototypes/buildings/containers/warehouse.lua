@@ -100,7 +100,6 @@ local function define_warehouse(name, logistics_name)
         },
         collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
         selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-        drawing_box = {{-3.0, -3.0}, {3.0, 3.0}},
         fast_replaceable_group = "warehouse",
         inventory_size = 450,
         inventory_type = "with_filters_and_bar",
