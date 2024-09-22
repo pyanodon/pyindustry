@@ -24,7 +24,7 @@ for i, color_data in pairs(colors) do
 
     tile.minable = {mining_time = 0.1, result = name}
     tile.mined_sound = {filename = '__base__/sound/deconstruct-bricks.ogg'}
-    tile.collision_mask = {layers = {layers = {ground_tile = true}}}
+    tile.collision_mask = {layers = {ground_tile = true}}
 
     RECIPE {
         type = 'recipe',

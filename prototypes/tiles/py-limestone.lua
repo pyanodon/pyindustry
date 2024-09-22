@@ -37,7 +37,7 @@ TILE {
     needs_correction = false,
     minable = {mining_time = 0.1, result = 'py-limestone'},
     mined_sound = {filename = '__base__/sound/deconstruct-bricks.ogg'},
-    collision_mask = {layers = {layers = {ground_tile = true}}},
+    collision_mask = {layers = {ground_tile = true}},
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 77,
