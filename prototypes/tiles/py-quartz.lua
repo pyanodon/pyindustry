@@ -38,7 +38,7 @@ data.raw.tile['lab-white'].vehicle_friction_modifier = 0.6
 data.raw.tile['lab-white'].tint = {255,255,255}
 
 -- giving it concrete base/transitions
-data.raw.tile['lab-white'].variants = table.deepcopy(data.raw.concrete.variants)
+data.raw.tile['lab-white'].variants = table.deepcopy(data.raw.tile.concrete.variants)
 data.raw.tile['lab-white'].variants.main = {{
       picture = "__base__/graphics/terrain/lab-tiles/lab-white.png",
       count = 1,
