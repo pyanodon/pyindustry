@@ -17,7 +17,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
 end
 
 for _, fluid in pairs(data.raw.fluid) do
-    if fluid.name == 'fluid-unknown' then goto continue end
+    if fluid.name == 'fluid-unknown' or fluid.subgroup == "parameters" then goto continue end
 
     local name
     local icons
