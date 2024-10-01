@@ -42,6 +42,7 @@ TILE {
     walking_speed_modifier = 3.25,
     decorative_removal_probability = 1,
     layer = 101,
+    layer_group = "ground-artificial",
     variants = {
         main = data.raw.tile['lab-dark-1'].variants.main,
         transition = {

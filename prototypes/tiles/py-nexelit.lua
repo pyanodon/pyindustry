@@ -37,6 +37,7 @@ TILE {
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 75,
+    layer_group = "ground-artificial",
     walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
     map_color = {r = 0, g = 110, b = 255, a = 1},
     absorptions_per_second = {pollution = 0},

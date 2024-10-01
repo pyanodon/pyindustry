@@ -40,6 +40,7 @@ TILE {
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 77,
+    layer_group = "ground-artificial",
     walking_sound = {
         {
             filename = '__base__/sound/walking/concrete-1.ogg',

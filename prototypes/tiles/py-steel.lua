@@ -55,6 +55,7 @@ TILE {
     walking_speed_modifier = 3.5,
     decorative_removal_probability = 1,
     layer = 7,
+    layer_group = "ground-artificial",
     walking_sound = {
         {
             filename = '__pyindustry__/sounds/iron-foot-01.ogg',
