@@ -53,7 +53,7 @@ ENTITY {
             {
                 position = {0, -0},
                 direction = defines.direction.north,
-                flow_direction = "output"
+                -- flow_direction = "output" --TODO fix valves
             }
         }
     },
