@@ -97,6 +97,7 @@ ENTITY {
             }
         },
     },
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         {
             production_type = "input",
@@ -106,7 +107,6 @@ ENTITY {
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {1.2, 0.0}, direction = defines.direction.east}}
         },
-        off_when_no_fluid_recipe = false
     },
     fast_replaceable_group = "py-sinkhole"
 }
