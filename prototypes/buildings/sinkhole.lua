@@ -105,7 +105,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(true, true, true, true),
             volume = 100000,
             base_level = -1,
-            pipe_connections = {{flow_direction = "input", position = {1.2, 0.0}, direction = defines.direction.east}}
+            pipe_connections = {{flow_direction = "input", position = {1.0, 0.0}, direction = defines.direction.east}}
         },
     },
     fast_replaceable_group = "py-sinkhole"
