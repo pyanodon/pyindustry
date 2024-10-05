@@ -1,3 +1,16 @@
+--- @param i integer
+local function make_visualization(i)
+  return
+  {
+    filename = "__base__/graphics/entity/pipe/visualization.png",
+    priority = "extra-high",
+    x = i * 64,
+    size = 64,
+    scale = 0.5,
+    flags = {"icon"},
+  }
+end
+
 local function py_pipepictures()
     return {
         straight_vertical_single = {
@@ -156,7 +169,25 @@ local function py_pipepictures()
             frame_count = 60,
             axially_symmetrical = false,
             direction_count = 1
-        }
+        },
+        straight_vertical_single_visualization = make_visualization(0),
+        straight_vertical_visualization = make_visualization(5),
+        straight_vertical_window_visualization = make_visualization(5),
+        straight_horizontal_window_visualization = make_visualization(10),
+        straight_horizontal_visualization = make_visualization(10),
+        corner_up_right_visualization = make_visualization(3),
+        corner_up_left_visualization = make_visualization(9),
+        corner_down_right_visualization = make_visualization(6),
+        corner_down_left_visualization = make_visualization(12),
+        t_up_visualization = make_visualization(11),
+        t_down_visualization = make_visualization(14),
+        t_right_visualization = make_visualization(7),
+        t_left_visualization = make_visualization(13),
+        cross_visualization = make_visualization(15),
+        ending_up_visualization = make_visualization(1),
+        ending_down_visualization = make_visualization(4),
+        ending_right_visualization = make_visualization(2),
+        ending_left_visualization = make_visualization(8),
     }
 end
 
@@ -309,12 +340,6 @@ for _, recipe_name in pairs(recipes) do
     RECIPE(recipe_name):replace_ingredient('pipe', 'niobium-pipe')
 end
 
---TODO: unfuck when bug is fixed
-local tmp_pics = table.deepcopy(data.raw.pipe.pipe.pictures)
-for k, v in pairs(py_pipepictures()) do
-    tmp_pics[k] = v
-end
-
 ENTITY {
     type = 'pipe',
     name = 'niobium-pipe',
@@ -355,9 +380,10 @@ ENTITY {
                 position = {-0, 0},
                 direction = defines.direction.west
             }
-        }
+        },
+        hide_connection_info = true
     },
-    pictures = tmp_pics,--py_pipepictures(),
+    pictures = py_pipepictures(),
     working_sound = {
         sound = {
             {
@@ -404,7 +430,8 @@ ENTITY {
                 connection_type = "underground",
                 max_underground_distance = 32
             }
-        }
+        },
+        hide_connection_info = true
     },
     underground_sprite = {
         filename = '__core__/graphics/arrows/underground-lines.png',
@@ -442,7 +469,45 @@ ENTITY {
             height = 128,
             scale = 0.5
         }
-    }
+    },
+    visualization = {
+      north =
+      {
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        priority = "extra-high",
+        x = 64,
+        size = 64,
+        scale = 0.5,
+        flags = {"icon"}
+      },
+      south =
+      {
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        priority = "extra-high",
+        x = 192,
+        size = 64,
+        scale = 0.5,
+        flags = {"icon"}
+      },
+      west =
+      {
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        priority = "extra-high",
+        x = 256,
+        size = 64,
+        scale = 0.5,
+        flags = {"icon"}
+      },
+      east =
+      {
+        filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
+        priority = "extra-high",
+        x = 128,
+        size = 64,
+        scale = 0.5,
+        flags = {"icon"}
+      },
+    },
 }
 
 data.raw.pipe.pipe.next_upgrade = 'niobium-pipe'
