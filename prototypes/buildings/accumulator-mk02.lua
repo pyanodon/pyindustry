@@ -46,35 +46,37 @@ ENTITY {
         input_flow_limit = "50000kW",
         output_flow_limit = "50000kW"
     },
-    picture = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk02/charged.png",
-        priority = "extra-high",
-        width = 192,
-        height = 288,
-        shift = util.by_pixel(16, -64),
+    chargable_graphics = {
+        picture = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk02/charged.png",
+            priority = "extra-high",
+            width = 192,
+            height = 288,
+            shift = util.by_pixel(16, -64),
+        },
+        charge_animation = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk02/charging.png",
+            width = 192,
+            height = 288,
+            line_length = 10,
+            frame_count = 70,
+            shift = util.by_pixel(16, -64),
+            animation_speed = 0.3
+        },
+        charge_cooldown = 30,
+        charge_light = {intensity = 0.7, size = 7, color = {r = 0.219, g = 0.835, b = 0.188}},
+        discharge_animation = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk02/discharge.png",
+            width = 192,
+            height = 288,
+            line_length = 9,
+            frame_count = 36,
+            shift = util.by_pixel(16, -64),
+            animation_speed = 0.3
+        },
+        discharge_cooldown = 60,
+        discharge_light = {intensity = 0.7, size = 7, color = {r = 0.862, g = 0.117, b = 0.117}},
     },
-    charge_animation = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk02/charging.png",
-        width = 192,
-        height = 288,
-        line_length = 10,
-        frame_count = 70,
-        shift = util.by_pixel(16, -64),
-        animation_speed = 0.3
-    },
-    charge_cooldown = 30,
-    charge_light = {intensity = 0.7, size = 7, color = {r = 0.219, g = 0.835, b = 0.188}},
-    discharge_animation = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk02/discharge.png",
-        width = 192,
-        height = 288,
-        line_length = 9,
-        frame_count = 36,
-        shift = util.by_pixel(16, -64),
-        animation_speed = 0.3
-    },
-    discharge_cooldown = 60,
-    discharge_light = {intensity = 0.7, size = 7, color = {r = 0.862, g = 0.117, b = 0.117}},
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
         sound = {

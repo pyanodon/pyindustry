@@ -46,35 +46,37 @@ ENTITY {
         input_flow_limit = "20000kW",
         output_flow_limit = "20000kW"
     },
-    picture = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-idle.png",
-        priority = "extra-high",
-        width = 157,
-        height = 244,
-        shift = {0.43, -1.781}
+    chargable_graphics = {
+        picture = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-idle.png",
+            priority = "extra-high",
+            width = 157,
+            height = 244,
+            shift = {0.43, -1.781}
+        },
+        charge_animation = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-charging.png",
+            width = 157,
+            height = 244,
+            line_length = 10,
+            frame_count = 40,
+            shift = {0.43, -1.781},
+            animation_speed = 0.2
+        },
+        charge_cooldown = 30,
+        charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
+        discharge_animation = {
+            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-discharging.png",
+            width = 157,
+            height = 244,
+            line_length = 10,
+            frame_count = 40,
+            shift = {0.43, -1.781},
+            animation_speed = 0.2
+        },
+        discharge_cooldown = 60,
+        discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     },
-    charge_animation = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-charging.png",
-        width = 157,
-        height = 244,
-        line_length = 10,
-        frame_count = 40,
-        shift = {0.43, -1.781},
-        animation_speed = 0.2
-    },
-    charge_cooldown = 30,
-    charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
-    discharge_animation = {
-        filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-discharging.png",
-        width = 157,
-        height = 244,
-        line_length = 10,
-        frame_count = 40,
-        shift = {0.43, -1.781},
-        animation_speed = 0.2
-    },
-    discharge_cooldown = 60,
-    discharge_light = {intensity = 0.7, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
         sound = {
