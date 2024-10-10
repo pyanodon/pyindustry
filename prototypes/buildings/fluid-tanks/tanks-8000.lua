@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "py-tank-4000", amount = 1},
-        {type = "item", name = "pipe", amount = 12},
-        {type = "item", name = "iron-stick", amount = 40},
-        {type = "item", name = "steel-plate", amount = 40}
+        {type = "item", name = "pipe",         amount = 12},
+        {type = "item", name = "iron-stick",   amount = 40},
+        {type = "item", name = "steel-plate",  amount = 40}
     },
     results = {
         {type = "item", name = "py-tank-8000", amount = 1}
@@ -43,7 +43,7 @@ ENTITY {
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0.5, -2.9},--0.5, -3.5
+                position = {0.5, -2.9}, --0.5, -3.5
                 direction = defines.direction.north
             },
             {

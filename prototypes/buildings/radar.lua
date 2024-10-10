@@ -3,16 +3,16 @@ RECIPE {
     name = "py-local-radar",
     ingredients = {
         {type = "item", name = "electronic-circuit", amount = 5},
-        {type = "item", name = "iron-gear-wheel", amount = 5},
-        {type = "item", name = "iron-plate", amount = 10},
-        {type = "item", name = "wood", amount = 20},
-        {type = "item", name = "engine-unit", amount = 1}
+        {type = "item", name = "iron-gear-wheel",    amount = 5},
+        {type = "item", name = "iron-plate",         amount = 10},
+        {type = "item", name = "wood",               amount = 20},
+        {type = "item", name = "engine-unit",        amount = 1}
     },
     results = {
         {type = "item", name = "py-local-radar", amount = 1}
     },
     enabled = false
-}:add_unlock('radars-mk01')
+}:add_unlock("radars-mk01")
 
 ITEM {
     type = "item",
@@ -71,30 +71,30 @@ ENTITY {
     pictures = {
         layers = {
             {
-                    filename = "__pyindustry__/graphics/entity/radar/hr-radar.png",
-                    priority = "low",
-                    width = 201,
-                    height = 283,
-                    apply_projection = false,
-                    direction_count = 50,
-                    line_length = 10,
-                    animation_speed = 0.7,
-                    shift = util.by_pixel(1, -16),
-                    scale = 0.5
+                filename = "__pyindustry__/graphics/entity/radar/hr-radar.png",
+                priority = "low",
+                width = 201,
+                height = 283,
+                apply_projection = false,
+                direction_count = 50,
+                line_length = 10,
+                animation_speed = 0.7,
+                shift = util.by_pixel(1, -16),
+                scale = 0.5
             },
             {
-                    filename = "__pyindustry__/graphics/entity/radar/hr-radar-shadow.png",
-                    priority = "low",
-                    width = 226,
-                    height = 192,
-                    apply_projection = false,
-                    direction_count = 50,
-                    line_length = 8,
-                    animation_speed = 0.7,
-                    shift = util.by_pixel(39.25, 3),
-                    draw_as_shadow = true,
-                    scale = 0.5
-                }
+                filename = "__pyindustry__/graphics/entity/radar/hr-radar-shadow.png",
+                priority = "low",
+                width = 226,
+                height = 192,
+                apply_projection = false,
+                direction_count = 50,
+                line_length = 8,
+                animation_speed = 0.7,
+                shift = util.by_pixel(39.25, 3),
+                draw_as_shadow = true,
+                scale = 0.5
+            }
         }
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},

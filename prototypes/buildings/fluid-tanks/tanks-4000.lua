@@ -4,8 +4,8 @@ RECIPE {
     energy_required = 3,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-stick", amount = 40},
-        {type = "item", name = "pipe", amount = 8},
+        {type = "item", name = "iron-stick",  amount = 40},
+        {type = "item", name = "pipe",        amount = 8},
         {type = "item", name = "steel-plate", amount = 30}
     },
     results = {

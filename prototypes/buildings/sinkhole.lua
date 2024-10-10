@@ -5,10 +5,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "offshore-pump", amount = 5},
-        {type = "item", name = "iron-plate", amount = 40},
-        {type = "item", name = "pipe", amount = 20},
-        {type = "item", name = "steel-plate", amount = 15},
-        {type = "item", name = "stone-brick", amount = 50}
+        {type = "item", name = "iron-plate",    amount = 40},
+        {type = "item", name = "pipe",          amount = 20},
+        {type = "item", name = "steel-plate",   amount = 15},
+        {type = "item", name = "stone-brick",   amount = 50}
     },
     results = {
         {type = "item", name = "py-sinkhole", amount = 1}
@@ -70,7 +70,7 @@ ENTITY {
     energy_usage = "1kW",
     crafting_speed = 2,
     energy_source = {
-        type = 'void'
+        type = "void"
     },
     graphics_set = {
         animation = _G.make_4way_animation_from_spritesheet {

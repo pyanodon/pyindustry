@@ -4,8 +4,8 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 15},
-        {type = "item", name = "pipe", amount = 20},
+        {type = "item", name = "iron-plate",  amount = 15},
+        {type = "item", name = "pipe",        amount = 20},
         {type = "item", name = "steel-plate", amount = 10},
     },
     results = {

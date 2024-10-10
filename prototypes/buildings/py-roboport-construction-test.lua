@@ -1,63 +1,63 @@
 RECIPE {
-    type = 'recipe',
-    name = 'py-ze',
+    type = "recipe",
+    name = "py-ze",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = 'steel-plate', amount = 20},
-        {type = "item", name = 'iron-plate', amount = 15},
-        {type = "item", name = 'iron-gear-wheel', amount = 20},
-        {type = "item", name = 'electronic-circuit', amount = 5}
+        {type = "item", name = "steel-plate",        amount = 20},
+        {type = "item", name = "iron-plate",         amount = 15},
+        {type = "item", name = "iron-gear-wheel",    amount = 20},
+        {type = "item", name = "electronic-circuit", amount = 5}
     },
     results = {
-        {type = "item", name = 'py-ze', amount = 1}
+        {type = "item", name = "py-ze", amount = 1}
     }
-}:add_unlock('construction-robotics')
+}:add_unlock("construction-robotics")
 
 ITEM {
-    type = 'item',
-    name = 'py-ze',
-    icon = '__pyindustry__/graphics/icons/py-ze.png',
+    type = "item",
+    name = "py-ze",
+    icon = "__pyindustry__/graphics/icons/py-ze.png",
     icon_size = 64,
     flags = {},
-    subgroup = 'py-stations',
-    order = 'a',
-    place_result = 'py-ze',
+    subgroup = "py-stations",
+    order = "a",
+    place_result = "py-ze",
     stack_size = 10
 }
 
 ENTITY {
-    type = 'roboport',
-    name = 'py-ze',
-    icon = '__pyindustry__/graphics/icons/py-ze.png',
+    type = "roboport",
+    name = "py-ze",
+    icon = "__pyindustry__/graphics/icons/py-ze.png",
     icon_size = 64,
-    flags = {'placeable-player', 'player-creation'},
-    minable = {mining_time = 0.1, result = 'py-ze'},
+    flags = {"placeable-player", "player-creation"},
+    minable = {mining_time = 0.1, result = "py-ze"},
     max_health = 500,
-    corpse = 'big-remnants',
+    corpse = "big-remnants",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     resistances = {
         {
-            type = 'fire',
+            type = "fire",
             percent = 60
         },
         {
-            type = 'impact',
+            type = "impact",
             percent = 30
         }
     },
-    dying_explosion = 'medium-explosion',
+    dying_explosion = "medium-explosion",
     energy_source = {
-        type = 'electric',
-        usage_priority = 'secondary-input',
-        input_flow_limit = '5MW',
-        buffer_capacity = '300MJ'
+        type = "electric",
+        usage_priority = "secondary-input",
+        input_flow_limit = "5MW",
+        buffer_capacity = "300MJ"
     },
-    recharge_minimum = '60MJ',
-    energy_usage = '50kW',
+    recharge_minimum = "60MJ",
+    energy_usage = "50kW",
     -- per one charge slot
-    charging_energy = '2MW',
+    charging_energy = "2MW",
     logistics_radius = 0,
     construction_radius = 40,
     logistics_connection_distance = 40,
@@ -72,7 +72,7 @@ ENTITY {
     base = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/icons/filler.png',
+                filename = "__pyindustry__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -82,7 +82,7 @@ ENTITY {
     base_patch = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/icons/filler.png',
+                filename = "__pyindustry__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -92,8 +92,8 @@ ENTITY {
     base_animation = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/entity/py-zone-extender/raw.png',
-                priority = 'extra-high',
+                filename = "__pyindustry__/graphics/entity/py-zone-extender/raw.png",
+                priority = "extra-high",
                 width = 96,
                 height = 288,
                 line_length = 10,
@@ -102,8 +102,8 @@ ENTITY {
                 shift = util.by_pixel(0, -96),
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-zone-extender/sh.png',
-                priority = 'extra-high',
+                filename = "__pyindustry__/graphics/entity/py-zone-extender/sh.png",
+                priority = "extra-high",
                 width = 128,
                 height = 96,
                 line_length = 10,
@@ -113,8 +113,8 @@ ENTITY {
                 shift = util.by_pixel(16, 0),
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-zone-extender/ao.png',
-                priority = 'extra-high',
+                filename = "__pyindustry__/graphics/entity/py-zone-extender/ao.png",
+                priority = "extra-high",
                 width = 160,
                 height = 320,
                 line_length = 10,
@@ -123,8 +123,8 @@ ENTITY {
                 shift = util.by_pixel(0, -80),
             },
             {
-                filename = '__pyindustry__/graphics/entity/py-zone-extender/l.png',
-                priority = 'extra-high',
+                filename = "__pyindustry__/graphics/entity/py-zone-extender/l.png",
+                priority = "extra-high",
                 width = 96,
                 height = 96,
                 line_length = 10,
@@ -140,7 +140,7 @@ ENTITY {
     door_animation_up = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/icons/filler.png',
+                filename = "__pyindustry__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -150,7 +150,7 @@ ENTITY {
     door_animation_down = {
         layers = {
             {
-                filename = '__pyindustry__/graphics/icons/filler.png',
+                filename = "__pyindustry__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -158,8 +158,8 @@ ENTITY {
         }
     },
     recharging_animation = {
-        filename = '__pyindustry__/graphics/entity/py-roboport-mk01/effect.png',
-        priority = 'high',
+        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/effect.png",
+        priority = "high",
         width = 128,
         height = 88,
         frame_count = 16,
@@ -167,9 +167,9 @@ ENTITY {
         scale = 0.5,
         animation_speed = 0.5
     },
-    vehicle_impact_sound = {filename = '__base__/sound/car-metal-impact-1.ogg', volume = 0.65},
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = '__base__/sound/roboport-working.ogg', volume = 0.6},
+        sound = {filename = "__base__/sound/roboport-working.ogg", volume = 0.6},
         max_sounds_per_type = 3,
         audible_distance_modifier = 0.5,
         probability = 1 / (5 * 60) -- average pause between the sound is 5 seconds
@@ -181,21 +181,21 @@ ENTITY {
     draw_construction_radius_visualization = true,
     open_door_trigger_effect = {
         {
-            type = 'play-sound',
-            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.4}
+            type = "play-sound",
+            sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
         }
     },
     close_door_trigger_effect = {
         {
-            type = 'play-sound',
-            sound = {filename = '__base__/sound/roboport-door.ogg', volume = 0.4}
+            type = "play-sound",
+            sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
         }
     },
-    circuit_wire_connection_point = _G.circuit_connector_definitions['roboport'].points,
-    circuit_connector_sprites = _G.circuit_connector_definitions['roboport'].sprites,
+    circuit_wire_connection_point = _G.circuit_connector_definitions["roboport"].points,
+    circuit_connector_sprites = _G.circuit_connector_definitions["roboport"].sprites,
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
-    default_available_logistic_output_signal = {type = 'virtual', name = 'signal-X'},
-    default_total_logistic_output_signal = {type = 'virtual', name = 'signal-Y'},
-    default_available_construction_output_signal = {type = 'virtual', name = 'signal-Z'},
-    default_total_construction_output_signal = {type = 'virtual', name = 'signal-T'}
+    default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
+    default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
+    default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
+    default_total_construction_output_signal = {type = "virtual", name = "signal-T"}
 }

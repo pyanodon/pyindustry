@@ -4,8 +4,8 @@ RECIPE {
     energy_required = 0.5,
     enabled = true,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 20},
-        {type = "item", name = "pipe", amount = 15},
+        {type = "item", name = "iron-plate",  amount = 20},
+        {type = "item", name = "pipe",        amount = 15},
         {type = "item", name = "stone-brick", amount = 5}
     },
     results = {
@@ -67,7 +67,7 @@ ENTITY {
     crafting_categories = {"py-venting"},
     energy_usage = "25kW",
     crafting_speed = 2,
-    energy_source = {type = 'void'},
+    energy_source = {type = "void"},
     graphics_set = {
         animation = _G.make_4way_animation_from_spritesheet {
             layers = {

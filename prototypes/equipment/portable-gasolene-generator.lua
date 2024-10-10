@@ -1,66 +1,66 @@
-data:extend{{
-	type = 'generator-equipment',
-	name = 'portable-gasolene-generator',
-	power = '180kW',
+data:extend {{
+	type = "generator-equipment",
+	name = "portable-gasolene-generator",
+	power = "180kW",
 	burner = {
-		type = 'burner',
+		type = "burner",
 		emissions_per_minute = {
-		    pollution = 6
+			pollution = 6
 		},
 		fuel_inventory_size = 4,
 		burnt_inventory_size = 4,
-		fuel_categories = {'jerry'}
+		fuel_categories = {"jerry"}
 	},
 	energy_source = {
-		type = 'electric',
-		usage_priority = 'secondary-output'
+		type = "electric",
+		usage_priority = "secondary-output"
 	},
-	categories = {'armor'},
-	shape = {type = 'full', width = 2, height = 2},
+	categories = {"armor"},
+	shape = {type = "full", width = 2, height = 2},
 	sprite = {
 		width = 64,
 		height = 64,
-		filename = '__pyindustry__/graphics/icons/gasolene-burner.png'
+		filename = "__pyindustry__/graphics/icons/gasolene-burner.png"
 	}
 }}
 
 ITEM {
-    type = 'item',
-    name = 'portable-gasolene-generator',
-    icon = '__pyindustry__/graphics/icons/gasolene-burner.png',
-    icon_size = 64,
-    subgroup = 'py-generator-equipment',
-    order = 'a[energy-source]-a[portable-gasolene-generator]',
-    stack_size = 10,
-	placed_as_equipment_result = 'portable-gasolene-generator',
-	localised_description = {'equipment-description.portable-gasolene-generator'}
+	type = "item",
+	name = "portable-gasolene-generator",
+	icon = "__pyindustry__/graphics/icons/gasolene-burner.png",
+	icon_size = 64,
+	subgroup = "py-generator-equipment",
+	order = "a[energy-source]-a[portable-gasolene-generator]",
+	stack_size = 10,
+	placed_as_equipment_result = "portable-gasolene-generator",
+	localised_description = {"equipment-description.portable-gasolene-generator"}
 }
 
 RECIPE {
-    type = 'recipe',
-    name = 'portable-gasolene-generator',
-    energy_required = 10,
-    category = "crafting",
-    enabled = false,
-    ingredients = {
-        {type = "item", name = 'engine-unit', amount = 4},
-        {type = "item", name = 'boiler', amount = 1},
-        {type = "item", name = 'steel-plate', amount = 20},
-        {type = "item", name = 'iron-gear-wheel', amount = 14},
-		{type = "item", name = 'small-electric-pole', amount = 1}
-    },
-    results = {
-        {type = "item", name = 'portable-gasolene-generator', amount = 1}
-    }
-}:add_unlock('personal-roboport-equipment')
+	type = "recipe",
+	name = "portable-gasolene-generator",
+	energy_required = 10,
+	category = "crafting",
+	enabled = false,
+	ingredients = {
+		{type = "item", name = "engine-unit",         amount = 4},
+		{type = "item", name = "boiler",              amount = 1},
+		{type = "item", name = "steel-plate",         amount = 20},
+		{type = "item", name = "iron-gear-wheel",     amount = 14},
+		{type = "item", name = "small-electric-pole", amount = 1}
+	},
+	results = {
+		{type = "item", name = "portable-gasolene-generator", amount = 1}
+	}
+}:add_unlock("personal-roboport-equipment")
 
-data.raw.recipe['personal-roboport-equipment'].ingredients = {
-	{'iron-gear-wheel', 45},
-	{'steel-plate', 20},
-	{'electronic-circuit', 10},
-	{'battery', 10},
+data.raw.recipe["personal-roboport-equipment"].ingredients = {
+	{"iron-gear-wheel",    45},
+	{"steel-plate",        20},
+	{"electronic-circuit", 10},
+	{"battery",            10},
 }
 
-data.raw.technology['personal-roboport-equipment'].prerequisites = {'construction-robotics'}
-data.raw.technology['personal-roboport-equipment'].unit.count = 300
+data.raw.technology["personal-roboport-equipment"].prerequisites = {"construction-robotics"}
+data.raw.technology["personal-roboport-equipment"].unit.count = 300
 --data.raw.technology['personal-roboport-equipment'].unit.ingredients = {{"automation-science-pack",1}, {"logistic-science-pack",1}}

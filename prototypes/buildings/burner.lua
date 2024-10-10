@@ -10,11 +10,11 @@ TECHNOLOGY {
         count = 40,
         ingredients = {
             {"automation-science-pack", 2},
-            {"logistic-science-pack", 2}
+            {"logistic-science-pack",   2}
         },
         time = 45
     }
-}:add_prereq('advanced-material-processing')
+}:add_prereq("advanced-material-processing")
 
 RECIPE {
     type = "recipe",
@@ -23,8 +23,8 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "stone-furnace", amount = 5},
-        {type = "item", name = "iron-plate", amount = 20},
-        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "iron-plate",    amount = 20},
+        {type = "item", name = "steel-plate",   amount = 20},
         {type = "item", name = "steel-furnace", amount = 1}
     },
     results = {

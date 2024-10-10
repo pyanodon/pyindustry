@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steel-plate", amount = 5},
-        {type = "item", name = "pipe", amount = 10},
-        {type = "item", name = "iron-gear-wheel", amount = 20},
-        {type = "item", name = "steam-engine", amount = 1},
-        {type = "item", name = "iron-plate", amount = 20},
+        {type = "item", name = "steel-plate",        amount = 5},
+        {type = "item", name = "pipe",               amount = 10},
+        {type = "item", name = "iron-gear-wheel",    amount = 20},
+        {type = "item", name = "steam-engine",       amount = 1},
+        {type = "item", name = "iron-plate",         amount = 20},
         {type = "item", name = "electronic-circuit", amount = 2}
     },
     results = {
@@ -32,7 +32,7 @@ ENTITY {
     type = "furnace",
     name = "barrel-machine-mk01",
     icon = "__pyindustry__/graphics/icons/barrel-machine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "barrel-machine-mk01"},
     fast_replaceable_group = "barrel-machine",
@@ -43,7 +43,7 @@ ENTITY {
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     match_animation_speed_to_activity = false,
     module_slots = 4,
-    allowed_effects = {"speed",'consumption'},
+    allowed_effects = {"speed", "consumption"},
     crafting_categories = {"py-barreling", "py-unbarreling"},
     crafting_speed = 0.5,
     source_inventory_size = 1,
@@ -113,15 +113,15 @@ ENTITY {
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound =
     {
-      sound =
-      {
+        sound =
         {
-          filename = "__base__/sound/assembling-machine-t2-1.ogg",
-          volume = 0.55
-        }
-      },
-      audible_distance_modifier = 0.5,
-      fade_in_ticks = 4,
-      fade_out_ticks = 20
+            {
+                filename = "__base__/sound/assembling-machine-t2-1.ogg",
+                volume = 0.55
+            }
+        },
+        audible_distance_modifier = 0.5,
+        fade_in_ticks = 4,
+        fade_out_ticks = 20
     },
 }

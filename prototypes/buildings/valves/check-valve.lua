@@ -4,9 +4,9 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steel-plate", amount = 1},
+        {type = "item", name = "steel-plate",     amount = 1},
         {type = "item", name = "iron-gear-wheel", amount = 1},
-        {type = "item", name = "pipe", amount = 1}
+        {type = "item", name = "pipe",            amount = 1}
     },
     results = {
         {type = "item", name = "py-check-valve", amount = 1}
@@ -36,7 +36,7 @@ ENTITY {
     max_health = data.raw["pipe"]["pipe"].max_health,
     resistances = data.raw["pipe"]["pipe"].resistances,
     fast_replaceable_group = data.raw["pipe"]["pipe"].fast_replaceable_group,
-    collision_box = data.raw["pipe"]["pipe"].collision_box,--0.29
+    collision_box = data.raw["pipe"]["pipe"].collision_box, --0.29
     selection_box = data.raw["pipe"]["pipe"].selection_box,
     window_bounding_box = {{0, 0}, {0, 0}},
     flow_length_in_ticks = data.raw["storage-tank"]["storage-tank"].flow_length_in_ticks,

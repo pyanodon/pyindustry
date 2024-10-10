@@ -2,9 +2,9 @@ RECIPE {
     type = "recipe",
     name = "megadar",
     ingredients = {
-        {type = "item", name = "advanced-circuit", amount = 20},
-        {type = "item", name = "iron-gear-wheel", amount = 40},
-        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "advanced-circuit",     amount = 20},
+        {type = "item", name = "iron-gear-wheel",      amount = 40},
+        {type = "item", name = "steel-plate",          amount = 20},
         {type = "item", name = "electric-engine-unit", amount = 3}
     },
     results = {
@@ -13,8 +13,8 @@ RECIPE {
     enabled = false
 }:add_unlock("radars-mk02")
 
-if mods['pycoalprocessing'] then
-    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({"niobium-plate", 10})
+if mods["pycoalprocessing"] then
+    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {"niobium-plate", 10}
 end
 
 ITEM {
@@ -74,15 +74,15 @@ ENTITY {
     pictures = {
         layers = {
             {
-                    filename = "__pyindustry__/graphics/entity/megadar/left.png",
-                    priority = "low",
-                    width = 64,
-                    height = 302,
-                    apply_projection = false,
-                    direction_count = 180,
-                    line_length = 32,
-                    shift = util.by_pixel(-64, -52),
-                    --scale = 0.5
+                filename = "__pyindustry__/graphics/entity/megadar/left.png",
+                priority = "low",
+                width = 64,
+                height = 302,
+                apply_projection = false,
+                direction_count = 180,
+                line_length = 32,
+                shift = util.by_pixel(-64, -52),
+                --scale = 0.5
             },
             {
                 filename = "__pyindustry__/graphics/entity/megadar/mid.png",
@@ -94,42 +94,42 @@ ENTITY {
                 line_length = 32,
                 shift = util.by_pixel(0, -52),
                 --scale = 0.5
-           },
-           {
-            filename = "__pyindustry__/graphics/entity/megadar/right.png",
-            priority = "low",
-            width = 64,
-            height = 302,
-            apply_projection = false,
-            direction_count = 180,
-            line_length = 32,
-            shift = util.by_pixel(64, -52),
-            --scale = 0.5
-       },
-           {
-                    filename = "__pyindustry__/graphics/entity/megadar/left-sh.png",
-                    priority = "low",
-                    width = 128,
-                    height = 160,
-                    apply_projection = false,
-                    direction_count = 180,
-                    line_length = 16,
-                    shift = util.by_pixel(-32, 22),
-                    draw_as_shadow = true,
-                    --scale = 0.5
-           },
-           {
-            filename = "__pyindustry__/graphics/entity/megadar/right-sh.png",
-            priority = "low",
-            width = 128,
-            height = 160,
-            apply_projection = false,
-            direction_count = 180,
-            line_length = 16,
-            shift = util.by_pixel(96, 22),
-            draw_as_shadow = true,
-            --scale = 0.5
-   }
+            },
+            {
+                filename = "__pyindustry__/graphics/entity/megadar/right.png",
+                priority = "low",
+                width = 64,
+                height = 302,
+                apply_projection = false,
+                direction_count = 180,
+                line_length = 32,
+                shift = util.by_pixel(64, -52),
+                --scale = 0.5
+            },
+            {
+                filename = "__pyindustry__/graphics/entity/megadar/left-sh.png",
+                priority = "low",
+                width = 128,
+                height = 160,
+                apply_projection = false,
+                direction_count = 180,
+                line_length = 16,
+                shift = util.by_pixel(-32, 22),
+                draw_as_shadow = true,
+                --scale = 0.5
+            },
+            {
+                filename = "__pyindustry__/graphics/entity/megadar/right-sh.png",
+                priority = "low",
+                width = 128,
+                height = 160,
+                apply_projection = false,
+                direction_count = 180,
+                line_length = 16,
+                shift = util.by_pixel(96, 22),
+                draw_as_shadow = true,
+                --scale = 0.5
+            }
         }
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},

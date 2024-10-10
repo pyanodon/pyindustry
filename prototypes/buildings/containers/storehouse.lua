@@ -2,50 +2,50 @@
  * Part of the Warehousing mod
 --]]
 
-local connectors = require 'prototypes/buildings/containers/connectors'
+local connectors = require "prototypes/buildings/containers/connectors"
 
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
-            {"py-storehouse-basic", 1},
+            {"py-storehouse-basic",    1},
             {"passive-provider-chest", 1},
-            {"iron-plate", 5},
-            {"advanced-circuit", 2}
+            {"iron-plate",             5},
+            {"advanced-circuit",       2}
         }
     elseif name == "active-provider" then
         return {
-            {"py-storehouse-basic", 1},
+            {"py-storehouse-basic",   1},
             {"active-provider-chest", 1},
-            {"iron-plate", 5},
-            {"advanced-circuit", 2}
+            {"iron-plate",            5},
+            {"advanced-circuit",      2}
         }
     elseif name == "storage" then
         return {
             {"py-storehouse-basic", 1},
-            {"storage-chest", 1},
-            {"iron-plate", 5},
-            {"advanced-circuit", 2},
-            {"steel-chest", 5}
+            {"storage-chest",       1},
+            {"iron-plate",          5},
+            {"advanced-circuit",    2},
+            {"steel-chest",         5}
         }
     elseif name == "requester" then
         return {
             {"py-storehouse-basic", 1},
-            {"requester-chest", 1},
-            {"iron-plate", 5},
-            {"advanced-circuit", 2}
+            {"requester-chest",     1},
+            {"iron-plate",          5},
+            {"advanced-circuit",    2}
         }
     elseif name == "buffer" then
         return {
             {"py-storehouse-basic", 1},
-            {"buffer-chest", 1},
-            {"iron-plate", 5},
-            {"advanced-circuit", 2}
+            {"buffer-chest",        1},
+            {"iron-plate",          5},
+            {"advanced-circuit",    2}
         }
     else
         return {
-            {"steel-plate", 20},
-            {"iron-plate", 40},
-            {"stone-brick", 10},
+            {"steel-plate",  20},
+            {"iron-plate",   40},
+            {"stone-brick",  10},
             {"wooden-chest", 5}
         }
     end
@@ -57,14 +57,14 @@ local function define_storehouse(name, logistics_name)
 
     local recipe =
         RECIPE {
-        type = "recipe",
-        name = full_name,
-        enabled = false,
-        ingredients = get_ingredients(logistics_name),
-        results = {
-            {type = "item", name = full_name, amount = 1}
+            type = "recipe",
+            name = full_name,
+            enabled = false,
+            ingredients = get_ingredients(logistics_name),
+            results = {
+                {type = "item", name = full_name, amount = 1}
+            }
         }
-    }
 
     ITEM {
         type = "item",
@@ -80,40 +80,40 @@ local function define_storehouse(name, logistics_name)
 
     local entity =
         ENTITY {
-        type = entity_type,
-        name = full_name,
-        icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
-        icon_size = 64,
-        flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 2, result = full_name},
-        max_health = 250,
-        corpse = "big-remnants",
-        dying_explosion = "medium-explosion",
-        open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-        close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-        vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
-        resistances = {
-            {
-                type = "fire",
-                percent = 90
-            }
-        },
-        collision_box = {{-1.8, -1.8}, {1.8, 1.8}},
-        selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
-        fast_replaceable_group = "storehouse",
-        inventory_size = 150,
-        inventory_type = "with_filters_and_bar",
-        picture = {
-            filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
-            priority = "high",
-            width = 132,
-            height = 172,
-            shift = util.by_pixel(2, -12),
-        },
-        circuit_wire_max_distance = 9,
-        --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
-        circuit_wire_connection_point = connectors.points({-0.11, -1.92})
-    }
+            type = entity_type,
+            name = full_name,
+            icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
+            icon_size = 64,
+            flags = {"placeable-neutral", "placeable-player", "player-creation"},
+            minable = {mining_time = 2, result = full_name},
+            max_health = 250,
+            corpse = "big-remnants",
+            dying_explosion = "medium-explosion",
+            open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+            close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
+            vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
+            resistances = {
+                {
+                    type = "fire",
+                    percent = 90
+                }
+            },
+            collision_box = {{-1.8, -1.8}, {1.8, 1.8}},
+            selection_box = {{-2.0, -2.0}, {2.0, 2.0}},
+            fast_replaceable_group = "storehouse",
+            inventory_size = 150,
+            inventory_type = "with_filters_and_bar",
+            picture = {
+                filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
+                priority = "high",
+                width = 132,
+                height = 172,
+                shift = util.by_pixel(2, -12),
+            },
+            circuit_wire_max_distance = 9,
+            --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
+            circuit_wire_connection_point = connectors.points {-0.11, -1.92}
+        }
 
     if logistics_name then
         recipe:add_unlock("py-warehouse-logistics-research")

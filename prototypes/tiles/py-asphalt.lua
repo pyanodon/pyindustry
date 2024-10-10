@@ -1,30 +1,30 @@
 RECIPE {
-    type = 'recipe',
-    name = 'py-asphalt',
-    category = 'crafting-with-fluid',
+    type = "recipe",
+    name = "py-asphalt",
+    category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
-        {type = 'fluid', name = 'water', amount = 10},
-        {type = 'item', name = 'coal', amount = 3},
-        {type = 'item', name = 'stone', amount = 5}
+        {type = "fluid", name = "water", amount = 10},
+        {type = "item",  name = "coal",  amount = 3},
+        {type = "item",  name = "stone", amount = 5}
     },
     results = {
-        {type = "item", name = 'py-asphalt', amount = 1}
+        {type = "item", name = "py-asphalt", amount = 1}
     },
     requester_paste_multiplier = 4,
     energy_required = 3
-}:add_unlock('py-asphalt'):replace_ingredient('water', 'tar'):replace_ingredient('coal', 'ash'):replace_ingredient('stone', 'gravel')
+}:add_unlock("py-asphalt"):replace_ingredient("water", "tar"):replace_ingredient("coal", "ash"):replace_ingredient("stone", "gravel")
 
 ITEM {
-    type = 'item',
-    name = 'py-asphalt',
-    icon = '__base__/graphics/terrain/lab-tiles/lab-dark-2.png',
+    type = "item",
+    name = "py-asphalt",
+    icon = "__base__/graphics/terrain/lab-tiles/lab-dark-2.png",
     icon_size = 1,
     flags = {},
-    subgroup = 'py-tiles',
-    order = 'zb',
+    subgroup = "py-tiles",
+    order = "zb",
     stack_size = 1000,
-    place_as_tile = {result = 'py-asphalt', condition_size = 1, condition = {layers = {water_tile = true}}}
+    place_as_tile = {result = "py-asphalt", condition_size = 1, condition = {layers = {water_tile = true}}}
 }
 
 TILE {
@@ -39,7 +39,7 @@ TILE {
     layer = 100,
     layer_group = "ground-artificial",
     variants = {
-        main = data.raw.tile['lab-dark-2'].variants.main,
+        main = data.raw.tile["lab-dark-2"].variants.main,
         transition = {
             overlay_layout = {
                 inner_corner = {
@@ -65,9 +65,9 @@ TILE {
             }
         }
     },
-    walking_sound = table.deepcopy(data.raw.tile['grass-1'].walking_sound),
+    walking_sound = table.deepcopy(data.raw.tile["grass-1"].walking_sound),
     map_color = {r = 0, g = 0, b = 0, a = 1},
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.6,
-    tint = {0.4,0.4,0.4}
+    tint = {0.4, 0.4, 0.4}
 }

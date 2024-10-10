@@ -68,10 +68,10 @@ ENTITY {
         intensity = 0.3
     },
     resistances = {
-        {type = "physical", decrease = 5, percent = 30},
+        {type = "physical",  decrease = 5, percent = 30},
         {type = "explosion", decrease = 2, percent = 30},
-        {type = "fire", percent = 10},
-        {type = "acid", percent = 10}
+        {type = "fire",      percent = 10},
+        {type = "acid",      percent = 10}
     },
     pictures = {
         single = {

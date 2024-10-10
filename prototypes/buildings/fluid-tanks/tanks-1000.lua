@@ -4,8 +4,8 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 5},
-        {type = "item", name = "pipe", amount = 10},
+        {type = "item", name = "iron-plate",  amount = 5},
+        {type = "item", name = "pipe",        amount = 10},
         {type = "item", name = "steel-plate", amount = 10}
     },
     results = {
@@ -56,21 +56,21 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000.png",
-                priority = "extra-high",
-                frames = 4,
-                width = 96,
-                height = 352,
-                shift = util.by_pixel(0, -128),
+                    filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000.png",
+                    priority = "extra-high",
+                    frames = 4,
+                    width = 96,
+                    height = 352,
+                    shift = util.by_pixel(0, -128),
                 },
                 {
-                filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
-                priority = "extra-high",
-                frames = 4,
-                width = 160,
-                height = 92,
-                draw_as_shadow = true,
-                shift = util.by_pixel(64, 16),
+                    filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
+                    priority = "extra-high",
+                    frames = 4,
+                    width = 160,
+                    height = 92,
+                    draw_as_shadow = true,
+                    shift = util.by_pixel(64, 16),
                 },
             },
         },

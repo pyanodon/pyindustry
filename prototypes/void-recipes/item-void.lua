@@ -50,11 +50,11 @@ local groups = {
 local fluid_barrels = {}
 
 for f, _ in pairs(data.raw.fluid) do
-    local i = f .. '-barrel'
+    local i = f .. "-barrel"
     if data.raw.item[i] then
         fluid_barrels[i] = true
     end
-    local i = f .. '-canister'
+    local i = f .. "-canister"
     if data.raw.item[i] then
         fluid_barrels[i] = true
     end
@@ -64,7 +64,7 @@ end
 for _, type in pairs(groups) do
     for _, item in pairs(data.raw[type]) do
         if not item.not_voidable and not (item.fuel_value and (item.fuel_category == "chemical" or item.fuel_category == "biomass" or item.fuel_category == "nuke"))
-        and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
+            and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 

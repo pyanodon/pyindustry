@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "electronic-circuit", amount = 1},
-        {type = "item", name = "steel-plate", amount = 1},
-        {type = "item", name = "iron-gear-wheel", amount = 1},
-        {type = "item", name = "pipe", amount = 1}
+        {type = "item", name = "steel-plate",        amount = 1},
+        {type = "item", name = "iron-gear-wheel",    amount = 1},
+        {type = "item", name = "pipe",               amount = 1}
     },
     results = {
         {type = "item", name = "py-underflow-valve", amount = 1}

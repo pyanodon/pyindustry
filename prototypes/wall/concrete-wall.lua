@@ -4,7 +4,7 @@ RECIPE {
     category = "crafting",
     enabled = false,
     ingredients = {
-        {type = "item", name = "concrete", amount = 2},
+        {type = "item", name = "concrete",   amount = 2},
         {type = "item", name = "iron-stick", amount = 4}
     },
     results = {
@@ -69,10 +69,10 @@ ENTITY {
         intensity = 0.3
     },
     resistances = {
-        {type = "physical", decrease = 5, percent = 60},
+        {type = "physical",  decrease = 5, percent = 60},
         {type = "explosion", decrease = 2, percent = 60},
-        {type = "fire", percent = 100},
-        {type = "acid", percent = 15}
+        {type = "fire",      percent = 100},
+        {type = "acid",      percent = 15}
     },
     pictures = {
         single = {
