@@ -32,7 +32,7 @@ ITEM {
 	subgroup = "py-generator-equipment",
 	order = "a[energy-source]-a[portable-gasolene-generator]",
 	stack_size = 10,
-	placed_as_equipment_result = "portable-gasolene-generator",
+	place_as_equipment_result = "portable-gasolene-generator",
 	localised_description = {"equipment-description.portable-gasolene-generator"}
 }
 

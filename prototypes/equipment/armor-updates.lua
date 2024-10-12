@@ -32,13 +32,13 @@ data.raw.technology["battery-equipment"].hidden = true
 data.raw.technology["battery-equipment"].enabled = false
 data.raw.recipe["battery-equipment"].hidden = true
 data.raw.item["battery-equipment"].hidden = true
-data.raw.item["battery-equipment"].placed_as_equipment_result = nil
+data.raw.item["battery-equipment"].place_as_equipment_result = nil
 data.raw.item["battery-equipment"].localised_name = {"equipment-name.battery-equipment"}
 data.raw.technology["battery-mk2-equipment"].hidden = true
 data.raw.technology["battery-mk2-equipment"].enabled = false
 data.raw.recipe["battery-mk2-equipment"].hidden = true
 data.raw.item["battery-mk2-equipment"].hidden = true
-data.raw.item["battery-mk2-equipment"].placed_as_equipment_result = nil
+data.raw.item["battery-mk2-equipment"].place_as_equipment_result = nil
 data.raw.item["battery-mk2-equipment"].localised_name = {"equipment-name.battery-mk2-equipment"}
 
 data:extend {{
