@@ -28,7 +28,7 @@ ITEM {
 
 ENTITY {
     name = "py-underflow-valve",
-    type = "simple-entity-with-owner",
+    type = "storage-tank",
     minable = {mining_time = 1, result = "py-underflow-valve"},
     icon = "__pyindustry__/graphics/icons/overflow-valve.png",
     icon_size = 32,
@@ -48,7 +48,7 @@ ENTITY {
         base_level = -0.2,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            {
+            --[[{
                 position = {0, 0},
                 direction = defines.direction.south
             },
@@ -56,16 +56,16 @@ ENTITY {
                 position = {0, -0},
                 direction = defines.direction.north,
                 -- flow_direction = "output" --TODO fix valves
-            }
+            }--]]
         }
     },
     pictures = {
-        --[[gas_flow = py.empty_image(),
+        gas_flow = py.empty_image(),
         fluid_background = py.empty_image(),
         window_background = py.empty_image(),
         flow_sprite = py.empty_image(),
-        picture = {--]]
-            layers = {
+        picture = {
+            sheets = {
                 {
                     filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
                     priority = "extra-high",
@@ -86,7 +86,7 @@ ENTITY {
                     scale = 0.5
                 }
             }
-        --}
+        }
     },
     circuit_wire_connection_points = {
         {
