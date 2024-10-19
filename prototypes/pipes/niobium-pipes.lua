@@ -1,3 +1,5 @@
+local NIOBIUM_CONNECTION_CATEGORY = settings.startup["py-braided-pipes"].value and {"niobium-pipe"} or nil
+
 --- @param i integer
 local function make_visualization(i)
     return
@@ -371,22 +373,22 @@ ENTITY {
             {
                 position = {0, -0},
                 direction = defines.direction.north,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             },
             {
                 position = {0, 0},
                 direction = defines.direction.east,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             },
             {
                 position = {0, 0},
                 direction = defines.direction.south,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             },
             {
                 position = {-0, 0},
                 direction = defines.direction.west,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             }
         },
         hide_connection_info = true,
@@ -432,14 +434,14 @@ ENTITY {
             {
                 position = {0, -0},
                 direction = defines.direction.north,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             },
             {
                 position = {0, 0},
                 direction = defines.direction.south,
                 connection_type = "underground",
                 max_underground_distance = 32,
-                connection_category = {"niobium-pipe"}
+                connection_category = NIOBIUM_CONNECTION_CATEGORY
             }
         },
         hide_connection_info = true,
