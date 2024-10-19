@@ -362,23 +362,27 @@ ENTITY {
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box = {
-        volume = 100,
+        volume = 200,
         pipe_connections = {
             {
                 position = {0, -0},
                 direction = defines.direction.north,
+                connection_category = {"niobium-pipe"}
             },
             {
                 position = {0, 0},
                 direction = defines.direction.east,
+                connection_category = {"niobium-pipe"}
             },
             {
                 position = {0, 0},
                 direction = defines.direction.south,
+                connection_category = {"niobium-pipe"}
             },
             {
                 position = {-0, 0},
-                direction = defines.direction.west
+                direction = defines.direction.west,
+                connection_category = {"niobium-pipe"}
             }
         },
         hide_connection_info = true,
@@ -418,18 +422,20 @@ ENTITY {
     collision_box = {{-0.29, -0.29}, {0.29, 0.2}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     fluid_box = {
-        volume = 100,
+        volume = 200,
         pipe_covers = py_pipecoverspictures(),
         pipe_connections = {
             {
                 position = {0, -0},
-                direction = defines.direction.north
+                direction = defines.direction.north,
+                connection_category = {"niobium-pipe"}
             },
             {
                 position = {0, 0},
                 direction = defines.direction.south,
                 connection_type = "underground",
-                max_underground_distance = 32
+                max_underground_distance = 32,
+                connection_category = {"niobium-pipe"}
             }
         },
         hide_connection_info = true,
