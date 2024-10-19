@@ -340,6 +340,10 @@ for _, recipe_name in pairs(recipes) do
     RECIPE(recipe_name):replace_ingredient("pipe", "niobium-pipe")
 end
 
+data.raw["utility-constants"].default.default_pipeline_extent = 640
+data.raw.pipe.pipe.fluid_box.max_pipeline_extent = 320
+data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.max_pipeline_extent = 320
+
 ENTITY {
     type = "pipe",
     name = "niobium-pipe",
@@ -386,7 +390,7 @@ ENTITY {
             }
         },
         hide_connection_info = true,
-        max_pipeline_extent = (data.raw.pipe.pipe.fluid_box.max_pipeline_extent or data.raw["utility-constants"].default.default_pipeline_extent) * 2
+        max_pipeline_extent = 640
     },
     pictures = py_pipepictures(),
     working_sound = {
@@ -439,7 +443,7 @@ ENTITY {
             }
         },
         hide_connection_info = true,
-        max_pipeline_extent = (data.raw.pipe.pipe.fluid_box.max_pipeline_extent or data.raw["utility-constants"].default.default_pipeline_extent) * 2
+        max_pipeline_extent = 640
     },
     underground_sprite = {
         filename = "__core__/graphics/arrows/underground-lines.png",
