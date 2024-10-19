@@ -49,7 +49,7 @@ for f, _ in pairs(data.raw.fluid) do
         "empty-" .. f .. "-canister",
         "empty-" .. f .. "-barrel",
         "fill-" .. f .. "-canister",
-        "fill-" .. f .. "-barrel"
+        f .. "-barrel"
     } do
         local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
         if recipe ~= nil then
