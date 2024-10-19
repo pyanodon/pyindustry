@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {type = "item", name = "py-overflow-valve", amount = 1}
     }
-}:add_unlock("fluid-handling")
+}--:add_unlock("fluid-handling")
 
 ITEM {
     type = "item",
@@ -28,7 +28,7 @@ ITEM {
 
 ENTITY {
     name = "py-overflow-valve",
-    type = "storage-tank",
+    type = "simple-entity-with-owner",
     minable = {mining_time = 1, result = "py-overflow-valve"},
     icon = "__pyindustry__/graphics/icons/overflow-valve.png",
     icon_size = 32,
@@ -60,12 +60,12 @@ ENTITY {
         }
     },
     pictures = {
-        gas_flow = py.empty_image(),
+        --[[gas_flow = py.empty_image(),
         fluid_background = py.empty_image(),
         window_background = py.empty_image(),
         flow_sprite = py.empty_image(),
-        picture = {
-            sheets = {
+        picture = {--]]
+            layers = {
                 {
                     filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve.png",
                     priority = "extra-high",
@@ -95,7 +95,7 @@ ENTITY {
                     scale = 0.5
                 }
             }
-        }
+        --}
     },
     circuit_wire_connection_points = {
         {
