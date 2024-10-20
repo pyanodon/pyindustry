@@ -39,7 +39,13 @@ ENTITY {
     corpse = "medium-remnants",
     collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
     selection_box = {{-2, -2}, {2, 2}},
-    energy_source = {
+    energy_source = mods.pyalternativeenergy and {
+        type = "electric",
+        buffer_capacity = "1GJ",
+        usage_priority = "tertiary",
+        input_flow_limit = "100MW",
+        output_flow_limit = "100MW"
+    } or {
         type = "electric",
         buffer_capacity = "100MJ",
         usage_priority = "tertiary",
