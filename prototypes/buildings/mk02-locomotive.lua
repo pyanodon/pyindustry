@@ -1,13 +1,5 @@
 local sounds = require "__base__/prototypes/entity/sounds"
 
-data:extend {{
-  type = "equipment-grid",
-  name = "mk02-train-equipment-grid",
-  width = 4,
-  height = 4,
-  equipment_categories = table.deepcopy(data.raw["equipment-grid"]["spidertron-equipment-grid"]["equipment_categories"]),
-}}
-
 RECIPE {
   type = "recipe",
   name = "mk02-locomotive",
@@ -305,7 +297,6 @@ ENTITY {
   close_sound = {filename = "__pyindustry__/sounds/mk02-locomotive-close.ogg", volume = 0.4},
   sound_minimum_speed = 0.5,
   sound_scaling_ratio = 0.35,
-  equipment_grid = "mk02-train-equipment-grid",
   water_reflection = {
     pictures =
     {
