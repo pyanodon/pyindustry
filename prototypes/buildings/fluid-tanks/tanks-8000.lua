@@ -43,35 +43,35 @@ ENTITY {
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0.5, -2.9}, --0.5, -3.5
+                position = {0.5, -2.5}, --0.5, -3.5
                 direction = defines.direction.north
             },
             {
-                position = {-0.5, -2.9},
+                position = {-0.5, -2.5},
                 direction = defines.direction.north
             },
             {
-                position = {2.43, 0.5},
+                position = {2.5, 0.5},
                 direction = defines.direction.east
             },
             {
-                position = {2.43, -0.5},
+                position = {2.5, -0.5},
                 direction = defines.direction.east
             },
             {
-                position = {0.5, 2.9},
+                position = {0.5, 2.5},
                 direction = defines.direction.south
             },
             {
-                position = {-0.5, 2.9},
+                position = {-0.5, 2.5},
                 direction = defines.direction.south
             },
             {
-                position = {-2.46, 0.5}, -- west goes a wee bit further
+                position = {-2.5, 0.5}, -- west goes a wee bit further
                 direction = defines.direction.west
             },
             {
-                position = {-2.46, -0.5},
+                position = {-2.5, -0.5},
                 direction = defines.direction.west
             }
         }
