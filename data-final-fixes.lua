@@ -16,7 +16,11 @@ if settings.startup["py-braided-pipes"].value then
         end
 
         for _, entity in pairs(data.raw[entity_prototype] or {}) do
-            local fluid_boxes = entity.fluid_boxes or {}
+            local fluid_boxes = {}
+
+            for _, fluid_box in pairs(entity.fluid_boxes or {}) do
+                fluid_boxes[#fluid_boxes + 1] = fluid_box
+            end
 
             if entity.fluid_box then
                 fluid_boxes[#fluid_boxes + 1] = entity.fluid_box
