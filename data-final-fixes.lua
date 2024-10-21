@@ -38,6 +38,10 @@ if settings.startup["py-braided-pipes"].value then
                 fluid_boxes[#fluid_boxes + 1] = entity.oxidizer_fluid_box
             end
 
+            if entity.energy_source and entity.energy_source.type == "fluid" then
+                fluid_boxes[#fluid_boxes + 1] = entity.energy_source.fluid_box
+            end
+
             for _, fluid_box in pairs(fluid_boxes) do
                 if type(fluid_box) == "table" then
                     for _, pipe_connection in pairs(fluid_box.pipe_connections or {}) do
