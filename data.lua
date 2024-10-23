@@ -60,7 +60,7 @@ end
 -- Armor
 if mods["pycoalprocessing"] then
 	require "prototypes/equipment/armor-updates"
-	require "prototypes/equipment/portable-gasolene-generator"
+	require "prototypes/equipment/portable-gasoline-generator"
 end
 
 --Other
