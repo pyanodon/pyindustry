@@ -286,7 +286,7 @@ RECIPE {
     results = {
         {type = "item", name = "niobium-pipe", amount = 2}
     }
-}:add_unlock {"niobium", "py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock {"py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
@@ -313,7 +313,7 @@ RECIPE {
     results = {
         {"niobium-pipe-to-ground", 2}
     }
-}:add_unlock {"niobium", "py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock {"py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
 
 ITEM {
     type = "item",
