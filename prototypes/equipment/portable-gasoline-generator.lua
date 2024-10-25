@@ -1,6 +1,6 @@
 data:extend {{
 	type = "generator-equipment",
-	name = "portable-gasolene-generator",
+	name = "portable-gasoline-generator",
 	power = "180kW",
 	burner = {
 		type = "burner",
@@ -20,25 +20,25 @@ data:extend {{
 	sprite = {
 		width = 64,
 		height = 64,
-		filename = "__pyindustry__/graphics/icons/gasolene-burner.png"
+		filename = "__pyindustry__/graphics/icons/gasoline-burner.png"
 	}
 }}
 
 ITEM {
 	type = "item",
-	name = "portable-gasolene-generator",
-	icon = "__pyindustry__/graphics/icons/gasolene-burner.png",
+	name = "portable-gasoline-generator",
+	icon = "__pyindustry__/graphics/icons/gasoline-burner.png",
 	icon_size = 64,
 	subgroup = "py-generator-equipment",
-	order = "a[energy-source]-a[portable-gasolene-generator]",
+	order = "a[energy-source]-a[portable-gasoline-generator]",
 	stack_size = 10,
-	place_as_equipment_result = "portable-gasolene-generator",
-	localised_description = {"equipment-description.portable-gasolene-generator"}
+	place_as_equipment_result = "portable-gasoline-generator",
+	localised_description = {"equipment-description.portable-gasoline-generator"}
 }
 
 RECIPE {
 	type = "recipe",
-	name = "portable-gasolene-generator",
+	name = "portable-gasoline-generator",
 	energy_required = 10,
 	category = "crafting",
 	enabled = false,
@@ -50,7 +50,7 @@ RECIPE {
 		{type = "item", name = "small-electric-pole", amount = 1}
 	},
 	results = {
-		{type = "item", name = "portable-gasolene-generator", amount = 1}
+		{type = "item", name = "portable-gasoline-generator", amount = 1}
 	}
 }:add_unlock("personal-roboport-equipment")
 
