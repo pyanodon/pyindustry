@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.3
+Date: soontm
+  Changes:
+    - Changed niobium pipe volume back to 100.
+    - Different pipe types don't connect to each other anymore by default. You can revert the change in startup settings.
+---------------------------------------------------------------------------------------------------
 Version: 3.0.2
 Date: 2024-10-23
   Changes:
@@ -7,7 +13,7 @@ Date: 2024-10-23
 Version: 3.0.1
 Date: 2024-10-21
   Changes:
-    - updated ralesias is now relesia
+    - updated ralesias is now ralesia
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.0
 Date: 2024-10-20
