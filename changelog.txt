@@ -4,7 +4,8 @@ Date: soontm
   Changes:
     - Changed niobium pipe volume back to 100.
     - Different pipe types don't connect to each other anymore by default. You can revert the change in startup settings.
-    - Fixed niobium pipes recipe being unlocked twice
+    - Fixed niobium pipes recipe being unlocked twice.
+    - Fixed refined concrete being slow without pyAL.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.2
 Date: 2024-10-23

@@ -71,6 +71,7 @@ data.raw["fluid-wagon"]["fluid-wagon"].capacity = 25000
 -- Match movement speed on vanilla tiles (except hazard) to py tiles, update decorative removal probability
 TILE("stone-path"):set("walking_speed_modifier", 1.5):set("decorative_removal_probability", 1.0)
 TILE("concrete"):set("walking_speed_modifier", 2.5):set("vehicle_friction_modifier", 0.75):set("decorative_removal_probability", 1.0)
+TILE("refined-concrete"):set("walking_speed_modifier", 3.5):set("vehicle_friction_modifier", 0.75):set("decorative_removal_probability", 1.0)
 
 -- Update hazard concrete to slow movement, for safety™
 TILE("hazard-concrete-left"):set("walking_speed_modifier", 0.5):set("vehicle_friction_modifier", 2):set("decorative_removal_probability", 1.0)
