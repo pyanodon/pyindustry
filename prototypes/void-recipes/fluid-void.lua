@@ -4,6 +4,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         type = "recipe",
         localised_name = locale,
         hidden = true,
+        hidden_in_factoriopedia = false,
         enabled = true,
         category = category,
         energy_required = 1,
@@ -17,6 +18,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
 end
 
 for _, fluid in pairs(data.raw.fluid) do
+    if fluid.hidden then goto continue end
     if fluid.name == "fluid-unknown" or fluid.subgroup == "parameters" then goto continue end
 
     local name
@@ -25,7 +27,7 @@ for _, fluid in pairs(data.raw.fluid) do
     if fluid.icons then
         icons = table.deepcopy(fluid.icons)
     else
-        icons = {{icon = fluid.icon, icon_size = fluid.icon_size or 32}}
+        icons = {{icon = fluid.icon, icon_size = fluid.icon_size or 64}}
     end
     icons[#icons + 1] = {icon = "__pyindustry__/graphics/icons/no.png", icon_size = 32}
 
