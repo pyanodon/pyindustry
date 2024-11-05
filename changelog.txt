@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.3
+Date: ?
+  Changes:
+    - Fixed incorrect icon size definitions for steam void and petroleum gas void recipes. Resolves https://github.com/pyanodon/pybugreports/issues/673
+    - Fluid voiding recipes are now vieable in factoriopedia.
+---------------------------------------------------------------------------------------------------
 Version: 3.0.2
 Date: 2024-10-29
   Changes:
