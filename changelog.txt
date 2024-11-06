@@ -2,6 +2,7 @@
 Version: 3.0.4
 Date: ?
   Changes:
+    - Made most crafting machines flippable
     - Fixed one of the two menu simulations for Factorio 2.0
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.3
