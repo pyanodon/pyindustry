@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.4
-Date: ?
+Date: 2024-11-7
   Changes:
     - Made most crafting machines flippable
     - Fixed menu simulations for Factorio 2.0
