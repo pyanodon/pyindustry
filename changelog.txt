@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: ????
+Version: 3.0.5
 Date: when all my sins are forgiven
   Changes:
     - Added Ukrainan translation (by bootseller)
+    - Fixed errors in the "pipe weaving" mod setting causing some pipe bitmasks to break (such as fusion reactor plasma)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.4
 Date: 2024-11-7

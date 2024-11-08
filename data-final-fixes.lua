@@ -49,6 +49,8 @@ if settings.startup["py-braided-pipes"].value then
             for _, fluid_box in pairs(fluid_boxes) do
                 if type(fluid_box) == "table" then
                     for _, pipe_connection in pairs(fluid_box.pipe_connections or {}) do
+                        if type(pipe_connection) ~= "table" then error(entity.name) end
+
                         local connection_category = pipe_connection.connection_category
                         if connection_category == nil then
                             connection_category = {"default"}
@@ -56,11 +58,13 @@ if settings.startup["py-braided-pipes"].value then
                             connection_category = {connection_category}
                         end
 
-                        connection_category[#connection_category + 1] = "pipe"
-                        connection_category[#connection_category + 1] = "niobium-pipe"
-                        connection_category[#connection_category + 1] = "ht-pipes" -- no need to check if pyhightech is installed
+                        if table.find(connection_category, "default") then
+                            connection_category[#connection_category + 1] = "pipe"
+                            connection_category[#connection_category + 1] = "niobium-pipe"
+                            connection_category[#connection_category + 1] = "ht-pipes" -- no need to check if pyhightech is installed
 
-                        pipe_connection.connection_category = connection_category
+                            pipe_connection.connection_category = connection_category
+                        end
                     end
                 end
             end
