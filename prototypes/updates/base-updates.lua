@@ -54,7 +54,6 @@ RECIPE("accumulator"):add_ingredient {type = "item", name = "electronic-circuit"
 RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
 TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustry__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
-TECHNOLOGY("electric-energy-accumulators"):set("icon_mipmaps", nil)
 
 
 if not mods["pycoalprocessing"] then

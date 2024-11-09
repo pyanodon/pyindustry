@@ -49,8 +49,7 @@ for i, color_data in pairs(colors) do
             {
                 icon = data.raw.item["refined-concrete"].icon,
                 tint = color_data.chat_color,
-                icon_size = 64,
-                icon_mipmaps = 4
+                icon_size = 64
             }
         },
         flags = {},
