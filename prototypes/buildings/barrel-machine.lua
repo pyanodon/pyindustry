@@ -110,7 +110,7 @@ ENTITY {
             pipe_connections = {{flow_direction = "output", position = {1.0, 1.0}, direction = defines.direction.south}}
         },
     },
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
+    impact_category = "metal-large",
     working_sound =
     {
         sound =

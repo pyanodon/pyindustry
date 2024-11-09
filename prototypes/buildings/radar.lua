@@ -97,7 +97,7 @@ ENTITY {
             }
         }
     },
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
+    impact_category = "metal-large",
     working_sound = table.deepcopy(data.raw.radar.radar.working_sound),
     radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275},
     rotation_speed = 0.005

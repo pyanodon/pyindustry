@@ -276,7 +276,7 @@ ENTITY {
     sound = sound_variations("__base__/sound/train-tie", 6, 0.4, {volume_multiplier("main-menu", 2.4), volume_multiplier("driving", 1.3)})
   },
   tie_distance = 30,
-  vehicle_impact_sound = sounds.generic_impact,
+  impact_category = "default",
   working_sound =
   {
     sound =

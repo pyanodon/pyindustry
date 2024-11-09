@@ -40,7 +40,7 @@ ENTITY {
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     repair_speed_modifier = 4,
     fast_replaceable_group = "wall",
-    vehicle_impact_sound = {filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0},
+    impact_category = "stone", 
     connected_gate_visualization = {filename = "__core__/graphics/arrows/underground-lines.png", priority = "high", width = 64, height = 64, scale = 0.5},
     wall_diode_green = {
         filename = "__base__/graphics/entity/wall/wall-diode-green.png",
