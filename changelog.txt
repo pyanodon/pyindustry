@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.6
+Date: ?
+  Changes:
+    - Standardized the internal names of the mk01-mk04 flying robots to `py-logistic-robot-mk0X` and `py-construction-robot-mk0X`.
+    - Renamed "Cargo pyanobot mk01" to "Logistic pyanobot mk01". Resolves https://github.com/pyanodon/pybugreports/issues/585
+    - Renamed "Cargo pyanobot mk02" to "Logistic pyanobot mk02". Resolves https://github.com/pyanodon/pybugreports/issues/585
+---------------------------------------------------------------------------------------------------
 Version: 3.0.5
 Date: 2024-11-9
   Changes:

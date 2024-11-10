@@ -2,7 +2,7 @@ local sounds = require "__base__/prototypes/entity/sounds"
 
 RECIPE {
     type = "recipe",
-    name = "py-construction-robot-01",
+    name = "py-construction-robot-mk01",
     energy_required = 10,
     category = "crafting-with-fluid",
     enabled = false,
@@ -14,19 +14,19 @@ RECIPE {
         {type = "item", name = "electronic-circuit", amount = 5},
     },
     results = {
-        {type = "item", name = "py-construction-robot-01", amount = 1}
+        {type = "item", name = "py-construction-robot-mk01", amount = 1}
     }
 }:add_unlock("construction-robotics")
 
 local bot_item = ITEM {
     type = "item",
-    name = "py-construction-robot-01",
+    name = "py-construction-robot-mk01",
     icon = "__pyindustry__/graphics/icons/py-construction-robot-01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-robots",
     order = "b",
-    place_result = "py-construction-robot-01",
+    place_result = "py-construction-robot-mk01",
     stack_size = 50
 }
 
@@ -36,11 +36,11 @@ end
 
 ENTITY {
     type = "construction-robot",
-    name = "py-construction-robot-01",
+    name = "py-construction-robot-mk01",
     icon = "__pyindustry__/graphics/icons/py-construction-robot-01.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-    minable = {mining_time = 0.1, result = "py-construction-robot-01"},
+    minable = {mining_time = 0.1, result = "py-construction-robot-mk01"},
     resistances = {{type = "fire", percent = 85}},
     max_health = 20,
     collision_box = {{0, 0}, {0, 0}},

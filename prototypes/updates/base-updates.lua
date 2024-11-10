@@ -15,8 +15,8 @@ if not mods["boblogistics"] then
     for recipe_name in pairs(data.raw.recipe) do
         RECIPE(recipe_name)
             :replace_ingredient("roboport", "py-roboport-mk01")
-            :replace_ingredient("construction-robot", "py-construction-robot-01")
-            :replace_ingredient("logistic-robot", "py-logistic-robot-01")
+            :replace_ingredient("construction-robot", "py-construction-robot-mk01")
+            :replace_ingredient("logistic-robot", "py-logistic-robot-mk01")
     end
 
     if not mods["pycoalprocessing"] then
