@@ -32,7 +32,6 @@ ENTITY {
     flags = {"placeable-neutral", "player-creation"},
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    --drawing_box = {{-1.5,-1.5},{1.5,1.5}},
     minable = {mining_time = 0.1, result = "concrete-wall"},
     max_health = 500,
     corpse = "wall-remnants",
