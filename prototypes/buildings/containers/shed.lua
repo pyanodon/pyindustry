@@ -112,7 +112,7 @@ local function define_shed(name, logistics_name)
             },
             circuit_wire_max_distance = 9,
             --circuit_connector_sprites = connectors.sprites({0.75, 0.55}),
-            circuit_wire_connection_point = connectors.points {0.64, 0.13}
+            circuit_connector = { points = connectors.points{0.64, 0.13} },
         }
 
     if logistics_name then

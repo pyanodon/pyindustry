@@ -87,6 +87,5 @@ ENTITY {
         max_sounds_per_type = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_wire_connection_points = _G.circuit_connector_definitions["storage-tank"].points,
-    circuit_connector_sprites = _G.circuit_connector_definitions["storage-tank"].sprites
+    circuit_connector = table.deepcopy(data.raw["storage-tank"]["storage-tank"].circuit_connector),
 }
