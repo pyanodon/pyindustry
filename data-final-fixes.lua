@@ -64,7 +64,7 @@ if settings.startup["py-braided-pipes"].value then
 
                         -- May have at most one category when connection_type is "underground"
                         -- Only loaded if connection_type is "normal" or "underground"
-                        if pipe_connection.connection_type == "normal" and table.find(connection_category, "default") then
+                        if pipe_connection.connection_type ~= "underground" and table.find(connection_category, "default") then
                             connection_category[#connection_category + 1] = "pipe"
                             connection_category[#connection_category + 1] = "niobium-pipe"
                             connection_category[#connection_category + 1] = "ht-pipes" -- no need to check if pyhightech is installed
@@ -78,7 +78,7 @@ if settings.startup["py-braided-pipes"].value then
         ::continue::
     end
 
-    for _, pipe in pairs{data.raw.pipe.pipe, data.raw["pipe-to-ground"]["pipe-to-ground"]} do
+    for _, pipe in pairs {data.raw.pipe.pipe, data.raw["pipe-to-ground"]["pipe-to-ground"]} do
         for _, pipe_connection in pairs(pipe.fluid_box.pipe_connections) do
             pipe_connection.connection_category = {"pipe"}
         end
