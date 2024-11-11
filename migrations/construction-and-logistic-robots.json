@@ -18,19 +18,19 @@
         ],
         [
             "c-pynobot-mk03",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk03"
         ],
         [
             "l-pynobot-mk03",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk03"
         ],
         [
             "construction-robot-ht",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk04"
         ],
         [
             "logistic-robot-ht",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk04"
         ]
     ],
     "item": [
@@ -52,19 +52,19 @@
         ],
         [
             "c-pynobot-mk03",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk03"
         ],
         [
             "l-pynobot-mk03",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk03"
         ],
         [
             "construction-robot-ht",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk04"
         ],
         [
             "logistic-robot-ht",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk04"
         ]
     ],
     "recipe": [
@@ -86,19 +86,19 @@
         ],
         [
             "c-pynobot-mk03",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk03"
         ],
         [
             "l-pynobot-mk03",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk03"
         ],
         [
             "construction-robot-ht",
-            "py-construction-robot-mk02"
+            "py-construction-robot-mk04"
         ],
         [
             "logistic-robot-ht",
-            "py-logistic-robot-mk02"
+            "py-logistic-robot-mk04"
         ]
     ]
 }
