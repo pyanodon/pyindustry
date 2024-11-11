@@ -62,6 +62,10 @@ end
 
 data.raw.pump["pump"].fluid_wagon_connector_alignment_tolerance = 1.0
 
+-- Moved from prototypes/pipes/niobium-pipes.lua because AFH was incorrectly copying the property causing crashes
+data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
+data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
+
 RECIPE("storage-tank"):remove_unlock("fluid-handling"):add_unlock("py-storage-tanks")
 
 data.raw["cargo-wagon"]["cargo-wagon"].inventory_size = 20
