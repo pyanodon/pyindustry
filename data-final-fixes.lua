@@ -49,7 +49,10 @@ if settings.startup["py-braided-pipes"].value then
             for _, fluid_box in pairs(fluid_boxes) do
                 if type(fluid_box) == "table" then
                     for _, pipe_connection in pairs(fluid_box.pipe_connections or {}) do
-                        if type(pipe_connection) ~= "table" then error(entity.name) end
+                        ---@cast pipe_connection PipeConnectionDefinition
+                        if type(pipe_connection) ~= "table" then
+                            error("Invalid pipe_connection spec on " .. entity.name)
+                        end
 
                         local connection_category = pipe_connection.connection_category
                         if connection_category == nil then
@@ -57,12 +60,15 @@ if settings.startup["py-braided-pipes"].value then
                         elseif type(connection_category) == "string" then
                             connection_category = {connection_category}
                         end
+                        ---@cast connection_category string[]
 
-                        if table.find(connection_category, "default") then
+                        -- May have at most one category when connection_type is "underground"
+                        -- Only loaded if connection_type is "normal" or "underground"
+                        if pipe_connection.connection_type == "normal" and table.find(connection_category, "default") then
                             connection_category[#connection_category + 1] = "pipe"
                             connection_category[#connection_category + 1] = "niobium-pipe"
                             connection_category[#connection_category + 1] = "ht-pipes" -- no need to check if pyhightech is installed
-
+                            ---@diagnostic disable-next-line inject-field
                             pipe_connection.connection_category = connection_category
                         end
                     end
