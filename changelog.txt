@@ -2,7 +2,8 @@
 Version: 3.0.7
 Date: ?
   Changes:
-    - Fixed Quartz Tiles to not look like concrete
+    - Fixed Quartz Tiles to not look like concrete.
+    - Added logistic trash slots to the requester and buffer sheds, deposits, ect. Resolves https://github.com/pyanodon/pybugreports/issues/721
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.6
 Date: 2024-11-14

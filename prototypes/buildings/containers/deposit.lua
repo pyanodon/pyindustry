@@ -4,6 +4,14 @@
 
 local connectors = require "prototypes/buildings/containers/connectors"
 
+local function get_trash_slots(name)
+    if name == "requester" or name == "buffer" then
+        return 20
+    else
+        return 0
+    end
+end
+
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
@@ -83,7 +91,8 @@ local function define_deposit(name, logistics_name)
             type = entity_type,
             name = full_name,
             icon = "__pyindustry__/graphics/icons/containers/deposit-" .. name .. ".png",
-            icon_size = 64,
+            icon_size                 = 64,
+            trash_inventory_size      = get_trash_slots(logistics_name),
             flags = {"placeable-neutral", "placeable-player", "player-creation"},
             minable = {mining_time = 2, result = full_name},
             max_health = 350,
