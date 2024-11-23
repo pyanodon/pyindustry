@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.8
+Date: ?
+  Changes:
+    - Fixed that construction zone extenders had the same range as normal roboports. Buffed the range of construction zone extenders. 80x80 -> 120x120, 120x120 -> 160x160, 160x160 -> 200x200, 200x200 -> 240x240
+---------------------------------------------------------------------------------------------------
 Version: 3.0.7
 Date: 2024-11-18
   Changes:

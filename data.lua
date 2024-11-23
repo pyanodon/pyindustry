@@ -76,7 +76,7 @@ require "prototypes/buildings/py-recharge-station-mk01"
 require "prototypes/robots/py-construction-robot-mk01"
 require "prototypes/robots/py-logistic-robot-mk01"
 
-require "prototypes/buildings/py-roboport-construction-test"
+require "prototypes/buildings/py-roboport-construction-mk01"
 require "prototypes/buildings/py-roboport-construction-mk02"
 require "prototypes/buildings/py-roboport-construction-mk03"
 require "prototypes/buildings/py-roboport-construction-mk04"

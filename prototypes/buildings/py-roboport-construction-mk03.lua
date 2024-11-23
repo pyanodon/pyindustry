@@ -59,8 +59,8 @@ ENTITY {
     -- per one charge slot
     charging_energy = "4MW",
     logistics_radius = 0,
-    construction_radius = 80,
-    logistics_connection_distance = 80,
+    construction_radius = 100,
+    logistics_connection_distance = 100,
     charge_approach_distance = 5,
     robot_slots_count = 0,
     material_slots_count = 0,
