@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.9
+Date: ?
+  Changes:
+    - Fixed incorrect recipe icons for pyburner recipes. Resolves https://github.com/pyanodon/pybugreports/issues/743
+---------------------------------------------------------------------------------------------------
 Version: 3.0.8
 Date: 2024-11-23
   Changes:
