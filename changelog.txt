@@ -3,6 +3,7 @@ Version: 3.0.9
 Date: ?
   Changes:
     - Fixed incorrect recipe icons for pyburner recipes. Resolves https://github.com/pyanodon/pybugreports/issues/743
+    - Sped up the casting speed of steel tiles from 3s -> 0.5s
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.8
 Date: 2024-11-23

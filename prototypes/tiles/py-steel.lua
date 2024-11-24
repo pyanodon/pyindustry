@@ -13,7 +13,7 @@ if mods.pyrawores and mods.pypetroleumhandling then
             {type = "item", name = "py-steel", amount = 2}
         },
         requester_paste_multiplier = 4,
-        energy_required = 3
+        energy_required = 0.5
     }:add_unlock("py-asphalt-mk02")
 else
     RECIPE {
@@ -29,7 +29,7 @@ else
             {"py-steel", 1}
         },
         requester_paste_multiplier = 4,
-        energy_required = 3
+        energy_required = 0.5
     }:add_unlock("py-asphalt-mk02", "coal-processing-2")
 end
 
