@@ -1,5 +1,21 @@
 local NIOBIUM_CONNECTION_CATEGORY = settings.startup["py-braided-pipes"].value and {"niobium-pipe"} or nil
 
+local function make_shadow(image)
+    local shift = image.shift or {0, 0}
+    local x, y = image[0] or image.x, image[1] or image.y
+
+    local shadow = table.deepcopy(image)
+    shadow.shift = {shift[1] + 0.2, shift[2] + 0.2}
+    shadow.draw_as_shadow = true
+
+    return {
+        layers = {
+            shadow,
+            image
+        }
+    }
+end
+
 --- @param i integer
 local function make_visualization(i)
     return
@@ -15,126 +31,126 @@ end
 
 local function py_pipepictures()
     return {
-        straight_vertical_single = {
+        straight_vertical_single = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-single.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_vertical = {
+        straight_vertical = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_vertical_window = {
+        straight_vertical_window = make_shadow{
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-vertical-window.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_horizontal_window = {
+        straight_horizontal_window = make_shadow{
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal-window.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_horizontal = {
+        straight_horizontal = make_shadow{
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-straight-horizontal.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        corner_up_right = {
+        corner_up_right = make_shadow{
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-right.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        corner_up_left = {
+        corner_up_left = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-up-left.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        corner_down_right = {
+        corner_down_right = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-right.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        corner_down_left = {
+        corner_down_left = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-corner-down-left.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        t_up = {
+        t_up = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-up.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        t_down = {
+        t_down = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-down.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        t_right = {
+        t_right = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-right.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        t_left = {
+        t_left = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-t-left.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        cross = {
+        cross = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-cross.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        ending_up = {
+        ending_up = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-up.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        ending_down = {
+        ending_down = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-down.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        ending_right = {
+        ending_right = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-right.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        ending_left = {
+        ending_left = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-ending-left.png",
             priority = "extra-high",
             width = 128,
@@ -455,28 +471,28 @@ ENTITY {
         scale = 0.5
     },
     pictures = {
-        north = {
+        north = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-up.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        south = {
+        south = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-down.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        west = {
+        west = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-left.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        east = {
+        east = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/hr-pipe-to-ground-right.png",
             priority = "extra-high",
             width = 128,
@@ -485,8 +501,7 @@ ENTITY {
         }
     },
     visualization = {
-        north =
-        {
+        north = {
             filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
             priority = "extra-high",
             x = 64,
@@ -494,8 +509,7 @@ ENTITY {
             scale = 0.5,
             flags = {"icon"}
         },
-        south =
-        {
+        south = {
             filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
             priority = "extra-high",
             x = 192,
@@ -503,8 +517,7 @@ ENTITY {
             scale = 0.5,
             flags = {"icon"}
         },
-        west =
-        {
+        west = {
             filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
             priority = "extra-high",
             x = 256,
@@ -512,8 +525,7 @@ ENTITY {
             scale = 0.5,
             flags = {"icon"}
         },
-        east =
-        {
+        east = {
             filename = "__base__/graphics/entity/pipe-to-ground/visualization.png",
             priority = "extra-high",
             x = 128,
