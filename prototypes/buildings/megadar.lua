@@ -50,6 +50,7 @@ ENTITY {
     },
     collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+	circuit_wire_max_distance = 9,
     energy_per_sector = "12MJ",
     max_distance_of_sector_revealed = 32,
     max_distance_of_nearby_sector_revealed = 8,
