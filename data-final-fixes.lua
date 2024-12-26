@@ -78,9 +78,11 @@ if settings.startup["py-braided-pipes"].value then
         ::continue::
     end
 
-    for _, pipe in pairs {data.raw.pipe.pipe, data.raw["pipe-to-ground"]["pipe-to-ground"]} do
+    for _, pipe in pairs {table.unpack(data.raw["pipe"]), table.unpack(data.raw["pipe-to-ground"])} do
         for _, pipe_connection in pairs(pipe.fluid_box.pipe_connections) do
-            pipe_connection.connection_category = {"pipe"}
+            if pipe_connection.connection_category == nil then
+                pipe_connection.connection_category = {"pipe"}
+            end
         end
     end
 end
