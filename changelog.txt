@@ -3,6 +3,7 @@ Version: 3.0.10
 Date: ???
   Changes:
     - Fixed radars not being connectable to the circuit network
+	- Added new textures for asphalt and coal tile
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.9
 Date: 2024-11-29

@@ -36,38 +36,38 @@ TILE {
     collision_mask = {layers = {ground_tile = true}},
     walking_speed_modifier = 3.25,
     decorative_removal_probability = 1,
-    layer = 10,
+    layer = 9,
     layer_group = "ground-artificial",
     variants = {
         material_background = {
-			picture = "__pyindustry__/graphics/tiles/py-asphalt/asphalt.png",
+			picture = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt.png",
 			count = 8,
 			scale = 0.5
 		},
         transition = {
             mask_layout = {
                 inner_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/asphalt-inner-corner-mask.png",
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-inner-corner-mask.png",
                     count = 8,
 					scale = 0.5
                 },
                 outer_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/asphalt-outer-corner-mask.png",
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-outer-corner-mask.png",
                     count = 8,
 					scale = 0.5
                 },
                 side = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/asphalt-side-mask.png",
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-side-mask.png",
                     count = 8,
 					scale = 0.5
                 },
                 u_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/asphalt-u-mask.png",
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-u-mask.png",
                     count = 8,
 					scale = 0.5
                 },
                 o_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/asphalt-o-mask.png",
+                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-o-mask.png",
                     count = 4,
 					scale = 0.5
                 }
