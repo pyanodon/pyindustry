@@ -41,31 +41,40 @@ TILE {
     collision_mask = {layers = {ground_tile = true}},
     walking_speed_modifier = 3.25,
     decorative_removal_probability = 1,
-    layer = 101,
+    layer = 10,
     layer_group = "ground-artificial",
     variants = {
-        main = data.raw.tile["lab-dark-1"].variants.main,
+        material_background = {
+			picture = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile.png",
+			count = 8,
+			scale = 0.5
+		},
         transition = {
-            overlay_layout = {
+            mask_layout = {
                 inner_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-inner-corner.png",
-                    count = 8
+                    spritesheet = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile-inner-corner-mask.png",
+                    count = 8,
+					scale = 0.5
                 },
                 outer_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-outer-corner.png",
-                    count = 8
+                    spritesheet = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile-outer-corner-mask.png",
+                    count = 8,
+					scale = 0.5
                 },
                 side = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-side.png",
-                    count = 8
+                    spritesheet = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile-side-mask.png",
+                    count = 8,
+					scale = 0.5
                 },
                 u_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-u.png",
-                    count = 8
+                    spritesheet = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile-u-mask.png",
+                    count = 8,
+					scale = 0.5
                 },
                 o_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/concrete-o.png",
-                    count = 1
+                    spritesheet = "__pyindustry__/graphics/tiles/py-coal-tile/py-coal-tile-o-mask.png",
+                    count = 4,
+					scale = 0.5
                 }
             }
         }
@@ -74,5 +83,4 @@ TILE {
     map_color = {r = 50, g = 50, b = 50, a = 1},
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.6,
-    tint = {0.2, 0.2, 0.2}
 }
