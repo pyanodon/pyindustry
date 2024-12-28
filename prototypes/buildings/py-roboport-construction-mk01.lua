@@ -52,23 +52,21 @@ ENTITY {
         type = "electric",
         usage_priority = "secondary-input",
         input_flow_limit = "5MW",
-        buffer_capacity = "300MJ"
+        buffer_capacity = "5MJ"
     },
-    recharge_minimum = "60MJ",
+    recharge_minimum = "500kJ",
     energy_usage = "50kW",
     -- per one charge slot
-    charging_energy = "2MW",
+    charging_energy = "0W",
     logistics_radius = 0,
     construction_radius = 60,
     logistics_connection_distance = 60,
-    charge_approach_distance = 5,
+    charge_approach_distance = 0,
     robot_slots_count = 0,
     material_slots_count = 0,
     robots_shrink_when_entering_and_exiting = true,
     stationing_offset = util.by_pixel(0, -3),
-    charging_offsets = {
-        {-0, -0.5}
-    },
+    charging_offsets = {},
     base = {
         layers = {
             {
