@@ -3,7 +3,7 @@ Version: 3.0.10
 Date: ???
   Changes:
     - Fixed radars not being connectable to the circuit network
-    - Removed charging ports from the construction zone extenders
+    - Removed charging ports from the construction zone extenders, in order to desambiguate from the charging stations and make them comparatively more attractive. Resolves https://github.com/pyanodon/pybugreports/issues/791
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.9
 Date: 2024-11-29
