@@ -67,7 +67,7 @@ TILE {
         transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
-            picture = "__pyindustry__/graphics/tiles/py-iron-oxide/hr-py-iron-oxide.png",
+            picture = "__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",
             count = 2,
             scale = 0.5
         }

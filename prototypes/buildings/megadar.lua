@@ -65,7 +65,7 @@ ENTITY {
     },
     energy_usage = "1200kW",
     integration_patch = {
-        filename = "__pyindustry__/graphics/entity/radar/hr-radar-integration.png",
+        filename = "__pyindustry__/graphics/entity/radar/radar-integration.png",
         priority = "low",
         width = 238,
         height = 216,

@@ -67,7 +67,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/underflow-valve.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -76,7 +76,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-underflow-valve-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/underflow-valve-shadow.png",
                     priority = "extra-high",
                     draw_as_shadow = true,
                     frames = 2,

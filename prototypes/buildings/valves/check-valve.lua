@@ -65,7 +65,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/check-valve.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -74,7 +74,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-check-valve-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/check-valve-shadow.png",
                     priority = "extra-high",
                     frames = 4,
                     draw_as_shadow = true,

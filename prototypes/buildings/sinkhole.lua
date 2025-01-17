@@ -76,7 +76,7 @@ ENTITY {
         animation = _G.make_4way_animation_from_spritesheet {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-py-sinkhole.png",
+                    filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
                     priority = "extra-high",
                     width = 192,
                     height = 192,
@@ -85,7 +85,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/hr-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-sinkhole/shadow.png",
                     priority = "extra-high",
                     width = 197,
                     height = 192,

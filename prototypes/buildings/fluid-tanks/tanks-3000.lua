@@ -63,7 +63,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustry__/graphics/entity/py-tank-3000/hr-py-tank-3000.png",
+                filename = "__pyindustry__/graphics/entity/py-tank-3000/py-tank-3000.png",
                 priority = "extra-high",
                 frames = 2,
                 width = 133,

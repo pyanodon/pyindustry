@@ -46,7 +46,7 @@ TILE {
         transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
-            picture = "__pyindustry__/graphics/tiles/py-nexelit/hr-py-nexelit.png",
+            picture = "__pyindustry__/graphics/tiles/py-nexelit/py-nexelit.png",
             count = 2,
             scale = 0.5
         }

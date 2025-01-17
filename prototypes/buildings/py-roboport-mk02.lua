@@ -85,7 +85,7 @@ ENTITY {
         }
     },
     base_patch = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk02/hr-patch.png",
+        filename = "__pyindustry__/graphics/entity/py-roboport-mk02/patch.png",
         priority = "high",
         width = 320,
         height = 512,
@@ -96,7 +96,7 @@ ENTITY {
     base_animation = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/hr-raw.png",
+                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/raw.png",
                 width = 320,
                 height = 512,
                 line_length = 12,
@@ -106,7 +106,7 @@ ENTITY {
                 scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/hr-l.png",
+                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/l.png",
                 width = 256,
                 height = 128,
                 line_length = 12,
@@ -117,7 +117,7 @@ ENTITY {
                 scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/hr-sh.png",
+                filename = "__pyindustry__/graphics/entity/py-roboport-mk02/sh.png",
                 width = 96,
                 height = 192,
                 line_length = 12,

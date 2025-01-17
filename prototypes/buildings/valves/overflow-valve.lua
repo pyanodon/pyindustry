@@ -67,7 +67,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -76,7 +76,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-arrows.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-arrows.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -85,7 +85,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/hr-overflow-valve-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-shadow.png",
                     priority = "extra-high",
                     frames = 2,
                     draw_as_shadow = true,

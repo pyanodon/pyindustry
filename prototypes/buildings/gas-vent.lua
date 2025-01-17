@@ -72,7 +72,7 @@ ENTITY {
         animation = _G.make_4way_animation_from_spritesheet {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-py-gas-vent.png",
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/py-gas-vent.png",
                     priority = "extra-high",
                     width = 64,
                     height = 352,
@@ -81,7 +81,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-gas-vent/hr-shadow.png",
+                    filename = "__pyindustry__/graphics/entity/py-gas-vent/shadow.png",
                     priority = "extra-high",
                     width = 150,
                     height = 46,

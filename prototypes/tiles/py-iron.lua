@@ -73,7 +73,7 @@ TILE {
         -- why do we do this instead of the tile_background used elsewhere?
         main =
         {{
-            picture = "__pyindustry__/graphics/tiles/py-iron/hr-py-iron.png",
+            picture = "__pyindustry__/graphics/tiles/py-iron/py-iron.png",
             count = 8,
             scale = 0.5,
             size = 1,
