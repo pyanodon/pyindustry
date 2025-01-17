@@ -4,6 +4,7 @@ Date: ?
   Changes:
     - Compressed and optimized all py graphics via `spritter optimize . -r --lossy`
     - Removed all legacy low-res graphic files from pyanodon.
+    - Implemented proper circuit connector definitions for py warehouses. Resolves https://github.com/pyanodon/pybugreports/issues/805
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.10
 Date: 2025-1-2

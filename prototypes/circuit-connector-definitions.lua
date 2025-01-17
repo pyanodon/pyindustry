@@ -44,3 +44,9 @@ circuit_connector_definitions["py-valves"] = {
         sprites = _G.circuit_connector_definitions["inserter"][4].sprites,
     }
 }
+
+circuit_connector_definitions["py-warehouse"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        {variation = 26, main_offset = util.by_pixel(55, 32.5), shadow_offset = util.by_pixel(52.5, 42.5), show_shadow = false}
+    )
