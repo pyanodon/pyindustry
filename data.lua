@@ -13,7 +13,6 @@ require "prototypes/technologies/asphalt"
 require "prototypes/technologies/warehouses"
 require "prototypes/technologies/railway"
 require "prototypes/technologies/accumulators"
-require "prototypes/technologies/radars"
 
 --Pipes
 require "prototypes/pipes/niobium-pipes"

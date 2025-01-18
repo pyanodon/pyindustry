@@ -1,3 +1,21 @@
+TECHNOLOGY {
+    type = "technology",
+    name = "radars-mk01",
+    icon = "__pyindustry__/graphics/technology/radars-mk01.png",
+    icon_size = 128,
+    order = "c-a",
+    prerequisites = {"steel-processing"},
+    effects = {},
+    unit = {
+        count = 35,
+        ingredients = {
+            {"automation-science-pack", 2},
+            {"logistic-science-pack",   2},
+        },
+        time = 45
+    }
+}
+
 RECIPE {
     type = "recipe",
     name = "py-local-radar",
@@ -13,6 +31,9 @@ RECIPE {
     },
     enabled = false
 }:add_unlock("radars-mk01")
+
+RECIPE("radar"):remove_unlock("radar"):add_unlock("radars-mk01").enabled = false
+TECHNOLOGY("radar").hidden = true
 
 ITEM {
     type = "item",
