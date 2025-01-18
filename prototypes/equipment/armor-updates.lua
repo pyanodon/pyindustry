@@ -102,6 +102,11 @@ RECIPE {
 data.raw.item["solar-panel-equipment"].subgroup = "py-generator-equipment"
 data.raw.item["solar-panel-equipment"].order = "a[energy-source]-b[solar-panel-equipment]"
 
+data.raw.technology["fission-reactor-equipment"].icons = util.technology_icon_constant_equipment("__pyindustry__/graphics/technology/fusion-reactor-equipment.png")
+data.raw.technology["fission-reactor-equipment"].icon_size = 256
+data.raw.technology["fission-reactor-equipment"].icon = nil
+data.raw.item["fission-reactor-equipment"].icon = "__pyindustry__/graphics/icons/fusion-reactor-equipment.png"
+data.raw.item["fission-reactor-equipment"].icon_size = 256
 data.raw.item["fission-reactor-equipment"].subgroup = "py-generator-equipment"
 data.raw.item["fission-reactor-equipment"].order = "a[energy-source]-c[fission-reactor-equipment]"
 data.raw["generator-equipment"]["fission-reactor-equipment"].power = "1.35MW"
@@ -110,6 +115,10 @@ data.raw["generator-equipment"]["fission-reactor-equipment"].burner = {
     fuel_inventory_size = 4,
     burnt_inventory_size = 4,
     fuel_categories = {"personal-fusion-cell"}
+}
+data.raw["generator-equipment"]["fission-reactor-equipment"].sprite = {
+    filename = "__pyindustry__/graphics/icons/fusion-reactor-equipment.png",
+    size = 256
 }
 data.raw["generator-equipment"]["fission-reactor-equipment"].shape = {
     type = "manual",
