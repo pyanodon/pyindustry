@@ -20,7 +20,6 @@ RECIPE {
     type = "recipe",
     name = "py-local-radar",
     ingredients = {
-        {type = "item", name = "electronic-circuit", amount = 5},
         {type = "item", name = "iron-gear-wheel",    amount = 5},
         {type = "item", name = "iron-plate",         amount = 10},
         {type = "item", name = "wood",               amount = 20},
