@@ -45,28 +45,28 @@ local function py_pipepictures()
             height = 128,
             scale = 0.5
         },
-        straight_vertical_window = make_shadow{
+        straight_vertical_window = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-vertical-window.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_horizontal_window = make_shadow{
+        straight_horizontal_window = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-horizontal-window.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        straight_horizontal = make_shadow{
+        straight_horizontal = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-straight-horizontal.png",
             priority = "extra-high",
             width = 128,
             height = 128,
             scale = 0.5
         },
-        corner_up_right = make_shadow{
+        corner_up_right = make_shadow {
             filename = "__pyindustry__/graphics/entity/niobium-pipe/pipe-corner-up-right.png",
             priority = "extra-high",
             width = 128,

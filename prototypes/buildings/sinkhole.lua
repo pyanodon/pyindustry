@@ -40,7 +40,7 @@ ENTITY {
     mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
     open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
     close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
-    impact_category = "stone", 
+    impact_category = "stone",
     source_inventory_size = 0,
     result_inventory_size = 0,
     module_slots = 0,

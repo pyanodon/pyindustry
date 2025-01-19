@@ -44,22 +44,22 @@ require "prototypes/buildings/valves/underflow-valve"
 
 --tank size settings check
 if settings.startup["py-tank-adjust"].value then
-	data.raw["storage-tank"]["py-tank-3000"].fluid_box.volume = 10000
-	data.raw["storage-tank"]["py-tank-3000"].localised_name = {"entity-name.py-tank-3000-adjust"}
-	data.raw["storage-tank"]["py-tank-4000"].fluid_box.volume = 27500
-	data.raw["storage-tank"]["py-tank-4000"].localised_name = {"entity-name.py-tank-4000-adjust"}
-	data.raw["storage-tank"]["py-tank-5000"].fluid_box.volume = 65000
-	data.raw["storage-tank"]["py-tank-5000"].localised_name = {"entity-name.py-tank-5000-adjust"}
-	data.raw["storage-tank"]["py-tank-6500"].fluid_box.volume = 75000
-	data.raw["storage-tank"]["py-tank-6500"].localised_name = {"entity-name.py-tank-6500-adjust"}
-	data.raw["storage-tank"]["py-tank-8000"].fluid_box.volume = 125000
-	data.raw["storage-tank"]["py-tank-8000"].localised_name = {"entity-name.py-tank-8000-adjust"}
+    data.raw["storage-tank"]["py-tank-3000"].fluid_box.volume = 10000
+    data.raw["storage-tank"]["py-tank-3000"].localised_name = {"entity-name.py-tank-3000-adjust"}
+    data.raw["storage-tank"]["py-tank-4000"].fluid_box.volume = 27500
+    data.raw["storage-tank"]["py-tank-4000"].localised_name = {"entity-name.py-tank-4000-adjust"}
+    data.raw["storage-tank"]["py-tank-5000"].fluid_box.volume = 65000
+    data.raw["storage-tank"]["py-tank-5000"].localised_name = {"entity-name.py-tank-5000-adjust"}
+    data.raw["storage-tank"]["py-tank-6500"].fluid_box.volume = 75000
+    data.raw["storage-tank"]["py-tank-6500"].localised_name = {"entity-name.py-tank-6500-adjust"}
+    data.raw["storage-tank"]["py-tank-8000"].fluid_box.volume = 125000
+    data.raw["storage-tank"]["py-tank-8000"].localised_name = {"entity-name.py-tank-8000-adjust"}
 end
 
 -- Armor
 if mods["pycoalprocessing"] then
-	require "prototypes/equipment/armor-updates"
-	require "prototypes/equipment/portable-gasoline-generator"
+    require "prototypes/equipment/armor-updates"
+    require "prototypes/equipment/portable-gasoline-generator"
 end
 
 --Other
@@ -81,9 +81,9 @@ require "prototypes/buildings/py-roboport-construction-mk03"
 require "prototypes/buildings/py-roboport-construction-mk04"
 
 if mods["pycoalprocessing"] then
-	require "prototypes/buildings/mk02-locomotive"
-	require "prototypes/buildings/mk02-cargo-wagon"
-	require "prototypes/buildings/mk02-fluid-wagon"
+    require "prototypes/buildings/mk02-locomotive"
+    require "prototypes/buildings/mk02-cargo-wagon"
+    require "prototypes/buildings/mk02-fluid-wagon"
 end
 
 --Voiding

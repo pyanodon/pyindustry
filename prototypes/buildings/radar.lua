@@ -20,10 +20,10 @@ RECIPE {
     type = "recipe",
     name = "py-local-radar",
     ingredients = {
-        {type = "item", name = "iron-gear-wheel",    amount = 5},
-        {type = "item", name = "iron-plate",         amount = 10},
-        {type = "item", name = "wood",               amount = 20},
-        {type = "item", name = "engine-unit",        amount = 1}
+        {type = "item", name = "iron-gear-wheel", amount = 5},
+        {type = "item", name = "iron-plate",      amount = 10},
+        {type = "item", name = "wood",            amount = 20},
+        {type = "item", name = "engine-unit",     amount = 1}
     },
     results = {
         {type = "item", name = "py-local-radar", amount = 1}
