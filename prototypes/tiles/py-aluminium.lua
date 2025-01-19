@@ -23,7 +23,7 @@ end
 ITEM {
     type = "item",
     name = "py-aluminium",
-    icon = "__pyindustry__/graphics/icons/py-aluminium.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-aluminium.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
@@ -51,7 +51,7 @@ TILE {
         transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
-            picture = "__pyindustry__/graphics/tiles/py-aluminium/py-aluminium.png",
+            picture = "__pyindustrygraphics__/graphics/tiles/py-aluminium/py-aluminium.png",
             count = 4,
             scale = 0.5
         }

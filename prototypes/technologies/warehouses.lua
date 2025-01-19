@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "py-warehouse-research",
-    icon = "__pyindustry__/graphics/technology/warehouse-research.png",
+    icon = "__pyindustrygraphics__/graphics/technology/warehouse-research.png",
     icon_size = 128,
     effects = {},
     prerequisites = {"steel-processing"},
@@ -16,7 +16,7 @@ TECHNOLOGY {
 TECHNOLOGY {
     type = "technology",
     name = "py-warehouse-logistics-research",
-    icon = "__pyindustry__/graphics/technology/warehouse-logistics-research.png",
+    icon = "__pyindustrygraphics__/graphics/technology/warehouse-logistics-research.png",
     icon_size = 128,
     effects = {},
     prerequisites = {"py-warehouse-research", "logistic-system", "chemical-science-pack"},

@@ -20,14 +20,14 @@ data:extend {{
     sprite = {
         width = 64,
         height = 64,
-        filename = "__pyindustry__/graphics/icons/gasoline-burner.png"
+        filename = "__pyindustrygraphics__/graphics/icons/gasoline-burner.png"
     }
 }}
 
 ITEM {
     type = "item",
     name = "portable-gasoline-generator",
-    icon = "__pyindustry__/graphics/icons/gasoline-burner.png",
+    icon = "__pyindustrygraphics__/graphics/icons/gasoline-burner.png",
     icon_size = 64,
     subgroup = "py-generator-equipment",
     order = "a[energy-source]-a[portable-gasoline-generator]",

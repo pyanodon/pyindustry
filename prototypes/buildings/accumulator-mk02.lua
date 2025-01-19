@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "accumulator-mk02",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
+    icon = "__pyindustrygraphics__/graphics/icons/accumulator-mk02.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-electric",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "accumulator",
     name = "accumulator-mk02",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk02.png",
+    icon = "__pyindustrygraphics__/graphics/icons/accumulator-mk02.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "accumulator-mk02"},
@@ -54,14 +54,14 @@ ENTITY {
     },
     chargable_graphics = {
         picture = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk02/charged.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/charged.png",
             priority = "extra-high",
             width = 192,
             height = 288,
             shift = util.by_pixel(16, -64),
         },
         charge_animation = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk02/charging.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/charging.png",
             width = 192,
             height = 288,
             line_length = 10,
@@ -72,7 +72,7 @@ ENTITY {
         charge_cooldown = 30,
         charge_light = {intensity = 0.7, size = 7, color = {r = 0.219, g = 0.835, b = 0.188}},
         discharge_animation = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk02/discharge.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/discharge.png",
             width = 192,
             height = 288,
             line_length = 9,
@@ -86,7 +86,7 @@ ENTITY {
     impact_category = "metal-large",
     working_sound = {
         sound = {
-            filename = "__pyindustry__/sounds/accumulator-mk02.ogg",
+            filename = "__pyindustrygraphics__/sounds/accumulator-mk02.ogg",
             volume = 0.5
         },
         idle_sound = {

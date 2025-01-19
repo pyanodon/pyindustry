@@ -15,7 +15,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-ze-mk04",
-    icon = "__pyindustry__/graphics/icons/py-ze-mk04.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-ze-mk04.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-stations",
@@ -27,7 +27,7 @@ ITEM {
 ENTITY {
     type = "roboport",
     name = "py-ze-mk04",
-    icon = "__pyindustry__/graphics/icons/py-ze-mk04.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-ze-mk04.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "py-ze-mk04"},
@@ -70,7 +70,7 @@ ENTITY {
     base = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/icons/filler.png",
+                filename = "__pyindustrygraphics__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -80,7 +80,7 @@ ENTITY {
     base_patch = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/icons/filler.png",
+                filename = "__pyindustrygraphics__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -90,7 +90,7 @@ ENTITY {
     base_animation = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/py-zone-extender-mk04/r.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-zone-extender-mk04/r.png",
                 priority = "extra-high",
                 width = 160,
                 height = 256,
@@ -100,7 +100,7 @@ ENTITY {
                 shift = util.by_pixel(0, -48),
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-zone-extender-mk04/ao.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-zone-extender-mk04/ao.png",
                 priority = "extra-high",
                 width = 224,
                 height = 288,
@@ -110,7 +110,7 @@ ENTITY {
                 shift = util.by_pixel(0, -32),
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-zone-extender-mk04/l.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-zone-extender-mk04/l.png",
                 priority = "extra-high",
                 width = 160,
                 height = 256,
@@ -121,7 +121,7 @@ ENTITY {
                 shift = util.by_pixel(0, -48),
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-zone-extender-mk04/sh.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-zone-extender-mk04/sh.png",
                 priority = "extra-high",
                 width = 192,
                 height = 128,
@@ -137,7 +137,7 @@ ENTITY {
     door_animation_up = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/icons/filler.png",
+                filename = "__pyindustrygraphics__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -147,7 +147,7 @@ ENTITY {
     door_animation_down = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/icons/filler.png",
+                filename = "__pyindustrygraphics__/graphics/icons/filler.png",
                 width = 4,
                 height = 4,
                 shift = util.by_pixel(0, -0),
@@ -155,7 +155,7 @@ ENTITY {
         }
     },
     recharging_animation = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/effect.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/effect.png",
         priority = "high",
         width = 128,
         height = 88,

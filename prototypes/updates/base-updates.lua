@@ -52,7 +52,7 @@ TECHNOLOGY("railway"):set_fields {enabled = false}:set_fields {hidden = true}
 
 RECIPE("accumulator"):add_ingredient {type = "item", name = "electronic-circuit", amount = 2}
 RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
-TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustry__/graphics/technology/accumulator-mk01.png")
+TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustrygraphics__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
 
 

@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "radars-mk02",
-    icon = "__pyindustry__/graphics/technology/radars-mk02.png",
+    icon = "__pyindustrygraphics__/graphics/technology/radars-mk02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"radars-mk01"},
@@ -40,7 +40,7 @@ end
 ITEM {
     type = "item",
     name = "megadar",
-    icon = "__pyindustry__/graphics/icons/megadar.png",
+    icon = "__pyindustrygraphics__/graphics/icons/megadar.png",
     icon_size = 64,
     flags = {},
     subgroup = "defensive-structure",
@@ -52,7 +52,7 @@ ITEM {
 ENTITY {
     type = "radar",
     name = "megadar",
-    icon = "__pyindustry__/graphics/icons/megadar.png",
+    icon = "__pyindustrygraphics__/graphics/icons/megadar.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "megadar"},
@@ -85,7 +85,7 @@ ENTITY {
     },
     energy_usage = "1200kW",
     integration_patch = {
-        filename = "__pyindustry__/graphics/entity/radar/radar-integration.png",
+        filename = "__pyindustrygraphics__/graphics/entity/radar/radar-integration.png",
         priority = "low",
         width = 238,
         height = 216,
@@ -99,7 +99,7 @@ ENTITY {
     pictures = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/megadar/left.png",
+                filename = "__pyindustrygraphics__/graphics/entity/megadar/left.png",
                 priority = "low",
                 width = 64,
                 height = 302,
@@ -110,7 +110,7 @@ ENTITY {
                 --scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/megadar/mid.png",
+                filename = "__pyindustrygraphics__/graphics/entity/megadar/mid.png",
                 priority = "low",
                 width = 64,
                 height = 302,
@@ -121,7 +121,7 @@ ENTITY {
                 --scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/megadar/right.png",
+                filename = "__pyindustrygraphics__/graphics/entity/megadar/right.png",
                 priority = "low",
                 width = 64,
                 height = 302,
@@ -132,7 +132,7 @@ ENTITY {
                 --scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/megadar/left-sh.png",
+                filename = "__pyindustrygraphics__/graphics/entity/megadar/left-sh.png",
                 priority = "low",
                 width = 128,
                 height = 160,
@@ -144,7 +144,7 @@ ENTITY {
                 --scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/megadar/right-sh.png",
+                filename = "__pyindustrygraphics__/graphics/entity/megadar/right-sh.png",
                 priority = "low",
                 width = 128,
                 height = 160,
@@ -161,7 +161,7 @@ ENTITY {
     working_sound = {
         sound = {
             {
-                filename = "__pyindustry__/sounds/megadar.ogg",
+                filename = "__pyindustrygraphics__/sounds/megadar.ogg",
                 volume = 1.9
             }
         },

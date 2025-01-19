@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-sinkhole",
-    icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-sinkhole.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-void",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "furnace",
     name = "py-sinkhole",
-    icon = "__pyindustry__/graphics/icons/py-sinkhole.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-sinkhole.png",
     icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-sinkhole"},
@@ -46,8 +46,8 @@ ENTITY {
     module_slots = 0,
     allowed_effects = {},
     working_sound = {
-        sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.8},
-        idle_sound = {filename = "__pyindustry__/sounds/py-sinkhole.ogg", volume = 0.3},
+        sound = {filename = "__pyindustrygraphics__/sounds/py-sinkhole.ogg", volume = 0.8},
+        idle_sound = {filename = "__pyindustrygraphics__/sounds/py-sinkhole.ogg", volume = 0.3},
         apparent_volume = 2.0
     },
     resistances = {
@@ -76,7 +76,7 @@ ENTITY {
         animation = _G.make_4way_animation_from_spritesheet {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/py-sinkhole.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-sinkhole/py-sinkhole.png",
                     priority = "extra-high",
                     width = 192,
                     height = 192,
@@ -85,7 +85,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-sinkhole/shadow.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-sinkhole/shadow.png",
                     priority = "extra-high",
                     width = 197,
                     height = 192,

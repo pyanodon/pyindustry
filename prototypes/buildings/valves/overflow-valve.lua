@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-overflow-valve",
-    icon = "__pyindustry__/graphics/icons/overflow-valve.png",
+    icon = "__pyindustrygraphics__/graphics/icons/overflow-valve.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-pipes",
@@ -30,7 +30,7 @@ ENTITY {
     name = "py-overflow-valve",
     type = "storage-tank",
     minable = {mining_time = 1, result = "py-overflow-valve"},
-    icon = "__pyindustry__/graphics/icons/overflow-valve.png",
+    icon = "__pyindustrygraphics__/graphics/icons/overflow-valve.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation", "placeable-neutral", "placeable-enemy"},
     corpse = "small-remnants",
@@ -67,7 +67,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -76,7 +76,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-arrows.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 64,
@@ -85,7 +85,7 @@ ENTITY {
                     scale = 0.5
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-valves/overflow-valve-shadow.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-shadow.png",
                     priority = "extra-high",
                     frames = 2,
                     draw_as_shadow = true,

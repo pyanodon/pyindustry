@@ -4,7 +4,7 @@ function connectors.sprites(con_shift, shadow_shift)
     local blue_shift = {con_shift[1] - 0.05, con_shift[2] + 0.1}
     return {
         connector_main = {
-            filename = "__pyindustry__/graphics/entity/pylon/pylon.png",
+            filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon.png",
             priority = "low",
             width = 27,
             height = 65,
@@ -50,7 +50,7 @@ function connectors.sprites(con_shift, shadow_shift)
         blue_led_light_offset = blue_shift,
         red_green_led_light_offset = red_green_shift,
         connector_shadow = {
-            filename = "__pyindustry__/graphics/entity/pylon/pylon-shadow.png",
+            filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon-shadow.png",
             priority = "low",
             flags = {"shadow"},
             width = 27,

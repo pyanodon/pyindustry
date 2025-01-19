@@ -77,7 +77,7 @@ local function define_warehouse(name, logistics_name)
     ITEM {
         type = "item",
         name = full_name,
-        icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
+        icon = "__pyindustrygraphics__/graphics/icons/containers/warehouse-" .. name .. ".png",
         icon_size = 64,
         flags = {},
         subgroup = "py-containers-warehouse",
@@ -90,7 +90,7 @@ local function define_warehouse(name, logistics_name)
         ENTITY {
             type = entity_type,
             name = full_name,
-            icon = "__pyindustry__/graphics/icons/containers/warehouse-" .. name .. ".png",
+            icon = "__pyindustrygraphics__/graphics/icons/containers/warehouse-" .. name .. ".png",
             icon_size                 = 64,
             trash_inventory_size      = get_trash_slots(logistics_name),
             flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -113,7 +113,7 @@ local function define_warehouse(name, logistics_name)
             inventory_size = 450,
             inventory_type = "with_filters_and_bar",
             picture = {
-                filename = "__pyindustry__/graphics/entity/warehouse/warehouse-" .. name .. ".png",
+                filename = "__pyindustrygraphics__/graphics/entity/warehouse/warehouse-" .. name .. ".png",
                 priority = "high",
                 width = 224,
                 height = 224,

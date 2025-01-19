@@ -15,7 +15,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "concrete-wall",
-    icon = "__pyindustry__/graphics/icons/concrete-wall.png",
+    icon = "__pyindustrygraphics__/graphics/icons/concrete-wall.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-walls",
@@ -27,7 +27,7 @@ ITEM {
 ENTITY {
     type = "wall",
     name = "concrete-wall",
-    icon = "__pyindustry__/graphics/icons/concrete-wall.png",
+    icon = "__pyindustrygraphics__/graphics/icons/concrete-wall.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
@@ -76,7 +76,7 @@ ENTITY {
     pictures = {
         single = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/single.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/single.png",
                 priority = "extra-high",
                 width = 32,
                 height = 44,
@@ -85,7 +85,7 @@ ENTITY {
         },
         straight_vertical = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/vertical.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/vertical.png",
                 priority = "extra-high",
                 width = 32,
                 height = 42,
@@ -94,28 +94,28 @@ ENTITY {
         },
         straight_horizontal = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/horizontal-1.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/horizontal-1.png",
                 priority = "extra-high",
                 width = 32,
                 height = 38,
                 shift = {0.0, 0.08}
             },
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/horizontal-2.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/horizontal-2.png",
                 priority = "extra-high",
                 width = 32,
                 height = 38,
                 shift = {0.0, 0.08}
             },
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/horizontal-3.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/horizontal-3.png",
                 priority = "extra-high",
                 width = 32,
                 height = 38,
                 shift = {0.0, 0.08}
             },
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/horizontal-4.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/horizontal-4.png",
                 priority = "extra-high",
                 width = 32,
                 height = 38,
@@ -124,7 +124,7 @@ ENTITY {
         },
         corner_right_down = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/corner-right.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/corner-right.png",
                 priority = "extra-high",
                 width = 32,
                 height = 43,
@@ -133,7 +133,7 @@ ENTITY {
         },
         corner_left_down = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/corner-left.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/corner-left.png",
                 priority = "extra-high",
                 width = 32,
                 height = 43,
@@ -142,7 +142,7 @@ ENTITY {
         },
         t_up = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/t-down.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/t-down.png",
                 priority = "extra-high",
                 width = 32,
                 height = 44,
@@ -151,7 +151,7 @@ ENTITY {
         },
         ending_right = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/end-right.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/end-right.png",
                 priority = "extra-high",
                 width = 32,
                 height = 43,
@@ -160,7 +160,7 @@ ENTITY {
         },
         ending_left = {
             {
-                filename = "__pyindustry__/graphics/walls/concrete-wall/end-left.png",
+                filename = "__pyindustrygraphics__/graphics/walls/concrete-wall/end-left.png",
                 priority = "extra-high",
                 width = 32,
                 height = 43,

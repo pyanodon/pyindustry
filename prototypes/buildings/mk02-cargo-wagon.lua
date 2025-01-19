@@ -20,7 +20,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "mk02-wagon",
-    icon = "__pyindustry__/graphics/icons/mk02-cargo-wagon.png",
+    icon = "__pyindustrygraphics__/graphics/icons/mk02-cargo-wagon.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-trains",
@@ -32,7 +32,7 @@ ITEM {
 ENTITY {
     type = "cargo-wagon",
     name = "mk02-wagon",
-    icon = "__pyindustry__/graphics/icons/mk02-cargo-wagon.png",
+    icon = "__pyindustrygraphics__/graphics/icons/mk02-cargo-wagon.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 0.5, result = "mk02-wagon"},
@@ -117,14 +117,14 @@ ENTITY {
                     allow_low_quality_rotation = true,
                     filenames =
                     {
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-01.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-02.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-03.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-04.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-05.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-06.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-07.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-08.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-01.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-02.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-03.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-04.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-05.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-06.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-07.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-08.png",
                     },
                     line_length = 7,
                     lines_per_file = 5,
@@ -145,14 +145,14 @@ ENTITY {
                     apply_runtime_tint = true,
                     filenames =
                     {
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-01-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-02-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-03-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-04-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-05-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-06-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-07-mask.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/wagon-08-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-01-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-02-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-03-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-04-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-05-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-06-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-07-mask.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/wagon-08-mask.png",
                     },
                     line_length = 7,
                     lines_per_file = 5,
@@ -171,14 +171,14 @@ ENTITY {
                     allow_low_quality_rotation = true,
                     filenames =
                     {
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-01.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-02.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-03.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-04.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-05.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-06.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-07.png",
-                        "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-08.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-01.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-02.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-03.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-04.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-05.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-06.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-07.png",
+                        "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sh-wagon-08.png",
                     },
                     line_length = 7,
                     lines_per_file = 5,
@@ -189,14 +189,14 @@ ENTITY {
     },
     minimap_representation =
     {
-        filename = "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/icon-map.png",
+        filename = "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/icon-map.png",
         flags = {"icon"},
         size = {20, 44},
         scale = 0.4
     },
     selected_minimap_representation =
     {
-        filename = "__pyindustry__/graphics/entity/mk02-train/cargo-wagon/icon-map-selected.png",
+        filename = "__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/icon-map-selected.png",
         flags = {"icon"},
         size = {20, 44},
         scale = 0.4

@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-recharge-station-mk01",
-    icon = "__pyindustry__/graphics/icons/py-recharge-station-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-recharge-station-mk01.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-stations",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "roboport",
     name = "py-recharge-station-mk01",
-    icon = "__pyindustry__/graphics/icons/py-recharge-station-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-recharge-station-mk01.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "py-recharge-station-mk01"},
@@ -62,7 +62,7 @@ ENTITY {
     },
     base_animation =
     {
-        filename = "__pyindustry__/graphics/entity/py-recharge-station-mk01/pilar.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/pilar.png",
         line_length = 12,
         width = 160,
         height = 224,
@@ -72,34 +72,34 @@ ENTITY {
     },
     base =
     {
-        filename = "__pyindustry__/graphics/entity/py-recharge-station-mk01/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
         frame_count = 1,
     },
     base_patch =
     {
-        filename = "__pyindustry__/graphics/entity/py-recharge-station-mk01/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
         frame_count = 1,
     },
     door_animation_up =
     {
-        filename = "__pyindustry__/graphics/entity/py-recharge-station-mk01/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
         frame_count = 1,
     },
     door_animation_down =
     {
-        filename = "__pyindustry__/graphics/entity/py-recharge-station-mk01/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
         frame_count = 1,
     },
     recharging_animation = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/effect.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/effect.png",
         priority = "high",
         width = 128,
         height = 88,
@@ -113,13 +113,13 @@ ENTITY {
     spawn_and_station_height = 0.33,
     radius_visualisation_picture =
     {
-        filename = "__pyindustry__/graphics/entity/roboport/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/roboport/blank.png",
         width = 12,
         height = 12
     },
     construction_radius_visualisation_picture =
     {
-        filename = "__pyindustry__/graphics/entity/roboport/blank.png",
+        filename = "__pyindustrygraphics__/graphics/entity/roboport/blank.png",
         width = 12,
         height = 12
     },

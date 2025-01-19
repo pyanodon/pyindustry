@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-nexelit",
-    icon = "__pyindustry__/graphics/icons/py-nexelit.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-nexelit.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
@@ -46,7 +46,7 @@ TILE {
         transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
-            picture = "__pyindustry__/graphics/tiles/py-nexelit/py-nexelit.png",
+            picture = "__pyindustrygraphics__/graphics/tiles/py-nexelit/py-nexelit.png",
             count = 2,
             scale = 0.5
         }

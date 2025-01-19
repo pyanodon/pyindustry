@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-iron",
-    icon = "__pyindustry__/graphics/icons/py-iron.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-iron.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
@@ -44,22 +44,22 @@ TILE {
     layer_group = "ground-artificial",
     walking_sound = {
         {
-            filename = "__pyindustry__/sounds/iron-foot-01.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-01.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-02.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-02.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-03.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-03.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-04.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-04.ogg",
             volume = 0.3,
             speed = 1.2
         }
@@ -73,7 +73,7 @@ TILE {
         -- why do we do this instead of the tile_background used elsewhere?
         main =
         {{
-            picture = "__pyindustry__/graphics/tiles/py-iron/py-iron.png",
+            picture = "__pyindustrygraphics__/graphics/tiles/py-iron/py-iron.png",
             count = 8,
             scale = 0.5,
             size = 1,

@@ -16,7 +16,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-tank-1000",
-    icon = "__pyindustry__/graphics/icons/py-tank-1000.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-storage-tanks",
@@ -28,7 +28,7 @@ ITEM {
 ENTITY {
     type = "storage-tank",
     name = "py-tank-1000",
-    icon = "__pyindustry__/graphics/icons/py-tank-1000.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 3, result = "py-tank-1000"},
@@ -56,7 +56,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 96,
@@ -64,7 +64,7 @@ ENTITY {
                     shift = util.by_pixel(0, -128),
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
                     priority = "extra-high",
                     frames = 4,
                     width = 160,

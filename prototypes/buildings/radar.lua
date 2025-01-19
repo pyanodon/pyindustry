@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "radars-mk01",
-    icon = "__pyindustry__/graphics/technology/radars-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/technology/radars-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"steel-processing"},
@@ -37,7 +37,7 @@ TECHNOLOGY("radar").hidden = true
 ITEM {
     type = "item",
     name = "py-local-radar",
-    icon = "__pyindustry__/graphics/icons/radar.png",
+    icon = "__pyindustrygraphics__/graphics/icons/radar.png",
     icon_size = 64,
     flags = {},
     subgroup = "defensive-structure",
@@ -49,7 +49,7 @@ ITEM {
 ENTITY {
     type = "radar",
     name = "py-local-radar",
-    icon = "__pyindustry__/graphics/icons/radar.png",
+    icon = "__pyindustrygraphics__/graphics/icons/radar.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "py-local-radar"},
@@ -82,7 +82,7 @@ ENTITY {
     },
     energy_usage = "25kW",
     integration_patch = {
-        filename = "__pyindustry__/graphics/entity/radar/radar-integration.png",
+        filename = "__pyindustrygraphics__/graphics/entity/radar/radar-integration.png",
         priority = "low",
         width = 238,
         height = 216,
@@ -96,7 +96,7 @@ ENTITY {
     pictures = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/radar/radar.png",
+                filename = "__pyindustrygraphics__/graphics/entity/radar/radar.png",
                 priority = "low",
                 width = 201,
                 height = 283,
@@ -108,7 +108,7 @@ ENTITY {
                 scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/radar/radar-shadow.png",
+                filename = "__pyindustrygraphics__/graphics/entity/radar/radar-shadow.png",
                 priority = "low",
                 width = 226,
                 height = 192,

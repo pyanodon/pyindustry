@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-tank-7000",
-    icon = "__pyindustry__/graphics/icons/py-tank-7000.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7000.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-storage-tanks",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "storage-tank",
     name = "py-tank-7000",
-    icon = "__pyindustry__/graphics/icons/py-tank-7000.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7000.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 3, result = "py-tank-7000"},
@@ -55,28 +55,28 @@ ENTITY {
     pictures = {
         picture = {
             north = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/north.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7000/north.png",
                 width = 253,
                 height = 585,
                 shift = {0.5, -1.0},
                 scale = 0.5
             },
             east = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/east.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7000/east.png",
                 width = 499,
                 height = 299,
                 shift = {0.35, -0.15},
                 scale = 0.5
             },
             south = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/south.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7000/south.png",
                 width = 239,
                 height = 477,
                 shift = {0.34, -0.0},
                 scale = 0.5
             },
             west = {
-                filename = "__pyindustry__/graphics/entity/py-tank-7000/west.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7000/west.png",
                 width = 499,
                 height = 299,
                 shift = {0.35, -0.15},

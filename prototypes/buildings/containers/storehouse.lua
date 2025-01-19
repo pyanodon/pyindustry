@@ -77,7 +77,7 @@ local function define_storehouse(name, logistics_name)
     ITEM {
         type = "item",
         name = full_name,
-        icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
+        icon = "__pyindustrygraphics__/graphics/icons/containers/storehouse-" .. name .. ".png",
         icon_size = 64,
         flags = {},
         subgroup = "py-containers-storehouse",
@@ -90,7 +90,7 @@ local function define_storehouse(name, logistics_name)
         ENTITY {
             type = entity_type,
             name = full_name,
-            icon = "__pyindustry__/graphics/icons/containers/storehouse-" .. name .. ".png",
+            icon = "__pyindustrygraphics__/graphics/icons/containers/storehouse-" .. name .. ".png",
             icon_size                 = 64,
             trash_inventory_size      = get_trash_slots(logistics_name),
             flags = {"placeable-neutral", "placeable-player", "player-creation"},
@@ -113,7 +113,7 @@ local function define_storehouse(name, logistics_name)
             inventory_size = 150,
             inventory_type = "with_filters_and_bar",
             picture = {
-                filename = "__pyindustry__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
+                filename = "__pyindustrygraphics__/graphics/entity/storehouse/storehouse-" .. name .. ".png",
                 priority = "high",
                 width = 132,
                 height = 172,

@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "py-burner",
-    icon = "__pyindustry__/graphics/technology/burner.png",
+    icon = "__pyindustrygraphics__/graphics/technology/burner.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {},
@@ -35,7 +35,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-burner",
-    icon = "__pyindustry__/graphics/icons/burner.png",
+    icon = "__pyindustrygraphics__/graphics/icons/burner.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-void",
@@ -54,7 +54,7 @@ end
 ENTITY {
     type = "furnace",
     name = "py-burner",
-    icon = "__pyindustry__/graphics/icons/burner.png",
+    icon = "__pyindustrygraphics__/graphics/icons/burner.png",
     icon_size = 64,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "py-burner"},
@@ -121,7 +121,7 @@ ENTITY {
                 south_position = {0.0, 3.0},
                 west_position = {0.0, 3.0},
                 animation = {
-                    filename = "__pyindustry__/graphics/entity/py-burner/on.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-burner/on.png",
                     priority = "extra-high",
                     line_length = 5,
                     width = 96,
@@ -136,7 +136,7 @@ ENTITY {
         animation = {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/py-burner/off.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-burner/off.png",
                     priority = "extra-high",
                     width = 96,
                     height = 192,
@@ -144,7 +144,7 @@ ENTITY {
                     shift = util.by_pixel(-0, -48)
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/py-burner/shadow.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-burner/shadow.png",
                     priority = "extra-high",
                     width = 113,
                     height = 105,

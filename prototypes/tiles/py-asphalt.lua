@@ -40,34 +40,34 @@ TILE {
     layer_group = "ground-artificial",
     variants = {
         material_background = {
-            picture = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt.png",
+            picture = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt.png",
             count = 8,
             scale = 0.5
         },
         transition = {
             mask_layout = {
                 inner_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-inner-corner-mask.png",
+                    spritesheet = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt-inner-corner-mask.png",
                     count = 8,
                     scale = 0.5
                 },
                 outer_corner = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-outer-corner-mask.png",
+                    spritesheet = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt-outer-corner-mask.png",
                     count = 8,
                     scale = 0.5
                 },
                 side = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-side-mask.png",
+                    spritesheet = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt-side-mask.png",
                     count = 8,
                     scale = 0.5
                 },
                 u_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-u-mask.png",
+                    spritesheet = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt-u-mask.png",
                     count = 8,
                     scale = 0.5
                 },
                 o_transition = {
-                    spritesheet = "__pyindustry__/graphics/tiles/py-asphalt/py-asphalt-o-mask.png",
+                    spritesheet = "__pyindustrygraphics__/graphics/tiles/py-asphalt/py-asphalt-o-mask.png",
                     count = 4,
                     scale = 0.5
                 }

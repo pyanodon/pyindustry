@@ -14,7 +14,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "poorman-wood-fence",
-    icon = "__pyindustry__/graphics/icons/poorman-wood-fence.png",
+    icon = "__pyindustrygraphics__/graphics/icons/poorman-wood-fence.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-walls",
@@ -26,7 +26,7 @@ ITEM {
 ENTITY {
     type = "wall",
     name = "poorman-wood-fence",
-    icon = "__pyindustry__/graphics/icons/poorman-wood-fence.png",
+    icon = "__pyindustrygraphics__/graphics/icons/poorman-wood-fence.png",
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
@@ -75,7 +75,7 @@ ENTITY {
     pictures = {
         single = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/single.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/single.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
@@ -84,7 +84,7 @@ ENTITY {
         },
         straight_vertical = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/vertical.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/vertical.png",
                 priority = "extra-high",
                 width = 32,
                 height = 45,
@@ -93,14 +93,14 @@ ENTITY {
         },
         straight_horizontal = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/horizontal-2.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/horizontal-2.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
                 shift = {0, -0.2}
             },
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/horizontal-1.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/horizontal-1.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
@@ -109,7 +109,7 @@ ENTITY {
         },
         corner_right_down = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/corner-right.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/corner-right.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
@@ -118,7 +118,7 @@ ENTITY {
         },
         corner_left_down = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/corner-left.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/corner-left.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
@@ -127,7 +127,7 @@ ENTITY {
         },
         t_up = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/t-down.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/t-down.png",
                 priority = "extra-high",
                 width = 32,
                 height = 45,
@@ -136,7 +136,7 @@ ENTITY {
         },
         ending_right = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/end-left.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/end-left.png",
                 priority = "extra-high",
                 width = 32,
                 height = 40,
@@ -145,7 +145,7 @@ ENTITY {
         },
         ending_left = {
             {
-                filename = "__pyindustry__/graphics/walls/poorman-wood-fence/end-right.png",
+                filename = "__pyindustrygraphics__/graphics/walls/poorman-wood-fence/end-right.png",
                 priority = "extra-high",
                 width = 32,
                 height = 38,

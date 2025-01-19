@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-roboport-mk01",
-    icon = "__pyindustry__/graphics/icons/py-roboport-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-roboport-mk01.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-stations",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "roboport",
     name = "py-roboport-mk01",
-    icon = "__pyindustry__/graphics/icons/py-roboport-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-roboport-mk01.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "py-roboport-mk01"},
@@ -74,14 +74,14 @@ ENTITY {
     base = {
         layers = {
             {
-                filename = "__pyindustry__/graphics/entity/py-roboport-mk01/roboport.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/roboport.png",
                 width = 192,
                 height = 224,
                 shift = util.by_pixel(0, 0),
                 scale = 0.5
             },
             {
-                filename = "__pyindustry__/graphics/entity/py-roboport-mk01/shadow.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/shadow.png",
                 width = 192,
                 height = 160,
                 draw_as_shadow = true,
@@ -91,7 +91,7 @@ ENTITY {
         }
     },
     base_patch = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/patch.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/patch.png",
         priority = "medium",
         width = 128,
         height = 128,
@@ -100,7 +100,7 @@ ENTITY {
         scale = 0.5
     },
     base_animation = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/anim.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/anim.png",
         priority = "extra-high",
         width = 32,
         height = 32,
@@ -110,7 +110,7 @@ ENTITY {
         scale = 0.5
     },
     door_animation_up = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/door-up.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/door-up.png",
         priority = "medium",
         width = 128,
         height = 64,
@@ -119,7 +119,7 @@ ENTITY {
         scale = 0.5
     },
     door_animation_down = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/door-down.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/door-down.png",
         priority = "medium",
         width = 128,
         height = 64,
@@ -128,7 +128,7 @@ ENTITY {
         scale = 0.5
     },
     recharging_animation = {
-        filename = "__pyindustry__/graphics/entity/py-roboport-mk01/effect.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-roboport-mk01/effect.png",
         priority = "high",
         width = 128,
         height = 88,

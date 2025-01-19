@@ -25,7 +25,7 @@ cargo_bot:add_unlock {"logistic-robotics"}
 local bot_item = ITEM {
     type = "item",
     name = "py-logistic-robot-mk01",
-    icon = "__pyindustry__/graphics/icons/py-logistic-robot-01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-logistic-robot-01.png",
     icon_size = 32,
     flags = {},
     subgroup = "py-robots",
@@ -41,7 +41,7 @@ end
 ENTITY {
     type = "logistic-robot",
     name = "py-logistic-robot-mk01",
-    icon = "__pyindustry__/graphics/icons/py-logistic-robot-01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-logistic-robot-01.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
     minable = {mining_time = 0.1, result = "py-logistic-robot-mk01"},
@@ -59,7 +59,7 @@ ENTITY {
     min_to_charge = 0.2,
     max_to_charge = 0.95,
     idle = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/idle.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/idle.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -71,7 +71,7 @@ ENTITY {
         scale = 0.5
     },
     idle_with_cargo = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/idle-cargo.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/idle-cargo.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -82,7 +82,7 @@ ENTITY {
         scale = 0.5
     },
     in_motion = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/run.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/run.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -93,7 +93,7 @@ ENTITY {
         scale = 0.5
     },
     in_motion_with_cargo = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/run-cargo.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/run-cargo.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -104,7 +104,7 @@ ENTITY {
         scale = 0.5
     },
     shadow_idle = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/shadow.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -116,7 +116,7 @@ ENTITY {
         scale = 0.5
     },
     shadow_idle_with_cargo = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/shadow-cargo.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/shadow-cargo.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -128,7 +128,7 @@ ENTITY {
         scale = 0.5
     },
     shadow_in_motion = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/shadow.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/shadow.png",
         priority = "high",
         line_length = 16,
         width = 128,
@@ -140,7 +140,7 @@ ENTITY {
         scale = 0.5
     },
     shadow_in_motion_with_cargo = {
-        filename = "__pyindustry__/graphics/entity/py-logistic-robot-01/shadow-cargo.png",
+        filename = "__pyindustrygraphics__/graphics/entity/py-logistic-robot-01/shadow-cargo.png",
         priority = "high",
         line_length = 16,
         width = 128,

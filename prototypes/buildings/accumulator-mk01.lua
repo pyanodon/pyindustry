@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "accumulator-mk01",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/accumulator-mk01.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-electric",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "accumulator",
     name = "accumulator-mk01",
-    icon = "__pyindustry__/graphics/icons/accumulator-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/icons/accumulator-mk01.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "accumulator-mk01"},
@@ -54,14 +54,14 @@ ENTITY {
     },
     chargable_graphics = {
         picture = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-idle.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk01/accumulator-idle.png",
             priority = "extra-high",
             width = 157,
             height = 244,
             shift = {0.43, -1.781}
         },
         charge_animation = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-charging.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk01/accumulator-charging.png",
             width = 157,
             height = 244,
             line_length = 10,
@@ -72,7 +72,7 @@ ENTITY {
         charge_cooldown = 30,
         charge_light = {intensity = 0.3, size = 7, color = {r = 1.0, g = 1.0, b = 1.0}},
         discharge_animation = {
-            filename = "__pyindustry__/graphics/entity/accumulator-mk01/accumulator-discharging.png",
+            filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk01/accumulator-discharging.png",
             width = 157,
             height = 244,
             line_length = 10,
@@ -86,7 +86,7 @@ ENTITY {
     impact_category = "metal-large",
     working_sound = {
         sound = {
-            filename = "__pyindustry__/sounds/accumulator.ogg",
+            filename = "__pyindustrygraphics__/sounds/accumulator.ogg",
             volume = 0.5
         },
         idle_sound = {

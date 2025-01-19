@@ -74,7 +74,7 @@ for _, type in pairs(groups) do
             else
                 new_icons = {{icon = item.icon, icon_size = item.icon_size or 64}}
             end
-            new_icons[#new_icons + 1] = {icon = "__pyindustry__/graphics/icons/no.png", icon_size = 32}
+            new_icons[#new_icons + 1] = {icon = "__pyindustrygraphics__/graphics/icons/no.png", icon_size = 32}
             make_void_recipe(name, new_icons, item.name, item.place_result)
         end
         item.not_voidable = nil

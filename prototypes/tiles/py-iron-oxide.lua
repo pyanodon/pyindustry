@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-iron-oxide",
-    icon = "__pyindustry__/graphics/icons/py-iron-oxide.png",
+    icon = "__pyindustrygraphics__/graphics/icons/py-iron-oxide.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-tiles",
@@ -40,22 +40,22 @@ TILE {
     layer_group = "ground-artificial",
     walking_sound = {
         {
-            filename = "__pyindustry__/sounds/iron-foot-01.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-01.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-02.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-02.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-03.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-03.ogg",
             volume = 0.3,
             speed = 1.2
         },
         {
-            filename = "__pyindustry__/sounds/iron-foot-04.ogg",
+            filename = "__pyindustrygraphics__/sounds/iron-foot-04.ogg",
             volume = 0.3,
             speed = 1.2
         }
@@ -67,7 +67,7 @@ TILE {
         transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
-            picture = "__pyindustry__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",
+            picture = "__pyindustrygraphics__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",
             count = 2,
             scale = 0.5
         }

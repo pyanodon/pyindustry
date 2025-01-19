@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "railway-mk01",
-    icon = "__pyindustry__/graphics/technology/railway-mk01.png",
+    icon = "__pyindustrygraphics__/graphics/technology/railway-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"steel-processing"},
@@ -21,7 +21,7 @@ if mods["pycoalprocessing"] then
     TECHNOLOGY {
         type = "technology",
         name = "railway-mk02",
-        icon = "__pyindustry__/graphics/technology/railway-mk02.png",
+        icon = "__pyindustrygraphics__/graphics/technology/railway-mk02.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {"railway-mk01", "niobium", "nexelit"},
@@ -42,7 +42,7 @@ if mods["pyhightech"] then
     TECHNOLOGY {
         type = "technology",
         name = "railway-mk03",
-        icon = "__pyindustry__/graphics/technology/railway-mk03.png",
+        icon = "__pyindustrygraphics__/graphics/technology/railway-mk03.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {"railway-mk02"},
@@ -64,7 +64,7 @@ if mods["pyalternativeenergy"] then
     TECHNOLOGY {
         type = "technology",
         name = "railway-mk04",
-        icon = "__pyindustry__/graphics/technology/railway-mk04.png",
+        icon = "__pyindustrygraphics__/graphics/technology/railway-mk04.png",
         icon_size = 128,
         order = "c-a",
         prerequisites = {"railway-mk03", "intermetallics-mk03", "battery-mk04"},

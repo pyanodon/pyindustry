@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "barrel-machine-mk01",
-    icon = "__pyindustry__/graphics/icons/barrel-machine.png",
+    icon = "__pyindustrygraphics__/graphics/icons/barrel-machine.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-pipes",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "furnace",
     name = "barrel-machine-mk01",
-    icon = "__pyindustry__/graphics/icons/barrel-machine.png",
+    icon = "__pyindustrygraphics__/graphics/icons/barrel-machine.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "barrel-machine-mk01"},
@@ -60,7 +60,7 @@ ENTITY {
         animation = {
             layers = {
                 {
-                    filename = "__pyindustry__/graphics/entity/barrel-machine/r.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/barrel-machine/r.png",
                     width = 96,
                     height = 192,
                     frame_count = 40,
@@ -69,7 +69,7 @@ ENTITY {
                     animation_speed = 0.6,
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/barrel-machine/ao.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/barrel-machine/ao.png",
                     width = 160,
                     height = 224,
                     frame_count = 40,
@@ -78,7 +78,7 @@ ENTITY {
                     animation_speed = 0.6,
                 },
                 {
-                    filename = "__pyindustry__/graphics/entity/barrel-machine/sh.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/barrel-machine/sh.png",
                     width = 128,
                     height = 128,
                     frame_count = 1,
