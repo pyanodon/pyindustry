@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.11
-Date: ?
+Date: 2024-1-20
   Changes:
     - Split this mod into pyindustry and pyindustrygraphics.
     - Compressed and optimized all py graphics via `spritter optimize . -r --lossy`
