@@ -1,26 +1,28 @@
 data:extend {{
     name = "light-armor-equipment-grid",
     type = "equipment-grid",
-    height = 4,
-    width = 2,
+    height = 6,
+    width = 4,
     equipment_categories = {"armor"}
 }}
 
 data:extend {{
     name = "heavy-armor-equipment-grid",
     type = "equipment-grid",
-    height = 4,
-    width = 4,
+    height = 8,
+    width = 6,
     equipment_categories = {"armor"}
 }}
 
 data.raw.armor["light-armor"].equipment_grid = "light-armor-equipment-grid"
 data.raw.armor["heavy-armor"].equipment_grid = "heavy-armor-equipment-grid"
 
-data.raw["equipment-grid"]["small-equipment-grid"].width = 6
-data.raw["equipment-grid"]["small-equipment-grid"].height = 6
-data.raw["equipment-grid"]["medium-equipment-grid"].width = 8
-data.raw["equipment-grid"]["medium-equipment-grid"].height = 8
+data.raw["equipment-grid"]["small-equipment-grid"].width = 10
+data.raw["equipment-grid"]["small-equipment-grid"].height = 8
+data.raw["equipment-grid"]["medium-equipment-grid"].width = 12
+data.raw["equipment-grid"]["medium-equipment-grid"].height = 10
+data.raw["equipment-grid"]["large-equipment-grid"].width = 14
+data.raw["equipment-grid"]["large-equipment-grid"].height = 12
 
 data.raw.armor["light-armor"].inventory_size_bonus = 20
 data.raw.armor["heavy-armor"].inventory_size_bonus = 40
