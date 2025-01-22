@@ -4,6 +4,7 @@ Date: ?
   Changes:
     - Migrated the internal name of the "railway-mk01" technology to "railway". Resolves https://github.com/pyanodon/pybugreports/issues/453
     - Vanilla construction, logistic, and roboport are now hidden from factoriopedia.
+    - Removed vanilla roboport animations to save VRAM.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.12
 Date: 2025-1-20

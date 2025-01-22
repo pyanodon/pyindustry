@@ -16,6 +16,16 @@ if not mods["boblogistics"] then
     ENTITY("logistic-robot"):set_fields {hidden = true}
     ENTITY("roboport"):set_fields {hidden = true}
 
+    -- remove roboport animations to save VRAM
+    ENTITY("roboport").base = nil
+    ENTITY("roboport").base_patch = nil
+    ENTITY("roboport").frozen_patch = nil
+    ENTITY("roboport").base_animation = nil
+    ENTITY("roboport").door_animation_up = nil
+    ENTITY("roboport").door_animation_down = nil
+    ENTITY("roboport").recharging_animation = nil
+    ENTITY("roboport").integration_patch = nil
+
     for recipe_name in pairs(data.raw.recipe) do
         RECIPE(recipe_name)
             :replace_ingredient("roboport", "py-roboport-mk01")
