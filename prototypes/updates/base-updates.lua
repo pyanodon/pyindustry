@@ -12,6 +12,10 @@ if not mods["boblogistics"] then
     ITEM("flying-robot-frame"):set_fields {hidden = true}
     ITEM("roboport"):set_fields {hidden = true}
 
+    ENTITY("construction-robot"):set_fields {hidden = true}
+    ENTITY("logistic-robot"):set_fields {hidden = true}
+    ENTITY("roboport"):set_fields {hidden = true}
+
     for recipe_name in pairs(data.raw.recipe) do
         RECIPE(recipe_name)
             :replace_ingredient("roboport", "py-roboport-mk01")
