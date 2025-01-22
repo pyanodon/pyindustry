@@ -1,11 +1,11 @@
 TECHNOLOGY {
     type = "technology",
-    name = "railway-mk01",
+    name = "railway",
     icon = "__pyindustrygraphics__/graphics/technology/railway-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"steel-processing"},
-    effects = {},
+    effects = data.raw.technology.railway.effects,
     unit = {
         count = 150,
         ingredients = {
@@ -14,9 +14,10 @@ TECHNOLOGY {
         time = 45
     }
 }
+RECIPE("iron-stick"):remove_unlock("railway")
 
 if mods["pycoalprocessing"] then
-    TECHNOLOGY("railway-mk01"):add_prereq("wood-processing"):remove_prereq("steel-processing")
+    TECHNOLOGY("railway"):add_prereq("wood-processing"):remove_prereq("steel-processing")
 
     TECHNOLOGY {
         type = "technology",
@@ -24,8 +25,8 @@ if mods["pycoalprocessing"] then
         icon = "__pyindustrygraphics__/graphics/technology/railway-mk02.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"railway-mk01", "niobium", "nexelit"},
-        dependencies = {"railway-mk01"},
+        prerequisites = {"railway", "niobium", "nexelit"},
+        dependencies = {"railway"},
         effects = {},
         unit = {
             count = 250,

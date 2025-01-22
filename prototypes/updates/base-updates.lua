@@ -39,26 +39,17 @@ RECIPE("active-provider-chest"):remove_ingredient("advanced-circuit")
 RECIPE("buffer-chest"):remove_ingredient("advanced-circuit")
 RECIPE("requester-chest"):remove_ingredient("advanced-circuit")
 
---Move vanilla train to railway tech 1
-RECIPE("locomotive"):remove_unlock("railway"):add_unlock("railway-mk01"):remove_ingredient("engine-unit"):add_ingredient {type = "item", name = "pipe", amount = 20}:add_ingredient {type = "item", name = "steam-engine", amount = 2}:add_ingredient {type = "item", name = "iron-gear-wheel", amount = 20}:subgroup_order("py-trains", "a")
-RECIPE("cargo-wagon"):remove_unlock("railway"):add_unlock("railway-mk01"):subgroup_order("py-trains", "ab")
+RECIPE("locomotive"):remove_ingredient("engine-unit"):add_ingredient {type = "item", name = "pipe", amount = 20}:add_ingredient {type = "item", name = "steam-engine", amount = 2}:add_ingredient {type = "item", name = "iron-gear-wheel", amount = 20}:subgroup_order("py-trains", "a")
+RECIPE("cargo-wagon"):subgroup_order("py-trains", "ab")
 RECIPE("fluid-wagon"):subgroup_order("py-trains", "ac")
-RECIPE("rail"):remove_unlock("railway"):add_unlock("railway-mk01")
 
-TECHNOLOGY("fluid-wagon"):remove_prereq("railway"):add_prereq("railway-mk01"):remove_pack("logistic-science-pack")
-TECHNOLOGY("braking-force-1"):remove_prereq("railway"):add_prereq("railway-mk01")
-TECHNOLOGY("automated-rail-transportation"):remove_prereq("railway"):add_prereq("railway-mk01"):remove_pack("logistic-science-pack")
-TECHNOLOGY("railway"):set_fields {enabled = false}:set_fields {hidden = true}
+TECHNOLOGY("fluid-wagon"):remove_pack("logistic-science-pack")
+TECHNOLOGY("automated-rail-transportation"):remove_pack("logistic-science-pack")
 
 RECIPE("accumulator"):add_ingredient {type = "item", name = "electronic-circuit", amount = 2}
 RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
 TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustrygraphics__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
-
-
-if not mods["pycoalprocessing"] then
-    TECHNOLOGY("production-science-pack"):add_prereq("railway-mk01")
-end
 
 data.raw.pump["pump"].fluid_wagon_connector_alignment_tolerance = 1.0
 
