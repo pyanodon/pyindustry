@@ -116,10 +116,10 @@ ENTITY {
         {
             {
                 filename = "__base__/sound/assembling-machine-t2-1.ogg",
-                volume = 0.55
+                volume = 0.55,
+                audible_distance_modifier = 0.5,
             }
         },
-        audible_distance_modifier = 0.5,
         fade_in_ticks = 4,
         fade_out_ticks = 20
     },
