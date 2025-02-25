@@ -57,7 +57,7 @@ ITEM {
     order = "a[energy-source]-cb[personal-fusion-cell]",
     stack_size = 10,
     burnt_result = "personal-fusion-cell-used",
-    fuel_value = "1GJ",
+    fuel_value = "2GJ",
     fuel_category = "personal-fusion-cell"
 }
 
@@ -111,7 +111,7 @@ data.raw.item["fission-reactor-equipment"].icon = "__pyindustrygraphics__/graphi
 data.raw.item["fission-reactor-equipment"].icon_size = 256
 data.raw.item["fission-reactor-equipment"].subgroup = "py-generator-equipment"
 data.raw.item["fission-reactor-equipment"].order = "a[energy-source]-c[fission-reactor-equipment]"
-data.raw["generator-equipment"]["fission-reactor-equipment"].power = "1.35MW"
+data.raw["generator-equipment"]["fission-reactor-equipment"].power = "2.7MW"
 data.raw["generator-equipment"]["fission-reactor-equipment"].burner = {
     type = "burner",
     fuel_inventory_size = 4,

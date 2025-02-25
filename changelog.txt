@@ -6,6 +6,7 @@ Date: ?
     - Vanilla construction, logistic, and roboport are now hidden from factoriopedia.
     - Removed vanilla roboport animations to save VRAM.
     - Updated Ukrainian translation.
+    - Doubled portable fusion reactor output
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.12
 Date: 2025-1-20
