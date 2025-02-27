@@ -3,6 +3,7 @@ Version: 3.0.13
 Date: ?
   Changes:
     - Migrated the internal name of the "railway-mk01" technology to "railway". Resolves https://github.com/pyanodon/pybugreports/issues/453
+    - Shrunk the collision box of local radar. Resolves https://github.com/pyanodon/pybugreports/issues/840
     - Vanilla construction, logistic, and roboport are now hidden from factoriopedia.
     - Removed vanilla roboport animations to save VRAM.
     - Updated Ukrainian translation.

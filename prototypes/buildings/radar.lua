@@ -65,7 +65,7 @@ ENTITY {
             percent = 30
         }
     },
-    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     circuit_connector = {
         sprites = _G.circuit_connector_definitions["roboport"].sprites,
