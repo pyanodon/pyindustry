@@ -129,15 +129,9 @@ data:extend {
     }
 }
 
---data.raw['item-subgroup']['barrel'].group = 'py-industry'
-data.raw["item-subgroup"]["barrel"].order = "zz"
 data.raw["item"]["barrel"].subgroup = "barrel"
 data.raw["item"]["barrel"].order = "a"
 data.raw["recipe"]["barrel"].subgroup = nil
 data.raw.item["stone-wall"].subgroup = "py-walls"
 data.raw.item["gate"].subgroup = "py-walls"
---data.raw['item-subgroup']['equipment'].group = 'py-industry'
---data.raw['item-subgroup']['equipment'].order = 'v2'
---data.raw['item-subgroup']['armor'].group = 'py-industry'
---data.raw['item-subgroup']['armor'].order = 'v4'
 data.raw["item-with-entity-data"]["artillery-wagon"].subgroup = "defensive-structure"
