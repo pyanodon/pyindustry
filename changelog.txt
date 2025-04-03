@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.14
+Date: ?
+  Changes:
+    - Fixed including tanks in a blueprint would cause the entire blueprint to be unrotatable. Resolves https://github.com/pyanodon/pybugreports/issues/920
+---------------------------------------------------------------------------------------------------
 Version: 3.0.13
 Date: 2025-2-26
   Changes:

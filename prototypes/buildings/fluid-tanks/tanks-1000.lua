@@ -36,7 +36,7 @@ ENTITY {
     corpse = "medium-remnants",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    two_direction_only = false,
+    two_direction_only = true,
     fluid_box = {
         volume = 10000,
         pipe_covers = _G.pipecoverspictures(),
@@ -58,7 +58,7 @@ ENTITY {
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000.png",
                     priority = "extra-high",
-                    frames = 4,
+                    frames = 2,
                     width = 96,
                     height = 352,
                     shift = util.by_pixel(0, -128),
@@ -66,7 +66,7 @@ ENTITY {
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
                     priority = "extra-high",
-                    frames = 4,
+                    frames = 2,
                     width = 160,
                     height = 92,
                     draw_as_shadow = true,

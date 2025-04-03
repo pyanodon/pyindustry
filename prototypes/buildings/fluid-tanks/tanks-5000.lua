@@ -31,7 +31,7 @@ ENTITY {
     name = "py-tank-5000",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-5000.png",
     icon_size = 32,
-    flags = {"placeable-player", "player-creation", "not-rotatable"},
+    flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 3, result = "py-tank-5000"},
     max_health = 500,
     corpse = "medium-remnants",
