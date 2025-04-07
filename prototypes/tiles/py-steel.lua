@@ -26,7 +26,7 @@ else
             {type = "item", name = "iron-stick",  amount = 1}
         },
         results = {
-            {"py-steel", 1}
+            {type = "item", name = "py-steel", amount = 1}
         },
         requester_paste_multiplier = 4,
         energy_required = 0.5

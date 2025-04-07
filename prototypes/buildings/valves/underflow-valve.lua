@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {type = "item", name = "py-underflow-valve", amount = 1}
     }
-}--:add_unlock("fluid-handling")
+} --:add_unlock("fluid-handling")
 
 ITEM {
     type = "item",

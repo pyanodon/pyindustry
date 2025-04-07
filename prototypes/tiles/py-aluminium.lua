@@ -15,9 +15,9 @@ RECIPE {
 }:add_unlock("py-asphalt-mk02", "coal-processing-2"):replace_ingredient("iron-stick", "solder"):replace_ingredient("copper-plate", "aluminium-plate")
 
 if mods.pyrawores then
-    RECIPE("py-aluminium"):add_ingredient {"graphite", 1}
+    RECIPE("py-aluminium"):add_ingredient {type = "item", name = "graphite", amount = 1}
     data.raw.recipe["py-aluminium"].category = "eaf"
-    data.raw.recipe["py-aluminium"].results = {{"py-aluminium", 2}}
+    data.raw.recipe["py-aluminium"].results = {{type = "item", name = "py-aluminium", amount = 2}}
 end
 
 ITEM {

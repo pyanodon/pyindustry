@@ -15,46 +15,46 @@ end
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
-            {"py-shed-basic",          1},
-            {"passive-provider-chest", 1},
-            {"iron-plate",             5},
-            {"advanced-circuit",       2}
+            {type = "item", name = "py-shed-basic",          amount = 1},
+            {type = "item", name = "passive-provider-chest", amount = 1},
+            {type = "item", name = "iron-plate",             amount = 5},
+            {type = "item", name = "advanced-circuit",       amount = 2}
         }
     elseif name == "active-provider" then
         return {
-            {"py-shed-basic",         1},
-            {"active-provider-chest", 1},
-            {"iron-plate",            5},
-            {"advanced-circuit",      2}
+            {type = "item", name = "py-shed-basic",         amount = 1},
+            {type = "item", name = "active-provider-chest", amount = 1},
+            {type = "item", name = "iron-plate",            amount = 5},
+            {type = "item", name = "advanced-circuit",      amount = 2}
         }
     elseif name == "storage" then
         return {
-            {"py-shed-basic",    1},
-            {"storage-chest",    1},
-            {"iron-plate",       5},
-            {"advanced-circuit", 2},
-            {"steel-chest",      5}
+            {type = "item", name = "py-shed-basic",    amount = 1},
+            {type = "item", name = "storage-chest",    amount = 1},
+            {type = "item", name = "iron-plate",       amount = 5},
+            {type = "item", name = "advanced-circuit", amount = 2},
+            {type = "item", name = "steel-chest",      amount = 5}
         }
     elseif name == "requester" then
         return {
-            {"py-shed-basic",    1},
-            {"requester-chest",  1},
-            {"iron-plate",       5},
-            {"advanced-circuit", 2}
+            {type = "item", name = "py-shed-basic",    amount = 1},
+            {type = "item", name = "requester-chest",  amount = 1},
+            {type = "item", name = "iron-plate",       amount = 5},
+            {type = "item", name = "advanced-circuit", amount = 2}
         }
     elseif name == "buffer" then
         return {
-            {"py-shed-basic",    1},
-            {"buffer-chest",     1},
-            {"iron-plate",       5},
-            {"advanced-circuit", 2}
+            {type = "item", name = "py-shed-basic",    amount = 1},
+            {type = "item", name = "buffer-chest",     amount = 1},
+            {type = "item", name = "iron-plate",       amount = 5},
+            {type = "item", name = "advanced-circuit", amount = 2}
         }
     else
         return {
-            {"steel-plate",  20},
-            {"iron-plate",   40},
-            {"stone-brick",  10},
-            {"wooden-chest", 5}
+            {type = "item", name = "steel-plate",  amount = 20},
+            {type = "item", name = "iron-plate",   amount = 40},
+            {type = "item", name = "stone-brick",  amount = 10},
+            {type = "item", name = "wooden-chest", amount = 5}
         }
     end
 end
@@ -88,31 +88,31 @@ local function define_shed(name, logistics_name)
 
     local entity =
         ENTITY {
-            type = entity_type,
-            name = full_name,
-            icon = "__pyindustrygraphics__/graphics/icons/containers/shed-" .. name .. ".png",
-            icon_size = 64,
+            type                      = entity_type,
+            name                      = full_name,
+            icon                      = "__pyindustrygraphics__/graphics/icons/containers/shed-" .. name .. ".png",
+            icon_size                 = 64,
             trash_inventory_size      = get_trash_slots(logistics_name),
-            flags = {"placeable-neutral", "placeable-player", "player-creation"},
-            minable = {mining_time = 2, result = full_name},
-            max_health = 250,
-            corpse = "big-remnants",
-            dying_explosion = "medium-explosion",
-            open_sound = {filename = "__pyindustrygraphics__/sounds/shed-open.ogg", volume = 0.55},
-            close_sound = {filename = "__pyindustrygraphics__/sounds/shed-close.ogg", volume = 0.65},
-            impact_category = "metal-large",
-            resistances = {
+            flags                     = {"placeable-neutral", "placeable-player", "player-creation"},
+            minable                   = {mining_time = 2, result = full_name},
+            max_health                = 250,
+            corpse                    = "big-remnants",
+            dying_explosion           = "medium-explosion",
+            open_sound                = {filename = "__pyindustrygraphics__/sounds/shed-open.ogg", volume = 0.55},
+            close_sound               = {filename = "__pyindustrygraphics__/sounds/shed-close.ogg", volume = 0.65},
+            impact_category           = "metal-large",
+            resistances               = {
                 {
                     type = "fire",
                     percent = 90
                 }
             },
-            collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
-            selection_box = {{-1.0, -1.0}, {1.0, 1.0}},
-            fast_replaceable_group = "shed",
-            inventory_size = 75,
-            inventory_type = "with_filters_and_bar",
-            picture = {
+            collision_box             = {{-0.8, -0.8}, {0.8, 0.8}},
+            selection_box             = {{-1.0, -1.0}, {1.0, 1.0}},
+            fast_replaceable_group    = "shed",
+            inventory_size            = 75,
+            inventory_type            = "with_filters_and_bar",
+            picture                   = {
                 filename = "__pyindustrygraphics__/graphics/entity/shed/shed-" .. name .. ".png",
                 priority = "high",
                 width = 96,
@@ -121,7 +121,7 @@ local function define_shed(name, logistics_name)
             },
             circuit_wire_max_distance = 9,
             --circuit_connector_sprites = connectors.sprites({0.75, 0.55}),
-            circuit_connector = { points = connectors.points{0.64, 0.13} },
+            circuit_connector         = {points = connectors.points {0.64, 0.13}},
         }
 
     if logistics_name then

@@ -1,6 +1,6 @@
 -- https://github.com/pyanodon/pybugreports/issues/920
 
-local tanks_to_reset_rotation = table.invert{
+local tanks_to_reset_rotation = table.invert {
     "py-tank-1500",
     "py-tank-4000",
     "py-tank-5000",

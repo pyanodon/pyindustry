@@ -323,11 +323,11 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {"niobium-pipe", 10},
-        {"copper-plate", 1} --pycoal niobium-plate
+        {type = "item", name = "niobium-pipe", amount = 10},
+        {type = "item", name = "copper-plate", amount = 1} --pycoal niobium-plate
     },
     results = {
-        {"niobium-pipe-to-ground", 2}
+        {type = "item", name = "niobium-pipe-to-ground", amount = 2}
     }
 }:add_unlock {"py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
 

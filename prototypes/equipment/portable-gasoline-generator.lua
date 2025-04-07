@@ -55,10 +55,10 @@ RECIPE {
 }:add_unlock("personal-roboport-equipment")
 
 data.raw.recipe["personal-roboport-equipment"].ingredients = {
-    {"iron-gear-wheel",    45},
-    {"steel-plate",        20},
-    {"electronic-circuit", 10},
-    {"battery",            10},
+    {type = "item", name = "iron-gear-wheel",    amount = 45},
+    {type = "item", name = "steel-plate",        amount = 20},
+    {type = "item", name = "electronic-circuit", amount = 10},
+    {type = "item", name = "battery",            amount = 10},
 }
 
 data.raw.technology["personal-roboport-equipment"].prerequisites = {"construction-robotics"}

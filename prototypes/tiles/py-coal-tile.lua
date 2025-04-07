@@ -17,7 +17,7 @@ RECIPE {
 if mods.pypetroleumhandling then
     RECIPE("py-coal-tile"):add_ingredient {type = "fluid", name = "medium-distillate", amount = 20}
     data.raw.recipe["py-coal-tile"].category = "reformer"
-    data.raw.recipe["py-coal-tile"].results = {{"py-coal-tile", 2}}
+    data.raw.recipe["py-coal-tile"].results = {{type = "item", name = "py-coal-tile", amount = 2}}
 end
 
 ITEM {
