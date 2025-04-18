@@ -14,7 +14,7 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk02", amount = 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {"optical-fiber", 30}:add_unlock("py-accumulator-mk02")
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "optical-fiber", amount = 30}:add_unlock("py-accumulator-mk02")
 
 ITEM {
     type = "item",

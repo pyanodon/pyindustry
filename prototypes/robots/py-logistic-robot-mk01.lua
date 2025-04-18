@@ -19,7 +19,7 @@ local cargo_bot =
             {type = "item", name = "py-logistic-robot-mk01", amount = 1}
         }
     }:add_ingredient {type = "fluid", name = "fish-oil", amount = 50}
-cargo_bot:replace_ingredient("copper-plate", {"nichrome", 2}):replace_ingredient("iron-plate", "niobium-plate")
+cargo_bot:replace_ingredient("copper-plate", {type = "item", name = "nichrome", amount = 2}):replace_ingredient("iron-plate", "niobium-plate")
 cargo_bot:add_unlock {"logistic-robotics"}
 
 local bot_item = ITEM {

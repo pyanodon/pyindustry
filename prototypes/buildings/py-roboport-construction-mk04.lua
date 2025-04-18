@@ -10,7 +10,7 @@ RECIPE {
     results = {
         {type = "item", name = "py-ze-mk04", amount = 1}
     }
-}:add_ingredient {"nbfe-alloy", 10}:add_ingredient {"kevlar", 30}
+}:add_ingredient {type = "item", name = "nbfe-alloy", amount = 10}:add_ingredient {type = "item", name = "kevlar", amount = 30}
 
 ITEM {
     type = "item",

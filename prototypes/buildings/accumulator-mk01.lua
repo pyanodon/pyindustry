@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk01", amount = 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {"niobium-plate", 10}:add_unlock {"py-accumulator-mk01"}
+}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}:add_unlock {"py-accumulator-mk01"}
 
 
 ITEM {
