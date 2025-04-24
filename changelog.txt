@@ -2,7 +2,8 @@
 Version: 3.0.15
 Date: tba
   Internal:
-    - remove shorthands in recipe declarations
+    - Removed shorthands in recipe declarations
+    - Fixed sheds, storehouses, warehouses, and deposits having duplicates and/or inconsistent recipes. Resolves https://github.com/pyanodon/pybugreports/issues/948
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.14
 Date: 2025-4-13

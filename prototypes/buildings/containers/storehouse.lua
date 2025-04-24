@@ -17,44 +17,43 @@ local function get_ingredients(name)
         return {
             {type = "item", name = "py-storehouse-basic",    amount = 1},
             {type = "item", name = "passive-provider-chest", amount = 1},
-            {type = "item", name = "iron-plate",             amount = 5},
-            {type = "item", name = "advanced-circuit",       amount = 2}
+            {type = "item", name = "iron-plate",             amount = 10},
+            {type = "item", name = "advanced-circuit",       amount = 4}
         }
     elseif name == "active-provider" then
         return {
             {type = "item", name = "py-storehouse-basic",   amount = 1},
             {type = "item", name = "active-provider-chest", amount = 1},
-            {type = "item", name = "iron-plate",            amount = 5},
-            {type = "item", name = "advanced-circuit",      amount = 2}
+            {type = "item", name = "iron-plate",            amount = 10},
+            {type = "item", name = "advanced-circuit",      amount = 4}
         }
     elseif name == "storage" then
         return {
             {type = "item", name = "py-storehouse-basic", amount = 1},
             {type = "item", name = "storage-chest",       amount = 1},
-            {type = "item", name = "iron-plate",          amount = 5},
-            {type = "item", name = "advanced-circuit",    amount = 2},
-            {type = "item", name = "steel-chest",         amount = 5}
+            {type = "item", name = "iron-plate",          amount = 10},
+            {type = "item", name = "advanced-circuit",    amount = 4},
         }
     elseif name == "requester" then
         return {
             {type = "item", name = "py-storehouse-basic", amount = 1},
             {type = "item", name = "requester-chest",     amount = 1},
-            {type = "item", name = "iron-plate",          amount = 5},
-            {type = "item", name = "advanced-circuit",    amount = 2}
+            {type = "item", name = "iron-plate",          amount = 10},
+            {type = "item", name = "advanced-circuit",    amount = 4}
         }
     elseif name == "buffer" then
         return {
             {type = "item", name = "py-storehouse-basic", amount = 1},
             {type = "item", name = "buffer-chest",        amount = 1},
-            {type = "item", name = "iron-plate",          amount = 5},
-            {type = "item", name = "advanced-circuit",    amount = 2}
+            {type = "item", name = "iron-plate",          amount = 10},
+            {type = "item", name = "advanced-circuit",    amount = 4}
         }
     else
         return {
-            {type = "item", name = "steel-plate",  amount = 20},
-            {type = "item", name = "iron-plate",   amount = 40},
-            {type = "item", name = "stone-brick",  amount = 10},
-            {type = "item", name = "wooden-chest", amount = 5}
+            {type = "item", name = "steel-plate",  amount = 40},
+            {type = "item", name = "iron-plate",   amount = 60},
+            {type = "item", name = "stone-brick",  amount = 15},
+            {type = "item", name = "wooden-chest", amount = 10}
         }
     end
 end

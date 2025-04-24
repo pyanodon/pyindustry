@@ -33,7 +33,6 @@ local function get_ingredients(name)
             {type = "item", name = "storage-chest",    amount = 1},
             {type = "item", name = "iron-plate",       amount = 5},
             {type = "item", name = "advanced-circuit", amount = 2},
-            {type = "item", name = "steel-chest",      amount = 5}
         }
     elseif name == "requester" then
         return {
