@@ -5,6 +5,7 @@ Date: tba
     - Fixed sheds, storehouses, warehouses, and deposits having duplicates and/or inconsistent recipes. Resolves https://github.com/pyanodon/pybugreports/issues/948
     - Readded overflow valves and underflow valves to the game.
     - Changed the localised description of check valves from "Allows flow only in the direction of the arrow." to "Allows the circuit network to read the level of fluid in a pipeline."
+    - Fixed using h or v key will break graphical sinkhole pipe position. Resolves https://github.com/pyanodon/pybugreports/issues/996
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.14
 Date: 2025-4-13

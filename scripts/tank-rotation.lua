@@ -16,6 +16,7 @@ local function reset_rotation(event)
     if not entity.valid then return end
     if not tanks_to_reset_rotation[entity.name] then return end
     entity.direction = 0
+    entity.mirroring = false
 end
 
 py.on_event(py.events.on_built(), reset_rotation)
