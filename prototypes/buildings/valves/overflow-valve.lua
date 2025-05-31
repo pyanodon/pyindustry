@@ -12,7 +12,7 @@ RECIPE {
     results = {
         {type = "item", name = "py-overflow-valve", amount = 1}
     }
-} --:add_unlock("fluid-handling")
+}:add_unlock("fluid-handling")
 
 ITEM {
     type = "item",
@@ -28,7 +28,10 @@ ITEM {
 
 ENTITY {
     name = "py-overflow-valve",
-    type = "storage-tank",
+    type = "valve",
+    mode = "overflow",
+    flow_rate = 6000 / 60,
+    threshold = 0.8,
     minable = {mining_time = 1, result = "py-overflow-valve"},
     icon = "__pyindustrygraphics__/graphics/icons/overflow-valve.png",
     icon_size = 32,
@@ -45,58 +48,148 @@ ENTITY {
     working_sound = nil,
     fluid_box = {
         volume = 100,
-        base_level = 0.8,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
-            --[[{
+            {
                 position = {0, 0},
                 direction = defines.direction.south,
-                -- flow_direction = "output" --TODO fix valves
+                flow_direction = "output"
             },
             {
                 position = {0, -0},
-                direction = defines.direction.north
-            }--]]
+                direction = defines.direction.north,
+                flow_direction = "input-output"
+            }
         }
     },
-    pictures = {
-        gas_flow = py.empty_image(),
-        fluid_background = py.empty_image(),
-        window_background = py.empty_image(),
-        flow_sprite = py.empty_image(),
-        picture = {
-            sheets = {
+    animations = {
+        north = {
+            layers = {
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve.png",
                     priority = "extra-high",
-                    frames = 4,
                     width = 64,
                     height = 128,
                     shift = {0.0, -0.5},
-                    scale = 0.5
+                    scale = 0.5,
+                    x = 64 * 0
                 },
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-arrows.png",
                     priority = "extra-high",
-                    frames = 4,
                     width = 64,
                     height = 128,
                     shift = {0.0, -0.5},
-                    scale = 0.5
+                    scale = 0.5,
+                    x = 64 * 0
                 },
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-shadow.png",
                     priority = "extra-high",
-                    frames = 2,
                     draw_as_shadow = true,
                     width = 96,
                     height = 48,
                     shift = util.by_pixel(12, 0),
-                    scale = 0.5
+                    scale = 0.5,
+                    x = 96 * 0
+                }
+            }
+        },
+        east = {
+            layers = {
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 1
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 1
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-shadow.png",
+                    priority = "extra-high",
+                    draw_as_shadow = true,
+                    width = 96,
+                    height = 48,
+                    shift = util.by_pixel(12, 0),
+                    scale = 0.5,
+                    x = 96 * 1
+                }
+            }
+        },
+        south = {
+            layers = {
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 2
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 2
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-shadow.png",
+                    priority = "extra-high",
+                    draw_as_shadow = true,
+                    width = 96,
+                    height = 48,
+                    shift = util.by_pixel(12, 0),
+                    scale = 0.5,
+                    x = 96 * 0
+                }
+            }
+        },
+        west = {
+            layers = {
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 3
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-arrows.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = {0.0, -0.5},
+                    scale = 0.5,
+                    x = 64 * 3
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/overflow-valve-shadow.png",
+                    priority = "extra-high",
+                    draw_as_shadow = true,
+                    width = 96,
+                    height = 48,
+                    shift = util.by_pixel(12, 0),
+                    scale = 0.5,
+                    x = 96 * 1
                 }
             }
         }
     },
-    circuit_connector = circuit_connector_definitions["py-valves"],
-    circuit_wire_max_distance = data.raw["storage-tank"]["storage-tank"].circuit_wire_max_distance
 }

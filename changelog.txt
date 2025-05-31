@@ -1,9 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
 Date: tba
-  Internal:
-    - Removed shorthands in recipe declarations
+  Changes:
     - Fixed sheds, storehouses, warehouses, and deposits having duplicates and/or inconsistent recipes. Resolves https://github.com/pyanodon/pybugreports/issues/948
+    - Readded overflow valves and underflow valves to the game.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.14
 Date: 2025-4-13
