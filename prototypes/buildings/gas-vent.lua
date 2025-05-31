@@ -103,5 +103,14 @@ ENTITY {
             pipe_connections = {{flow_direction = "input", position = {0.0, 0.0}, direction = defines.direction.east}}
         },
     },
-    fast_replaceable_group = "py-gas-vent"
+    fast_replaceable_group = "py-gas-vent",
+    circuit_connector = circuit_connector_definitions.create_vector(
+        universal_connector_template,
+        {
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false}
+        }
+    )
 }
