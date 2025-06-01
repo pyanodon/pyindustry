@@ -33,7 +33,7 @@ ENTITY {
     flow_rate = 6000 / 60,
     threshold = 0.8,
     minable = {mining_time = 1, result = "py-underflow-valve"},
-    icon = "__pyindustrygraphics__/graphics/icons/overflow-valve.png",
+    icon = "__pyindustrygraphics__/graphics/icons/underflow-valve.png",
     icon_size = 32,
     flags = {"placeable-player", "player-creation", "placeable-neutral", "placeable-enemy"},
     corpse = "small-remnants",
