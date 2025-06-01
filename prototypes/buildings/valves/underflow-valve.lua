@@ -52,64 +52,64 @@ ENTITY {
         pipe_connections = {
             {
                 position = {0, 0},
-                direction = defines.direction.south,
+                direction = defines.direction.north,
                 flow_direction = "input-output"
             },
             {
                 position = {0, -0},
-                direction = defines.direction.north,
+                direction = defines.direction.south,
                 flow_direction = "output"
             }
         }
     },
     animations = {
-        north = {
-            layers = {
-                {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
-                    priority = "extra-high",
-                    width = 64,
-                    height = 128,
-                    shift = util.by_pixel(0, -16),
-                    scale = 0.5,
-                    x = 64 * 0
-                },
-                {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve-shadow.png",
-                    priority = "extra-high",
-                    draw_as_shadow = true,
-                    width = 90,
-                    height = 48,
-                    shift = util.by_pixel(14, -0),
-                    scale = 0.5,
-                    x = 64 * 0
-                }
-            }
-        },
-        east = {
-            layers = {
-                {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
-                    priority = "extra-high",
-                    width = 64,
-                    height = 128,
-                    shift = util.by_pixel(0, -16),
-                    scale = 0.5,
-                    x = 64 * 1
-                },
-                {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve-shadow.png",
-                    priority = "extra-high",
-                    draw_as_shadow = true,
-                    width = 90,
-                    height = 48,
-                    shift = util.by_pixel(14, -0),
-                    scale = 0.5,
-                    x = 64 * 1
-                }
-            }
-        },
         south = {
+            layers = {
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = util.by_pixel(0, -16),
+                    scale = 0.5,
+                    x = 64 * 0
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve-shadow.png",
+                    priority = "extra-high",
+                    draw_as_shadow = true,
+                    width = 90,
+                    height = 48,
+                    shift = util.by_pixel(14, -0),
+                    scale = 0.5,
+                    x = 64 * 0
+                }
+            }
+        },
+        west = {
+            layers = {
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
+                    priority = "extra-high",
+                    width = 64,
+                    height = 128,
+                    shift = util.by_pixel(0, -16),
+                    scale = 0.5,
+                    x = 64 * 1
+                },
+                {
+                    filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve-shadow.png",
+                    priority = "extra-high",
+                    draw_as_shadow = true,
+                    width = 90,
+                    height = 48,
+                    shift = util.by_pixel(14, -0),
+                    scale = 0.5,
+                    x = 64 * 1
+                }
+            }
+        },
+        north = {
             layers = {
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
@@ -132,7 +132,7 @@ ENTITY {
                 }
             }
         },
-        west = {
+        east = {
             layers = {
                 {
                     filename = "__pyindustrygraphics__/graphics/entity/py-valves/underflow-valve.png",
