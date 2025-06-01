@@ -7,6 +7,7 @@ Date: tba
     - Changed the localised description of check valves from "Allows flow only in the direction of the arrow." to "Allows the circuit network to read the level of fluid in a pipeline."
     - Fixed using h or v key will break graphical sinkhole pipe position. Resolves https://github.com/pyanodon/pybugreports/issues/996
     - Fixed circuit connector location for exaust vents. Resolves https://github.com/pyanodon/pybugreports/issues/972
+    - Valves from the "valves" mod by stringweasel now support the upgrade planner turing them into py valves.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.14
 Date: 2025-4-13

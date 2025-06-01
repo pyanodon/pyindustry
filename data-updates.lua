@@ -64,6 +64,13 @@ for f, _ in pairs(data.raw.fluid) do
     end
 end
 
+if mods["valves"] then
+    data.raw.valve["valves-top_up"].next_upgrade = "py-underflow-valve"
+    data.raw.valve["valves-top_up"].collision_box = data.raw.valve["py-underflow-valve"].collision_box
+    data.raw.valve["valves-overflow"].next_upgrade = "py-overflow-valve"
+    data.raw.valve["valves-overflow"].collision_box = data.raw.valve["py-overflow-valve"].collision_box
+end
+
 if register_cache_file ~= nil then
     register_cache_file({"pyindustry"}, "__pyindustry__/cached-configs/pyindustry.lua")
     register_cache_file({"pycoalprocessing", "pyindustry"}, "__pyindustry__/cached-configs/pycoalprocessing+pyindustry.lua")
