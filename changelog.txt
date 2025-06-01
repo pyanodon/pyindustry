@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
-Date: tba
+Date: 2025-6-1
   Changes:
     - Fixed sheds, storehouses, warehouses, and deposits having duplicates and/or inconsistent recipes. Resolves https://github.com/pyanodon/pybugreports/issues/948
     - Readded overflow valves and underflow valves to the game.
