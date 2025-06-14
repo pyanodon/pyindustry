@@ -32,7 +32,7 @@ data.raw.armor["power-armor-mk2"].inventory_size_bonus = 100
 
 -- This should fix this issue https://github.com/pyanodon/pybugreports/issues/1050
 -- IF IF IF IF pyindustry and or pycoalprocessing are enabled only
-if mods.pyhightech or mods.pyalternativeenergy then
+if mods.pyhightech then
     data.raw.technology["battery-equipment"].hidden = true
     data.raw.technology["battery-equipment"].enabled = false
     data.raw.recipe["battery-equipment"].hidden = true
