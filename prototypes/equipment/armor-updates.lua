@@ -30,18 +30,22 @@ data.raw.armor["modular-armor"].inventory_size_bonus = 60
 data.raw.armor["power-armor"].inventory_size_bonus = 80
 data.raw.armor["power-armor-mk2"].inventory_size_bonus = 100
 
-data.raw.technology["battery-equipment"].hidden = true
-data.raw.technology["battery-equipment"].enabled = false
-data.raw.recipe["battery-equipment"].hidden = true
-data.raw.item["battery-equipment"].hidden = true
-data.raw.item["battery-equipment"].place_as_equipment_result = nil
-data.raw.item["battery-equipment"].localised_name = {"equipment-name.battery-equipment"}
-data.raw.technology["battery-mk2-equipment"].hidden = true
-data.raw.technology["battery-mk2-equipment"].enabled = false
-data.raw.recipe["battery-mk2-equipment"].hidden = true
-data.raw.item["battery-mk2-equipment"].hidden = true
-data.raw.item["battery-mk2-equipment"].place_as_equipment_result = nil
-data.raw.item["battery-mk2-equipment"].localised_name = {"equipment-name.battery-mk2-equipment"}
+-- This should fix this issue https://github.com/pyanodon/pybugreports/issues/1050
+-- IF IF IF IF pyindustry and or pycoalprocessing are enabled only
+if mods.pyhightech then
+    data.raw.technology["battery-equipment"].hidden = true
+    data.raw.technology["battery-equipment"].enabled = false
+    data.raw.recipe["battery-equipment"].hidden = true
+    data.raw.item["battery-equipment"].hidden = true
+    data.raw.item["battery-equipment"].place_as_equipment_result = nil
+    data.raw.item["battery-equipment"].localised_name = {"equipment-name.battery-equipment"}
+    data.raw.technology["battery-mk2-equipment"].hidden = true
+    data.raw.technology["battery-mk2-equipment"].enabled = false
+    data.raw.recipe["battery-mk2-equipment"].hidden = true
+    data.raw.item["battery-mk2-equipment"].hidden = true
+    data.raw.item["battery-mk2-equipment"].place_as_equipment_result = nil
+    data.raw.item["battery-mk2-equipment"].localised_name = {"equipment-name.battery-mk2-equipment"}
+end
 
 data:extend {{
     name = "personal-fusion-cell",
