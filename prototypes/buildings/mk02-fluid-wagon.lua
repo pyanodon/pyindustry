@@ -51,7 +51,7 @@ ENTITY {
     air_resistance = 0.0085,
     connection_distance = 2,
     joint_distance = 1.5, --igual to collision box works if the sprite is tight in the png
-    tank_count = 1,
+    tank_count = 2,
     energy_per_hit_point = 5,
     capacity = 25000,
     resistances =
