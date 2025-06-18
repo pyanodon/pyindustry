@@ -2,6 +2,7 @@
 Version: ???
 Date: ???
   Changes:
+    - Changed mk02 train fluid wagon to have 2 pump slots.
     - Added personal batteries back if standalone mod (also resolves https://github.com/pyanodon/pybugreports/issues/1050).
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
