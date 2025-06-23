@@ -377,8 +377,12 @@ ENTITY {
     resistances = {
         {
             type = "fire",
-            percent = 90
-        }
+            percent = 90,
+        },
+        {
+            type = "impact",
+            percent = 50,
+        },
     },
     fast_replaceable_group = "pipe",
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
@@ -432,12 +436,16 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "niobium-pipe-to-ground"},
-    max_health = 100,
+    max_health = 150,
     corpse = "small-remnants",
     resistances = {
         {
             type = "fire",
-            percent = 80
+            percent = 90
+        },
+        {
+            type = "impact",
+            percent = 60,
         }
     },
     fast_replaceable_group = "pipe",
