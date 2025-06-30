@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: ???
+Version: 3.0.17
 Date: ???
+  Changes:
+    - Fixed circuit connection for py-gas-vent
+---------------------------------------------------------------------------------------------------
+Version: 3.0.16
+Date: 2025-06-29
   Changes:
     - Changed niobium pipes to have higher resistance and health.
     - Changed mk02 train fluid wagon to have 2 pump slots.
