@@ -104,6 +104,7 @@ ENTITY {
         },
     },
     fast_replaceable_group = "py-gas-vent",
+    circuit_wire_max_distance = 9,
     circuit_connector = circuit_connector_definitions.create_vector(
         universal_connector_template,
         {
