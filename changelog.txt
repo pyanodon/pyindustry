@@ -3,6 +3,7 @@ Version: 3.0.17
 Date: ???
   Changes:
     - Fixed circuit connection for py-gas-vent
+    - Updated German translation
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.16
 Date: 2025-06-29
@@ -10,7 +11,6 @@ Date: 2025-06-29
     - Changed niobium pipes to have higher resistance and health.
     - Changed mk02 train fluid wagon to have 2 pump slots.
     - Added personal batteries back if standalone mod (also resolves https://github.com/pyanodon/pybugreports/issues/1050).
-    - Updated German translation
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.15
 Date: 2025-6-1
