@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.17
-Date: ???
+Date: 2025-07-20
   Changes:
     - Fixed circuit connection for py-gas-vent
     - Updated German translation
