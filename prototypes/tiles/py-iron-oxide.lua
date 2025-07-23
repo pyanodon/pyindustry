@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {type = "item",  name = "iron-oxide",        amount = 4},
         {type = "item",  name = "pipe",              amount = 1},
-        {type = "fluid", name = "dirty-water-light", amount = 20}
+        {type = "fluid", name = "muddy-sludge", amount = 20}
     },
     results = {
         {type = "item", name = "py-iron-oxide", amount = 2}
