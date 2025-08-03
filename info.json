@@ -9,7 +9,7 @@
     "description": "Control the means of production with new logistic and storage structures. Works either as a standalone mod or alongside the rest of the pY modpack.",
     "dependencies": [
         "base >= 2.0.48",
-        "~ pypostprocessing",
+        "~ pypostprocessing >= 3.0.35",
         "~ pyindustrygraphics >= 3.0.0",
         "? pycoalprocessing >= 1.0.6",
         "? pyfusionenergy >= 1.0.3",
