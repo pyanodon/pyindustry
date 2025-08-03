@@ -3,6 +3,7 @@ Version: 3.0.18
 Date: ????
   Changes:
     - Fixed Bulk Inserter 1 and 2 technologies not having the correct prerequesites and dependants. Resolves https://github.com/pyanodon/pybugreports/issues/1086 and https://github.com/pyanodon/pybugreports/issues/1099
+    - Fixed Sinkhole pipe connections rendering improperly on flip
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.17
 Date: 2025-07-20
