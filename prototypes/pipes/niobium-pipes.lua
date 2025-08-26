@@ -345,7 +345,6 @@ ITEM {
 
 local recipes = {
     "xyhiphoe-pool-mk01",
-    "hydrocyclone-mk01",
     "compressor-mk01",
     "genlab-mk01",
     "kmauts-enclosure-mk01",

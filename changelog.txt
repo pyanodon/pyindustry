@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.2.0?
+Date: ???
+  Changes:
+    - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
+---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: 2025-08-12
   Changes:
