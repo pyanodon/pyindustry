@@ -129,9 +129,9 @@ data:extend({
     }
 })
 
-data.raw[ "item" ][ "barrel" ].subgroup = "barrel"
-data.raw[ "item" ][ "barrel" ].order = "a"
-data.raw[ "recipe" ][ "barrel" ].subgroup = nil
-data.raw.item[ "stone-wall" ].subgroup = "py-walls"
-data.raw.item[ "gate" ].subgroup = "py-walls"
-data.raw[ "item-with-entity-data" ][ "artillery-wagon" ].subgroup = "defensive-structure"
+data.raw["item"]["barrel"].subgroup = "barrel"
+data.raw["item"]["barrel"].order = "a"
+data.raw["recipe"]["barrel"].subgroup = nil
+data.raw.item["stone-wall"].subgroup = "py-walls"
+data.raw.item["gate"].subgroup = "py-walls"
+data.raw["item-with-entity-data"]["artillery-wagon"].subgroup = "defensive-structure"

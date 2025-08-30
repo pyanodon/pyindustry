@@ -2,7 +2,7 @@
 
 local void_result = {
     type = "item",
-    name = data.raw.item[ "ash" ] and "ash" or data.raw.item[ "coal" ] and "coal" or nil,
+    name = data.raw.item["ash"] and "ash" or data.raw.item["coal"] and "coal" or nil,
     amount_min = 1,
     amount_max = 1,
     probability = 0.20
@@ -51,20 +51,20 @@ local fluid_barrels = {}
 
 for f, _ in pairs(data.raw.fluid) do
     local i = f .. "-barrel"
-    if data.raw.item[ i ] then
-        fluid_barrels[ i ] = true
+    if data.raw.item[i] then
+        fluid_barrels[i] = true
     end
     local i = f .. "-canister"
-    if data.raw.item[ i ] then
-        fluid_barrels[ i ] = true
+    if data.raw.item[i] then
+        fluid_barrels[i] = true
     end
 end
 
 
 for _, type in pairs(groups) do
-    for _, item in pairs(data.raw[ type ]) do
+    for _, item in pairs(data.raw[type]) do
         if not item.not_voidable and not (item.fuel_value and (item.fuel_category == "chemical" or item.fuel_category == "biomass" or item.fuel_category == "nuke"))
-            and not fluid_barrels[ item.name ] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
+            and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
 
@@ -74,7 +74,7 @@ for _, type in pairs(groups) do
             else
                 new_icons = { { icon = item.icon, icon_size = item.icon_size or 64 } }
             end
-            new_icons[ #new_icons+1 ] = { icon = "__pyindustrygraphics__/graphics/icons/no.png", icon_size = 32 }
+            new_icons[#new_icons+1] = { icon = "__pyindustrygraphics__/graphics/icons/no.png", icon_size = 32 }
             make_void_recipe(name, new_icons, item.name, item.place_result)
         end
         item.not_voidable = nil

@@ -33,7 +33,7 @@ RECIPE({
     enabled = false
 }):add_unlock("radars-mk02")
 
-if mods[ "pycoalprocessing" ] then
+if mods["pycoalprocessing"] then
     RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({ type = "item", name = "niobium-plate", amount = 10 })
 end
 
@@ -71,8 +71,8 @@ ENTITY({
     collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
     selection_box = { { -3.0, -3.0 }, { 3.0, 3.0 } },
     circuit_connector = {
-        sprites = _G.circuit_connector_definitions[ "roboport" ].sprites,
-        points = _G.circuit_connector_definitions[ "roboport" ].points
+        sprites = _G.circuit_connector_definitions["roboport"].sprites,
+        points = _G.circuit_connector_definitions["roboport"].points
     },
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     energy_per_sector = "12MJ",

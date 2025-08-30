@@ -30,7 +30,7 @@ local bot_item = ITEM({
     stack_size = 50
 })
 
-if data.raw[ "item-subgroup" ][ "py-hightech-items" ] then
+if data.raw["item-subgroup"]["py-hightech-items"] then
     bot_item:subgroup_order("py-hightech-items", "b")
 end
 

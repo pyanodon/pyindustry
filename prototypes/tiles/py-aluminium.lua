@@ -16,8 +16,8 @@ RECIPE({
 
 if mods.pyrawores then
     RECIPE("py-aluminium"):add_ingredient({ type = "item", name = "graphite", amount = 1 })
-    data.raw.recipe[ "py-aluminium" ].category = "eaf"
-    data.raw.recipe[ "py-aluminium" ].results = { { type = "item", name = "py-aluminium", amount = 2 } }
+    data.raw.recipe["py-aluminium"].category = "eaf"
+    data.raw.recipe["py-aluminium"].results = { { type = "item", name = "py-aluminium", amount = 2 } }
 end
 
 ITEM({
@@ -43,7 +43,7 @@ TILE({
     decorative_removal_probability = 1,
     layer = 78,
     layer_group = "ground-artificial",
-    walking_sound = table.deepcopy(data.raw.tile[ "dry-dirt" ].walking_sound),
+    walking_sound = table.deepcopy(data.raw.tile["dry-dirt"].walking_sound),
     map_color = { r = 100, g = 100, b = 100, a = 1 },
     absorptions_per_second = { pollution = 0 },
     vehicle_friction_modifier = 0.6,

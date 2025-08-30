@@ -1,9 +1,9 @@
-if settings.startup[ "py-tank-adjust" ].value then
-    if mods[ "pypetroleumhandling" ] then
-        data.raw[ "storage-tank" ][ "py-tank-9000" ].fluid_box.volume = 180000
-        data.raw[ "storage-tank" ][ "py-tank-9000" ].localised_name = { "entity-name.py-tank-9000-adjust" }
-        data.raw[ "storage-tank" ][ "py-tank-10000" ].fluid_box.volume = 250000
-        data.raw[ "storage-tank" ][ "py-tank-10000" ].localised_name = { "entity-name.py-tank-10000-adjust" }
+if settings.startup["py-tank-adjust"].value then
+    if mods["pypetroleumhandling"] then
+        data.raw["storage-tank"]["py-tank-9000"].fluid_box.volume = 180000
+        data.raw["storage-tank"]["py-tank-9000"].localised_name = { "entity-name.py-tank-9000-adjust" }
+        data.raw["storage-tank"]["py-tank-10000"].fluid_box.volume = 250000
+        data.raw["storage-tank"]["py-tank-10000"].localised_name = { "entity-name.py-tank-10000-adjust" }
     end
 end
 
@@ -22,21 +22,21 @@ end
 
 require("prototypes/updates/base-updates")
 
-if mods[ "pycoalprocessing" ] then
+if mods["pycoalprocessing"] then
     require("prototypes/updates/pycoalprocessing-updates")
     require("prototypes/tiles/py-iron-oxide")
     require("prototypes/tiles/py-nexelit")
 end
 
-if mods[ "pyfusionenergy" ] then
+if mods["pyfusionenergy"] then
     require("prototypes/updates/pyfusionenergy-updates")
 end
 
-if mods[ "pyrawores" ] then
+if mods["pyrawores"] then
     require("prototypes/updates/pyrawores-updates")
 end
 
-if mods[ "pyalternativeenergy" ] then
+if mods["pyalternativeenergy"] then
     require("prototypes/updates/pyalternativeenergy-updates")
 end
 
@@ -51,7 +51,7 @@ for f, _ in pairs(data.raw.fluid) do
         "fill-" .. f .. "-canister",
         f .. "-barrel"
     }) do
-        local recipe = data.raw.recipe[ recipe_name ] and RECIPE(recipe_name)
+        local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
         if recipe ~= nil then
             recipe:set_fields({ hide_from_player_crafting = true, hide_from_stats = true })
             -- This is backwards, I blame king
@@ -64,11 +64,11 @@ for f, _ in pairs(data.raw.fluid) do
     end
 end
 
-if mods[ "valves" ] then
-    data.raw.valve[ "valves-top_up" ].next_upgrade = "py-underflow-valve"
-    data.raw.valve[ "valves-top_up" ].collision_box = data.raw.valve[ "py-underflow-valve" ].collision_box
-    data.raw.valve[ "valves-overflow" ].next_upgrade = "py-overflow-valve"
-    data.raw.valve[ "valves-overflow" ].collision_box = data.raw.valve[ "py-overflow-valve" ].collision_box
+if mods["valves"] then
+    data.raw.valve["valves-top_up"].next_upgrade = "py-underflow-valve"
+    data.raw.valve["valves-top_up"].collision_box = data.raw.valve["py-underflow-valve"].collision_box
+    data.raw.valve["valves-overflow"].next_upgrade = "py-overflow-valve"
+    data.raw.valve["valves-overflow"].collision_box = data.raw.valve["py-overflow-valve"].collision_box
 end
 
 if register_cache_file ~= nil then

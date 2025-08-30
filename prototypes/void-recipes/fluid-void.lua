@@ -29,7 +29,7 @@ for _, fluid in pairs(data.raw.fluid) do
     else
         icons = { { icon = fluid.icon, icon_size = fluid.icon_size or 64 } }
     end
-    icons[ #icons+1 ] = { icon = "__pyindustrygraphics__/graphics/icons/no.png", icon_size = 32 }
+    icons[#icons+1] = { icon = "__pyindustrygraphics__/graphics/icons/no.png", icon_size = 32 }
 
     if (fluid.default_temperature or 15) < (fluid.gas_temperature or 999999999999) then
         -- Make sinkhole

@@ -119,7 +119,7 @@ local function define_warehouse(name, logistics_name)
                 shift = util.by_pixel(10, -16),
             },
             circuit_wire_max_distance = 9,
-            circuit_connector         = circuit_connector_definitions[ "py-warehouse" ],
+            circuit_connector         = circuit_connector_definitions["py-warehouse"],
         })
 
     if logistics_name then

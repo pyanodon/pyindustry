@@ -16,8 +16,8 @@ RECIPE({
 
 if mods.pypetroleumhandling then
     RECIPE("py-coal-tile"):add_ingredient({ type = "fluid", name = "medium-distillate", amount = 20 })
-    data.raw.recipe[ "py-coal-tile" ].category = "reformer"
-    data.raw.recipe[ "py-coal-tile" ].results = { { type = "item", name = "py-coal-tile", amount = 2 } }
+    data.raw.recipe["py-coal-tile"].category = "reformer"
+    data.raw.recipe["py-coal-tile"].results = { { type = "item", name = "py-coal-tile", amount = 2 } }
 end
 
 ITEM({
@@ -79,7 +79,7 @@ TILE({
             }
         }
     },
-    walking_sound = table.deepcopy(data.raw.tile[ "grass-1" ].walking_sound),
+    walking_sound = table.deepcopy(data.raw.tile["grass-1"].walking_sound),
     map_color = { r = 50, g = 50, b = 50, a = 1 },
     absorptions_per_second = { pollution = 0 },
     vehicle_friction_modifier = 0.6,

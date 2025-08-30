@@ -16,7 +16,7 @@ TECHNOLOGY({
 })
 RECIPE("iron-stick"):remove_unlock("railway")
 
-if mods[ "pycoalprocessing" ] then
+if mods["pycoalprocessing"] then
     TECHNOLOGY("railway"):add_prereq("wood-processing"):remove_prereq("steel-processing")
 
     TECHNOLOGY({
@@ -39,7 +39,7 @@ if mods[ "pycoalprocessing" ] then
     })
 end
 
-if mods[ "pyhightech" ] then
+if mods["pyhightech"] then
     TECHNOLOGY({
         type = "technology",
         name = "railway-mk03",
@@ -61,7 +61,7 @@ if mods[ "pyhightech" ] then
     })
 end
 
-if mods[ "pyalternativeenergy" ] then
+if mods["pyalternativeenergy"] then
     TECHNOLOGY({
         type = "technology",
         name = "railway-mk04",

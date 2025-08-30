@@ -16,7 +16,7 @@ TECHNOLOGY({
     }
 })
 
-if mods[ "pyrawores" ] then
+if mods["pyrawores"] then
     TECHNOLOGY({
         type = "technology",
         name = "py-asphalt-mk02",

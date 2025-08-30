@@ -40,7 +40,7 @@ TECHNOLOGY({
     upgrade = true
 })
 
-if mods[ "pyalternativeenergy" ] then
+if mods["pyalternativeenergy"] then
     TECHNOLOGY({
         type = "technology",
         name = "py-accumulator-mk03",

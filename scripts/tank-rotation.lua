@@ -14,7 +14,7 @@ local tanks_to_reset_rotation = table.invert({
 local function reset_rotation(event)
     local entity = event.entity
     if not entity.valid then return end
-    if not tanks_to_reset_rotation[ entity.name ] then return end
+    if not tanks_to_reset_rotation[entity.name] then return end
     entity.direction = 0
     entity.mirroring = false
 end

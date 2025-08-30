@@ -1,11 +1,11 @@
-local NIOBIUM_CONNECTION_CATEGORY = settings.startup[ "py-braided-pipes" ].value and { "niobium-pipe" } or nil
+local NIOBIUM_CONNECTION_CATEGORY = settings.startup["py-braided-pipes"].value and { "niobium-pipe" } or nil
 
 local function make_shadow(image)
     local shift = image.shift or { 0, 0 }
-    local x, y = image[ 0 ] or image.x, image[ 1 ] or image.y
+    local x, y = image[0] or image.x, image[1] or image.y
 
     local shadow = table.deepcopy(image)
-    shadow.shift = { shift[ 1 ] + 0.2, shift[ 2 ] + 0.2 }
+    shadow.shift = { shift[1] + 0.2, shift[2] + 0.2 }
     shadow.draw_as_shadow = true
 
     return {
@@ -358,9 +358,9 @@ for _, recipe_name in pairs(recipes) do
     RECIPE(recipe_name):replace_ingredient("pipe", "niobium-pipe")
 end
 
-data.raw[ "utility-constants" ].default.default_pipeline_extent = 640
+data.raw["utility-constants"].default.default_pipeline_extent = 640
 data.raw.pipe.pipe.fluid_box.max_pipeline_extent = 320
-data.raw[ "pipe-to-ground" ][ "pipe-to-ground" ].fluid_box.max_pipeline_extent = 320
+data.raw["pipe-to-ground"]["pipe-to-ground"].fluid_box.max_pipeline_extent = 320
 
 ENTITY({
     type = "pipe",

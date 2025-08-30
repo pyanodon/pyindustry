@@ -74,7 +74,7 @@ TILE({
             }
         }
     },
-    walking_sound = table.deepcopy(data.raw.tile[ "grass-1" ].walking_sound),
+    walking_sound = table.deepcopy(data.raw.tile["grass-1"].walking_sound),
     map_color = { r = 0, g = 0, b = 0, a = 1 },
     absorptions_per_second = { pollution = 0 },
     vehicle_friction_modifier = 0.6,

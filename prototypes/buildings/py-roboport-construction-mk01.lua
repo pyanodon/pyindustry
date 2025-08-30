@@ -191,8 +191,8 @@ ENTITY({
         }
     },
     circuit_connector = {
-        sprites = _G.circuit_connector_definitions[ "roboport" ].sprites,
-        points = _G.circuit_connector_definitions[ "roboport" ].points
+        sprites = _G.circuit_connector_definitions["roboport"].sprites,
+        points = _G.circuit_connector_definitions["roboport"].points
     },
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     default_available_logistic_output_signal = { type = "virtual", name = "signal-X" },

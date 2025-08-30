@@ -33,13 +33,13 @@ ENTITY({
     icon_size = 32,
     flags = { "placeable-player", "player-creation", "placeable-neutral", "placeable-enemy" },
     corpse = "small-remnants",
-    max_health = data.raw[ "pipe" ][ "pipe" ].max_health,
-    resistances = data.raw[ "pipe" ][ "pipe" ].resistances,
-    fast_replaceable_group = data.raw[ "pipe" ][ "pipe" ].fast_replaceable_group,
-    collision_box = data.raw[ "pipe" ][ "pipe" ].collision_box, --0.29
-    selection_box = data.raw[ "pipe" ][ "pipe" ].selection_box,
+    max_health = data.raw["pipe"]["pipe"].max_health,
+    resistances = data.raw["pipe"]["pipe"].resistances,
+    fast_replaceable_group = data.raw["pipe"]["pipe"].fast_replaceable_group,
+    collision_box = data.raw["pipe"]["pipe"].collision_box,     --0.29
+    selection_box = data.raw["pipe"]["pipe"].selection_box,
     window_bounding_box = { { 0, 0 }, { 0, 0 } },
-    flow_length_in_ticks = data.raw[ "storage-tank" ][ "storage-tank" ].flow_length_in_ticks,
+    flow_length_in_ticks = data.raw["storage-tank"]["storage-tank"].flow_length_in_ticks,
     two_direction_only = false,
     working_sound = nil,
     fluid_box = {
@@ -86,6 +86,6 @@ ENTITY({
             }
         }
     },
-    circuit_connector = circuit_connector_definitions[ "py-valves" ],
-    circuit_wire_max_distance = data.raw[ "storage-tank" ][ "storage-tank" ].circuit_wire_max_distance
+    circuit_connector = circuit_connector_definitions["py-valves"],
+    circuit_wire_max_distance = data.raw["storage-tank"]["storage-tank"].circuit_wire_max_distance
 })

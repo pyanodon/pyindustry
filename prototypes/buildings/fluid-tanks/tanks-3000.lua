@@ -88,5 +88,5 @@ ENTITY({
         max_sounds_per_prototype = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_connector = circuit_connector_definitions[ "tanks-3000" ],
+    circuit_connector = circuit_connector_definitions["tanks-3000"],
 })

@@ -27,20 +27,20 @@ ITEM({
     place_as_tile = { result = "lab-white", condition_size = 1, condition = { layers = { water_tile = true } } }
 })
 
-data.raw.tile[ "lab-white" ].minable = { mining_time = 0.1, result = "py-quartz" }
-data.raw.tile[ "lab-white" ].mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" }
-data.raw.tile[ "lab-white" ].walking_speed_modifier = 3.25
-data.raw.tile[ "lab-white" ].decorative_removal_probability = 1
-data.raw.tile[ "lab-white" ].layer = 99
-data.raw.tile[ "lab-white" ].walking_sound = table.deepcopy(data.raw.tile[ "grass-1" ].walking_sound)
-data.raw.tile[ "lab-white" ].collision_mask = { layers = { ground_tile = true } }
-data.raw.tile[ "lab-white" ].vehicle_friction_modifier = 0.6
-data.raw.tile[ "lab-white" ].tint = { 255, 255, 255 }
+data.raw.tile["lab-white"].minable = { mining_time = 0.1, result = "py-quartz" }
+data.raw.tile["lab-white"].mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" }
+data.raw.tile["lab-white"].walking_speed_modifier = 3.25
+data.raw.tile["lab-white"].decorative_removal_probability = 1
+data.raw.tile["lab-white"].layer = 99
+data.raw.tile["lab-white"].walking_sound = table.deepcopy(data.raw.tile["grass-1"].walking_sound)
+data.raw.tile["lab-white"].collision_mask = { layers = { ground_tile = true } }
+data.raw.tile["lab-white"].vehicle_friction_modifier = 0.6
+data.raw.tile["lab-white"].tint = { 255, 255, 255 }
 
 -- giving it concrete base/transitions
 -- data.raw.tile["lab-white"].variants = table.deepcopy(data.raw.tile.concrete.variants)
-data.raw.tile[ "lab-white" ].variants = {
-    transition = table.deepcopy(data.raw.tile[ "concrete" ].variants.transition),
+data.raw.tile["lab-white"].variants = {
+    transition = table.deepcopy(data.raw.tile["concrete"].variants.transition),
     main =
     { {
         picture = "__base__/graphics/terrain/lab-tiles/lab-white.png",
