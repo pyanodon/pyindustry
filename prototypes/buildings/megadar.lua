@@ -1,43 +1,43 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "radars-mk02",
     icon = "__pyindustrygraphics__/graphics/technology/radars-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"radars-mk01"},
-    dependencies = {"radars-mk01"},
+    prerequisites = { "radars-mk01" },
+    dependencies = { "radars-mk01" },
     effects = {},
     unit = {
         count = 35,
         ingredients = {
-            {"automation-science-pack", 2},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   2},
+            { "automation-science-pack", 2 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   2 },
         },
         time = 45
     }
-}
+})
 
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "megadar",
     ingredients = {
-        {type = "item", name = "advanced-circuit",     amount = 20},
-        {type = "item", name = "iron-gear-wheel",      amount = 40},
-        {type = "item", name = "steel-plate",          amount = 20},
-        {type = "item", name = "electric-engine-unit", amount = 3}
+        { type = "item", name = "advanced-circuit",     amount = 20 },
+        { type = "item", name = "iron-gear-wheel",      amount = 40 },
+        { type = "item", name = "steel-plate",          amount = 20 },
+        { type = "item", name = "electric-engine-unit", amount = 3 }
     },
     results = {
-        {type = "item", name = "megadar", amount = 1}
+        { type = "item", name = "megadar", amount = 1 }
     },
     enabled = false
-}:add_unlock("radars-mk02")
+}):add_unlock("radars-mk02")
 
-if mods["pycoalprocessing"] then
-    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
+if mods[ "pycoalprocessing" ] then
+    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient({ type = "item", name = "niobium-plate", amount = 10 })
 end
 
-ITEM {
+ITEM({
     type = "item",
     name = "megadar",
     icon = "__pyindustrygraphics__/graphics/icons/megadar.png",
@@ -47,15 +47,15 @@ ITEM {
     order = "d[radar]-a[megadar]",
     place_result = "megadar",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "radar",
     name = "megadar",
     icon = "__pyindustrygraphics__/graphics/icons/megadar.png",
     icon_size = 64,
-    flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.1, result = "megadar"},
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.1, result = "megadar" },
     max_health = 1000,
     corpse = "big-remnants",
     resistances = {
@@ -68,11 +68,11 @@ ENTITY {
             percent = 40
         }
     },
-    collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
-    selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+    selection_box = { { -3.0, -3.0 }, { 3.0, 3.0 } },
     circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
+        sprites = _G.circuit_connector_definitions[ "roboport" ].sprites,
+        points = _G.circuit_connector_definitions[ "roboport" ].points
     },
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     energy_per_sector = "12MJ",
@@ -167,6 +167,6 @@ ENTITY {
         },
         apparent_volume = 2
     },
-    radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275},
+    radius_minimap_visualisation_color = { r = 0.059, g = 0.092, b = 0.235, a = 0.275 },
     rotation_speed = 0.0008
-}
+})

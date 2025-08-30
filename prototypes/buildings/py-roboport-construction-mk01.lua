@@ -1,20 +1,20 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "py-ze",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steel-plate",        amount = 20},
-        {type = "item", name = "iron-plate",         amount = 15},
-        {type = "item", name = "iron-gear-wheel",    amount = 20},
-        {type = "item", name = "electronic-circuit", amount = 5}
+        { type = "item", name = "steel-plate",        amount = 20 },
+        { type = "item", name = "iron-plate",         amount = 15 },
+        { type = "item", name = "iron-gear-wheel",    amount = 20 },
+        { type = "item", name = "electronic-circuit", amount = 5 }
     },
     results = {
-        {type = "item", name = "py-ze", amount = 1}
+        { type = "item", name = "py-ze", amount = 1 }
     }
-}:add_unlock("construction-robotics")
+}):add_unlock("construction-robotics")
 
-ITEM {
+ITEM({
     type = "item",
     name = "py-ze",
     icon = "__pyindustrygraphics__/graphics/icons/py-ze.png",
@@ -24,19 +24,19 @@ ITEM {
     order = "a",
     place_result = "py-ze",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "roboport",
     name = "py-ze",
     icon = "__pyindustrygraphics__/graphics/icons/py-ze.png",
     icon_size = 64,
-    flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.1, result = "py-ze"},
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 0.1, result = "py-ze" },
     max_health = 500,
     corpse = "big-remnants",
-    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     resistances = {
         {
             type = "fire",
@@ -67,7 +67,7 @@ ENTITY {
     robots_shrink_when_entering_and_exiting = true,
     stationing_offset = util.by_pixel(0, -3),
     charging_offsets = {
-        {-0, -0.5}
+        { -0, -0.5 }
     },
     base = {
         layers = {
@@ -131,7 +131,7 @@ ENTITY {
                 frame_count = 50,
                 animation_speed = 0.3,
                 draw_as_glow = true,
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 0.8},
+                tint = { r = 1.0, g = 1.0, b = 0.0, a = 0.8 },
                 shift = util.by_pixel(0, -96),
             },
         }
@@ -169,11 +169,11 @@ ENTITY {
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__base__/sound/roboport-working.ogg", volume = 0.6, audible_distance_modifier = 0.5,},
+        sound = { filename = "__base__/sound/roboport-working.ogg", volume = 0.6, audible_distance_modifier = 0.5, },
         max_sounds_per_prototype = 3,
         probability = 1 / (5 * 60) -- average pause between the sound is 5 seconds
     },
-    recharging_light = {intensity = 0.4, size = 5, color = {r = 1.0, g = 1.0, b = 1.0}},
+    recharging_light = { intensity = 0.4, size = 5, color = { r = 1.0, g = 1.0, b = 1.0 } },
     request_to_open_door_timeout = 15,
     spawn_and_station_height = -0.1,
     draw_logistic_radius_visualization = true,
@@ -181,22 +181,22 @@ ENTITY {
     open_door_trigger_effect = {
         {
             type = "play-sound",
-            sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
+            sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.4 }
         }
     },
     close_door_trigger_effect = {
         {
             type = "play-sound",
-            sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
+            sound = { filename = "__base__/sound/roboport-door.ogg", volume = 0.4 }
         }
     },
     circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
+        sprites = _G.circuit_connector_definitions[ "roboport" ].sprites,
+        points = _G.circuit_connector_definitions[ "roboport" ].points
     },
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
-    default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
-    default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},
-    default_available_construction_output_signal = {type = "virtual", name = "signal-Z"},
-    default_total_construction_output_signal = {type = "virtual", name = "signal-T"}
-}
+    default_available_logistic_output_signal = { type = "virtual", name = "signal-X" },
+    default_total_logistic_output_signal = { type = "virtual", name = "signal-Y" },
+    default_available_construction_output_signal = { type = "virtual", name = "signal-Z" },
+    default_total_construction_output_signal = { type = "virtual", name = "signal-T" }
+})

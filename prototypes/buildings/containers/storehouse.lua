@@ -2,7 +2,7 @@
  * Part of the Warehousing mod
 --]]
 
-local connectors = require "prototypes/buildings/containers/connectors"
+local connectors = require("prototypes/buildings/containers/connectors")
 
 local function get_trash_slots(name)
     if name == "requester" or name == "buffer" then
@@ -15,45 +15,45 @@ end
 local function get_ingredients(name)
     if name == "passive-provider" then
         return {
-            {type = "item", name = "py-storehouse-basic",    amount = 1},
-            {type = "item", name = "passive-provider-chest", amount = 1},
-            {type = "item", name = "iron-plate",             amount = 10},
-            {type = "item", name = "advanced-circuit",       amount = 4}
+            { type = "item", name = "py-storehouse-basic",    amount = 1 },
+            { type = "item", name = "passive-provider-chest", amount = 1 },
+            { type = "item", name = "iron-plate",             amount = 10 },
+            { type = "item", name = "advanced-circuit",       amount = 4 }
         }
     elseif name == "active-provider" then
         return {
-            {type = "item", name = "py-storehouse-basic",   amount = 1},
-            {type = "item", name = "active-provider-chest", amount = 1},
-            {type = "item", name = "iron-plate",            amount = 10},
-            {type = "item", name = "advanced-circuit",      amount = 4}
+            { type = "item", name = "py-storehouse-basic",   amount = 1 },
+            { type = "item", name = "active-provider-chest", amount = 1 },
+            { type = "item", name = "iron-plate",            amount = 10 },
+            { type = "item", name = "advanced-circuit",      amount = 4 }
         }
     elseif name == "storage" then
         return {
-            {type = "item", name = "py-storehouse-basic", amount = 1},
-            {type = "item", name = "storage-chest",       amount = 1},
-            {type = "item", name = "iron-plate",          amount = 10},
-            {type = "item", name = "advanced-circuit",    amount = 4},
+            { type = "item", name = "py-storehouse-basic", amount = 1 },
+            { type = "item", name = "storage-chest",       amount = 1 },
+            { type = "item", name = "iron-plate",          amount = 10 },
+            { type = "item", name = "advanced-circuit",    amount = 4 },
         }
     elseif name == "requester" then
         return {
-            {type = "item", name = "py-storehouse-basic", amount = 1},
-            {type = "item", name = "requester-chest",     amount = 1},
-            {type = "item", name = "iron-plate",          amount = 10},
-            {type = "item", name = "advanced-circuit",    amount = 4}
+            { type = "item", name = "py-storehouse-basic", amount = 1 },
+            { type = "item", name = "requester-chest",     amount = 1 },
+            { type = "item", name = "iron-plate",          amount = 10 },
+            { type = "item", name = "advanced-circuit",    amount = 4 }
         }
     elseif name == "buffer" then
         return {
-            {type = "item", name = "py-storehouse-basic", amount = 1},
-            {type = "item", name = "buffer-chest",        amount = 1},
-            {type = "item", name = "iron-plate",          amount = 10},
-            {type = "item", name = "advanced-circuit",    amount = 4}
+            { type = "item", name = "py-storehouse-basic", amount = 1 },
+            { type = "item", name = "buffer-chest",        amount = 1 },
+            { type = "item", name = "iron-plate",          amount = 10 },
+            { type = "item", name = "advanced-circuit",    amount = 4 }
         }
     else
         return {
-            {type = "item", name = "steel-plate",  amount = 40},
-            {type = "item", name = "iron-plate",   amount = 60},
-            {type = "item", name = "stone-brick",  amount = 15},
-            {type = "item", name = "wooden-chest", amount = 10}
+            { type = "item", name = "steel-plate",  amount = 40 },
+            { type = "item", name = "iron-plate",   amount = 60 },
+            { type = "item", name = "stone-brick",  amount = 15 },
+            { type = "item", name = "wooden-chest", amount = 10 }
         }
     end
 end
@@ -63,17 +63,17 @@ local function define_storehouse(name, logistics_name)
     local full_name = "py-storehouse-" .. name
 
     local recipe =
-        RECIPE {
+        RECIPE({
             type = "recipe",
             name = full_name,
             enabled = false,
             ingredients = get_ingredients(logistics_name),
             results = {
-                {type = "item", name = full_name, amount = 1}
+                { type = "item", name = full_name, amount = 1 }
             }
-        }
+        })
 
-    ITEM {
+    ITEM({
         type = "item",
         name = full_name,
         icon = "__pyindustrygraphics__/graphics/icons/containers/storehouse-" .. name .. ".png",
@@ -83,22 +83,22 @@ local function define_storehouse(name, logistics_name)
         order = entity_type .. "[" .. full_name .. "]",
         place_result = full_name,
         stack_size = 10
-    }
+    })
 
     local entity =
-        ENTITY {
+        ENTITY({
             type                      = entity_type,
             name                      = full_name,
             icon                      = "__pyindustrygraphics__/graphics/icons/containers/storehouse-" .. name .. ".png",
             icon_size                 = 64,
             trash_inventory_size      = get_trash_slots(logistics_name),
-            flags                     = {"placeable-neutral", "placeable-player", "player-creation"},
-            minable                   = {mining_time = 2, result = full_name},
+            flags                     = { "placeable-neutral", "placeable-player", "player-creation" },
+            minable                   = { mining_time = 2, result = full_name },
             max_health                = 250,
             corpse                    = "big-remnants",
             dying_explosion           = "medium-explosion",
-            open_sound                = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-            close_sound               = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
+            open_sound                = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
+            close_sound               = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
             impact_category           = "metal-large",
             resistances               = {
                 {
@@ -106,8 +106,8 @@ local function define_storehouse(name, logistics_name)
                     percent = 90
                 }
             },
-            collision_box             = {{-1.8, -1.8}, {1.8, 1.8}},
-            selection_box             = {{-2.0, -2.0}, {2.0, 2.0}},
+            collision_box             = { { -1.8, -1.8 }, { 1.8, 1.8 } },
+            selection_box             = { { -2.0, -2.0 }, { 2.0, 2.0 } },
             fast_replaceable_group    = "storehouse",
             inventory_size            = 150,
             inventory_type            = "with_filters_and_bar",
@@ -120,8 +120,8 @@ local function define_storehouse(name, logistics_name)
             },
             circuit_wire_max_distance = 9,
             --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
-            circuit_connector         = {points = connectors.points {-0.11, -1.92}},
-        }
+            circuit_connector         = { points = connectors.points({ -0.11, -1.92 }) },
+        })
 
     if logistics_name then
         recipe:add_unlock("py-warehouse-logistics-research")

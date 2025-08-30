@@ -1,7 +1,7 @@
 local connectors = {}
 function connectors.sprites(con_shift, shadow_shift)
-    local red_green_shift = {con_shift[1] - 0.1, con_shift[2] + 0.05}
-    local blue_shift = {con_shift[1] - 0.05, con_shift[2] + 0.1}
+    local red_green_shift = { con_shift[ 1 ] - 0.1, con_shift[ 2 ] + 0.05 }
+    local blue_shift = { con_shift[ 1 ] - 0.05, con_shift[ 2 ] + 0.1 }
     return {
         connector_main = {
             filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon.png",
@@ -41,7 +41,7 @@ function connectors.sprites(con_shift, shadow_shift)
             height = 43,
             frame_count = 15,
             animation_speed = 0.5,
-            shift = {0, 0}
+            shift = { 0, 0 }
         },
         led_light = {
             intensity = 0.8,
@@ -52,7 +52,7 @@ function connectors.sprites(con_shift, shadow_shift)
         connector_shadow = {
             filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon-shadow.png",
             priority = "low",
-            flags = {"shadow"},
+            flags = { "shadow" },
             width = 27,
             height = 65,
             shift = shadow_shift or con_shift,
@@ -62,18 +62,18 @@ function connectors.sprites(con_shift, shadow_shift)
 end
 
 function connectors.points(red_points)
-    local rx, ry = red_points[1], red_points[2]
+    local rx, ry = red_points[ 1 ], red_points[ 2 ]
     local gx, gy = rx + 0.06, ry + 0.07
     local srx, sry = rx + 0.1, ry
     local sgx, sgy = gx + 0.1, gy
     return {
         wire = {
-            red = {rx, ry},
-            green = {gx, gy}
+            red = { rx, ry },
+            green = { gx, gy }
         },
         shadow = {
-            red = {srx, sry},
-            green = {sgx, sgy}
+            red = { srx, sry },
+            green = { sgx, sgy }
         }
     }
 end

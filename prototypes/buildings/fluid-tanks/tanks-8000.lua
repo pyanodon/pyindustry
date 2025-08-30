@@ -1,20 +1,20 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "py-tank-8000",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-4000", amount = 1},
-        {type = "item", name = "pipe",         amount = 12},
-        {type = "item", name = "iron-stick",   amount = 40},
-        {type = "item", name = "steel-plate",  amount = 40}
+        { type = "item", name = "py-tank-4000", amount = 1 },
+        { type = "item", name = "pipe",         amount = 12 },
+        { type = "item", name = "iron-stick",   amount = 40 },
+        { type = "item", name = "steel-plate",  amount = 40 }
     },
     results = {
-        {type = "item", name = "py-tank-8000", amount = 1}
+        { type = "item", name = "py-tank-8000", amount = 1 }
     }
-}:add_unlock("py-storage-tanks")
+}):add_unlock("py-storage-tanks")
 
-ITEM {
+ITEM({
     type = "item",
     name = "py-tank-8000",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-8000.png",
@@ -24,59 +24,59 @@ ITEM {
     order = "a-c[py-items]",
     place_result = "py-tank-8000",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "storage-tank",
     name = "py-tank-8000",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-8000.png",
     icon_size = 32,
-    flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-8000"},
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 3, result = "py-tank-8000" },
     max_health = 500,
     corpse = "medium-remnants",
-    collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
-    selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
+    collision_box = { { -2.9, -2.9 }, { 2.9, 2.9 } },
+    selection_box = { { -3.0, -3.0 }, { 3.0, 3.0 } },
     two_direction_only = true,
     fluid_box = {
         volume = 80000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0.5, -2.5}, --0.5, -3.5
+                position = { 0.5, -2.5 }, --0.5, -3.5
                 direction = defines.direction.north
             },
             {
-                position = {-0.5, -2.5},
+                position = { -0.5, -2.5 },
                 direction = defines.direction.north
             },
             {
-                position = {2.5, 0.5},
+                position = { 2.5, 0.5 },
                 direction = defines.direction.east
             },
             {
-                position = {2.5, -0.5},
+                position = { 2.5, -0.5 },
                 direction = defines.direction.east
             },
             {
-                position = {0.5, 2.5},
+                position = { 0.5, 2.5 },
                 direction = defines.direction.south
             },
             {
-                position = {-0.5, 2.5},
+                position = { -0.5, 2.5 },
                 direction = defines.direction.south
             },
             {
-                position = {-2.5, 0.5}, -- west goes a wee bit further
+                position = { -2.5, 0.5 }, -- west goes a wee bit further
                 direction = defines.direction.west
             },
             {
-                position = {-2.5, -0.5},
+                position = { -2.5, -0.5 },
                 direction = defines.direction.west
             }
         }
     },
-    window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
+    window_bounding_box = { { -0.0, 0.0 }, { 0.0, 0.0 } },
     pictures = {
         picture = {
             sheet = {
@@ -85,7 +85,7 @@ ENTITY {
                 frames = 1,
                 width = 231,
                 height = 257,
-                shift = {0.55, -0.55}
+                shift = { 0.55, -0.55 }
             }
         },
         fluid_background = py.empty_image(),
@@ -104,5 +104,5 @@ ENTITY {
         max_sounds_per_prototype = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_connector = table.deepcopy(data.raw["storage-tank"]["storage-tank"].circuit_connector),
-}
+    circuit_connector = table.deepcopy(data.raw[ "storage-tank" ][ "storage-tank" ].circuit_connector),
+})

@@ -1,4 +1,4 @@
-data:extend {
+data:extend({
     {
         type = "recipe-category",
         name = "py-incineration"
@@ -19,4 +19,4 @@ data:extend {
         type = "recipe-category",
         name = "py-unbarreling"
     },
-}
+})

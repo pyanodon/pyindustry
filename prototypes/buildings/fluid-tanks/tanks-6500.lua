@@ -1,20 +1,20 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "py-tank-6500",
     energy_required = 05,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-4000", amount = 1},
-        {type = "item", name = "pipe",         amount = 8},
-        {type = "item", name = "iron-stick",   amount = 30},
-        {type = "item", name = "steel-plate",  amount = 30}
+        { type = "item", name = "py-tank-4000", amount = 1 },
+        { type = "item", name = "pipe",         amount = 8 },
+        { type = "item", name = "iron-stick",   amount = 30 },
+        { type = "item", name = "steel-plate",  amount = 30 }
     },
     results = {
-        {type = "item", name = "py-tank-6500", amount = 1}
+        { type = "item", name = "py-tank-6500", amount = 1 }
     }
-}:add_unlock("py-storage-tanks")
+}):add_unlock("py-storage-tanks")
 
-ITEM {
+ITEM({
     type = "item",
     name = "py-tank-6500",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-6500.png",
@@ -24,43 +24,43 @@ ITEM {
     order = "a-c[py-items]",
     place_result = "py-tank-6500",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "storage-tank",
     name = "py-tank-6500",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-6500.png",
     icon_size = 32,
-    flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-6500"},
+    flags = { "placeable-player", "player-creation" },
+    minable = { mining_time = 3, result = "py-tank-6500" },
     max_health = 500,
     corpse = "medium-remnants",
-    collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = { { -2.3, -2.3 }, { 2.3, 2.3 } },
+    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     two_direction_only = true,
     fluid_box = {
         volume = 65000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0, -2.07},
+                position = { 0, -2.07 },
                 direction = defines.direction.north
             },
             {
-                position = {1.96, 0},
+                position = { 1.96, 0 },
                 direction = defines.direction.east
             },
             {
-                position = {0, 2.07},
+                position = { 0, 2.07 },
                 direction = defines.direction.south
             },
             {
-                position = {-1.96, 0},
+                position = { -1.96, 0 },
                 direction = defines.direction.west
             }
         }
     },
-    window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
+    window_bounding_box = { { -0.0, 0.0 }, { 0.0, 0.0 } },
     pictures = {
         picture = {
             sheet = {
@@ -69,7 +69,7 @@ ENTITY {
                 frames = 1,
                 width = 182,
                 height = 201,
-                shift = {0.25, -0.3}
+                shift = { 0.25, -0.3 }
             }
         },
         fluid_background = py.empty_image(),
@@ -88,5 +88,5 @@ ENTITY {
         max_sounds_per_prototype = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_connector = table.deepcopy(data.raw["storage-tank"]["storage-tank"].circuit_connector),
-}
+    circuit_connector = table.deepcopy(data.raw[ "storage-tank" ][ "storage-tank" ].circuit_connector),
+})

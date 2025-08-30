@@ -1,21 +1,21 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "py-asphalt",
     category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
-        {type = "fluid", name = "water", amount = 10},
-        {type = "item",  name = "coal",  amount = 3},
-        {type = "item",  name = "stone", amount = 5}
+        { type = "fluid", name = "water", amount = 10 },
+        { type = "item",  name = "coal",  amount = 3 },
+        { type = "item",  name = "stone", amount = 5 }
     },
     results = {
-        {type = "item", name = "py-asphalt", amount = 1}
+        { type = "item", name = "py-asphalt", amount = 1 }
     },
     requester_paste_multiplier = 4,
     energy_required = 3
-}:add_unlock("py-asphalt"):replace_ingredient("water", "tar"):replace_ingredient("coal", "ash"):replace_ingredient("stone", "gravel")
+}):add_unlock("py-asphalt"):replace_ingredient("water", "tar"):replace_ingredient("coal", "ash"):replace_ingredient("stone", "gravel")
 
-ITEM {
+ITEM({
     type = "item",
     name = "py-asphalt",
     icon = "__base__/graphics/terrain/lab-tiles/lab-dark-2.png",
@@ -24,16 +24,16 @@ ITEM {
     subgroup = "py-tiles",
     order = "zb",
     stack_size = 1000,
-    place_as_tile = {result = "py-asphalt", condition_size = 1, condition = {layers = {water_tile = true}}}
-}
+    place_as_tile = { result = "py-asphalt", condition_size = 1, condition = { layers = { water_tile = true } } }
+})
 
-TILE {
+TILE({
     type = "tile",
     name = "py-asphalt",
     needs_correction = false,
-    minable = {mining_time = 0.1, result = "py-asphalt"},
-    mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
-    collision_mask = {layers = {ground_tile = true}},
+    minable = { mining_time = 0.1, result = "py-asphalt" },
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    collision_mask = { layers = { ground_tile = true } },
     walking_speed_modifier = 3.25,
     decorative_removal_probability = 1,
     layer = 9,
@@ -74,8 +74,8 @@ TILE {
             }
         }
     },
-    walking_sound = table.deepcopy(data.raw.tile["grass-1"].walking_sound),
-    map_color = {r = 0, g = 0, b = 0, a = 1},
-    absorptions_per_second = {pollution = 0},
+    walking_sound = table.deepcopy(data.raw.tile[ "grass-1" ].walking_sound),
+    map_color = { r = 0, g = 0, b = 0, a = 1 },
+    absorptions_per_second = { pollution = 0 },
     vehicle_friction_modifier = 0.6,
-}
+})

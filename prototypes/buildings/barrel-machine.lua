@@ -1,22 +1,22 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "barrel-machine-mk01",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steel-plate",        amount = 5},
-        {type = "item", name = "pipe",               amount = 10},
-        {type = "item", name = "iron-gear-wheel",    amount = 20},
-        {type = "item", name = "steam-engine",       amount = 1},
-        {type = "item", name = "iron-plate",         amount = 20},
-        {type = "item", name = "electronic-circuit", amount = 2}
+        { type = "item", name = "steel-plate",        amount = 5 },
+        { type = "item", name = "pipe",               amount = 10 },
+        { type = "item", name = "iron-gear-wheel",    amount = 20 },
+        { type = "item", name = "steam-engine",       amount = 1 },
+        { type = "item", name = "iron-plate",         amount = 20 },
+        { type = "item", name = "electronic-circuit", amount = 2 }
     },
     results = {
-        {type = "item", name = "barrel-machine-mk01", amount = 1}
+        { type = "item", name = "barrel-machine-mk01", amount = 1 }
     }
-}:add_unlock("fluid-handling")
+}):add_unlock("fluid-handling")
 
-ITEM {
+ITEM({
     type = "item",
     name = "barrel-machine-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/barrel-machine.png",
@@ -26,25 +26,25 @@ ITEM {
     order = "a",
     place_result = "barrel-machine-mk01",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "furnace",
     name = "barrel-machine-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/barrel-machine.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "barrel-machine-mk01"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "barrel-machine-mk01" },
     fast_replaceable_group = "barrel-machine",
     max_health = 100,
     corpse = "medium-remnants",
     dying_explosion = "big-explosion",
-    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = { { -1.3, -1.3 }, { 1.3, 1.3 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     forced_symmetry = "diagonal-neg",
     module_slots = 4,
-    allowed_effects = {"speed", "consumption"},
-    crafting_categories = {"py-barreling", "py-unbarreling"},
+    allowed_effects = { "speed", "consumption" },
+    crafting_categories = { "py-barreling", "py-unbarreling" },
     crafting_speed = 0.5,
     source_inventory_size = 1,
     result_inventory_size = 1,
@@ -96,17 +96,17 @@ ENTITY {
         --1
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { 0.0, -0.96 }, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-1.0, -1.0}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -1.0, -1.0 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { 0.0, -0.96 }, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "output", position = {1.0, 1.0}, direction = defines.direction.south}}
+            pipe_connections = { { flow_direction = "output", position = { 1.0, 1.0 }, direction = defines.direction.south } }
         },
     },
     impact_category = "metal-large",
@@ -123,4 +123,4 @@ ENTITY {
         fade_in_ticks = 4,
         fade_out_ticks = 20
     },
-}
+})

@@ -1,28 +1,28 @@
-local sounds = require "__base__/prototypes/entity/sounds"
+local sounds = require("__base__/prototypes/entity/sounds")
 
 local cargo_bot =
-    RECIPE {
+    RECIPE({
         type = "recipe",
         name = "py-logistic-robot-mk01",
         energy_required = 10,
         category = "crafting-with-fluid",
         enabled = false,
         ingredients = {
-            {type = "item", name = "iron-plate",         amount = 10},
-            {type = "item", name = "iron-gear-wheel",    amount = 10},
-            {type = "item", name = "copper-plate",       amount = 4},
-            {type = "item", name = "electronic-circuit", amount = 10},
-            {type = "item", name = "plastic-bar",        amount = 5},
-            {type = "item", name = "steam-engine",       amount = 1},
+            { type = "item", name = "iron-plate",         amount = 10 },
+            { type = "item", name = "iron-gear-wheel",    amount = 10 },
+            { type = "item", name = "copper-plate",       amount = 4 },
+            { type = "item", name = "electronic-circuit", amount = 10 },
+            { type = "item", name = "plastic-bar",        amount = 5 },
+            { type = "item", name = "steam-engine",       amount = 1 },
         },
         results = {
-            {type = "item", name = "py-logistic-robot-mk01", amount = 1}
+            { type = "item", name = "py-logistic-robot-mk01", amount = 1 }
         }
-    }:add_ingredient {type = "fluid", name = "fish-oil", amount = 50}
-cargo_bot:replace_ingredient("copper-plate", {type = "item", name = "nichrome", amount = 2}):replace_ingredient("iron-plate", "niobium-plate")
-cargo_bot:add_unlock {"logistic-robotics"}
+    }):add_ingredient({ type = "fluid", name = "fish-oil", amount = 50 })
+cargo_bot:replace_ingredient("copper-plate", { type = "item", name = "nichrome", amount = 2 }):replace_ingredient("iron-plate", "niobium-plate")
+cargo_bot:add_unlock({ "logistic-robotics" })
 
-local bot_item = ITEM {
+local bot_item = ITEM({
     type = "item",
     name = "py-logistic-robot-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/py-logistic-robot-01.png",
@@ -32,23 +32,23 @@ local bot_item = ITEM {
     order = "c",
     place_result = "py-logistic-robot-mk01",
     stack_size = 50
-}
+})
 
-if data.raw["item-subgroup"]["py-hightech-items"] then
+if data.raw[ "item-subgroup" ][ "py-hightech-items" ] then
     bot_item:subgroup_order("py-hightech-items", "b")
 end
 
-ENTITY {
+ENTITY({
     type = "logistic-robot",
     name = "py-logistic-robot-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/py-logistic-robot-01.png",
     icon_size = 32,
-    flags = {"placeable-player", "player-creation", "placeable-off-grid", "not-on-map"},
-    minable = {mining_time = 0.1, result = "py-logistic-robot-mk01"},
-    resistances = {{type = "fire", percent = 85}},
+    flags = { "placeable-player", "player-creation", "placeable-off-grid", "not-on-map" },
+    minable = { mining_time = 0.1, result = "py-logistic-robot-mk01" },
+    resistances = { { type = "fire", percent = 85 } },
     max_health = 100,
-    collision_box = {{0, 0}, {0, 0}},
-    selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
+    collision_box = { { 0, 0 }, { 0, 0 } },
+    selection_box = { { -0.5, -1.5 }, { 0.5, -0.5 } },
     max_payload_size = 3,
     speed = 0.08,
     transfer_distance = 0.5,
@@ -152,4 +152,4 @@ ENTITY {
         scale = 0.5
     },
     working_sound = sounds.flying_robot(0.5),
-}
+})
