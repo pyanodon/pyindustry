@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
-Date: ????
+Date: ?????
   Changes:
-    - Added Spanish locale
+    - Added Dutch locale (thanks, QatSquirrel!)
+    - Added Spanish locale (thanks, Starl1ght5!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: 2025-08-12
