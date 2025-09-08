@@ -24,8 +24,7 @@ TECHNOLOGY {
     icon = "__pyindustrygraphics__/graphics/technology/accumulator-mk03.png",
     icon_size = 128,
     effects = {},
-    prerequisites = {"production-science-pack", "py-accumulator-mk01"},
-    dependencies = {"py-accumulator-mk01"},
+    prerequisites = {"py-accumulator-mk01"},
     unit = {
         count = 200,
         ingredients = {
@@ -47,8 +46,7 @@ if mods["pyalternativeenergy"] then
         icon = "__pyindustrygraphics__/graphics/technology/accumulator-mk04.png",
         icon_size = 128,
         effects = {},
-        prerequisites = {"production-science-pack", "py-accumulator-mk01"},
-        dependencies = {"py-accumulator-mk02"},
+        prerequisites = {"py-accumulator-mk02"},
         unit = {
             count = 200,
             ingredients = {
