@@ -13,7 +13,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         icons = icons,
         icon_size = 32,
         subgroup = subgroup or "py-void",
-        ignore_for_dependencies = true
+        autotech_ignore = true
     }
 end
 
