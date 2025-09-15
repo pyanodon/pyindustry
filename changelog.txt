@@ -1,8 +1,26 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.2.0?
+Version: 4.0.0
 Date: ???
   Changes:
     - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
+---------------------------------------------------------------------------------------------------
+Version: 3.0.19
+Date: ???
+  Changes:
+    - Remade tech tree with autotech 2.0. Science pack cost comparasion:
+    - automation: n/a -> trigger
+    - py1: 100 -> 100
+    - logi: 360 -> 300
+    - py2: 1300 -> 800
+    - chem: 2000 -> 1400
+    - py3: 2250 -> 1750
+    - prod: 1750 -> 2250
+    - py4: 2250 -> 3000
+    - utility: 1500 -> 3300
+    - space: 1000 -> 3600
+    - phyrric: 3000 -> 8000
+    - Added Dutch locale (thanks, QatSquirrel!)
+    - Added Spanish locale (thanks, Starl1ght5!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: 2025-08-12

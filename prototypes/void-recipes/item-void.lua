@@ -25,7 +25,7 @@ local function make_void_recipe(name, newicons, ing_name, place_result)
         ingredients = {{type = "item", name = ing_name, amount = 1}},
         results = {void_result},
         subgroup = "py-void-items",
-        ignore_for_dependencies = true
+        autotech_ignore = true
     }
 end
 

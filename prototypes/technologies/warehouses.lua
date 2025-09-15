@@ -19,8 +19,7 @@ TECHNOLOGY {
     icon = "__pyindustrygraphics__/graphics/technology/warehouse-logistics-research.png",
     icon_size = 128,
     effects = {},
-    prerequisites = {"py-warehouse-research", "logistic-system", "chemical-science-pack"},
-    dependencies = {"py-warehouse-research"},
+    prerequisites = {"py-warehouse-research"},
     unit = {
         count = 25,
         ingredients = {

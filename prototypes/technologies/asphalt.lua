@@ -23,8 +23,7 @@ if mods["pyrawores"] then
         icon = "__pyindustrygraphics__/graphics/technology/tiles-mk02.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"nexelit-mk01"},
-        dependencies = {"py-asphalt"},
+        prerequisites = {"py-asphalt"},
         effects = {},
         unit = {
             count = 10,
@@ -45,7 +44,6 @@ if mods.pyalternativeenergy then
         icon_size = 128,
         order = "c-a",
         prerequisites = {"py-asphalt-mk02"},
-        dependencies = {"py-asphalt-mk02"},
         effects = {},
         unit = {
             count = 10,
