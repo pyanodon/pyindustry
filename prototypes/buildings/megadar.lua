@@ -5,7 +5,6 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"radars-mk01"},
-    dependencies = {"radars-mk01"},
     effects = {},
     unit = {
         count = 35,

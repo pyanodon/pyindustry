@@ -25,8 +25,7 @@ if mods["pycoalprocessing"] then
         icon = "__pyindustrygraphics__/graphics/technology/railway-mk02.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"railway", "niobium", "nexelit"},
-        dependencies = {"railway"},
+        prerequisites = {"railway"},
         effects = {},
         unit = {
             count = 250,
@@ -47,7 +46,6 @@ if mods["pyhightech"] then
         icon_size = 128,
         order = "c-a",
         prerequisites = {"railway-mk02"},
-        dependencies = {"railway-mk02"},
         effects = {},
         unit = {
             count = 250,
@@ -68,8 +66,7 @@ if mods["pyalternativeenergy"] then
         icon = "__pyindustrygraphics__/graphics/technology/railway-mk04.png",
         icon_size = 128,
         order = "c-a",
-        prerequisites = {"railway-mk03", "intermetallics-mk03", "battery-mk04"},
-        dependencies = {"railway-mk03"},
+        prerequisites = {"railway-mk03"},
         effects = {},
         unit = {
             count = 400,
