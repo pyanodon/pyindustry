@@ -4,10 +4,9 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-1500", amount = 1},
-        {type = "item", name = "iron-stick",   amount = 40},
-        {type = "item", name = "pipe",         amount = 8},
-        {type = "item", name = "steel-plate",  amount = 30}
+        {type = "item", name = "iron-plate",  amount = 15},
+        {type = "item", name = "pipe",        amount = 20},
+        {type = "item", name = "steel-plate", amount = 10},
     },
     results = {
         {type = "item", name = "py-tank-5000", amount = 1}
@@ -33,30 +32,30 @@ ENTITY {
     icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 3, result = "py-tank-5000"},
-    max_health = 500,
+    max_health = 100,
     corpse = "medium-remnants",
+    collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
+    selection_box = {{-1.0, -1.0}, {1.0, 1.0}},
     two_direction_only = true,
-    collision_box = {{-2.45, -2.45}, {2.45, 2.45}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     fluid_box = {
-        volume = 50000,
+        volume = 5000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0, -2.1},
-                direction = defines.direction.north
+                position = {-0.45, -0.5},
+                direction = defines.direction.west
             },
             {
-                position = {1.96, 0},
+                position = {-0.45, 0.5},
+                direction = defines.direction.west
+            },
+            {
+                position = {0.45, -0.5},
                 direction = defines.direction.east
             },
             {
-                position = {0, 2.1},
-                direction = defines.direction.south
-            },
-            {
-                position = {-1.96, 0},
-                direction = defines.direction.west
+                position = {0.45, 0.5},
+                direction = defines.direction.east
             }
         }
     },
@@ -66,10 +65,11 @@ ENTITY {
             sheet = {
                 filename = "__pyindustrygraphics__/graphics/entity/py-tank-5000/py-tank-5000.png",
                 priority = "extra-high",
-                frames = 1,
-                width = 187,
-                height = 397,
-                shift = {0.28, -3.356}
+                frames = 2,
+                width = 133,
+                height = 157,
+                shift = {0.0, -0.0},
+                scale = 0.5
             }
         },
         fluid_background = py.empty_image(),
@@ -77,7 +77,7 @@ ENTITY {
         flow_sprite = py.empty_image(),
         gas_flow = py.empty_image()
     },
-    flow_length_in_ticks = 360,
+    flow_length_in_ticks = 660,
     impact_category = "metal-large",
     working_sound = {
         sound = {
@@ -88,5 +88,5 @@ ENTITY {
         max_sounds_per_prototype = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_connector = table.deepcopy(data.raw["storage-tank"]["storage-tank"].circuit_connector),
+    circuit_connector = circuit_connector_definitions["tanks-3000"],
 }
