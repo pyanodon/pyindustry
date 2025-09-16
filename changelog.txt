@@ -2,6 +2,7 @@
 Version: 4.0.0
 Date: ???
   Changes:
+    - Linearilized dependencies.
     - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
