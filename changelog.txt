@@ -6,6 +6,7 @@ Date: ???
     - Rebalanced fluid tank volumes per tier to the following values: 1k, 5k, 15k, 27.5k, 65k, 70k, 75k, 125k, 180k, 250k.
     - The 180k and 250k fluid tanks are no longer located within pypetrolemhandling. All tanks are now stored inside pyindustry.
     - New entity graphics for all updated fluid tanks. Huge thanks to JigSaW_3 for providing these!
+    - Rebalanced recipes for all py storage tanks.
     - Upscaled all fluid tank item icons from 32p to 64p.
     - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
 ---------------------------------------------------------------------------------------------------

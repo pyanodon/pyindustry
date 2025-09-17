@@ -5,8 +5,8 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "py-tank-5000", amount = 1},
-        {type = "item", name = "iron-stick",   amount = 40},
         {type = "item", name = "pipe",         amount = 8},
+        {type = "item", name = "iron-stick",   amount = 20},
         {type = "item", name = "steel-plate",  amount = 30}
     },
     results = {

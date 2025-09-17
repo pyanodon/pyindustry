@@ -4,9 +4,8 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate",  amount = 15},
-        {type = "item", name = "pipe",        amount = 20},
-        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "pipe",        amount = 5},
+        {type = "item", name = "steel-plate", amount = 15},
     },
     results = {
         {type = "item", name = "py-tank-5000", amount = 1}
