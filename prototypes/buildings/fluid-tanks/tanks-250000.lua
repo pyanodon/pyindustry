@@ -20,7 +20,7 @@ ITEM {
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-e[py-items]",
+    order = "a-j[py-items]",
     place_result = "py-tank-250000",
     stack_size = 10
 }
