@@ -4,8 +4,7 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate",  amount = 5},
-        {type = "item", name = "pipe",        amount = 10},
+        {type = "item", name = "pipe",        amount = 15},
         {type = "item", name = "steel-plate", amount = 10}
     },
     results = {
@@ -17,10 +16,10 @@ ITEM {
     type = "item",
     name = "py-tank-1000",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
+    order = "a-a[py-items]",
     place_result = "py-tank-1000",
     stack_size = 10
 }
@@ -29,7 +28,7 @@ ENTITY {
     type = "storage-tank",
     name = "py-tank-1000",
     icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 3, result = "py-tank-1000"},
     max_health = 500,
@@ -38,7 +37,7 @@ ENTITY {
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     two_direction_only = true,
     fluid_box = {
-        volume = 10000,
+        volume = 1000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
