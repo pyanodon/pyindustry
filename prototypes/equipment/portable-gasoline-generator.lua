@@ -1,3 +1,4 @@
+--DEPRECIATED--
 data:extend {{
     type = "generator-equipment",
     name = "portable-gasoline-generator",

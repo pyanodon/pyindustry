@@ -1,11 +1,12 @@
+--DEPRECIATED--
 RECIPE {
     type = "recipe",
     name = "py-iron-oxide",
     category = "hpf",
     enabled = false,
     ingredients = {
-        {type = "item",  name = "iron-oxide",        amount = 4},
-        {type = "item",  name = "pipe",              amount = 1},
+        {type = "item",  name = "iron-oxide",   amount = 4},
+        {type = "item",  name = "pipe",         amount = 1},
         {type = "fluid", name = "muddy-sludge", amount = 20}
     },
     results = {

@@ -1,3 +1,4 @@
+require "prototypes/buildings/megadar"
 --Tiles
 require "prototypes/tiles/py-asphalt"
 require "prototypes/tiles/py-limestone"
@@ -12,12 +13,6 @@ if mods.pyalternativeenergy then
 end
 
 require "prototypes/updates/base-updates"
-
-if mods["pycoalprocessing"] then
-    require "prototypes/updates/pycoalprocessing-updates"
-    require "prototypes/tiles/py-iron-oxide"
-    require "prototypes/tiles/py-nexelit"
-end
 
 if mods["pyfusionenergy"] then
     require "prototypes/updates/pyfusionenergy-updates"
