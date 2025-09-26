@@ -14,10 +14,6 @@ end
 
 require "prototypes/updates/base-updates"
 
-if mods["pyfusionenergy"] then
-    require "prototypes/updates/pyfusionenergy-updates"
-end
-
 if mods["pyrawores"] then
     require "prototypes/updates/pyrawores-updates"
 end
