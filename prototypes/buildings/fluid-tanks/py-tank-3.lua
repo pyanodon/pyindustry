@@ -1,44 +1,44 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-27500",
-    energy_required = 3,
+    name = "py-tank-3",
+    energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe",        amount = 8},
-        {type = "item", name = "iron-stick",  amount = 15},
-        {type = "item", name = "steel-plate", amount = 25}
+        {type = "item", name = "pipe",        amount = 6},
+        {type = "item", name = "iron-plate",  amount = 10},
+        {type = "item", name = "steel-plate", amount = 20}
     },
     results = {
-        {type = "item", name = "py-tank-27500", amount = 1}
+        {type = "item", name = "py-tank-3", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-27500",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-27500.png",
+    name = "py-tank-3",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-3.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-d[py-items]",
-    place_result = "py-tank-27500",
+    order = "a-c[py-items]",
+    place_result = "py-tank-3",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-27500",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-27500.png",
+    name = "py-tank-3",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-3.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-27500"},
+    minable = {mining_time = 3, result = "py-tank-3"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     two_direction_only = true,
     fluid_box = {
-        volume = 27500,
+        volume = 15000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
@@ -63,12 +63,12 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-27500/py-tank-27500.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-3/py-tank-3.png",
                 priority = "extra-high",
                 frames = 1,
-                width = 165,
-                height = 209,
-                shift = {1.0, -1.5}
+                width = 119,
+                height = 141,
+                shift = {0.29, -0.69}
             }
         },
         fluid_background = py.empty_image(),

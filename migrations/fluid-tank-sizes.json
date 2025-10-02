@@ -1,35 +1,38 @@
 {
     "entity": [
-        ["py-tank-1500", "py-tank-5000"],
-        ["py-tank-3000", "py-tank-15000"],
-        ["py-tank-4000", "py-tank-27500"],
-        ["py-tank-5000", "py-tank-65000"],
-        ["py-tank-6500", "py-tank-70000"],
-        ["py-tank-7000", "py-tank-75000"],
-        ["py-tank-8000", "py-tank-125000"],
-        ["py-tank-9000", "py-tank-180000"],
-        ["py-tank-10000", "py-tank-250000"]
+        ["py-tank-1000", "py-tank-1"],
+        ["py-tank-1500", "py-tank-2"],
+        ["py-tank-3000", "py-tank-3"],
+        ["py-tank-4000", "py-tank-4"],
+        ["py-tank-5000", "py-tank-5"],
+        ["py-tank-6500", "py-tank-6"],
+        ["py-tank-7000", "py-tank-7"],
+        ["py-tank-8000", "py-tank-8"],
+        ["py-tank-9000", "py-tank-9"],
+        ["py-tank-10000", "py-tank-10"]
     ],
     "item": [
-        ["py-tank-1500", "py-tank-5000"],
-        ["py-tank-3000", "py-tank-15000"],
-        ["py-tank-4000", "py-tank-27500"],
-        ["py-tank-5000", "py-tank-65000"],
-        ["py-tank-6500", "py-tank-70000"],
-        ["py-tank-7000", "py-tank-75000"],
-        ["py-tank-8000", "py-tank-125000"],
-        ["py-tank-9000", "py-tank-180000"],
-        ["py-tank-10000", "py-tank-250000"]
+        ["py-tank-1000", "py-tank-1"],
+        ["py-tank-1500", "py-tank-2"],
+        ["py-tank-3000", "py-tank-3"],
+        ["py-tank-4000", "py-tank-4"],
+        ["py-tank-5000", "py-tank-5"],
+        ["py-tank-6500", "py-tank-6"],
+        ["py-tank-7000", "py-tank-7"],
+        ["py-tank-8000", "py-tank-8"],
+        ["py-tank-9000", "py-tank-9"],
+        ["py-tank-10000", "py-tank-10"]
     ],
     "recipe": [
-        ["py-tank-1500", "py-tank-5000"],
-        ["py-tank-3000", "py-tank-15000"],
-        ["py-tank-4000", "py-tank-27500"],
-        ["py-tank-5000", "py-tank-65000"],
-        ["py-tank-6500", "py-tank-70000"],
-        ["py-tank-7000", "py-tank-75000"],
-        ["py-tank-8000", "py-tank-125000"],
-        ["py-tank-9000", "py-tank-180000"],
-        ["py-tank-10000", "py-tank-250000"]
+        ["py-tank-1000", "py-tank-1"],
+        ["py-tank-1500", "py-tank-2"],
+        ["py-tank-3000", "py-tank-3"],
+        ["py-tank-4000", "py-tank-4"],
+        ["py-tank-5000", "py-tank-5"],
+        ["py-tank-6500", "py-tank-6"],
+        ["py-tank-7000", "py-tank-7"],
+        ["py-tank-8000", "py-tank-8"],
+        ["py-tank-9000", "py-tank-9"],
+        ["py-tank-10000", "py-tank-10"]
     ]
 }

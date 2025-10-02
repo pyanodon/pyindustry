@@ -1,13 +1,13 @@
 -- https://github.com/pyanodon/pybugreports/issues/920
 
 local tanks_to_reset_rotation = table.invert {
-    "py-tank-5000",
-    "py-tank-27500",
-    "py-tank-65000",
-    "py-tank-75000",
-    "py-tank-125000",
-    "py-tank-180000",
-    "py-tank-250000",
+    "py-tank-2",
+    "py-tank-4",
+    "py-tank-5",
+    "py-tank-7",
+    "py-tank-8",
+    "py-tank-9",
+    "py-tank-10",
     "tailings-pond",
 }
 

@@ -1,37 +1,37 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-250000",
+    name = "py-tank-10",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-27500", amount = 2},
+        {type = "item", name = "py-tank-4", amount = 2},
         {type = "item", name = "iron-plate",   amount = 45},
         {type = "item", name = "steel-plate",  amount = 55},
     },
     results = {
-        {type = "item", name = "py-tank-250000", amount = 1}
+        {type = "item", name = "py-tank-10", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-250000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-250000.png",
+    name = "py-tank-10",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-10.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
     order = "a-j[py-items]",
-    place_result = "py-tank-250000",
+    place_result = "py-tank-10",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-250000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-250000.png",
+    name = "py-tank-10",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-10.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-250000"},
+    minable = {mining_time = 3, result = "py-tank-10"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-3.9, -3.9}, {3.9, 3.9}},
@@ -55,7 +55,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-250000/py-tank-250000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-10/py-tank-10.png",
                 priority = "extra-high",
                 frames = 1,
                 width = 272,

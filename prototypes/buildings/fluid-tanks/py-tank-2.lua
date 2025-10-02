@@ -1,6 +1,6 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-5000",
+    name = "py-tank-2",
     energy_required = 5,
     enabled = false,
     ingredients = {
@@ -8,29 +8,29 @@ RECIPE {
         {type = "item", name = "steel-plate", amount = 15},
     },
     results = {
-        {type = "item", name = "py-tank-5000", amount = 1}
+        {type = "item", name = "py-tank-2", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-5000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-5000.png",
+    name = "py-tank-2",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-2.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
     order = "a-b[py-items]",
-    place_result = "py-tank-5000",
+    place_result = "py-tank-2",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-5000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-5000.png",
+    name = "py-tank-2",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-2.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-5000"},
+    minable = {mining_time = 3, result = "py-tank-2"},
     max_health = 100,
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
@@ -62,7 +62,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-5000/py-tank-5000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-2/py-tank-2.png",
                 priority = "extra-high",
                 frames = 2,
                 width = 133,

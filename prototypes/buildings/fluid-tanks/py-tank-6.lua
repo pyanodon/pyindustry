@@ -1,38 +1,38 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-70000",
+    name = "py-tank-6",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-1000", amount = 1},
+        {type = "item", name = "py-tank-1", amount = 1},
         {type = "item", name = "pipe",         amount = 10},
         {type = "item", name = "iron-plate",   amount = 25},
         {type = "item", name = "steel-plate",  amount = 35}
     },
     results = {
-        {type = "item", name = "py-tank-70000", amount = 1}
+        {type = "item", name = "py-tank-6", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-70000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-70000.png",
+    name = "py-tank-6",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-6.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
     order = "a-f[py-items]",
-    place_result = "py-tank-70000",
+    place_result = "py-tank-6",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-70000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-70000.png",
+    name = "py-tank-6",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-6.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-70000"},
+    minable = {mining_time = 3, result = "py-tank-6"},
     max_health = 100,
     corpse = "medium-remnants",
     collision_box = {{-1.3, -3.3}, {1.3, 3.3}},
@@ -55,28 +55,28 @@ ENTITY {
     pictures = {
         picture = {
             north = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-70000/north.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-6/north.png",
                 width = 253,
                 height = 585,
                 shift = {0.5, -1.0},
                 scale = 0.5
             },
             east = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-70000/east.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-6/east.png",
                 width = 499,
                 height = 299,
                 shift = {0.35, -0.15},
                 scale = 0.5
             },
             south = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-70000/south.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-6/south.png",
                 width = 239,
                 height = 477,
                 shift = {0.34, -0.0},
                 scale = 0.5
             },
             west = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-70000/west.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-6/west.png",
                 width = 499,
                 height = 299,
                 shift = {0.35, -0.15},

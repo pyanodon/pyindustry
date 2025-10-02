@@ -1,38 +1,38 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-180000",
+    name = "py-tank-9",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-65000", amount = 1},
-        {type = "item", name = "py-tank-15000", amount = 1},
+        {type = "item", name = "py-tank-5", amount = 1},
+        {type = "item", name = "py-tank-3", amount = 1},
         {type = "item", name = "iron-plate",   amount = 40},
         {type = "item", name = "steel-plate",  amount = 50},
     },
     results = {
-        {type = "item", name = "py-tank-180000", amount = 1}
+        {type = "item", name = "py-tank-9", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-180000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-180000.png",
+    name = "py-tank-9",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-9.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
     order = "a-i[py-items]",
-    place_result = "py-tank-180000",
+    place_result = "py-tank-9",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-180000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-180000.png",
+    name = "py-tank-9",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-9.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-180000"},
+    minable = {mining_time = 3, result = "py-tank-9"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
@@ -56,7 +56,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-180000/py-tank-180000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-9/py-tank-9.png",
                 priority = "extra-high",
                 frames = 1,
                 width = 252,

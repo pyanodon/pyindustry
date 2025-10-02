@@ -1,49 +1,49 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-65000",
-    energy_required = 5,
+    name = "py-tank-7",
+    energy_required = 05,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-5000", amount = 1},
+        {type = "item", name = "py-tank-4", amount = 1},
         {type = "item", name = "pipe",         amount = 8},
-        {type = "item", name = "iron-stick",   amount = 20},
+        {type = "item", name = "iron-stick",   amount = 30},
         {type = "item", name = "steel-plate",  amount = 30}
     },
     results = {
-        {type = "item", name = "py-tank-65000", amount = 1}
+        {type = "item", name = "py-tank-7", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-65000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-65000.png",
+    name = "py-tank-7",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7.png",
     icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-e[py-items]",
-    place_result = "py-tank-65000",
+    order = "a-g[py-items]",
+    place_result = "py-tank-7",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-65000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-65000.png",
+    name = "py-tank-7",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7.png",
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-65000"},
+    minable = {mining_time = 3, result = "py-tank-7"},
     max_health = 500,
     corpse = "medium-remnants",
-    two_direction_only = true,
-    collision_box = {{-2.45, -2.45}, {2.45, 2.45}},
+    collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    two_direction_only = true,
     fluid_box = {
-        volume = 65000,
+        volume = 75000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0, -2.1},
+                position = {0, -2.07},
                 direction = defines.direction.north
             },
             {
@@ -51,7 +51,7 @@ ENTITY {
                 direction = defines.direction.east
             },
             {
-                position = {0, 2.1},
+                position = {0, 2.07},
                 direction = defines.direction.south
             },
             {
@@ -64,12 +64,12 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-65000/py-tank-65000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7/py-tank-7.png",
                 priority = "extra-high",
                 frames = 1,
-                width = 187,
-                height = 397,
-                shift = {0.28, -3.356}
+                width = 182,
+                height = 201,
+                shift = {0.25, -0.3}
             }
         },
         fluid_background = py.empty_image(),
