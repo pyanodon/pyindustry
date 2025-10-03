@@ -29,32 +29,20 @@ require "prototypes/buildings/containers/warehouse"
 require "prototypes/buildings/containers/deposit"
 
 --Storage Tanks
-require "prototypes/buildings/fluid-tanks/tanks-1000"
-require "prototypes/buildings/fluid-tanks/tanks-1500"
-require "prototypes/buildings/fluid-tanks/tanks-3000"
-require "prototypes/buildings/fluid-tanks/tanks-4000"
-require "prototypes/buildings/fluid-tanks/tanks-5000"
-require "prototypes/buildings/fluid-tanks/tanks-7000"
-require "prototypes/buildings/fluid-tanks/tanks-6500"
-require "prototypes/buildings/fluid-tanks/tanks-8000"
+require "prototypes/buildings/fluid-tanks/py-tank-1"
+require "prototypes/buildings/fluid-tanks/py-tank-2"
+require "prototypes/buildings/fluid-tanks/py-tank-3"
+require "prototypes/buildings/fluid-tanks/py-tank-4"
+require "prototypes/buildings/fluid-tanks/py-tank-5"
+require "prototypes/buildings/fluid-tanks/py-tank-6"
+require "prototypes/buildings/fluid-tanks/py-tank-7"
+require "prototypes/buildings/fluid-tanks/py-tank-8"
+require "prototypes/buildings/fluid-tanks/py-tank-9"
+require "prototypes/buildings/fluid-tanks/py-tank-10"
 
 require "prototypes/buildings/valves/check-valve"
 require "prototypes/buildings/valves/overflow-valve"
 require "prototypes/buildings/valves/underflow-valve"
-
---tank size settings check
-if settings.startup["py-tank-adjust"].value then
-    data.raw["storage-tank"]["py-tank-3000"].fluid_box.volume = 10000
-    data.raw["storage-tank"]["py-tank-3000"].localised_name = {"entity-name.py-tank-3000-adjust"}
-    data.raw["storage-tank"]["py-tank-4000"].fluid_box.volume = 27500
-    data.raw["storage-tank"]["py-tank-4000"].localised_name = {"entity-name.py-tank-4000-adjust"}
-    data.raw["storage-tank"]["py-tank-5000"].fluid_box.volume = 65000
-    data.raw["storage-tank"]["py-tank-5000"].localised_name = {"entity-name.py-tank-5000-adjust"}
-    data.raw["storage-tank"]["py-tank-6500"].fluid_box.volume = 75000
-    data.raw["storage-tank"]["py-tank-6500"].localised_name = {"entity-name.py-tank-6500-adjust"}
-    data.raw["storage-tank"]["py-tank-8000"].fluid_box.volume = 125000
-    data.raw["storage-tank"]["py-tank-8000"].localised_name = {"entity-name.py-tank-8000-adjust"}
-end
 
 -- Armor
 if mods["pycoalprocessing"] then

@@ -1,60 +1,61 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-4000",
-    energy_required = 3,
+    name = "py-tank-7",
+    energy_required = 05,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-stick",  amount = 40},
-        {type = "item", name = "pipe",        amount = 8},
-        {type = "item", name = "steel-plate", amount = 30}
+        {type = "item", name = "py-tank-4", amount = 1},
+        {type = "item", name = "pipe",         amount = 8},
+        {type = "item", name = "iron-stick",   amount = 30},
+        {type = "item", name = "steel-plate",  amount = 30}
     },
     results = {
-        {type = "item", name = "py-tank-4000", amount = 1}
+        {type = "item", name = "py-tank-7", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-4000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-4000.png",
-    icon_size = 32,
+    name = "py-tank-7",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7.png",
+    icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
-    place_result = "py-tank-4000",
+    order = "a-g[py-items]",
+    place_result = "py-tank-7",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-4000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-4000.png",
-    icon_size = 32,
+    name = "py-tank-7",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-7.png",
+    icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-4000"},
+    minable = {mining_time = 3, result = "py-tank-7"},
     max_health = 500,
     corpse = "medium-remnants",
-    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-2.3, -2.3}, {2.3, 2.3}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     two_direction_only = true,
     fluid_box = {
-        volume = 40000,
+        volume = 75000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
-                position = {0, -1.04},
+                position = {0, -2.07},
                 direction = defines.direction.north
             },
             {
-                position = {1.04, 0},
+                position = {1.96, 0},
                 direction = defines.direction.east
             },
             {
-                position = {0, 1.04},
+                position = {0, 2.07},
                 direction = defines.direction.south
             },
             {
-                position = {-1.04, 0},
+                position = {-1.96, 0},
                 direction = defines.direction.west
             }
         }
@@ -63,12 +64,12 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-4000/py-tank-4000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-7/py-tank-7.png",
                 priority = "extra-high",
                 frames = 1,
-                width = 165,
-                height = 209,
-                shift = {1.0, -1.5}
+                width = 182,
+                height = 201,
+                shift = {0.25, -0.3}
             }
         },
         fluid_background = py.empty_image(),

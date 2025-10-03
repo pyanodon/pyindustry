@@ -1,12 +1,3 @@
-if settings.startup["py-tank-adjust"].value then
-    if mods["pypetroleumhandling"] then
-        data.raw["storage-tank"]["py-tank-9000"].fluid_box.volume = 180000
-        data.raw["storage-tank"]["py-tank-9000"].localised_name = {"entity-name.py-tank-9000-adjust"}
-        data.raw["storage-tank"]["py-tank-10000"].fluid_box.volume = 250000
-        data.raw["storage-tank"]["py-tank-10000"].localised_name = {"entity-name.py-tank-10000-adjust"}
-    end
-end
-
 --Tiles
 require "prototypes/tiles/py-asphalt"
 require "prototypes/tiles/py-limestone"

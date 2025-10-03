@@ -1,44 +1,43 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-1000",
+    name = "py-tank-1",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate",  amount = 5},
-        {type = "item", name = "pipe",        amount = 10},
+        {type = "item", name = "pipe",        amount = 15},
         {type = "item", name = "steel-plate", amount = 10}
     },
     results = {
-        {type = "item", name = "py-tank-1000", amount = 1}
+        {type = "item", name = "py-tank-1", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-1000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
-    icon_size = 32,
+    name = "py-tank-1",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1.png",
+    icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
-    place_result = "py-tank-1000",
+    order = "a-a[py-items]",
+    place_result = "py-tank-1",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-1000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1000.png",
-    icon_size = 32,
+    name = "py-tank-1",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-1.png",
+    icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-1000"},
+    minable = {mining_time = 3, result = "py-tank-1"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     two_direction_only = true,
     fluid_box = {
-        volume = 10000,
+        volume = 5000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
@@ -56,7 +55,7 @@ ENTITY {
         picture = {
             sheets = {
                 {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1/py-tank-1.png",
                     priority = "extra-high",
                     frames = 2,
                     width = 96,
@@ -64,7 +63,7 @@ ENTITY {
                     shift = util.by_pixel(0, -128),
                 },
                 {
-                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1000/py-tank-1000-sh.png",
+                    filename = "__pyindustrygraphics__/graphics/entity/py-tank-1/py-tank-1-sh.png",
                     priority = "extra-high",
                     frames = 2,
                     width = 160,

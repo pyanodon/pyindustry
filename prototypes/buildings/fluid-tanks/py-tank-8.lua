@@ -1,45 +1,45 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-8000",
+    name = "py-tank-8",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-4000", amount = 1},
+        {type = "item", name = "py-tank-4", amount = 1},
         {type = "item", name = "pipe",         amount = 12},
-        {type = "item", name = "iron-stick",   amount = 40},
-        {type = "item", name = "steel-plate",  amount = 40}
+        {type = "item", name = "iron-stick",   amount = 35},
+        {type = "item", name = "steel-plate",  amount = 45}
     },
     results = {
-        {type = "item", name = "py-tank-8000", amount = 1}
+        {type = "item", name = "py-tank-8", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-8000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-8000.png",
-    icon_size = 32,
+    name = "py-tank-8",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-8.png",
+    icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
-    place_result = "py-tank-8000",
+    order = "a-h[py-items]",
+    place_result = "py-tank-8",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-8000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-8000.png",
-    icon_size = 32,
+    name = "py-tank-8",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-8.png",
+    icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-8000"},
+    minable = {mining_time = 3, result = "py-tank-8"},
     max_health = 500,
     corpse = "medium-remnants",
     collision_box = {{-2.9, -2.9}, {2.9, 2.9}},
     selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
     two_direction_only = true,
     fluid_box = {
-        volume = 80000,
+        volume = 125000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
@@ -80,7 +80,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-8000/py-tank-8000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-8/py-tank-8.png",
                 priority = "extra-high",
                 frames = 1,
                 width = 231,
