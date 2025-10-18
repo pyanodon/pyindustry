@@ -11,8 +11,6 @@
         "base >= 2.0.48",
         "pyindustrygraphics >= 4.0.0",
         "~ pypostprocessing >= 3.0.35",
-        "? pycoalprocessing >= 1.0.6",
-        "? pyfusionenergy >= 1.0.3",
         "! wret-beacon-rebalance-mod",
         "! BigBags",
         "! ResearchFog",
