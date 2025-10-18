@@ -16,6 +16,10 @@ RECIPE {
     }
 }:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "optical-fiber", amount = 30}:add_unlock("py-accumulator-mk02")
 
+if mods.pyrawores then
+    RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 50}
+end
+
 ITEM {
     type = "item",
     name = "accumulator-mk02",
