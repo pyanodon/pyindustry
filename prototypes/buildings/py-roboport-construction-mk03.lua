@@ -12,7 +12,11 @@ RECIPE {
     results = {
         {type = "item", name = "py-ze-mk03", amount = 1}
     }
-}:add_unlock("py-accumulator-mk03"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}:add_ingredient {type = "item", name = "nexelit-plate", amount = 20}
+}:add_unlock("py-accumulator-mk03")
+
+if mods.pycoalprocessing then
+    RECIPE("py-ze-mk03"):add_ingredient_unsafe {type = "item", name = "niobium-plate", amount = 10}:add_ingredient_unsafe {type = "item", name = "nexelit-plate", amount = 20}
+end
 
 ITEM {
     type = "item",

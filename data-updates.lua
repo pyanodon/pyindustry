@@ -22,7 +22,7 @@ if mods.pyrawores then
     RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 end
 
-for f, _ in pairs(data.raw.fluid) do
+--[[for f, _ in pairs(data.raw.fluid) do
     for i, recipe_name in pairs {
         "empty-" .. f .. "-canister",
         "empty-" .. f .. "-barrel",
@@ -40,7 +40,7 @@ for f, _ in pairs(data.raw.fluid) do
             end
         end
     end
-end
+end]] --
 
 if mods["valves"] then
     data.raw.valve["valves-top_up"].next_upgrade = "py-underflow-valve"
