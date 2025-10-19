@@ -24,10 +24,6 @@ if mods.pyrawores then
     RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 50}
 end
 
-if mods.pyrawores then
-    RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 50}
-end
-
 ITEM {
     type = "item",
     name = "accumulator-mk02",
