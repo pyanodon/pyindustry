@@ -1,3 +1,4 @@
+require "prototypes/buildings/megadar"
 --Tiles
 require "prototypes/tiles/py-asphalt"
 require "prototypes/tiles/py-limestone"
@@ -13,20 +14,6 @@ end
 
 require "prototypes/updates/base-updates"
 
-if mods["pycoalprocessing"] then
-    require "prototypes/updates/pycoalprocessing-updates"
-    require "prototypes/tiles/py-iron-oxide"
-    require "prototypes/tiles/py-nexelit"
-end
-
-if mods["pyfusionenergy"] then
-    require "prototypes/updates/pyfusionenergy-updates"
-end
-
-if mods["pyrawores"] then
-    require "prototypes/updates/pyrawores-updates"
-end
-
 if mods["pyalternativeenergy"] then
     require "prototypes/updates/pyalternativeenergy-updates"
 end
@@ -35,7 +22,7 @@ if mods.pyrawores then
     RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 end
 
-for f, _ in pairs(data.raw.fluid) do
+--[[for f, _ in pairs(data.raw.fluid) do
     for i, recipe_name in pairs {
         "empty-" .. f .. "-canister",
         "empty-" .. f .. "-barrel",
@@ -53,7 +40,7 @@ for f, _ in pairs(data.raw.fluid) do
             end
         end
     end
-end
+end]] --
 
 if mods["valves"] then
     data.raw.valve["valves-top_up"].next_upgrade = "py-underflow-valve"

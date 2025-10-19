@@ -8,6 +8,7 @@ Date: ???
     - New entity graphics for all updated fluid tanks. Huge thanks to JigSaW_3 for providing these!
     - Rebalanced recipes for all py storage tanks.
     - Upscaled all fluid tank item icons from 32p to 64p.
+    - Linearilized dependencies.
     - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19

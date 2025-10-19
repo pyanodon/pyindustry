@@ -44,17 +44,10 @@ require "prototypes/buildings/valves/check-valve"
 require "prototypes/buildings/valves/overflow-valve"
 require "prototypes/buildings/valves/underflow-valve"
 
--- Armor
-if mods["pycoalprocessing"] then
-    require "prototypes/equipment/armor-updates"
-    require "prototypes/equipment/portable-gasoline-generator"
-end
-
 --Other
 require "prototypes/buildings/accumulator-mk01"
 require "prototypes/buildings/accumulator-mk02"
 require "prototypes/buildings/radar"
-require "prototypes/buildings/megadar"
 require "prototypes/buildings/barrel-machine"
 
 require "prototypes/buildings/py-roboport-mk01"

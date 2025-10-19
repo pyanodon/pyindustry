@@ -1,3 +1,4 @@
+--DEPRECIATED--
 data:extend {{
     name = "light-armor-equipment-grid",
     type = "equipment-grid",
