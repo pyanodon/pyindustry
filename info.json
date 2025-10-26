@@ -10,6 +10,7 @@
     "dependencies": [
         "base >= 2.0.48",
         "pyindustrygraphics >= 4.0.0",
+        "(?) quality >= 2.0",
         "~ pypostprocessing >= 3.0.35",
         "! wret-beacon-rebalance-mod",
         "! BigBags",
