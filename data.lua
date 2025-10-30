@@ -84,6 +84,7 @@ if mods["pycoalprocessing"] then
     require "prototypes/buildings/mk02-locomotive"
     require "prototypes/buildings/mk02-cargo-wagon"
     require "prototypes/buildings/mk02-fluid-wagon"
+    require "prototypes/buildings/mk02-train-sloped"
 end
 
 --Voiding
