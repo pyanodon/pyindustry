@@ -24,6 +24,11 @@ if mods.pyrawores then
     RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 50}
 end
 
+if mods.pyhightech then
+    RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "item", name = "used-nexelit-battery", amount = 5}
+    RECIPE("accumulator-mk02"):remove_ingredient("battery"):add_ingredient_unsafe {type = "item", name = "re-magnet", amount = 10}:add_ingredient_unsafe {type = "item", name = "sc-coil", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "accumulator-mk02",
