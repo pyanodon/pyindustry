@@ -13,10 +13,10 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk01", amount = 1}
     }
-}
+}:add_unlock {"py-accumulator-mk01"}
 
 if mods.pycoalprocessing then
-    RECIPE("accumulator-mk01"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "niobium-plate", amount = 10}:add_unlock {"py-accumulator-mk01"}
+    RECIPE("accumulator-mk01"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "niobium-plate", amount = 10}
 end
 
 if mods.pyhightech then

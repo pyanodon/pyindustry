@@ -14,10 +14,10 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk02", amount = 1}
     }
-}
+}:add_unlock("py-accumulator-mk02")
 
 if mods.pycoalprocessing then
-    RECIPE("accumulator-mk02"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "optical-fiber", amount = 30}:add_unlock("py-accumulator-mk02")
+    RECIPE("accumulator-mk02"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "optical-fiber", amount = 30}
 end
 
 if mods.pyrawores then
