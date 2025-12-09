@@ -6,6 +6,7 @@ Date: ????
     - Fixed some techs having a too-fast cycle time
     - Fixed all techs added by "enable all feature flags" not being seen by autotech.
     - Updated German locale courtesy of @Spunk42
+    - Updated Dutch locale courtesy of @QatSquirrel
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
 Date: 2025-09-15
