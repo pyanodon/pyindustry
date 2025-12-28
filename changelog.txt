@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.20
-Date: ????
+Date: 2025-12-28
   Changes:
     - MK02 trains now tilt on rail ramps
     - Fixed some techs having a too-fast cycle time
