@@ -30,7 +30,7 @@ ENTITY {
     name = "py-underflow-valve",
     type = "valve",
     mode = "top-up",
-    flow_rate = 6000 / 60,
+    flow_rate = 12000 / 60,
     threshold = 0.8,
     minable = {mining_time = 1, result = "py-underflow-valve"},
     icon = "__pyindustrygraphics__/graphics/icons/underflow-valve.png",

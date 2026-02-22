@@ -30,7 +30,7 @@ ENTITY {
     name = "py-overflow-valve",
     type = "valve",
     mode = "overflow",
-    flow_rate = 6000 / 60,
+    flow_rate = 12000 / 60,
     threshold = 0.8,
     minable = {mining_time = 1, result = "py-overflow-valve"},
     icon = "__pyindustrygraphics__/graphics/icons/overflow-valve.png",
