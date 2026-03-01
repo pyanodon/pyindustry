@@ -2,19 +2,19 @@ data.raw.fluid["petroleum-gas"].gas_temperature = 20
 
 if not mods["boblogistics"] then
     --Remove base robots
-    RECIPE("construction-robot"):remove_unlock("construction-robotics"):set_fields {hidden = true}
-    RECIPE("logistic-robot"):remove_unlock("logistic-robotics"):set_fields {hidden = true}
-    RECIPE("flying-robot-frame"):remove_unlock("robotics"):set_fields {hidden = true}
-    RECIPE("roboport"):remove_unlock("logistic-robotics"):remove_unlock("construction-robotics"):set_fields {hidden = true}
+    RECIPE("construction-robot"):remove_unlock("construction-robotics"):hide()
+    RECIPE("logistic-robot"):remove_unlock("logistic-robotics"):hide()
+    RECIPE("flying-robot-frame"):remove_unlock("robotics"):hide()
+    RECIPE("roboport"):remove_unlock("logistic-robotics"):remove_unlock("construction-robotics"):hide()
 
-    ITEM("construction-robot"):set_fields {hidden = true}
-    ITEM("logistic-robot"):set_fields {hidden = true}
-    ITEM("flying-robot-frame"):set_fields {hidden = true}
-    ITEM("roboport"):set_fields {hidden = true}
+    ITEM("construction-robot"):hide()
+    ITEM("logistic-robot"):hide()
+    ITEM("flying-robot-frame"):hide()
+    ITEM("roboport"):hide()
 
-    ENTITY("construction-robot"):set_fields {hidden = true}
-    ENTITY("logistic-robot"):set_fields {hidden = true}
-    ENTITY("roboport"):set_fields {hidden = true}
+    ENTITY("construction-robot"):hide()
+    ENTITY("logistic-robot"):hide()
+    ENTITY("roboport"):hide()
 
     -- remove roboport animations to save VRAM
     ENTITY("roboport").base = nil

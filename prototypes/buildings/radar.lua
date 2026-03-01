@@ -32,7 +32,7 @@ RECIPE {
 }:add_unlock("radars-mk01")
 
 RECIPE("radar"):remove_unlock("radar"):add_unlock("radars-mk01").enabled = false
-TECHNOLOGY("radar").hidden = true
+TECHNOLOGY("radar"):hide()
 
 ITEM {
     type = "item",
