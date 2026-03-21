@@ -1,4 +1,4 @@
-if mods.pyrawores and mods.pypetroleumhandling then
+if mods.pypetroleumhandling then
     RECIPE {
         type = "recipe",
         name = "py-steel",
