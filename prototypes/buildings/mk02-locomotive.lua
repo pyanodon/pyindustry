@@ -46,6 +46,7 @@ ENTITY {
     selection_box = {{-1, -3.5}, {1, 3.5}},
     --damaged_trigger_effect = hit_effects.entity(),
     drawing_box_vertical_extension = data.raw["locomotive"]["locomotive"].drawing_box_vertical_extension,
+    icons_positioning = {{inventory_index = defines.inventory.fuel, shift = {0, 0.3}, max_icons_per_row = 5}},
     alert_icon_shift = util.by_pixel(0, -24),
     weight = 1600,
     max_speed = 1.30,
