@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
-Date: ????
+Date: 2026-06-08
   Changes:
     - Updated German locale courtesy of @Spunk42
     - Increased valve flow rate from 6k/s to 12k/s
