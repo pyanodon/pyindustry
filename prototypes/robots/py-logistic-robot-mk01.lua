@@ -5,7 +5,7 @@ local cargo_bot =
         type = "recipe",
         name = "py-logistic-robot-mk01",
         energy_required = 10,
-        category = "crafting-with-fluid",
+        categories = {"crafting-with-fluid"},
         enabled = false,
         ingredients = {
             {type = "item", name = "iron-plate",         amount = 10},
@@ -51,7 +51,6 @@ ENTITY {
     selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
     max_payload_size = 3,
     speed = 0.08,
-    transfer_distance = 0.5,
     max_energy = "1.5MJ",
     energy_per_tick = "0.05kJ",
     speed_multiplier_when_out_of_energy = 0.2,

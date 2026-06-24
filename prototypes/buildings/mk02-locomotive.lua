@@ -292,12 +292,12 @@ ENTITY {
         },
         match_speed_to_activity = true,
         max_sounds_per_prototype = 2,
-        -- use_doppler_shift = false
+        -- use_doppler_shift = false,
+        activity_to_speed_modifiers = {minimum = 0.5},
+        activity_to_volume_modifiers ={multiplier = 0.35}
     },
     --open_sound = { filename = "__pyindustrygraphics__/sounds/mk02-locomotive-open.ogg", volume=0.5 },
     close_sound = {filename = "__pyindustrygraphics__/sounds/mk02-locomotive-close.ogg", volume = 0.4},
-    sound_minimum_speed = 0.5,
-    sound_scaling_ratio = 0.35,
     water_reflection = {
         pictures =
         {

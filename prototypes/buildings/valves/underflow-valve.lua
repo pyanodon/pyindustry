@@ -42,9 +42,6 @@ ENTITY {
     fast_replaceable_group = data.raw["pipe"]["pipe"].fast_replaceable_group,
     collision_box = data.raw["pipe"]["pipe"].collision_box,
     selection_box = data.raw["pipe"]["pipe"].selection_box,
-    window_bounding_box = {{0, 0}, {0, 0}},
-    flow_length_in_ticks = data.raw["storage-tank"]["storage-tank"].flow_length_in_ticks,
-    two_direction_only = false,
     working_sound = nil,
     fluid_box = {
         volume = 100,

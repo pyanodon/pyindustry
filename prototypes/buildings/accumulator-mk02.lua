@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "accumulator-mk02",
     energy_required = 0.5,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item", name = "battery",         amount = 50},

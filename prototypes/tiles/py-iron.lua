@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-iron",
-    category = mods.pycoalprocessing and "evaporator" or "crafting-with-fluid",
+    categories = {mods.pycoalprocessing and "evaporator" or "crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 4},

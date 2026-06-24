@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-coal-tile",
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     ingredients = {
         {type = "item", name = "coal", amount = 2}, --ash, 2
@@ -15,9 +15,7 @@ RECIPE {
 }:add_unlock("py-asphalt"):replace_ingredient("coal", "ash"):replace_ingredient("wood", "tailings-dust")
 
 if mods.pypetroleumhandling then
-    RECIPE("py-coal-tile"):add_ingredient {type = "fluid", name = "medium-distillate", amount = 20}
-    data.raw.recipe["py-coal-tile"].category = "reformer"
-    data.raw.recipe["py-coal-tile"].results = {{type = "item", name = "py-coal-tile", amount = 2}}
+    RECIPE("py-coal-tile"):add_ingredient {type = "fluid", name = "medium-distillate", amount = 20}:replace_category("crafting", "reformer"):set_result_amount("py-coal-tile", 2)
 end
 
 ITEM {

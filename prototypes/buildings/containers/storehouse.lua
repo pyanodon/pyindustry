@@ -119,8 +119,10 @@ local function define_storehouse(name, logistics_name)
                 shift = util.by_pixel(2, -12),
             },
             circuit_wire_max_distance = 9,
-            --circuit_connector_sprites = connectors.sprites({0.0, -1.50}),
-            circuit_connector         = {points = connectors.points {-0.11, -1.92}},
+            circuit_connector         = {{
+                points = connectors.points {-0.11, -1.92},
+                sprites = connectors.sprites({0.0, -1.50})
+            }},
         }
 
     if logistics_name then

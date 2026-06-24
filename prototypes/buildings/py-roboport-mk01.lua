@@ -95,7 +95,6 @@ ENTITY {
         priority = "medium",
         width = 128,
         height = 128,
-        frame_count = 1,
         shift = util.by_pixel(0, -8),
         scale = 0.5
     },

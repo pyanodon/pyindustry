@@ -1,4 +1,4 @@
-local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
+local function make_fluid_recipe(name, locale, icons, categories, ing, subgroup)
     RECIPE {
         name = name,
         type = "recipe",
@@ -6,7 +6,7 @@ local function make_fluid_recipe(name, locale, icons, category, ing, subgroup)
         hidden = true,
         hidden_in_factoriopedia = false,
         enabled = true,
-        category = category,
+        categories = categories,
         energy_required = 1,
         ingredients = {ing},
         results = {},
@@ -36,7 +36,7 @@ for _, fluid in pairs(data.raw.fluid) do
         name = fluid.name .. "-pyvoid-fluid"
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, amount = 20000}
-        make_fluid_recipe(name, locale, icons, "py-runoff", ing, "py-void-liquid")
+        make_fluid_recipe(name, locale, icons, {"py-runoff"}, ing, "py-void-liquid")
     end
 
     if fluid.gas_temperature and (fluid.default_temperature or 15) >= fluid.gas_temperature then
@@ -44,7 +44,7 @@ for _, fluid in pairs(data.raw.fluid) do
         name = fluid.name .. "-pyvoid-gas"
         local locale = {"", "Void ", {"fluid-name." .. fluid.name}}
         local ing = {type = "fluid", name = fluid.name, amount = 20000}
-        make_fluid_recipe(name, locale, icons, "py-venting", ing, "py-void-gas")
+        make_fluid_recipe(name, locale, icons, {"py-venting"}, ing, "py-void-gas")
     end
 
     ::continue::

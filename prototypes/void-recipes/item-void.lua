@@ -5,7 +5,7 @@ local void_result = {
     name = data.raw.item["ash"] and "ash" or data.raw.item["coal"] and "coal" or nil,
     amount_min = 1,
     amount_max = 1,
-    probability = 0.20
+    independent_probability = 0.20
 }
 if not void_result.name then
     void_result = {type = "fluid", name = "water", amount = 0}
@@ -21,30 +21,13 @@ local function make_void_recipe(name, newicons, ing_name, place_result)
         icon_size = 32,
         hidden = true,
         enabled = true,
-        category = "py-incineration",
+        categories = {"py-incineration"},
         ingredients = {{type = "item", name = ing_name, amount = 1}},
         results = {void_result},
         subgroup = "py-void-items",
         autotech_ignore = true
     }
 end
-
---TODO: See if Raiguard fixes the missing categories for release
-local groups = {
-    "ammo",
-    "armor",
-    "capsule",
-    "gun",
-    "item-with-entity-data",
-    --"item-with-inventory",
-    --"item-with-label",
-    --"item-with-tags",
-    "item",
-    "module",
-    "rail-planner",
-    "repair-tool",
-    "tool",
-}
 
 --local item_count = 0
 local fluid_barrels = {}
@@ -60,9 +43,8 @@ for f, _ in pairs(data.raw.fluid) do
     end
 end
 
-
-for _, type in pairs(groups) do
-    for _, item in pairs(data.raw[type]) do
+for type in pairs(defines.prototypes.item) do
+    for _, item in pairs(data.raw[type] or {}) do
         if not item.not_voidable and not (item.fuel_value and (item.fuel_category == "chemical" or item.fuel_category == "biomass" or item.fuel_category == "nuke"))
             and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1

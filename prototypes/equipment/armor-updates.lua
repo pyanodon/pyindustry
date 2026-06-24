@@ -69,7 +69,7 @@ RECIPE {
     type = "recipe",
     name = "personal-fusion-cell",
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "barrel", amount = 1},
@@ -94,7 +94,7 @@ RECIPE {
     type = "recipe",
     name = "personal-fusion-cell-refuel",
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "personal-fusion-cell-used", amount = 1},

@@ -88,9 +88,6 @@ ENTITY {
         priority = "low",
         width = 238,
         height = 216,
-        apply_projection = false,
-        direction_count = 1,
-        repeat_count = 32,
         line_length = 1,
         shift = util.by_pixel(1.5, 4),
         scale = 0.5
@@ -164,7 +161,6 @@ ENTITY {
                 volume = 1.9
             }
         },
-        apparent_volume = 2
     },
     radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275},
     rotation_speed = 0.0008

@@ -65,8 +65,6 @@ RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
 TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustrygraphics__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
 
-data.raw.pump["pump"].fluid_wagon_connector_alignment_tolerance = 1.0
-
 -- Moved from prototypes/pipes/niobium-pipes.lua because AFH was incorrectly copying the property causing crashes
 if not settings.startup["py-braided-pipes"].value then
     data.raw.pipe.pipe.next_upgrade = "niobium-pipe"

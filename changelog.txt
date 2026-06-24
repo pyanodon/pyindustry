@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.0
+Date: ???
+  Changes:
+    - Updated to Factorio 2.1
+    - Removed sinkhole flipping adjustment script since mirroring has been improved on the engine side
+    - Removed unnecessary prototype values to clear up the log
+    - Fixed that many buildings did not have certain pipe covers rendered
+    - Reduced most fluidbox sizes from 1000 to 100
+---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: ????
   Changes:

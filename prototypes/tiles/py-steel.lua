@@ -2,7 +2,7 @@ if mods.pyrawores and mods.pypetroleumhandling then
     RECIPE {
         type = "recipe",
         name = "py-steel",
-        category = "casting",
+        categories = {"casting"},
         enabled = false,
         ingredients = {
             {type = "fluid", name = "molten-steel",   amount = 10},
@@ -19,7 +19,7 @@ else
     RECIPE {
         type = "recipe",
         name = "py-steel",
-        category = "crafting",
+        categories = {"crafting"},
         enabled = false,
         ingredients = {
             {type = "item", name = "steel-plate", amount = 2},
