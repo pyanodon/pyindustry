@@ -8,6 +8,7 @@ Date: ???
     - Fixed that many buildings did not have certain pipe covers rendered
     - Reduced most fluidbox sizes from 1000 to 100
     - Added a mod setting to show item/fluid voiding in production statistics, default on
+    - Added the following entities to be hidden when visibility of tall entities is toggled: 10k, 40k, 50k, and 80k tanks, accumulator mk02, barreling machine
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: ????

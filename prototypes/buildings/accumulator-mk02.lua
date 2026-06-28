@@ -52,6 +52,7 @@ ENTITY {
         input_flow_limit = "50000kW",
         output_flow_limit = "50000kW"
     },
+    tall = true,
     chargable_graphics = {
         picture = {
             filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/charged.png",
