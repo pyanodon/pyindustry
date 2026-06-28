@@ -11,18 +11,20 @@ if not void_result.name then
     void_result = {type = "fluid", name = "water", amount = 0}
 end
 
-local function make_void_recipe(name, newicons, ing_name, place_result)
+local ignored = settings.startup["py-show-voiding-in-stats"].value and 0 or 1
+
+local function make_void_recipe(name, newicons, item, place_result)
     RECIPE {
         name = name,
         type = "recipe",
-        localised_name = {"recipe-name.py-void", {"?", {"item-name." .. ing_name}, {"entity-name." .. (place_result or ing_name)}, ""}},
+        localised_name = {"recipe-name.py-void", {"?", {"item-name." .. item}, {"entity-name." .. (place_result or item)}, ""}},
         energy_required = 1.5,
         icons = newicons,
         icon_size = 32,
         hidden = true,
         enabled = true,
         categories = {"py-incineration"},
-        ingredients = {{type = "item", name = ing_name, amount = 1}},
+        ingredients = {{type = "item", name = item, amount = 1, ignored_by_stats = ignored}},
         results = {void_result},
         subgroup = "py-void-items",
         autotech_ignore = true

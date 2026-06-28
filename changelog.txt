@@ -7,6 +7,7 @@ Date: ???
     - Removed unnecessary prototype values to clear up the log
     - Fixed that many buildings did not have certain pipe covers rendered
     - Reduced most fluidbox sizes from 1000 to 100
+    - Added a mod setting to show item/fluid voiding in production statistics, default on
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: ????
