@@ -9,6 +9,7 @@ Date: ???
     - Reduced most fluidbox sizes from 1000 to 100
     - Added a mod setting to show item/fluid voiding in production statistics, default on
     - Added the following entities to be hidden when visibility of tall entities is toggled: 10k, 40k, 50k, and 80k tanks, accumulator mk02, barreling machine
+    - Allowed the advanced locomotive, cargo wagon, and fluid wagon to be used with the upgrade planner to upgrade trains
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.21
 Date: ????

@@ -56,6 +56,9 @@ RECIPE("requester-chest"):remove_ingredient("advanced-circuit")
 RECIPE("locomotive"):remove_ingredient("engine-unit"):add_ingredient {type = "item", name = "pipe", amount = 20}:add_ingredient {type = "item", name = "steam-engine", amount = 2}:add_ingredient {type = "item", name = "iron-gear-wheel", amount = 20}:subgroup_order("py-trains", "a")
 RECIPE("cargo-wagon"):subgroup_order("py-trains", "ab")
 RECIPE("fluid-wagon"):subgroup_order("py-trains", "ac")
+ENTITY("locomotive").fast_replaceable_group = "locomotive"
+ENTITY("cargo-wagon").fast_replaceable_group = "cargo-wagon"
+ENTITY("fluid-wagon").fast_replaceable_group = "fluid-wagon"
 
 TECHNOLOGY("fluid-wagon"):remove_pack("logistic-science-pack")
 TECHNOLOGY("automated-rail-transportation"):remove_pack("logistic-science-pack")
