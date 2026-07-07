@@ -15,7 +15,7 @@ RECIPE {
 }:add_unlock("py-asphalt"):replace_ingredient("coal", "ash"):replace_ingredient("wood", "tailings-dust")
 
 if mods.pypetroleumhandling then
-    RECIPE("py-coal-tile"):add_ingredient {type = "fluid", name = "medium-distillate", amount = 20}:replace_category("crafting", "reformer"):set_result_amount("py-coal-tile", 2)
+    RECIPE("py-coal-tile"):add_ingredient {type = "fluid", name = "medium-distillate", amount = 20}:replace_category("crafting-with-fluid", "reformer"):set_result_amount("py-coal-tile", 2)
 end
 
 ITEM {
