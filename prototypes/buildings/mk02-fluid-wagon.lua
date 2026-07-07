@@ -40,10 +40,11 @@ ENTITY {
     max_health = 500,
     corpse = "fluid-wagon-remnants",
     dying_explosion = "fluid-wagon-explosion",
-    collision_box = {{-0.5, -1.5}, {0.5, 1.5}}, --must have a relation between this box and the joint distance to calibrate the wagon distance. (min 0.2)
-    selection_box = {{-1, -1.7}, {1, 1.7}},
+    collision_box = {{-0.6, -1.5}, {0.6, 1.5}}, --must have a relation between this box and the joint distance to calibrate the wagon distance. (min 0.2)
+    selection_box = {{-1.2, -1.7}, {1.2, 1.7}},
     --damaged_trigger_effect = hit_effects.entity(),
     vertical_selection_shift = -0.7,
+    fast_replaceable_group = "fluid-wagon",
     weight = 500,
     max_speed = 1.5,
     braking_force = 4,
@@ -208,10 +209,8 @@ ENTITY {
         sound = sound_variations("__base__/sound/train-tie", 6, 0.4, {volume_multiplier("main-menu", 2.4), volume_multiplier("driving", 1.3)})
     },
     tie_distance = 30,
-    crash_trigger = crash_trigger(),
     open_sound = sounds.cargo_wagon_open,
     close_sound = sounds.cargo_wagon_close,
-    sound_minimum_speed = 1,
     impact_category = "default",
     --equipment_grid = "spidertron-equipment-grid",
     water_reflection = {

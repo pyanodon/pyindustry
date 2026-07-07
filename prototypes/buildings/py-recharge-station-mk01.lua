@@ -75,14 +75,12 @@ ENTITY {
         filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
-        frame_count = 1,
     },
     base_patch =
     {
         filename = "__pyindustrygraphics__/graphics/entity/py-recharge-station-mk01/blank.png",
         width = 1,
         height = 1,
-        frame_count = 1,
     },
     door_animation_up =
     {
@@ -111,16 +109,4 @@ ENTITY {
     recharging_light = {intensity = 0.4, size = 5},
     request_to_open_door_timeout = 15,
     spawn_and_station_height = 0.33,
-    radius_visualisation_picture =
-    {
-        filename = "__pyindustrygraphics__/graphics/entity/roboport/blank.png",
-        width = 12,
-        height = 12
-    },
-    construction_radius_visualisation_picture =
-    {
-        filename = "__pyindustrygraphics__/graphics/entity/roboport/blank.png",
-        width = 12,
-        height = 12
-    },
 }

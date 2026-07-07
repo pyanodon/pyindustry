@@ -29,7 +29,7 @@ for i, color_data in pairs(colors) do
     RECIPE {
         type = "recipe",
         name = name,
-        category = "mixer",
+        categories = {"mixer"},
         enabled = false,
         ingredients = {
             {type = "item", name = "refined-concrete", amount = 2},

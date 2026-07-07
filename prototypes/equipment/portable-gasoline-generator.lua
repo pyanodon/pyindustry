@@ -40,7 +40,7 @@ RECIPE {
     type = "recipe",
     name = "portable-gasoline-generator",
     energy_required = 10,
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     ingredients = {
         {type = "item", name = "engine-unit",         amount = 4},

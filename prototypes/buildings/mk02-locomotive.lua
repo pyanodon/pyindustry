@@ -42,12 +42,13 @@ ENTITY {
     max_health = 1000,
     corpse = "locomotive-remnants",
     dying_explosion = "locomotive-explosion",
-    collision_box = {{-0.6, -2.5}, {0.6, 2.5}},
+    collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
     selection_box = {{-1, -3.5}, {1, 3.5}},
     --damaged_trigger_effect = hit_effects.entity(),
     drawing_box_vertical_extension = data.raw["locomotive"]["locomotive"].drawing_box_vertical_extension,
     icons_positioning = {{inventory_index = defines.inventory.fuel, shift = {0, 0.3}, max_icons_per_row = 5}},
     alert_icon_shift = util.by_pixel(0, -24),
+    fast_replaceable_group = "locomotive",
     weight = 1600,
     max_speed = 1.30,
     max_power = "900kW",
@@ -292,12 +293,12 @@ ENTITY {
         },
         match_speed_to_activity = true,
         max_sounds_per_prototype = 2,
-        -- use_doppler_shift = false
+        -- use_doppler_shift = false,
+        activity_to_speed_modifiers = {minimum = 0.5},
+        activity_to_volume_modifiers ={multiplier = 0.35}
     },
     --open_sound = { filename = "__pyindustrygraphics__/sounds/mk02-locomotive-open.ogg", volume=0.5 },
     close_sound = {filename = "__pyindustrygraphics__/sounds/mk02-locomotive-close.ogg", volume = 0.4},
-    sound_minimum_speed = 0.5,
-    sound_scaling_ratio = 0.35,
     water_reflection = {
         pictures =
         {

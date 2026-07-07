@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "accumulator-mk02",
     energy_required = 0.5,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item", name = "battery",         amount = 50},
@@ -52,6 +52,7 @@ ENTITY {
         input_flow_limit = "50000kW",
         output_flow_limit = "50000kW"
     },
+    tall = true,
     chargable_graphics = {
         picture = {
             filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/charged.png",

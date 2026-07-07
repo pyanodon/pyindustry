@@ -61,14 +61,12 @@ ENTITY {
     logistics_radius = 0,
     construction_radius = 60,
     logistics_connection_distance = 60,
-    charge_approach_distance = 5,
+    charge_approach_distance = 0,
     robot_slots_count = 0,
     material_slots_count = 0,
     robots_shrink_when_entering_and_exiting = true,
-    stationing_offset = util.by_pixel(0, -3),
-    charging_offsets = {
-        {-0, -0.5}
-    },
+    stationing_offset = {0, 0},
+    charging_offsets = {},
     base = {
         layers = {
             {

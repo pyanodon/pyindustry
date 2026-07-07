@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-iron-oxide",
-    category = "hpf",
+    categories = {"hpf"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "iron-oxide",        amount = 4},

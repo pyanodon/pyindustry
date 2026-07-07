@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-nexelit",
-    category = mods.pyhightech and "pcb" or "hpf",
+    categories = {mods.pyhightech and "pcb" or "hpf"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "nexelit-plate", amount = 1},

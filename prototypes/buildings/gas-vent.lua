@@ -46,7 +46,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__base__/sound/idle1.ogg", volume = 0.7},
         idle_sound = {filename = "__base__/sound/idle1.ogg", volume = 0.3},
-        apparent_volume = 1.0
     },
     resistances = {
         {
@@ -93,7 +92,6 @@ ENTITY {
             }
         },
     },
-    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         {
             production_type = "input",

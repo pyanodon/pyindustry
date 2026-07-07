@@ -184,9 +184,6 @@ local function py_pipepictures()
             line_length = 10,
             width = 48,
             height = 30,
-            frame_count = 60,
-            axially_symmetrical = false,
-            direction_count = 1
         },
         straight_vertical_single_visualization = make_visualization(0),
         straight_vertical_visualization = make_visualization(5),
@@ -470,13 +467,6 @@ ENTITY {
         },
         hide_connection_info = true,
         max_pipeline_extent = 640
-    },
-    underground_sprite = {
-        filename = "__core__/graphics/arrows/underground-lines.png",
-        priority = "extra-high-no-scale",
-        width = 64,
-        height = 64,
-        scale = 0.5
     },
     pictures = {
         north = make_shadow {

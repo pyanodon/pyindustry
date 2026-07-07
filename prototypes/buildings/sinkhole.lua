@@ -48,7 +48,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyindustrygraphics__/sounds/py-sinkhole.ogg", volume = 0.8},
         idle_sound = {filename = "__pyindustrygraphics__/sounds/py-sinkhole.ogg", volume = 0.3},
-        apparent_volume = 2.0
     },
     resistances = {
         {
@@ -122,7 +121,6 @@ ENTITY {
             }
         })
     },
-    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         {
             production_type = "input",

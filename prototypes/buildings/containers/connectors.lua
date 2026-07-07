@@ -12,36 +12,44 @@ function connectors.sprites(con_shift, shadow_shift)
             scale = 0.5
         },
         led_red = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-red-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04i-red-LED-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = red_green_shift
+            width = 48,
+            height = 46,
+            shift = red_green_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_green = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-green-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04h-green-LED-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = red_green_shift
+            width = 48,
+            height = 46,
+            shift = red_green_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_blue = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-blue-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04e-blue-LED-on-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = blue_shift
+            width = 60,
+            height = 60,
+            shift = blue_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
-        logistic_animation = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-logistic-animation.png",
+        led_blue_off = {
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04f-blue-LED-off-sequence.png",
             priority = "low",
-            blend_mode = "additive",
-            line_length = 4,
-            width = 43,
-            height = 43,
-            frame_count = 15,
-            animation_speed = 0.5,
-            shift = {0, 0}
+            width = 46,
+            height = 44,
+            shift = blue_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_light = {
             intensity = 0.8,

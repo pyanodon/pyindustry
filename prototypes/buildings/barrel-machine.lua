@@ -41,7 +41,6 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    forced_symmetry = "diagonal-neg",
     module_slots = 4,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"py-barreling", "py-unbarreling"},
@@ -56,6 +55,7 @@ ENTITY {
         },
     },
     energy_usage = "200kW",
+    tall = true,
     graphics_set = {
         animation = {
             layers = {
@@ -91,7 +91,6 @@ ENTITY {
             }
         },
     },
-    fluid_boxes_off_when_no_fluid_recipe = true,
     fluid_boxes = {
         --1
         {
@@ -117,7 +116,6 @@ ENTITY {
             {
                 filename = "__base__/sound/assembling-machine-t2-1.ogg",
                 volume = 0.55,
-                audible_distance_modifier = 0.5,
             }
         },
         fade_in_ticks = 4,

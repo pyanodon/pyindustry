@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-limestone",
-    category = mods.pycoalprocessing and "smelting" or "crafting-with-fluid",
+    categories = {mods.pycoalprocessing and "smelting" or "crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "fluid", name = "water", amount = 35},
