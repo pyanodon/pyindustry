@@ -41,6 +41,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    use_mirroring = true,
     module_slots = 4,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"py-barreling", "py-unbarreling"},
