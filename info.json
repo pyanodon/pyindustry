@@ -1,6 +1,6 @@
 {
     "name": "pyindustry",
-    "version": "3.1.0",
+    "version": "3.1.1",
     "factorio_version": "2.1",
     "title": "Pyanodons Industry",
     "author": "Pyanodon, Nexela, Kingarthur, notnotmelon, Mootykins, ShadowGlass, Archezekiel, Quintuple, przemo1232, protocol_1903",
@@ -9,10 +9,10 @@
     "description": "Control the means of production with new logistic and storage structures. Works either as a standalone mod or alongside the rest of the pY modpack.",
     "dependencies": [
         "base >= 2.1.0",
-        "~ pypostprocessing >= 3.1.0",
-        "~ pyindustrygraphics >= 3.1.0",
-        "? pycoalprocessing >= 3.1.0",
-        "? pyfusionenergy >= 3.1.0",
+        "~ pypostprocessing >= 3.1.1",
+        "~ pyindustrygraphics >= 3.1.1",
+        "? pycoalprocessing >= 3.1.1",
+        "? pyfusionenergy >= 3.1.1",
         "! wret-beacon-rebalance-mod",
         "! BigBags",
         "! ResearchFog",
