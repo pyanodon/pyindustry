@@ -10,7 +10,7 @@
     "dependencies": [
         "base >= 2.1.0",
         "~ pypostprocessing >= 3.1.1",
-        "~ pyindustrygraphics >= 3.1.1",
+        "~ pyindustrygraphics >= 3.1.0",
         "? pycoalprocessing >= 3.1.1",
         "? pyfusionenergy >= 3.1.1",
         "! wret-beacon-rebalance-mod",
