@@ -33,9 +33,10 @@ ENTITY {
     icon_size = 64,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.1, result = "py-ze"},
+    fast_replaceable_group = "roboport",
     max_health = 500,
     corpse = "big-remnants",
-    collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     resistances = {
         {
