@@ -53,6 +53,12 @@ ENTITY {
     connection_distance = 2,
     joint_distance = 1.5, --igual to collision box works if the sprite is tight in the png
     tank_count = 2,
+    valve_to_valve_offset_when_horizontal = {1.64, 0},
+    base_valve_xy_offset_when_horizontal = {-0.04, 0},
+    base_valve_z_offset_projected_when_horizontal = -1.55,
+    valve_to_valve_offset_when_vertical = {0, 1.2},
+    base_valve_xy_offset_when_vertical = {0, 0},
+    base_valve_z_offset_projected_when_vertical = -1.57,
     energy_per_hit_point = 5,
     capacity = 25000,
     resistances =
