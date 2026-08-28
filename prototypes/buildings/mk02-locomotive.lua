@@ -50,10 +50,9 @@ ENTITY {
     alert_icon_shift = util.by_pixel(0, -24),
     fast_replaceable_group = "locomotive",
     weight = 1600,
-    max_speed = 1.30,
     max_power = "900kW",
     reversing_power_modifier = 0.6,
-    braking_force = 12,
+    braking_force = 18,
     friction_force = 0.40,
     vertical_selection_shift = -0.7,
     air_resistance = 0.0085, -- this is a percentage of current speed that will be subtracted
