@@ -10,6 +10,7 @@ Date: ????
     - Decreased advanced cargo wagon and fluid wagon friction by from 0.5 to 0.4
     - Increased advanced cargo wagon and fluid wagon air resistance from 0.0085 to 0.011
     - Adjusted advanced cargo wagon and fluid wagon braking force from 15 and 4 to 8
+    - Fixed misaligned pipe connection graphics. Resolves https://github.com/pyanodon/pybugreports/issues/1540
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.2
 Date: 2026-07-09
