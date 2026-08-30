@@ -411,6 +411,8 @@ ENTITY {
         hide_connection_info = true,
         max_pipeline_extent = 640
     },
+    circuit_connector = circuit_connector_definitions["pipe"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     pictures = py_pipepictures(),
     working_sound = {
         sound = {
@@ -468,6 +470,8 @@ ENTITY {
         hide_connection_info = true,
         max_pipeline_extent = 640
     },
+    circuit_connector = circuit_connector_definitions["pipe-to-ground"],
+    circuit_wire_max_distance = default_circuit_wire_max_distance,
     pictures = {
         north = make_shadow {
             filename = "__pyindustrygraphics__/graphics/entity/niobium-pipe/pipe-to-ground-up.png",
