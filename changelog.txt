@@ -4,6 +4,7 @@ Date: ???
   Changes:
     - Updated autotech caches to apply latest tech tree fixes
     - Added circuit connections to niobium pipes. Resolves https://github.com/pyanodon/pybugreports/issues/1511
+    - Changed check valves to be actual valve prototypes. Existing valves will become legacy objects, as new valves cannot connect to the circuit network.
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.3
 Date: 2026-08-28
