@@ -47,7 +47,7 @@ end
 
 for type in pairs(defines.prototypes.item) do
     for _, item in pairs(data.raw[type] or {}) do
-        if not item.not_voidable and not (item.fuel_value and (table.any(item.fuel_categories, function(f) return (f == "chemical" or f == "biomass" or f == "nuke") end)))
+        if not item.not_voidable and not ITEM(item.name):has_fuel_categories({"chemical", "biomass", "nuke"})
             and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
