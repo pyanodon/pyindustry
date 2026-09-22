@@ -62,7 +62,7 @@ ITEM {
     stack_size = 10,
     burnt_result = "personal-fusion-cell-used",
     fuel_value = "2GJ",
-    fuel_category = "personal-fusion-cell"
+    fuel_categories = {"personal-fusion-cell"}
 }
 
 RECIPE {
