@@ -45,9 +45,20 @@ for f, _ in pairs(data.raw.fluid) do
     end
 end
 
+-- checks fields directly since items added by other mods may lack the ITEM() metatable
+local function is_py_fuel(item)
+    if not item.fuel_value then return false end
+    local cats = item.fuel_categories
+    if not cats or #cats == 0 then return true end -- no categories = chemical (Factorio default)
+    for _, c in pairs(cats) do
+        if c == "chemical" or c == "biomass" or c == "nuke" then return true end
+    end
+    return false
+end
+
 for type in pairs(defines.prototypes.item) do
     for _, item in pairs(data.raw[type] or {}) do
-        if not item.not_voidable and not ITEM(item.name):has_fuel_categories({"chemical", "biomass", "nuke"})
+        if not item.not_voidable and not is_py_fuel(item)
             and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
