@@ -155,14 +155,14 @@ ENTITY {
 
 
 if not mods["pystellarexpedition"] then
-    local legacy_entity = table.deepcopy(data.raw.valve["py-check-valve"])
+    local legacy_entity = table.deepcopy(data.raw.valve["py-check-valve"])--[[@as data.StorageTankPrototype]]
     legacy_entity.name = "py-check-valve-legacy"
     legacy_entity.type = "storage-tank"
     legacy_entity.circuit_connector = circuit_connector_definitions["py-valves"]
     legacy_entity.circuit_wire_max_distance = data.raw["storage-tank"]["storage-tank"].circuit_wire_max_distance
     legacy_entity.window_bounding_box = {{0, 0}, {0, 0}}
     legacy_entity.flow_length_in_ticks = data.raw["storage-tank"]["storage-tank"].flow_length_in_ticks
-    legacy_entity.fluid_box.pipe_connections[2].flow_direction = nil
+    legacy_entity.fluid_box.pipe_connections[2]--[[@cast -?]].flow_direction = nil
     legacy_entity.placeable_by = {item = "py-check-valve", count = 1}
     legacy_entity.pictures = {
         gas_flow = py.empty_image(),
