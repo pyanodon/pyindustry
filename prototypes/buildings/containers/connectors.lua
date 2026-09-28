@@ -1,7 +1,7 @@
 local connectors = {}
 function connectors.sprites(con_shift, shadow_shift)
     local red_green_shift = {con_shift[1] - 0.1, con_shift[2] + 0.05}
-    local blue_shift = {con_shift[1] - 0.05, con_shift[2] + 0.1}
+    local blue_shift = {con_shift[1] + 0.2, con_shift[2] + 0.1}
     return {
         connector_main = {
             filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon.png",
@@ -71,9 +71,9 @@ end
 
 function connectors.points(red_points)
     local rx, ry = red_points[1], red_points[2]
-    local gx, gy = rx + 0.06, ry + 0.07
-    local srx, sry = rx + 0.1, ry
-    local sgx, sgy = gx + 0.1, gy
+    local gx, gy = rx, ry + .1
+    local srx, sry = rx + 0.5, ry + .7
+    local sgx, sgy = gx + 0.5, gy + .7
     return {
         wire = {
             red = {rx, ry},
