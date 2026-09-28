@@ -129,3 +129,53 @@ circuit_connector_definitions["accumulator-mk1"] = circuit_connector_definitions
           universal_connector_template,
           { variation = 26, main_offset = util.by_pixel(34, 19), shadow_offset = util.by_pixel(36, 25.5), show_shadow = true }
     )
+
+circuit_connector_definitions["local-radar"] = circuit_connector_definitions.create_single
+    (
+          universal_connector_template,
+          { variation = 2, main_offset = util.by_pixel(-38, 34), shadow_offset = util.by_pixel(-32, 34), show_shadow = true }
+    )
+
+circuit_connector_definitions["gas-vent"] = circuit_connector_definitions.create_vector
+    (
+          universal_connector_template,
+        {
+            {variation = 26, main_offset = util.by_pixel(0, -25), shadow_offset = util.by_pixel(20, 0), show_shadow = true},
+            {variation = 26, main_offset = util.by_pixel(0, -25), shadow_offset = util.by_pixel(20, 0), show_shadow = true},
+            {variation = 26, main_offset = util.by_pixel(0, -25), shadow_offset = util.by_pixel(20, 0), show_shadow = true},
+            {variation = 26, main_offset = util.by_pixel(0, -25), shadow_offset = util.by_pixel(20, 0), show_shadow = true},
+        }
+    )
+
+circuit_connector_definitions["sinkhole"] = circuit_connector_definitions.create_vector
+    (
+          universal_connector_template,
+        {
+            {variation = 19, main_offset = util.by_pixel(-22, -26), shadow_offset = util.by_pixel(-22, -26), show_shadow = false},
+            {variation = 19, main_offset = util.by_pixel(-22, -26), shadow_offset = util.by_pixel(-22, -26), show_shadow = false},
+            {variation = 19, main_offset = util.by_pixel(-22, -26), shadow_offset = util.by_pixel(-22, -26), show_shadow = false},
+            {variation = 19, main_offset = util.by_pixel(-22, -26), shadow_offset = util.by_pixel(-22, -26), show_shadow = false},
+        }
+    )
+
+circuit_connector_definitions["burner"] = circuit_connector_definitions.create_vector
+    (
+          universal_connector_template,
+        {
+            {variation = 17, main_offset = util.by_pixel(-30, 12), shadow_offset = util.by_pixel(-24, 14), show_shadow = true},
+            {variation = 0, main_offset = util.by_pixel(100, 100), shadow_offset = util.by_pixel(100, 100), show_shadow = false}, --unused
+            {variation = 0, main_offset = util.by_pixel(100, 100), shadow_offset = util.by_pixel(100, 100), show_shadow = false}, --unused
+            {variation = 0, main_offset = util.by_pixel(100, 100), shadow_offset = util.by_pixel(100, 100), show_shadow = false}, --unused
+        }
+    )
+
+circuit_connector_definitions["barrel-machine"] = circuit_connector_definitions.create_vector
+    (
+          universal_connector_template,
+        {
+            {variation = 2, main_offset = util.by_pixel(32, 8), shadow_offset = util.by_pixel(40, 10), show_shadow = true},
+            {variation = 2, main_offset = util.by_pixel(32, 8), shadow_offset = util.by_pixel(40, 10), show_shadow = true},
+            {variation = 2, main_offset = util.by_pixel(32, 8), shadow_offset = util.by_pixel(40, 10), show_shadow = true},
+            {variation = 2, main_offset = util.by_pixel(32, 8), shadow_offset = util.by_pixel(40, 10), show_shadow = true},
+        }
+    )
