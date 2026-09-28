@@ -130,5 +130,7 @@ ENTITY {
             pipe_connections = {{flow_direction = "input", position = {1.0, 0.0}, direction = defines.direction.east}}
         },
     },
-    fast_replaceable_group = "py-sinkhole"
+    fast_replaceable_group = "py-sinkhole",
+    circuit_wire_max_distance = 9,
+    circuit_connector = circuit_connector_definitions["sinkhole"],
 }

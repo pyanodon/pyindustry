@@ -67,10 +67,7 @@ ENTITY {
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
-    },
+    circuit_connector = circuit_connector_definitions["local-radar"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     energy_per_sector = "2MJ",
     max_distance_of_sector_revealed = 3,

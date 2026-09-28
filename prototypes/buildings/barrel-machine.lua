@@ -122,4 +122,6 @@ ENTITY {
         fade_in_ticks = 4,
         fade_out_ticks = 20
     },
+    circuit_wire_max_distance = 9,
+    circuit_connector = circuit_connector_definitions["barrel-machine"],
 }
