@@ -88,3 +88,38 @@ circuit_connector_definitions["py-valves"] = {
         sprites = _G.circuit_connector_definitions["inserter"][4].sprites,
     }
 }
+
+circuit_connector_definitions["py-roboport-ze-mk1"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 26, main_offset = util.by_pixel(0, -5), shadow_offset = util.by_pixel(0, -5), show_shadow = false }
+    )
+
+circuit_connector_definitions["py-roboport-ze-mk2"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 10, main_offset = util.by_pixel(0, 17), shadow_offset = util.by_pixel(0, 17), show_shadow = false }
+    )
+
+circuit_connector_definitions["py-roboport-ze-mk3"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 11, main_offset = util.by_pixel(40, 24), shadow_offset = util.by_pixel(42, 28), show_shadow = true }
+    )
+
+circuit_connector_definitions["py-roboport-ze-mk4"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 10, main_offset = util.by_pixel(0, 50), shadow_offset = util.by_pixel(0, 50), show_shadow = false }
+    )
+circuit_connector_definitions["py-roboport-mk1"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 11, main_offset = util.by_pixel(34, 30), shadow_offset = util.by_pixel(38, 30), show_shadow = true }
+    )
+
+circuit_connector_definitions["py-roboport-mk2"] = circuit_connector_definitions.create_single
+    (
+        universal_connector_template,
+        { variation = 3, main_offset = util.by_pixel(64, 28), shadow_offset = util.by_pixel(68, 28), show_shadow = true }
+    )
