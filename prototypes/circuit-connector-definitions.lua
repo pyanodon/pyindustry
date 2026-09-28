@@ -123,3 +123,9 @@ circuit_connector_definitions["py-roboport-mk2"] = circuit_connector_definitions
         universal_connector_template,
         { variation = 3, main_offset = util.by_pixel(64, 28), shadow_offset = util.by_pixel(68, 28), show_shadow = true }
     )
+
+circuit_connector_definitions["accumulator-mk1"] = circuit_connector_definitions.create_single
+    (
+          universal_connector_template,
+          { variation = 26, main_offset = util.by_pixel(34, 19), shadow_offset = util.by_pixel(36, 25.5), show_shadow = true }
+    )
