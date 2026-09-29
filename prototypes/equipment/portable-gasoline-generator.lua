@@ -62,5 +62,5 @@ data.raw.recipe["personal-roboport-equipment"].ingredients = {
 }
 
 data.raw.technology["personal-roboport-equipment"].prerequisites = {"construction-robotics"}
-data.raw.technology["personal-roboport-equipment"].unit--[[@cast -?]].count = 300
-TECHNOLOGY(data.raw.technology["personal-roboport-mk2-equipment"]):remove_prereq("solar-panel-equipment")
+data.raw.technology["personal-roboport-equipment"].unit.count = 300
+TECHNOLOGY("personal-roboport-mk2-equipment"):remove_prereq("solar-panel-equipment")
