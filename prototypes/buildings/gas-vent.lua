@@ -103,13 +103,5 @@ ENTITY {
     },
     fast_replaceable_group = "py-gas-vent",
     circuit_wire_max_distance = 9,
-    circuit_connector = circuit_connector_definitions.create_vector(
-        universal_connector_template,
-        {
-            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
-            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
-            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
-            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false}
-        }
-    )
+    circuit_connector = circuit_connector_definitions["gas-vent"],
 }

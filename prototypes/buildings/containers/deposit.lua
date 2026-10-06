@@ -120,8 +120,8 @@ local function define_deposit(name, logistics_name)
             },
             circuit_wire_max_distance = 9,
             circuit_connector         = {{
-                points = connectors.points {-0.11, -2.82},
-                sprites = connectors.sprites({0, -2.4})
+                points = connectors.points {-1.9, -0.35},
+                sprites = connectors.sprites({-1.8, 0})
             }},
         }
 

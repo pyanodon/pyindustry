@@ -187,10 +187,7 @@ ENTITY {
             sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
         }
     },
-    circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
-    },
+    circuit_connector = circuit_connector_definitions["py-roboport-ze-mk3"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
     default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},

@@ -120,7 +120,7 @@ local function define_storehouse(name, logistics_name)
             },
             circuit_wire_max_distance = 9,
             circuit_connector         = {{
-                points = connectors.points {-0.11, -1.92},
+                points = connectors.points {-0.1, -1.85},
                 sprites = connectors.sprites({0.0, -1.50})
             }},
         }
