@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.6
-Date: ????
+Date: 2026-10-06
   Changes:
     - Updated German local (thanks, Spunk42!)
     - Fixed a load error with mk02-fluid-wagon in Factorio v2.1.21. Resolves https://github.com/pyanodon/pybugreports/issues/1598
