@@ -13,6 +13,7 @@ updates.locomotive =
             layers =
             {
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/locomotive/sloped/loco-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         dice = 4,
                         priority = "very-low",
@@ -22,6 +23,7 @@ updates.locomotive =
                     }
                 ),
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/locomotive/sloped/loco-mask-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         dice = 4,
                         priority = "very-low",
@@ -49,6 +51,7 @@ updates.fluid_wagon =
             layers =
             {
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/fluid-wagon/sloped/fluid-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         priority = "very-low",
                         direction_count = 160,
@@ -57,6 +60,7 @@ updates.fluid_wagon =
                     }
                 ),
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/fluid-wagon/sloped/fluid-mask-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         priority = "very-low",
                         flags = {"mask"},
@@ -83,6 +87,7 @@ updates.cargo_wagon =
             layers =
             {
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sloped/wagon-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         priority = "very-low",
                         direction_count = 160,
@@ -91,6 +96,7 @@ updates.cargo_wagon =
                     }
                 ),
                 util.sprite_load("__pyindustrygraphics__/graphics/entity/mk02-train/cargo-wagon/sloped/wagon-mask-sloped",
+                    ---@diagnostic disable-next-line: generic-constraint-mismatch
                     {
                         priority = "very-low",
                         flags = {"mask"},

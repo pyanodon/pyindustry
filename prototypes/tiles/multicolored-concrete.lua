@@ -58,7 +58,7 @@ for i, color_data in pairs(colors) do
         stack_size = 1000,
         place_as_tile = {result = name, condition_size = 1, condition = {layers = {water_tile = true}}},
         localised_name = tile.localised_name
-    }
+    }--[[@as data.ItemPrototype]]
 end
 
 TILE("refined-concrete"):set_fields(refined_properties)

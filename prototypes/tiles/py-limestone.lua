@@ -64,7 +64,7 @@ TILE {
     vehicle_friction_modifier = 0.75,
 
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants.transition),
+        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-limestone/py-limestone.png",

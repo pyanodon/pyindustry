@@ -66,6 +66,7 @@ if settings.startup["py-braided-pipes"].value then
     end
 
     for _, pipe in pairs {table.unpack(data.raw["pipe"]), table.unpack(data.raw["pipe-to-ground"])} do
+        ---@diagnostic disable-next-line: undefined-field
         for _, pipe_connection in pairs(pipe.fluid_box.pipe_connections) do
             if pipe_connection.connection_category == nil then
                 pipe_connection.connection_category = {"pipe"}

@@ -69,7 +69,7 @@ TILE {
     vehicle_friction_modifier = 0.6,
     --TODO: fix low quality?
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants.transition),
+        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
         -- why do we do this instead of the tile_background used elsewhere?
         main =
         {{

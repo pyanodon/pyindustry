@@ -64,28 +64,28 @@ circuit_connector_definitions["py-valves"] = {
             shadow = {red = {0.171875, 0.140625}, green = {0.171875, 0.265625}},
             wire = {red = {-0.53125, -0.15625}, green = {-0.53125, 0}}
         },
-        sprites = _G.circuit_connector_definitions["inserter"][1].sprites,
+        sprites = _G.circuit_connector_definitions["inserter"][1]--[[@cast -?]].sprites,
     },
     {
         points = {
             shadow = {red = {0.890625, 0.703125}, green = {0.75, 0.75}},
             wire = {red = {0.34375, 0.28125}, green = {0.34375, 0.4375}}
         },
-        sprites = _G.circuit_connector_definitions["inserter"][2].sprites,
+        sprites = _G.circuit_connector_definitions["inserter"][2]--[[@cast -?]].sprites,
     },
     {
         points = {
             shadow = {red = {0.15625, 0.0625}, green = {0.09375, 0.125}},
             wire = {red = {-0.53125, -0.09375}, green = {-0.53125, 0.03125}}
         },
-        sprites = _G.circuit_connector_definitions["inserter"][3].sprites,
+        sprites = _G.circuit_connector_definitions["inserter"][3]--[[@cast -?]].sprites,
     },
     {
         points = {
             shadow = {red = {0.796875, 0.703125}, green = {0.625, 0.75}},
             wire = {red = {0.40625, 0.28125}, green = {0.40625, 0.4375}}
         },
-        sprites = _G.circuit_connector_definitions["inserter"][4].sprites,
+        sprites = _G.circuit_connector_definitions["inserter"][4]--[[@cast -?]].sprites,
     }
 }
 
@@ -132,7 +132,7 @@ circuit_connector_definitions["accumulator-mk1"] = circuit_connector_definitions
 
 circuit_connector_definitions["local-radar"] = circuit_connector_definitions.create_single
     (
-          universal_connector_template,
+          universal_connector_template--[[@as lualib.connector_sprite_template]],
           { variation = 2, main_offset = util.by_pixel(-38, 34), shadow_offset = util.by_pixel(-32, 34), show_shadow = true }
     )
 

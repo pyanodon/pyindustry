@@ -127,13 +127,13 @@ local function define_shed(name, logistics_name)
 
     if logistics_name then
         entity.logistic_mode = logistics_name
-        recipe:add_unlock("py-warehouse-logistics-research")
+        RECIPE(recipe):add_unlock("py-warehouse-logistics-research")
         if (logistics_name == "storage") then
             entity.inventory_size = 75
             entity.max_logistic_slots = 1
         end
     else
-        recipe:add_unlock("py-warehouse-research")
+        RECIPE(recipe):add_unlock("py-warehouse-research")
     end
 end
 
