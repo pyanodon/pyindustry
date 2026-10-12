@@ -36,6 +36,7 @@ end
 
 ENTITY {
     type = "construction-robot",
+    tall = true,
     name = "py-construction-robot-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/py-construction-robot-01.png",
     icon_size = 32,

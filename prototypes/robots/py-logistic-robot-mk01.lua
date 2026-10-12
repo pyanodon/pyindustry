@@ -40,6 +40,7 @@ end
 
 ENTITY {
     type = "logistic-robot",
+    tall = true,
     name = "py-logistic-robot-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/py-logistic-robot-01.png",
     icon_size = 32,
