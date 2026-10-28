@@ -45,9 +45,12 @@ for f, _ in pairs(data.raw.fluid) do
     end
 end
 
+local fuel_categories = {"chemical"}
+if mods.pycoalprocessing then table.insert(fuel_categories, "biomass") end
+if mods.pyalternativeenergy then table.insert(fuel_categories, "nuke") end
 for type in pairs(defines.prototypes.item) do
     for _, item in pairs(data.raw[type] or {}) do
-        if not item.not_voidable and not ITEM(item.name):has_fuel_categories({"chemical", "biomass", "nuke"})
+        if not item.not_voidable and not ITEM(item.name):has_fuel_categories(fuel_categories)
             and not fluid_barrels[item.name] and string.match(item.name, "rocket%-fuel") == nil and not (item.subgroup == "parameters") then
             --item_count = item_count + 1
             local name = item.name .. "-pyvoid"
