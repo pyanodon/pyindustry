@@ -65,14 +65,12 @@ ENTITY {
     logistics_radius = 0,
     construction_radius = 100,
     logistics_connection_distance = 100,
-    charge_approach_distance = 5,
+    charge_approach_distance = 0,
     robot_slots_count = 0,
     material_slots_count = 0,
     robots_shrink_when_entering_and_exiting = true,
-    stationing_offset = util.by_pixel(0, -3),
-    charging_offsets = {
-        {-0, -0.5}
-    },
+    stationing_offset = {0, 0},
+    charging_offsets = {},
     base = {
         layers = {
             {
@@ -193,10 +191,7 @@ ENTITY {
             sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
         }
     },
-    circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
-    },
+    circuit_connector = circuit_connector_definitions["py-roboport-ze-mk3"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
     default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "concrete-wall",
-    category = "crafting",
+    categories = {"crafting"},
     enabled = false,
     ingredients = {
         {type = "item", name = "concrete",   amount = 2},

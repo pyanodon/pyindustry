@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-limestone",
-    category = mods.pycoalprocessing and "smelting" or "crafting-with-fluid",
+    categories = {mods.pycoalprocessing and "smelting" or "crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "fluid", name = "water", amount = 35},
@@ -64,7 +64,7 @@ TILE {
     vehicle_friction_modifier = 0.75,
 
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants.transition),
+        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-limestone/py-limestone.png",

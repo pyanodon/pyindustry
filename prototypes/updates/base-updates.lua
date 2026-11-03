@@ -56,6 +56,9 @@ RECIPE("requester-chest"):remove_ingredient("advanced-circuit")
 RECIPE("locomotive"):remove_ingredient("engine-unit"):add_ingredient {type = "item", name = "pipe", amount = 20}:add_ingredient {type = "item", name = "steam-engine", amount = 2}:add_ingredient {type = "item", name = "iron-gear-wheel", amount = 20}:subgroup_order("py-trains", "a")
 RECIPE("cargo-wagon"):subgroup_order("py-trains", "ab")
 RECIPE("fluid-wagon"):subgroup_order("py-trains", "ac")
+ENTITY("locomotive").fast_replaceable_group = "locomotive"
+ENTITY("cargo-wagon").fast_replaceable_group = "cargo-wagon"
+ENTITY("fluid-wagon").fast_replaceable_group = "fluid-wagon"
 
 TECHNOLOGY("fluid-wagon"):remove_pack("logistic-science-pack")
 TECHNOLOGY("automated-rail-transportation"):remove_pack("logistic-science-pack")
@@ -65,11 +68,11 @@ RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
 TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustrygraphics__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
 
-data.raw.pump["pump"].fluid_wagon_connector_alignment_tolerance = 1.0
-
 -- Moved from prototypes/pipes/niobium-pipes.lua because AFH was incorrectly copying the property causing crashes
-data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
-data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
+if not settings.startup["py-braided-pipes"].value then
+    data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
+    data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
+end
 
 RECIPE("storage-tank"):remove_unlock("fluid-handling"):add_unlock("py-storage-tanks")
 

@@ -67,10 +67,7 @@ ENTITY {
     },
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    circuit_connector = {
-        sprites = _G.circuit_connector_definitions["roboport"].sprites,
-        points = _G.circuit_connector_definitions["roboport"].points
-    },
+    circuit_connector = circuit_connector_definitions["local-radar"],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     energy_per_sector = "2MJ",
     max_distance_of_sector_revealed = 3,
@@ -86,9 +83,6 @@ ENTITY {
         priority = "low",
         width = 238,
         height = 216,
-        apply_projection = false,
-        direction_count = 1,
-        repeat_count = 64,
         line_length = 1,
         shift = util.by_pixel(1.5, 4),
         scale = 0.5
@@ -103,7 +97,6 @@ ENTITY {
                 apply_projection = false,
                 direction_count = 50,
                 line_length = 10,
-                animation_speed = 0.7,
                 shift = util.by_pixel(1, -16),
                 scale = 0.5
             },
@@ -115,7 +108,6 @@ ENTITY {
                 apply_projection = false,
                 direction_count = 50,
                 line_length = 8,
-                animation_speed = 0.7,
                 shift = util.by_pixel(39.25, 3),
                 draw_as_shadow = true,
                 scale = 0.5
