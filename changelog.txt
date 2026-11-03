@@ -1,84 +1,18 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.1.7
+Version: 4.0.0
 Date: ???
   Changes:
-    - Made bots tall
----------------------------------------------------------------------------------------------------
-Version: 3.1.6
-Date: 2026-10-06
-  Changes:
-    - Updated German local (thanks, Spunk42!)
-    - Fixed a load error with mk02-fluid-wagon in Factorio v2.1.21. Resolves https://github.com/pyanodon/pybugreports/issues/1598
-    - Updated circuit connector definitions for relevant buildings (thanks, Spunk42!)
----------------------------------------------------------------------------------------------------
-Version: 3.1.5
-Date: 2026-09-22
-  Changes:
-    - Changed to ItemPrototype.fuel_categories
----------------------------------------------------------------------------------------------------
-Version: 3.1.4
-Date: 2026-09-16
-  Changes:
-    - Updated autotech caches to apply latest tech tree fixes
-    - Added circuit connections to niobium pipes. Resolves https://github.com/pyanodon/pybugreports/issues/1511
-    - Changed check valves to be actual valve prototypes. Existing valves will become legacy objects, as new valves cannot connect to the circuit network.
----------------------------------------------------------------------------------------------------
-Version: 3.1.3
-Date: 2026-08-28
-  Changes:
-    - Allow the construction zone extender mk01, roboport mk01, and charging station to be used in the upgrade planner with each other
-    - Updated advanced fluid wagon pump connections to more accurately fit the graphics. Resolves https://github.com/pyanodon/pybugreports/issues/1532
-    - Removed speed cap on advanced locomotive, cargo wagon, and fluid wagon
-    - Increased advanced locomotive braking force from 12 to 18
-    - Increased advanced cargo wagon and fluid wagon weight to 600 and 500 to 700
-    - Decreased advanced cargo wagon and fluid wagon friction by from 0.5 to 0.4
-    - Increased advanced cargo wagon and fluid wagon air resistance from 0.0085 to 0.011
-    - Adjusted advanced cargo wagon and fluid wagon braking force from 15 and 4 to 8
-    - Fixed misaligned pipe connection graphics. Resolves https://github.com/pyanodon/pybugreports/issues/1540
----------------------------------------------------------------------------------------------------
-Version: 3.1.2
-Date: 2026-07-09
-  Changes:
-    - Fixed incorrect dependency version requirement
----------------------------------------------------------------------------------------------------
-Version: 3.1.1
-Date: 2026-07-09
-  Changes:
-    - Restored mirroring for barreling machine
----------------------------------------------------------------------------------------------------
-Version: 3.1.0
-Date: 2026-07-07
-  Breaking Changes:
-    - Removed charging ports from construction zone extenders. Resolves https://github.com/pyanodon/pybugreports/issues/791
-  Changes:
-    - Updated to Factorio 2.1
-    - Removed sinkhole flipping adjustment script since mirroring has been improved on the engine side
-    - Removed unnecessary prototype values to clear up the log
-    - Fixed that many buildings did not have certain pipe covers rendered
-    - Reduced most fluidbox sizes from 1000 to 100
-    - Added a mod setting to show item/fluid voiding in production statistics, default on
-    - Added the following entities to be hidden when visibility of tall entities is toggled: 10k, 40k, 50k, and 80k tanks, accumulator mk02, barreling machine
-    - Allowed the advanced locomotive, cargo wagon, and fluid wagon to be used with the upgrade planner to upgrade trains
----------------------------------------------------------------------------------------------------
-Version: 3.0.21
-Date: 2026-06-08
-  Changes:
-    - Updated German locale courtesy of @Spunk42
-    - Increased valve flow rate from 6k/s to 12k/s
-    - Fixed being able to unknowingly upgrade pipes to niobium pipes when pipe weaving is enabled, breaking some setups. Resolves https://github.com/pyanodon/pybugreports/issues/1421
-    - Fixed advanced locomotive fuel icon positioning. Resolves https://github.com/pyanodon/pybugreports/issues/1406
----------------------------------------------------------------------------------------------------
-Version: 3.0.20
-Date: 2025-12-28
-  Changes:
-    - MK02 trains now tilt on rail ramps
-    - Fixed some techs having a too-fast cycle time
-    - Fixed all techs added by "enable all feature flags" not being seen by autotech.
-    - Updated German locale courtesy of @Spunk42
-    - Updated Dutch locale courtesy of @QatSquirrel
+    - Removed startup setting "fluid tank rebalance".
+    - Rebalanced fluid tank volumes per tier to the following values: 5k, 10k, 15k, 27.5k, 65k, 70k, 75k, 125k, 180k, 250k.
+    - The 180k and 250k fluid tanks are no longer located within pypetrolemhandling. All tanks are now stored inside pyindustry.
+    - New entity graphics for all updated fluid tanks. Huge thanks to JigSaW_3 for providing these!
+    - Rebalanced recipes for all py storage tanks.
+    - Upscaled all fluid tank item icons from 32p to 64p.
+    - Linearilized dependencies.
+    - Removed niobium pipes from hydrocyclone recipe. Resolves https://github.com/pyanodon/pybugreports/issues/851
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.19
-Date: 2025-09-15
+Date: ???
   Changes:
     - Remade tech tree with autotech 2.0. Science pack cost comparasion:
     - automation: n/a -> trigger

@@ -1,3 +1,4 @@
+--DEPRECIATED
 -- RECIPE UPDATES --
 if not mods["pyrawores"] then
     RECIPE("automated-factory-mk01"):replace_ingredient("advanced-circuit", "electronic-circuit"):remove_unlock("advanced-circuit"):add_unlock("fast-inserter")

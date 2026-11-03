@@ -1,44 +1,43 @@
 RECIPE {
     type = "recipe",
-    name = "py-tank-3000",
+    name = "py-tank-2",
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate",  amount = 15},
-        {type = "item", name = "pipe",        amount = 20},
-        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "pipe",        amount = 5},
+        {type = "item", name = "steel-plate", amount = 15},
     },
     results = {
-        {type = "item", name = "py-tank-3000", amount = 1}
+        {type = "item", name = "py-tank-2", amount = 1}
     }
 }:add_unlock("py-storage-tanks")
 
 ITEM {
     type = "item",
-    name = "py-tank-3000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-3000.png",
-    icon_size = 32,
+    name = "py-tank-2",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-2.png",
+    icon_size = 64,
     flags = {},
     subgroup = "py-storage-tanks",
-    order = "a-c[py-items]",
-    place_result = "py-tank-3000",
+    order = "a-b[py-items]",
+    place_result = "py-tank-2",
     stack_size = 10
 }
 
 ENTITY {
     type = "storage-tank",
-    name = "py-tank-3000",
-    icon = "__pyindustrygraphics__/graphics/icons/py-tank-3000.png",
-    icon_size = 32,
+    name = "py-tank-2",
+    icon = "__pyindustrygraphics__/graphics/icons/py-tank-2.png",
+    icon_size = 64,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 3, result = "py-tank-3000"},
+    minable = {mining_time = 3, result = "py-tank-2"},
     max_health = 100,
     corpse = "medium-remnants",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1.0, -1.0}, {1.0, 1.0}},
     two_direction_only = true,
     fluid_box = {
-        volume = 30000,
+        volume = 10000,
         pipe_covers = _G.pipecoverspictures(),
         pipe_connections = {
             {
@@ -63,7 +62,7 @@ ENTITY {
     pictures = {
         picture = {
             sheet = {
-                filename = "__pyindustrygraphics__/graphics/entity/py-tank-3000/py-tank-3000.png",
+                filename = "__pyindustrygraphics__/graphics/entity/py-tank-2/py-tank-2.png",
                 priority = "extra-high",
                 frames = 2,
                 width = 133,

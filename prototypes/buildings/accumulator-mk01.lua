@@ -13,8 +13,15 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk01", amount = 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}:add_unlock {"py-accumulator-mk01"}
+}:add_unlock {"py-accumulator-mk01"}
 
+if mods.pycoalprocessing then
+    RECIPE("accumulator-mk01"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "niobium-plate", amount = 10}
+end
+
+if mods.pyhightech then
+    RECIPE("accumulator-mk01"):add_ingredient_unsafe {type = "item", name = "used-nexelit-battery", amount = 1}
+end
 
 ITEM {
     type = "item",

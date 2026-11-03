@@ -1,7 +1,8 @@
+--DEPRECIATED--
 RECIPE {
     type = "recipe",
     name = "py-nexelit",
-    categories = {mods.pyhightech and "pcb" or "hpf"},
+    category = mods.pyhightech and "pcb" or "hpf",
     enabled = false,
     ingredients = {
         {type = "item",  name = "nexelit-plate", amount = 1},
@@ -13,7 +14,7 @@ RECIPE {
     },
     requester_paste_multiplier = 4,
     energy_required = 3
-}:add_unlock("py-asphalt-mk02")
+}:add_unlock("py-asphalt-mk02", "nexelit-mk02")
 
 ITEM {
     type = "item",
@@ -43,7 +44,7 @@ TILE {
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.6,
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
+        transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-nexelit/py-nexelit.png",

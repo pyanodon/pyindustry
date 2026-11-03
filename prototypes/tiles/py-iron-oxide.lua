@@ -1,11 +1,12 @@
+--DEPRECIATED--
 RECIPE {
     type = "recipe",
     name = "py-iron-oxide",
-    categories = {"hpf"},
+    category = "hpf",
     enabled = false,
     ingredients = {
-        {type = "item",  name = "iron-oxide",        amount = 4},
-        {type = "item",  name = "pipe",              amount = 1},
+        {type = "item",  name = "iron-oxide",   amount = 4},
+        {type = "item",  name = "pipe",         amount = 1},
         {type = "fluid", name = "muddy-sludge", amount = 20}
     },
     results = {
@@ -64,7 +65,7 @@ TILE {
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.75,
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
+        transition = table.deepcopy(TILE("concrete").variants.transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",

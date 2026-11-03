@@ -1,3 +1,4 @@
+--DEPRECIATED--
 data:extend {{
     type = "generator-equipment",
     name = "portable-gasoline-generator",
@@ -40,7 +41,7 @@ RECIPE {
     type = "recipe",
     name = "portable-gasoline-generator",
     energy_required = 10,
-    categories = {"crafting"},
+    category = "crafting",
     enabled = false,
     ingredients = {
         {type = "item", name = "engine-unit",         amount = 4},
@@ -62,5 +63,5 @@ data.raw.recipe["personal-roboport-equipment"].ingredients = {
 }
 
 data.raw.technology["personal-roboport-equipment"].prerequisites = {"construction-robotics"}
-data.raw.technology["personal-roboport-equipment"].unit--[[@cast -?]].count = 300
-TECHNOLOGY("personal-roboport-mk2-equipment"):remove_prereq("solar-panel-equipment")
+data.raw.technology["personal-roboport-equipment"].unit.count = 300
+data.raw.technology["personal-roboport-mk2-equipment"]:remove_prereq("solar-panel-equipment")
