@@ -11,11 +11,12 @@ local tanks_to_reset_rotation = table.invert {
     "tailings-pond",
 }
 
+---@param event EventData.on_built_entity|EventData.on_robot_built_entity|EventData.on_space_platform_built_entity|EventData.script_raised_built|EventData.script_raised_revive
 local function reset_rotation(event)
     local entity = event.entity
     if not entity.valid then return end
     if not tanks_to_reset_rotation[entity.name] then return end
-    entity.direction = 0
+    entity.direction = defines.direction.north
     entity.mirroring = false
 end
 
