@@ -80,7 +80,7 @@ local function define_deposit(name, logistics_name)
         icon_size = 64,
         flags = {},
         subgroup = "py-containers-deposit",
-        order = entity_type .. "[" .. full_name .. "]",
+        order = entity_type .. ((name == "buffer" and "-d") or (name == "requester" and "-e") or "-c") .. "[" .. full_name .. "]",
         place_result = full_name,
         stack_size = 10
     }
