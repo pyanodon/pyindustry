@@ -299,7 +299,11 @@ RECIPE {
     results = {
         {type = "item", name = "niobium-pipe", amount = 2}
     }
-}:add_unlock {"py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock {"py-storage-tanks"}
+
+if mods.pycoalprocessing then
+    RECIPE("niobium-pipe"):replace_ingredient_unsafe("copper-plate", "niobium-plate")
+end
 
 ITEM {
     type = "item",
@@ -326,7 +330,11 @@ RECIPE {
     results = {
         {type = "item", name = "niobium-pipe-to-ground", amount = 2}
     }
-}:add_unlock {"py-storage-tanks"}:replace_ingredient("copper-plate", "niobium-plate")
+}:add_unlock {"py-storage-tanks"}
+
+if mods.pycoalprocessing then
+    RECIPE("niobium-pipe-to-ground"):replace_ingredient_unsafe("copper-plate", "niobium-plate")
+end
 
 ITEM {
     type = "item",
@@ -342,7 +350,6 @@ ITEM {
 
 local recipes = {
     "xyhiphoe-pool-mk01",
-    "hydrocyclone-mk01",
     "compressor-mk01",
     "genlab-mk01",
     "kmauts-enclosure-mk01",

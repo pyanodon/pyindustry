@@ -10,7 +10,11 @@ RECIPE {
     results = {
         {type = "item", name = "py-ze-mk04", amount = 1}
     }
-}:add_ingredient {type = "item", name = "nbfe-alloy", amount = 10}:add_ingredient {type = "item", name = "kevlar", amount = 30}
+}
+
+if mods.pycoalprocessing then
+    RECIPE("py-ze-mk04"):add_ingredient_unsafe {type = "item", name = "nbfe-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "kevlar", amount = 30}
+end
 
 ITEM {
     type = "item",

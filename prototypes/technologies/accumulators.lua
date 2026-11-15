@@ -38,6 +38,9 @@ TECHNOLOGY {
     order = "c-k-a",
     upgrade = true
 }
+if mods.pycoalprocessing then
+    RECIPE("accumulator-mk02"):add_unlock("py-accumulator-mk02")
+end
 
 if mods["pyalternativeenergy"] then
     TECHNOLOGY {

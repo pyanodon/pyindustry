@@ -1,12 +1,4 @@
-if settings.startup["py-tank-adjust"].value then
-    if mods["pypetroleumhandling"] then
-        data.raw["storage-tank"]["py-tank-9000"].fluid_box.volume = 180000
-        data.raw["storage-tank"]["py-tank-9000"].localised_name = {"entity-name.py-tank-9000-adjust"}
-        data.raw["storage-tank"]["py-tank-10000"].fluid_box.volume = 250000
-        data.raw["storage-tank"]["py-tank-10000"].localised_name = {"entity-name.py-tank-10000-adjust"}
-    end
-end
-
+require "prototypes/buildings/megadar"
 --Tiles
 require "prototypes/tiles/py-asphalt"
 require "prototypes/tiles/py-limestone"
@@ -22,20 +14,6 @@ end
 
 require "prototypes/updates/base-updates"
 
-if mods["pycoalprocessing"] then
-    require "prototypes/updates/pycoalprocessing-updates"
-    require "prototypes/tiles/py-iron-oxide"
-    require "prototypes/tiles/py-nexelit"
-end
-
-if mods["pyfusionenergy"] then
-    require "prototypes/updates/pyfusionenergy-updates"
-end
-
-if mods["pyrawores"] then
-    require "prototypes/updates/pyrawores-updates"
-end
-
 if mods["pyalternativeenergy"] then
     require "prototypes/updates/pyalternativeenergy-updates"
 end
@@ -44,7 +22,7 @@ if mods.pyrawores then
     RECIPE("accumulator-mk02"):replace_ingredient("copper-cable", "tinned-cable"):replace_ingredient("iron-plate", "stainless-steel")
 end
 
-for f, _ in pairs(data.raw.fluid) do
+--[[for f, _ in pairs(data.raw.fluid) do
     for i, recipe_name in pairs {
         "empty-" .. f .. "-canister",
         "empty-" .. f .. "-barrel",
@@ -53,16 +31,16 @@ for f, _ in pairs(data.raw.fluid) do
     } do
         local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
         if recipe ~= nil then
-            RECIPE(recipe_name):set_fields {hide_from_player_crafting = true, hide_from_stats = true}
+            recipe:set_fields {hide_from_player_crafting = true, hide_from_stats = true}
             -- This is backwards, I blame king
             if recipe_name:match("^empty") then
-                recipe.categories = {"py-barreling"}
+                recipe.category = "py-barreling"
             else
-                recipe.categories = {"py-unbarreling"}
+                recipe.category = "py-unbarreling"
             end
         end
     end
-end
+end]] --
 
 if mods["valves"] then
     data.raw.valve["valves-top_up"].next_upgrade = "py-underflow-valve"
