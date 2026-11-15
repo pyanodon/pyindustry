@@ -16,7 +16,7 @@ local function make_shadow(image)
     }
 end
 
---- @param i integer
+---@param i integer
 local function make_visualization(i)
     return
     {
