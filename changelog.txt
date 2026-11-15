@@ -3,6 +3,7 @@ Version: 3.1.7
 Date: ???
   Changes:
     - Made bots tall
+    - Updated RU locale (thanks, Astorin!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.6
 Date: 2026-10-06
