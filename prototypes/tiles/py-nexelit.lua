@@ -1,3 +1,4 @@
+--DEPRECIATED--
 RECIPE {
     type = "recipe",
     name = "py-nexelit",

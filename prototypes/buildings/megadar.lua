@@ -30,10 +30,10 @@ RECIPE {
         {type = "item", name = "megadar", amount = 1}
     },
     enabled = false
-}:add_unlock("radars-mk02")
+}:add_unlock("radars-mk02"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
 
 if mods["pycoalprocessing"] then
-    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
+    --RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
 end
 
 ITEM {
