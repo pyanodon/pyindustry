@@ -51,7 +51,6 @@ ENTITY {
         }
     },
     window_bounding_box = {{-0.0, 0.0}, {0.0, 0.0}},
-    tall = true,
     pictures = {
         picture = {
             sheets = {
@@ -86,8 +85,9 @@ ENTITY {
             filename = "__base__/sound/storage-tank.ogg",
             volume = 0.8
         },
+        apparent_volume = 1.5,
         max_sounds_per_prototype = 3
     },
     circuit_wire_max_distance = 9,
-    circuit_connector = circuit_connector_definitions["tanks-1000"],
+    circuit_connector = table.deepcopy(data.raw["storage-tank"]["storage-tank"].circuit_connector),
 }

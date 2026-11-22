@@ -46,6 +46,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__base__/sound/idle1.ogg", volume = 0.7},
         idle_sound = {filename = "__base__/sound/idle1.ogg", volume = 0.3},
+        apparent_volume = 1.0
     },
     resistances = {
         {
@@ -92,6 +93,7 @@ ENTITY {
             }
         },
     },
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         {
             production_type = "input",
@@ -103,5 +105,13 @@ ENTITY {
     },
     fast_replaceable_group = "py-gas-vent",
     circuit_wire_max_distance = 9,
-    circuit_connector = circuit_connector_definitions["gas-vent"],
+    circuit_connector = circuit_connector_definitions.create_vector(
+        universal_connector_template,
+        {
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false},
+            {variation = 26, main_offset = util.by_pixel(0, 0), shadow_offset = util.by_pixel(0, 0), show_shadow = false}
+        }
+    )
 }

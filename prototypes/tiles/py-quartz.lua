@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-quartz",
-    categories = {"glassworks"},
+    category = "glassworks",
     enabled = false,
     ingredients = {
         {type = "fluid", name = "slacked-lime",    amount = 10},

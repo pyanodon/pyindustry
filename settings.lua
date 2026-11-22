@@ -4,10 +4,4 @@ data:extend {{
     setting_type = "startup",
     default_value = true,
     order = "f",
-}, {
-    type = "bool-setting",
-    name = "py-show-voiding-in-stats",
-    setting_type = "startup",
-    default_value = true,
-    order = "g"
 }}
