@@ -57,14 +57,14 @@ ITEM {
     stack_size = 10,
     burnt_result = "personal-fusion-cell-used",
     fuel_value = "2GJ",
-    fuel_category = "personal-fusion-cell"
+    fuel_categories = {"personal-fusion-cell"}
 }
 
 RECIPE {
     type = "recipe",
     name = "personal-fusion-cell",
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "barrel", amount = 1},
@@ -89,7 +89,7 @@ RECIPE {
     type = "recipe",
     name = "personal-fusion-cell-refuel",
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "personal-fusion-cell-used", amount = 1},

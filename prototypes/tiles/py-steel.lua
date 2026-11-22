@@ -2,7 +2,7 @@ if mods.pyrawores and mods.pypetroleumhandling then
     RECIPE {
         type = "recipe",
         name = "py-steel",
-        category = "casting",
+        categories = {"casting"},
         enabled = false,
         ingredients = {
             {type = "fluid", name = "molten-steel",   amount = 10},
@@ -19,7 +19,7 @@ else
     RECIPE {
         type = "recipe",
         name = "py-steel",
-        category = "crafting",
+        categories = {"crafting"},
         enabled = false,
         ingredients = {
             {type = "item", name = "steel-plate", amount = 2},
@@ -30,7 +30,7 @@ else
         },
         requester_paste_multiplier = 4,
         energy_required = 0.5
-    }:add_unlock("py-asphalt-mk02", "coal-processing-2")
+    }:add_unlock("py-asphalt-mk02")
 end
 
 ITEM {
@@ -82,7 +82,7 @@ TILE {
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.6,
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants.transition),
+        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-steel/py-steel.png",

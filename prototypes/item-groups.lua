@@ -3,7 +3,6 @@ data:extend {
         type = "item-group",
         name = "py-industry",
         order = "t2",
-        inventory_order = "t2",
         icon = "__pyindustrygraphics__/graphics/technology/item-group.png",
         icon_size = 128
     },

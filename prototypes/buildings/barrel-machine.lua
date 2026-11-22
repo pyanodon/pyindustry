@@ -41,7 +41,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    forced_symmetry = "diagonal-neg",
+    use_mirroring = true,
     module_slots = 4,
     allowed_effects = {"speed", "consumption"},
     crafting_categories = {"py-barreling", "py-unbarreling"},
@@ -56,6 +56,7 @@ ENTITY {
         },
     },
     energy_usage = "200kW",
+    tall = true,
     graphics_set = {
         animation = {
             layers = {
@@ -91,19 +92,18 @@ ENTITY {
             }
         },
     },
-    fluid_boxes_off_when_no_fluid_recipe = true,
     fluid_boxes = {
         --1
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.75}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-1.0, -1.0}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.96}, nil, nil),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.0, -0.75}, nil, nil),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
             pipe_connections = {{flow_direction = "output", position = {1.0, 1.0}, direction = defines.direction.south}}
@@ -117,10 +117,11 @@ ENTITY {
             {
                 filename = "__base__/sound/assembling-machine-t2-1.ogg",
                 volume = 0.55,
-                audible_distance_modifier = 0.5,
             }
         },
         fade_in_ticks = 4,
         fade_out_ticks = 20
     },
+    circuit_wire_max_distance = 9,
+    circuit_connector = circuit_connector_definitions["barrel-machine"],
 }

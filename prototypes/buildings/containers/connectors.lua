@@ -1,7 +1,7 @@
 local connectors = {}
 function connectors.sprites(con_shift, shadow_shift)
     local red_green_shift = {con_shift[1] - 0.1, con_shift[2] + 0.05}
-    local blue_shift = {con_shift[1] - 0.05, con_shift[2] + 0.1}
+    local blue_shift = {con_shift[1] + 0.2, con_shift[2] + 0.1}
     return {
         connector_main = {
             filename = "__pyindustrygraphics__/graphics/entity/pylon/pylon.png",
@@ -12,36 +12,44 @@ function connectors.sprites(con_shift, shadow_shift)
             scale = 0.5
         },
         led_red = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-red-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04i-red-LED-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = red_green_shift
+            width = 48,
+            height = 46,
+            shift = red_green_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_green = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-green-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04h-green-LED-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = red_green_shift
+            width = 48,
+            height = 46,
+            shift = red_green_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_blue = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-led-blue-glow.png",
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04e-blue-LED-on-sequence.png",
             priority = "low",
-            width = 13,
-            height = 12,
-            shift = blue_shift
+            width = 60,
+            height = 60,
+            shift = blue_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
-        logistic_animation = {
-            filename = "__base__/graphics/entity/circuit-connector/circuit-connector-logistic-animation.png",
+        led_blue_off = {
+            filename = "__base__/graphics/entity/circuit-connector/ccm-universal-04f-blue-LED-off-sequence.png",
             priority = "low",
-            blend_mode = "additive",
-            line_length = 4,
-            width = 43,
-            height = 43,
-            frame_count = 15,
-            animation_speed = 0.5,
-            shift = {0, 0}
+            width = 46,
+            height = 44,
+            shift = blue_shift,
+            draw_as_glow = true,
+            scale = 0.5,
+            line_length = 8
         },
         led_light = {
             intensity = 0.8,
@@ -63,9 +71,9 @@ end
 
 function connectors.points(red_points)
     local rx, ry = red_points[1], red_points[2]
-    local gx, gy = rx + 0.06, ry + 0.07
-    local srx, sry = rx + 0.1, ry
-    local sgx, sgy = gx + 0.1, gy
+    local gx, gy = rx, ry + .1
+    local srx, sry = rx + 0.5, ry + .7
+    local sgx, sgy = gx + 0.5, gy + .7
     return {
         wire = {
             red = {rx, ry},

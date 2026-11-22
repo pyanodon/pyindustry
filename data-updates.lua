@@ -31,12 +31,12 @@ end
     } do
         local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
         if recipe ~= nil then
-            recipe:set_fields {hide_from_player_crafting = true, hide_from_stats = true}
+            RECIPE(recipe_name):set_fields {hide_from_player_crafting = true, hide_from_stats = true}
             -- This is backwards, I blame king
             if recipe_name:match("^empty") then
-                recipe.category = "py-barreling"
+                recipe.categories = {"py-barreling"}
             else
-                recipe.category = "py-unbarreling"
+                recipe.categories = {"py-unbarreling"}
             end
         end
     end

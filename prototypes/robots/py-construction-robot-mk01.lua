@@ -4,7 +4,7 @@ RECIPE {
     type = "recipe",
     name = "py-construction-robot-mk01",
     energy_required = 10,
-    category = "crafting-with-fluid",
+    categories = {"crafting-with-fluid"},
     enabled = false,
     ingredients = {
         {type = "item", name = "steel-plate",        amount = 20},
@@ -36,6 +36,7 @@ end
 
 ENTITY {
     type = "construction-robot",
+    tall = true,
     name = "py-construction-robot-mk01",
     icon = "__pyindustrygraphics__/graphics/icons/py-construction-robot-01.png",
     icon_size = 32,
@@ -47,7 +48,6 @@ ENTITY {
     selection_box = {{-0.5, -1.5}, {0.5, -0.5}},
     max_payload_size = 1,
     speed = 0.08,
-    transfer_distance = 0.5,
     max_energy = "1.5MJ",
     energy_per_tick = "0.05kJ",
     speed_multiplier_when_out_of_energy = 0.4,

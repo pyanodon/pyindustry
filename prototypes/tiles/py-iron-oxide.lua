@@ -2,7 +2,7 @@
 RECIPE {
     type = "recipe",
     name = "py-iron-oxide",
-    category = "hpf",
+    categories = {"hpf"},
     enabled = false,
     ingredients = {
         {type = "item",  name = "iron-oxide",   amount = 4},
@@ -65,7 +65,7 @@ TILE {
     absorptions_per_second = {pollution = 0},
     vehicle_friction_modifier = 0.75,
     variants = {
-        transition = table.deepcopy(TILE("concrete").variants.transition),
+        transition = table.deepcopy(TILE("concrete").variants--[[@as data.TileTransitionsVariants]].transition),
         material_background =
         {
             picture = "__pyindustrygraphics__/graphics/tiles/py-iron-oxide/py-iron-oxide.png",
