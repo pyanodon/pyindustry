@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-asphalt",
-    categories = {"crafting-with-fluid"},
+    category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
         {type = "fluid", name = "water", amount = 10},

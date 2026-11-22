@@ -1,3 +1,23 @@
+for f, _ in pairs(data.raw.fluid) do
+    for i, recipe_name in pairs {
+        "empty-" .. f .. "-canister",
+        "empty-" .. f .. "-barrel",
+        "fill-" .. f .. "-canister",
+        f .. "-barrel"
+    } do
+        local recipe = data.raw.recipe[recipe_name] and RECIPE(recipe_name)
+        if recipe ~= nil then
+            recipe:set_fields {hide_from_player_crafting = true, hide_from_stats = true}
+            -- This is backwards, I blame king
+            if recipe_name:match("^empty") then
+                recipe.category = "py-barreling"
+            else
+                recipe.category = "py-unbarreling"
+            end
+        end
+    end
+end
+
 require "prototypes/void-recipes/fluid-void"
 require "prototypes/void-recipes/item-void"
 
@@ -17,20 +37,33 @@ if settings.startup["py-braided-pipes"].value then
 
         for _, entity in pairs(data.raw[entity_prototype] or {}) do
             local fluid_boxes = {}
+
             for _, fluid_box in pairs(entity.fluid_boxes or {}) do
                 fluid_boxes[#fluid_boxes + 1] = fluid_box
             end
 
-            -- add generically, if they're nil this does nothing
-            fluid_boxes[#fluid_boxes + 1] = entity.fluid_box
-            fluid_boxes[#fluid_boxes + 1] = entity.input_fluid_box
-            fluid_boxes[#fluid_boxes + 1] = entity.output_fluid_box
-            fluid_boxes[#fluid_boxes + 1] = entity.fuel_fluid_box
-            fluid_boxes[#fluid_boxes + 1] = entity.oxidizer_fluid_box
+            if entity.fluid_box then
+                fluid_boxes[#fluid_boxes + 1] = entity.fluid_box
+            end
+
+            if entity.input_fluid_box then
+                fluid_boxes[#fluid_boxes + 1] = entity.input_fluid_box
+            end
+
+            if entity.output_fluid_box then
+                fluid_boxes[#fluid_boxes + 1] = entity.output_fluid_box
+            end
+
+            if entity.fuel_fluid_box then
+                fluid_boxes[#fluid_boxes + 1] = entity.fuel_fluid_box
+            end
+
+            if entity.oxidizer_fluid_box then
+                fluid_boxes[#fluid_boxes + 1] = entity.oxidizer_fluid_box
+            end
 
             if entity.energy_source and entity.energy_source.type == "fluid" then
                 fluid_boxes[#fluid_boxes + 1] = entity.energy_source.fluid_box
-                fluid_boxes[#fluid_boxes + 1] = entity.energy_source.output_fluid_box
             end
 
             for _, fluid_box in pairs(fluid_boxes) do
@@ -66,7 +99,6 @@ if settings.startup["py-braided-pipes"].value then
     end
 
     for _, pipe in pairs {table.unpack(data.raw["pipe"]), table.unpack(data.raw["pipe-to-ground"])} do
-        ---@diagnostic disable-next-line: undefined-field
         for _, pipe_connection in pairs(pipe.fluid_box.pipe_connections) do
             if pipe_connection.connection_category == nil then
                 pipe_connection.connection_category = {"pipe"}

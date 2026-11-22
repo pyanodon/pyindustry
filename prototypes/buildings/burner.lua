@@ -155,7 +155,5 @@ ENTITY {
             }
         },
     },
-    fast_replaceable_group = "py-burner",
-    circuit_wire_max_distance = 9,
-    circuit_connector = circuit_connector_definitions["burner"],
+    fast_replaceable_group = "py-burner"
 }

@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "accumulator-mk02",
     energy_required = 0.5,
-    categories = {"crafting-with-fluid"},
+    category = "crafting-with-fluid",
     enabled = false,
     ingredients = {
         {type = "item", name = "battery",         amount = 50},
@@ -14,7 +14,20 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk02", amount = 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "optical-fiber", amount = 30}:add_unlock("py-accumulator-mk02")
+}:add_unlock("py-accumulator-mk02")
+
+if mods.pycoalprocessing then
+    RECIPE("accumulator-mk02"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "optical-fiber", amount = 30}
+end
+
+if mods.pyrawores then
+    RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 50}
+end
+
+if mods.pyhightech then
+    RECIPE("accumulator-mk02"):add_ingredient_unsafe {type = "item", name = "used-nexelit-battery", amount = 5}
+    RECIPE("accumulator-mk02"):remove_ingredient("battery"):add_ingredient_unsafe {type = "item", name = "re-magnet", amount = 10}:add_ingredient_unsafe {type = "item", name = "sc-coil", amount = 10}
+end
 
 ITEM {
     type = "item",
@@ -52,7 +65,6 @@ ENTITY {
         input_flow_limit = "50000kW",
         output_flow_limit = "50000kW"
     },
-    tall = true,
     chargable_graphics = {
         picture = {
             filename = "__pyindustrygraphics__/graphics/entity/accumulator-mk02/charged.png",
@@ -96,7 +108,19 @@ ENTITY {
         },
         max_sounds_per_prototype = 5
     },
-    circuit_connector = table.deepcopy(data.raw["accumulator"]["accumulator"].circuit_connector),
+    circuit_connector = {
+        points = {
+            shadow = {
+                red = {0.984375, 1.10938},
+                green = {0.890625, 1.10938}
+            },
+            wire = {
+                red = {0.6875, 0.59375},
+                green = {0.6875, 0.71875}
+            }
+        },
+        sprites = table.deepcopy(data.raw.accumulator.accumulator.circuit_connector.sprites)
+    },
     circuit_wire_max_distance = 9,
     default_output_signal = {type = "virtual", name = "signal-A"},
     fast_replaceable_group = "py-accumulator"

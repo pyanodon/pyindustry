@@ -10,7 +10,11 @@ RECIPE {
     results = {
         {type = "item", name = "py-ze-mk04", amount = 1}
     }
-}:add_ingredient {type = "item", name = "nbfe-alloy", amount = 10}:add_ingredient {type = "item", name = "kevlar", amount = 30}
+}
+
+if mods.pycoalprocessing then
+    RECIPE("py-ze-mk04"):add_ingredient_unsafe {type = "item", name = "nbfe-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "kevlar", amount = 30}
+end
 
 ITEM {
     type = "item",
@@ -59,12 +63,14 @@ ENTITY {
     logistics_radius = 0,
     construction_radius = 120,
     logistics_connection_distance = 120,
-    charge_approach_distance = 0,
+    charge_approach_distance = 5,
     robot_slots_count = 0,
     material_slots_count = 0,
     robots_shrink_when_entering_and_exiting = true,
-    stationing_offset = {0, 0},
-    charging_offsets = {},
+    stationing_offset = util.by_pixel(0, -3),
+    charging_offsets = {
+        {-0, -0.5}
+    },
     base = {
         layers = {
             {
@@ -185,7 +191,10 @@ ENTITY {
             sound = {filename = "__base__/sound/roboport-door.ogg", volume = 0.4}
         }
     },
-    circuit_connector = circuit_connector_definitions["py-roboport-ze-mk4"],
+    circuit_connector = {
+        sprites = _G.circuit_connector_definitions["roboport"].sprites,
+        points = _G.circuit_connector_definitions["roboport"].points
+    },
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     default_available_logistic_output_signal = {type = "virtual", name = "signal-X"},
     default_total_logistic_output_signal = {type = "virtual", name = "signal-Y"},

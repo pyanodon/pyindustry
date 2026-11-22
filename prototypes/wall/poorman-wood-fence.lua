@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "poorman-wood-fence",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = true,
     ingredients = {
         {type = "item", name = "wood", amount = 3}

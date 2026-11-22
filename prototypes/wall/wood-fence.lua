@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "wood-fence",
-    categories = {"crafting"},
+    category = "crafting",
     enabled = false,
     ingredients = {
         {type = "item", name = "wood", amount = 2}
@@ -9,7 +9,11 @@ RECIPE {
     results = {
         {type = "item", name = "wood-fence", amount = 1}
     }
-}:add_unlock("py-asphalt"):replace_ingredient("wood", "treated-wood")
+}:add_unlock("py-asphalt")
+
+if mods.pycoalprocessing then
+    RECIPE("wood-fence"):replace_ingredient_unsafe("wood", "treated-wood")
+end
 
 ITEM {
     type = "item",

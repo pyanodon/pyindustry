@@ -2,19 +2,19 @@ data.raw.fluid["petroleum-gas"].gas_temperature = 20
 
 if not mods["boblogistics"] then
     --Remove base robots
-    RECIPE("construction-robot"):remove_unlock("construction-robotics"):set_fields {hidden = true}
-    RECIPE("logistic-robot"):remove_unlock("logistic-robotics"):set_fields {hidden = true}
-    RECIPE("flying-robot-frame"):remove_unlock("robotics"):set_fields {hidden = true}
-    RECIPE("roboport"):remove_unlock("logistic-robotics"):remove_unlock("construction-robotics"):set_fields {hidden = true}
+    RECIPE("construction-robot"):remove_unlock("construction-robotics"):hide()
+    RECIPE("logistic-robot"):remove_unlock("logistic-robotics"):hide()
+    RECIPE("flying-robot-frame"):remove_unlock("robotics"):hide()
+    RECIPE("roboport"):remove_unlock("logistic-robotics"):remove_unlock("construction-robotics"):hide()
 
-    ITEM("construction-robot"):set_fields {hidden = true}
-    ITEM("logistic-robot"):set_fields {hidden = true}
-    ITEM("flying-robot-frame"):set_fields {hidden = true}
-    ITEM("roboport"):set_fields {hidden = true}
+    ITEM("construction-robot"):hide()
+    ITEM("logistic-robot"):hide()
+    ITEM("flying-robot-frame"):hide()
+    ITEM("roboport"):hide()
 
-    ENTITY("construction-robot"):set_fields {hidden = true}
-    ENTITY("logistic-robot"):set_fields {hidden = true}
-    ENTITY("roboport"):set_fields {hidden = true}
+    ENTITY("construction-robot"):hide()
+    ENTITY("logistic-robot"):hide()
+    ENTITY("roboport"):hide()
 
     -- remove roboport animations to save VRAM
     ENTITY("roboport").base = nil
@@ -56,9 +56,6 @@ RECIPE("requester-chest"):remove_ingredient("advanced-circuit")
 RECIPE("locomotive"):remove_ingredient("engine-unit"):add_ingredient {type = "item", name = "pipe", amount = 20}:add_ingredient {type = "item", name = "steam-engine", amount = 2}:add_ingredient {type = "item", name = "iron-gear-wheel", amount = 20}:subgroup_order("py-trains", "a")
 RECIPE("cargo-wagon"):subgroup_order("py-trains", "ab")
 RECIPE("fluid-wagon"):subgroup_order("py-trains", "ac")
-ENTITY("locomotive").fast_replaceable_group = "locomotive"
-ENTITY("cargo-wagon").fast_replaceable_group = "cargo-wagon"
-ENTITY("fluid-wagon").fast_replaceable_group = "fluid-wagon"
 
 TECHNOLOGY("fluid-wagon"):remove_pack("logistic-science-pack")
 TECHNOLOGY("automated-rail-transportation"):remove_pack("logistic-science-pack")
@@ -68,11 +65,11 @@ RECIPE("rocket-silo"):replace_ingredient("pipe", "niobium-pipe")
 TECHNOLOGY("electric-energy-accumulators"):set("icon", "__pyindustrygraphics__/graphics/technology/accumulator-mk01.png")
 TECHNOLOGY("electric-energy-accumulators"):set("icon_size", 128)
 
+data.raw.pump["pump"].fluid_wagon_connector_alignment_tolerance = 1.0
+
 -- Moved from prototypes/pipes/niobium-pipes.lua because AFH was incorrectly copying the property causing crashes
-if not settings.startup["py-braided-pipes"].value then
-    data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
-    data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
-end
+data.raw.pipe.pipe.next_upgrade = "niobium-pipe"
+data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "niobium-pipe-to-ground"
 
 RECIPE("storage-tank"):remove_unlock("fluid-handling"):add_unlock("py-storage-tanks")
 

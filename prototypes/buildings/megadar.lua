@@ -30,10 +30,10 @@ RECIPE {
         {type = "item", name = "megadar", amount = 1}
     },
     enabled = false
-}:add_unlock("radars-mk02")
+}:add_unlock("radars-mk02"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
 
 if mods["pycoalprocessing"] then
-    RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
+    --RECIPE("megadar"):replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}
 end
 
 ITEM {
@@ -88,6 +88,9 @@ ENTITY {
         priority = "low",
         width = 238,
         height = 216,
+        apply_projection = false,
+        direction_count = 1,
+        repeat_count = 32,
         line_length = 1,
         shift = util.by_pixel(1.5, 4),
         scale = 0.5
@@ -161,6 +164,7 @@ ENTITY {
                 volume = 1.9
             }
         },
+        apparent_volume = 2
     },
     radius_minimap_visualisation_color = {r = 0.059, g = 0.092, b = 0.235, a = 0.275},
     rotation_speed = 0.0008

@@ -13,8 +13,15 @@ RECIPE {
     results = {
         {type = "item", name = "accumulator-mk01", amount = 1}
     }
-}:replace_ingredient("steel-plate", "nexelit-plate"):add_ingredient {type = "item", name = "niobium-plate", amount = 10}:add_unlock {"py-accumulator-mk01"}
+}:add_unlock {"py-accumulator-mk01"}
 
+if mods.pycoalprocessing then
+    RECIPE("accumulator-mk01"):replace_ingredient_unsafe("steel-plate", "nexelit-plate"):add_ingredient_unsafe {type = "item", name = "niobium-plate", amount = 10}
+end
+
+if mods.pyhightech then
+    RECIPE("accumulator-mk01"):add_ingredient_unsafe {type = "item", name = "used-nexelit-battery", amount = 1}
+end
 
 ITEM {
     type = "item",
@@ -95,7 +102,19 @@ ENTITY {
         },
         max_sounds_per_prototype = 5
     },
-    circuit_connector = circuit_connector_definitions["accumulator-mk1"],
+    circuit_connector = {
+        points = {
+            shadow = {
+                red = {0.984375, 1.10938},
+                green = {0.890625, 1.10938}
+            },
+            wire = {
+                red = {0.6875, 0.59375},
+                green = {0.6875, 0.71875}
+            }
+        },
+        sprites = table.deepcopy(data.raw.accumulator.accumulator.circuit_connector.sprites)
+    },
     circuit_wire_max_distance = 9,
     default_output_signal = {type = "virtual", name = "signal-A"},
     fast_replaceable_group = "py-accumulator"

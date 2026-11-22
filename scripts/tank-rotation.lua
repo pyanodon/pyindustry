@@ -1,22 +1,21 @@
 -- https://github.com/pyanodon/pybugreports/issues/920
 
 local tanks_to_reset_rotation = table.invert {
-    "py-tank-1500",
-    "py-tank-4000",
-    "py-tank-5000",
-    "py-tank-6500",
-    "py-tank-8000",
-    "py-tank-9000",
-    "py-tank-10000",
+    "py-tank-2",
+    "py-tank-4",
+    "py-tank-5",
+    "py-tank-7",
+    "py-tank-8",
+    "py-tank-9",
+    "py-tank-10",
     "tailings-pond",
 }
 
----@param event EventData.on_built_entity|EventData.on_robot_built_entity|EventData.on_space_platform_built_entity|EventData.script_raised_built|EventData.script_raised_revive
 local function reset_rotation(event)
     local entity = event.entity
     if not entity.valid then return end
     if not tanks_to_reset_rotation[entity.name] then return end
-    entity.direction = defines.direction.north
+    entity.direction = 0
     entity.mirroring = false
 end
 
